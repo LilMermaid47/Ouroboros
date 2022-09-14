@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c40d57cc4a07c82459f5c7c375d0d175, type: 3}
-  m_Name: StoryQuest
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: ConstructionDuPuit
   m_EditorClassIdentifier: 
   questDefinition:
     questName: 
@@ -42,7 +42,3 @@ MonoBehaviour:
         honor: 0
         discple: 0
         devotion: 0
-  nbQuestPlusLoinChoice1: 0
-  questChoice1: {fileID: 0}
-  nbQuestPlusLoinChoice2: 0
-  questChoice2: {fileID: 0}

@@ -20,11 +20,13 @@ public class QuestDefinition
     public string questDescription;
 
     [Header("Choice descrption & Reveal Description")]
+    public string choice1Name;
     [TextArea(minLines: 2, maxLines: 5)]
     public string choice1Description;
     [TextArea(minLines: 2, maxLines: 5)]
     public string choice1Reveal;
 
+    public string choice2Name;
     [TextArea(minLines: 2, maxLines: 5)]
     public string choice2Description;
     [TextArea(minLines: 2, maxLines: 5)]
