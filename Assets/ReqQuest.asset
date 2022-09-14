@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: ReqQuest
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 
+    questGiverName: 
+    questDescription: 
+    choice1Description: 
+    choice1Reveal: 
+    choice2Description: 
+    choice2Reveal: 
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+  requirementChoice1:
+    moneyReward: 0
+    templeReadiness: 0
+    recompenseClanSusoda:
+      honor: 0
+      discple: 0
+      devotion: 0
+    recompenseClanHuangsei:
+      honor: 0
+      discple: 0
+      devotion: 0
+  requirementChoice2:
+    moneyReward: 0
+    templeReadiness: 0
+    recompenseClanSusoda:
+      honor: 0
+      discple: 0
+      devotion: 0
+    recompenseClanHuangsei:
+      honor: 0
+      discple: 0
+      devotion: 0
