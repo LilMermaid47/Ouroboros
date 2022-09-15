@@ -13,30 +13,37 @@ MonoBehaviour:
   m_Name: ConstructionDuPuit
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: 
-    questGiverName: 
-    questDescription: 
-    choice1Description: 
-    choice1Reveal: 
-    choice2Description: 
-    choice2Reveal: 
+    questName: La construction du puit
+    questGiverName: Villageois neutre
+    questDescription: The river is dry again. We should build a Well. Who should
+      lead the construction of this dangerous project?
+    choice1Name: Huangsei
+    choice1Description: "Nos membres sont forts et costauds, nous allons creuser
+      nous-m\xEAme le puit.\r"
+    choice1Reveal: "Apr\xE8s de tumultueuse et dangereuse construction, le nouveau
+      monument est construit."
+    choice2Name: Susoda
+    choice2Description: "Achetons quelques esclaves qui creuseront le puit \xE0 notre
+      place.\r"
+    choice2Reveal: "La construction c\u2019est bien pass\xE9 et les Susodien r\xE9ussirent
+      \xE0 convertir les esclaves \xE0 leur clan\r."
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: 25
       recompenseClanSusoda:
         honor: 0
         discple: 0
         devotion: 0
       recompenseClanHuangsei:
-        honor: 0
-        discple: 0
+        honor: 5
+        discple: -3
         devotion: 0
     rewardChoice2:
-      moneyReward: 0
-      templeReadiness: 0
+      moneyReward: -20
+      templeReadiness: 35
       recompenseClanSusoda:
-        honor: 0
-        discple: 0
+        honor: 5
+        discple: 3
         devotion: 0
       recompenseClanHuangsei:
         honor: 0
