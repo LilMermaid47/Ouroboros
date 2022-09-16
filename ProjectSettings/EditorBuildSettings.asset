@@ -4,6 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5be1a9fbf06dc814394f9e7ce1011b14
+  - enabled: 1
+    path: Assets/Scenes/Gym/GymAriel.unity
+    guid: fc6436ad065f38940b002919720bd07f
+  - enabled: 1
+    path: Assets/Scenes/Prototype.unity
+    guid: 297a6ce71dea18042aa4deed498d4eb1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a7aa5bdd8cb8a7a4f8cb825c300c14cf, type: 2}
