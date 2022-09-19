@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: TestQuest 2
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: TestQuest1
-    questGiverName: 
-    questDescription: 
-    choice1Name: 
+    questName: TestQuest2
+    questGiverName: Paul
+    questDescription: Yo wassup
+    choice1Name: Left
     choice1Description: 
-    choice1Reveal: 
-    choice2Name: 
+    choice1Reveal: reveal txt
+    choice2Name: Right
     choice2Description: 
-    choice2Reveal: 
+    choice2Reveal: reveal txt
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

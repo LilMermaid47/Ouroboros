@@ -46,9 +46,17 @@ public class QuestManager : MonoBehaviour
     public void NextQuest()
     {
         currentQuestIndex++;
-        currentQuest = filledLevel.questList[currentQuestIndex];
+        if(currentQuestIndex < filledLevel.questList.Count)
+        {
+            currentQuest = filledLevel.questList[currentQuestIndex];
+            uIController.SetQuest(currentQuest);
+        }
+        else
+        {
+            Debug.Log("LvlCompleted");
+        }
     }
-    
+
     public void InsertQuest(int index, Quest questToAdd)
     {
         filledLevel.questList.Insert(index, questToAdd);
