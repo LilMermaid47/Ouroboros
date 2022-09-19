@@ -30,13 +30,16 @@ public class UIController : MonoBehaviour
 
     private Quest CurrentQuest;
 
-    private void Start()
+    private void Awake()
     {
         QuestUI.SetActive(false);
         VictoryUI.SetActive(false);
         DefeatUI.SetActive(false);
         InGameMenuUI.SetActive(false);
+    }
 
+    private void Start()
+    {
         PlayerInputs = new Ouroboros();
 
         PlayerInputs.InGameMenu.Pause.performed += InGameMenuPressed;

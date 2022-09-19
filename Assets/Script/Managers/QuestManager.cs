@@ -10,16 +10,22 @@ public class QuestManager : MonoBehaviour
     private Level filledLevel;
     private RandomQuestList tempQuestList;
 
+    UIController uIController;
+
     int currentQuestIndex = 0;
     Quest currentQuest;
 
     private void Start()
     {
+        uIController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<UIController>();
+
         //creates a copy to not lose original data (important)
         filledLevel = Instantiate(level);
         tempQuestList = Instantiate(randomQuestList);
         SideQuestFiller();
         currentQuest = filledLevel.questList[currentQuestIndex];
+
+        uIController.SetQuest(currentQuest);
     }
 
     //Come fill all the null element in the level list by random quest in the RandomQuestList
