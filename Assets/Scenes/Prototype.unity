@@ -439,15 +439,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4415b1725b422994db31393bafff7a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clanHonorDevotionModifier: 0.2
   argent: 0
   clanSusoda:
-    honor: 0
-    discple: 0
-    devotion: 0
+    honor: 10
+    discple: 10
+    devotion: 10
   clanHuangsei:
-    honor: 0
-    discple: 0
-    devotion: 0
+    honor: 10
+    discple: 10
+    devotion: 10
   level: {fileID: 11400000, guid: f7cbb94d79290c345ad8be1e7c823afa, type: 2}
   randomQuestList: {fileID: 11400000, guid: f1a8e7d15323deb449f12908d0dd20d1, type: 2}
 --- !u!4 &1707705098

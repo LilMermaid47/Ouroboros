@@ -7,6 +7,18 @@ using UnityEngine;
 public class Quest : ScriptableObject
 {
     public QuestDefinition questDefinition;
+
+    public virtual TypeOfQuest QuestType()
+    {
+        return TypeOfQuest.Quest;
+    }
+}
+
+public enum TypeOfQuest
+{
+    MerchantQuest,
+    Quest,
+    RequirementQuest,
 }
 
 [Serializable]
@@ -45,6 +57,16 @@ public class Reward
 
     public ClanDefinition recompenseClanSusoda;
     public ClanDefinition recompenseClanHuangsei;
+
+    public bool AdditiveQuest;
+    public UnlockedQuest unlockQuestChoice;
+}
+
+[Serializable]
+public class UnlockedQuest
+{
+    public int nbQuestLater;
+    public Quest unlockedQuest;
 }
 
 [Serializable]

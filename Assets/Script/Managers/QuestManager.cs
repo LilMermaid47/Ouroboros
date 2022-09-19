@@ -5,9 +5,11 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     [Header("Valeur de départ du niveau")]
+    public float clanHonorDevotionModifier = 0.2f;
+
     [SerializeField]
     int argent = 0;
-    int yinYangBalance = 0;
+    public int yinYangBalance = 0;
     float templeReadiness = 0;
     [SerializeField]
     ClanDefinition clanSusoda = new ClanDefinition(0, 0, 0);
@@ -34,6 +36,8 @@ public class QuestManager : MonoBehaviour
         tempQuestList = Instantiate(randomQuestList);
         SideQuestFiller();
         currentQuest = filledLevel.questList[currentQuestIndex];
+
+        uIController.IncreaseMaxBalance(99);
 
         uIController.SetQuest(currentQuest);
         uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
@@ -86,11 +90,33 @@ public class QuestManager : MonoBehaviour
         clanHuangsei.ClanReward(reward.recompenseClanHuangsei);
         clanSusoda.ClanReward(reward.recompenseClanSusoda);
 
+        yinYangBalance = YinYangCalculator();
+
         uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+
+        if(reward.unlockQuestChoice.unlockedQuest != null)
+        {
+            if (reward.AdditiveQuest)
+                AddQuest(reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
+            else
+                InsertQuest(reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
+        }
+    }
+
+    public void AddQuest(int index, Quest questToAdd)
+    {
+        filledLevel.questList.Insert(index, questToAdd);
     }
 
     public void InsertQuest(int index, Quest questToAdd)
     {
-        filledLevel.questList.Insert(index, questToAdd);
+        filledLevel.questList[index] = questToAdd;
+    }
+
+    private int YinYangCalculator()
+    {
+        float susodaPower = (1 - clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.honor + (1 + clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.devotion;
+        float huangseiPower = (1 + clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.honor + (1 - clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.devotion;
+        return (int) (susodaPower - huangseiPower);
     }
 }

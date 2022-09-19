@@ -8,6 +8,11 @@ public class RequirementQuest : Quest
 {
     public Requirement requirementChoice1;
     public Requirement requirementChoice2;
+
+    public override TypeOfQuest QuestType()
+    {
+        return TypeOfQuest.RequirementQuest;
+    }
 }
 
 

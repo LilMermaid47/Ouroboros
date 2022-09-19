@@ -6,5 +6,10 @@ using UnityEngine;
 public class MerchantQuest : Quest
 {
     public int itemPrice;
+
+    public override TypeOfQuest QuestType()
+    {
+        return TypeOfQuest.MerchantQuest;
+    }
     //public object gpi to buy
 }

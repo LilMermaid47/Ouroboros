@@ -23,7 +23,7 @@ MonoBehaviour:
     choice2Description: 
     choice2Reveal: mauvais choix :(
     rewardChoice1:
-      moneyReward: 0
+      moneyReward: 200
       templeReadiness: 0
       recompenseClanSusoda:
         honor: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
         devotion: 0
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: -10
       recompenseClanSusoda:
         honor: 0
         discple: 0
