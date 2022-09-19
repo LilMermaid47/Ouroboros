@@ -37,7 +37,7 @@ public class QuestManager : MonoBehaviour
         SideQuestFiller();
         currentQuest = filledLevel.questList[currentQuestIndex];
 
-        uIController.IncreaseMaxBalance(99);
+        uIController.SetMaxBalance(100);
 
         uIController.SetQuest(currentQuest);
         uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);

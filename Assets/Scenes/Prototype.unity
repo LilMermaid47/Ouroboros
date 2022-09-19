@@ -441,6 +441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clanHonorDevotionModifier: 0.2
   argent: 0
+  yinYangBalance: 0
   clanSusoda:
     honor: 10
     discple: 10
