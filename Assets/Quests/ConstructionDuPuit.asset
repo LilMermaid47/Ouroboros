@@ -28,7 +28,7 @@ MonoBehaviour:
     choice2Reveal: "La construction c\u2019est bien pass\xE9 et les Susodien r\xE9ussirent
       \xE0 convertir les esclaves \xE0 leur clan\r."
     rewardChoice1:
-      moneyReward: 0
+      moneyReward: 200
       templeReadiness: 25
       recompenseClanSusoda:
         honor: 0

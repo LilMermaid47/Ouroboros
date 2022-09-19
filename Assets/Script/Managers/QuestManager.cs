@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    [Header("Valeur de départ du niveau")]
+    [SerializeField]
+    int argent = 0;
+    int yinYangBalance = 0;
+    float templeReadiness = 0;
+    [SerializeField]
+    ClanDefinition clanSusoda = new ClanDefinition(0, 0, 0);
+    [SerializeField]
+    ClanDefinition clanHuangsei = new ClanDefinition(0, 0, 0);
+
     public Level level;
     public RandomQuestList randomQuestList;
 
@@ -26,6 +36,7 @@ public class QuestManager : MonoBehaviour
         currentQuest = filledLevel.questList[currentQuestIndex];
 
         uIController.SetQuest(currentQuest);
+        uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
     }
 
     //Come fill all the null element in the level list by random quest in the RandomQuestList
@@ -46,15 +57,36 @@ public class QuestManager : MonoBehaviour
     public void NextQuest()
     {
         currentQuestIndex++;
-        if(currentQuestIndex < filledLevel.questList.Count)
+        if (currentQuestIndex < filledLevel.questList.Count)
         {
             currentQuest = filledLevel.questList[currentQuestIndex];
             uIController.SetQuest(currentQuest);
+
         }
         else
         {
             Debug.Log("LvlCompleted");
         }
+    }
+
+    public void UpdateStatChoix1()
+    {
+        QuestReward(currentQuest.questDefinition.rewardChoice1);
+    }
+
+    public void UpdateStatChoix2()
+    {
+        QuestReward(currentQuest.questDefinition.rewardChoice2);
+    }
+
+    private void QuestReward(Reward reward)
+    {
+        argent += reward.moneyReward;
+        templeReadiness += templeReadiness;
+        clanHuangsei.ClanReward(reward.recompenseClanHuangsei);
+        clanSusoda.ClanReward(reward.recompenseClanSusoda);
+
+        uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
     }
 
     public void InsertQuest(int index, Quest questToAdd)

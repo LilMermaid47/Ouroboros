@@ -53,4 +53,18 @@ public class ClanDefinition
     public float honor;
     public int discple;
     public float devotion;
+
+    public void ClanReward(ClanDefinition clanReward)
+    {
+        honor += clanReward.honor;
+        discple += clanReward.discple;
+        devotion += clanReward.devotion;
+    }
+
+    public ClanDefinition(float honor, int discple, float devotion)
+    {
+        this.honor = honor;
+        this.discple = discple;
+        this.devotion = devotion;
+    }
 }

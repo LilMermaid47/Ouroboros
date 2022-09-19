@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: SpecialQuest
-    questGiverName: 
-    questDescription: 
-    choice1Name: 
+    questGiverName: Mangeur de pomme
+    questDescription: 'je mange des pommes '
+    choice1Name: yep yep
     choice1Description: 
-    choice1Reveal: 
-    choice2Name: 
+    choice1Reveal: bon choix :)
+    choice2Name: nope nope
     choice2Description: 
-    choice2Reveal: 
+    choice2Reveal: mauvais choix :(
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
