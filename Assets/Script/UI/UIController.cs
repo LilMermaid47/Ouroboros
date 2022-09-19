@@ -208,8 +208,8 @@ public class UIController : MonoBehaviour
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
         BtnQuest.NextPerson.gameObject.SetActive(!status);
-
     }
+
     private void ShowQuest(bool status)
     {
         QuestUI.SetActive(status);
