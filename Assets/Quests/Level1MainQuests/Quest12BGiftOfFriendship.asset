@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest12BGiftOfFriendship
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Gift of friendship
+    questGiverName: Caifu, the merchant
+    questDescription: I managed to get you the most beautiful gifts in the country.
+      I await your decision. Who did you want to give it to?
+    choice1Name: Clan Huangsei
+    choice1Description: You offer new capes and a mixture to polish their armor.
+    choice1Reveal: The Huangsei's glowing armor turned many heads in the village.
+      Even though several villagers wanted to join their clan. Rilou the clan leader
+      was satisfied.
+    choice2Name: Clan Susoda
+    choice2Description: "You offer amulets and totems that have the effigy of their
+      divinity.\r"
+    choice2Reveal: "Yu, the head of the Susoda clan appreciated your gifts. She promised
+      to pray for the temple. Perhaps their goddess will offer us protection.\r"
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 5
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 3
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 5
+      recompenseClanSusoda:
+        honor: 0
+        discple: 2
+        devotion: 2
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

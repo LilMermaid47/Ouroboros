@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: QuestHVanishedCaravan
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Vanished Caravans
+    questGiverName: A Member of clan Huangsei
+    questDescription: We were expecting a caravan, but it never showed up. Maybe
+      she got lost or got attacked. Can we still save the merchants?
+    choice1Name: Send an escort of soldiers
+    choice1Description: "Let's not take any risks, let's send fifteen soldiers.\r"
+    choice1Reveal: "After several weeks, the soldiers never returned. The Huangsei
+      clan has been apologizing ever since.\r"
+    choice2Name: Send a scout
+    choice2Description: "Let's send a Susoda scout who will give us a better report
+      of the situation.\r"
+    choice2Reveal: After several weeks, the scout never returned. The Huangsei clan
+      is disappointed to have lost their caravans.
+    rewardChoice1:
+      moneyReward: 10
+      templeReadiness: 0
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      recompenseClanSusoda:
+        honor: -2
+        discple: -1
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: -2
+        discple: -1
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

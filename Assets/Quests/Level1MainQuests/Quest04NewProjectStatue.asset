@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest04NewProjectStatue
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'New project : Statue'
+    questGiverName: A member of Susoda and one from Huangsei
+    questDescription: We want to build a new monument, but the two clans do not get
+      along
+    choice1Name: Huangsei
+    choice1Description: We want a statue of the Sun God to light up the lives of
+      villagers and give them hope.
+    choice1Reveal: The clan built a statue of the Sun God with ease.
+    choice2Name: Susoda
+    choice2Description: A statue of the moon goddess would attract her graces for
+      fertile harvests.
+    choice2Reveal: "The clan built a statue of the moon goddess with ease.\r"
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 10
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: -1
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 2
+        devotion: 1
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 10
+      templeReadiness: 10
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: -1
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

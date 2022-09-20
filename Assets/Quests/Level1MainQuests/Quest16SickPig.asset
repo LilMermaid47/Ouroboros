@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest16SickPig
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Sick Pig
+    questGiverName: Bendan the Mad
+    questDescription: I found my pig, it was hidden under my bed. But since he came
+      back, he has been sick. Nobody wants to help me. Please have mercy on my sick
+      pig. I don't know what to do to cure it.
+    choice1Name: Kill the pig
+    choice1Description: His pig looks bad, there's nothing we can do for him. It
+      is better to shoot it down.
+    choice1Reveal: Bendan walks away angry. He would never let anyone touch his favorite
+      pig.
+    choice2Name: Susoda Clan Healing
+    choice2Description: "The Susoda clan has already treated several sick people.
+      Maybe they know a cure for pigs?\r"
+    choice2Reveal: Bendan asked for help from Yu, the leader of the Susoda. She gave
+      the pig some herbs, but her condition doesn't seem to have changed since.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: -5
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: -10
+      recompenseClanSusoda:
+        honor: 1
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

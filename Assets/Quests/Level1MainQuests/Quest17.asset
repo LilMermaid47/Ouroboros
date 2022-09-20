@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest17
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: The Great means
+    questGiverName: Liliang, the Magistrate
+    questDescription: "We have to find a new way to defend ourselves. Our militia
+      is not enough. I need your advice.\r"
+    choice1Name: Ancient monks
+    choice1Description: "Many offer help from ancient monks. Those who dwell in the
+      mountain of fire. Their wisdom and magic can help the village.\r"
+    choice1Reveal: The fighting abilities of the monks are extraordinary! The village
+      is in good hands. The Huangsei clan offered to host our new allies who joined
+      their clan without problems.
+    choice2Name: Wolves
+    choice2Description: Others think that the wolves that ransack the chicken coops
+      should be domesticated. In this way, we solve two problems at once.
+    choice2Reveal: Wolf training didn't go as planned. They attacked several villagers.
+      The project almost fell through, but the Susodas insisted on taking over the
+      project. They trained about ten wolves.
+    rewardChoice1:
+      moneyReward: -15
+      templeReadiness: 30
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 1
+        devotion: 2
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 5
+      templeReadiness: 15
+      recompenseClanSusoda:
+        honor: 1
+        discple: -2
+        devotion: 1
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

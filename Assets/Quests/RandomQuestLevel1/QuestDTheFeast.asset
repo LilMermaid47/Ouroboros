@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: QuestDTheFeast
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: The feast
+    questGiverName: Liliang, the Magistrate
+    questDescription: ' I want to organize a feast in my honor but my palace cannot
+      accommodate the whole village. I can receive men or just women. Who do you
+      recommend?'
+    choice1Name: 'The men '
+    choice1Description: The men of the village represent half of the inhabitants.
+      Most are soldiers and enjoy contests and challenges.
+    choice1Reveal: Huangsei clan leader Rilou showed off his skills in several strength
+      plays. He seems to have made a good impression on the others.
+    choice2Name: The women
+    choice2Description: "The women of the village are young and would appreciate
+      a banquet followed by a dance party.\r"
+    choice2Reveal: "During the evening, the Susoda clan converted several women to
+      their clan. Yu, the chef never misses an opportunity to showcase her talents
+      as a speaker.\r"
+    rewardChoice1:
+      moneyReward: -5
+      templeReadiness: 15
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 1
+        discple: 1
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: -5
+      templeReadiness: 25
+      recompenseClanSusoda:
+        honor: 1
+        discple: 1
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: -1
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

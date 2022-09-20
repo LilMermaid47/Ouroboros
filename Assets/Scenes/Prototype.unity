@@ -382,6 +382,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &841263666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5253632130037821500, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &841263670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841263666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Nombre de disciple du clan Huangsei
 --- !u!1 &978800773
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +431,7 @@ RectTransform:
   m_Children:
   - {fileID: 125053590}
   m_Father: {fileID: 277566648}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -606,6 +624,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3577320312164063575, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
   m_PrefabInstance: {fileID: 1195783224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1391119695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3448658304367001228, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391119699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391119695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Nombre de disciple du clan Susoda
 --- !u!1 &1403298196
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clanHonorDevotionModifier: 0.2
   argent: 0
-  yinYangBalance: 0
+  templeReadinessToAchieve: 100
   clanSusoda:
     honor: 10
     discple: 10
@@ -720,8 +756,8 @@ MonoBehaviour:
     honor: 10
     discple: 10
     devotion: 10
-  level: {fileID: 11400000, guid: f7cbb94d79290c345ad8be1e7c823afa, type: 2}
-  randomQuestList: {fileID: 11400000, guid: f1a8e7d15323deb449f12908d0dd20d1, type: 2}
+  level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
+  randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
 --- !u!4 &1707705098
 Transform:
   m_ObjectHideFlags: 0
@@ -736,6 +772,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1851229956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1102502232088977961, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1851229958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851229956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Balance des pouvoirs entres les clans
 --- !u!1 &2008135171
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,3 +883,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &2033440753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4955070837482036179, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033440757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033440753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Balance des pouvoirs entres les clans
+--- !u!1 &2054783498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2070514412349128608, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054783502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054783498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Balance des pouvoirs entres les clans

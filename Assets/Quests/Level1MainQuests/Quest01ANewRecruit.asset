@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest01ANewRecruit
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: A new recruit
+    questGiverName: Neutral Peasant
+    questDescription: I want to train and become a monk, but I don't know which one
+      would be more interesting. What practice do you recommend?
+    choice1Name: Fire magic
+    choice1Description: "Mastery of fire would make you a seasoned warrior.\r"
+    choice1Reveal: "The Huangsei clan trained the new devotee. He is an important
+      member of the Sun Clan.\r"
+    choice2Name: Earth magic
+    choice2Description: Mastering the land would make life easier for many villagers.
+    choice2Reveal: "The head of the Susoda clan personally trained the new member.\r"
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 5
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 1
+        discple: 1
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 5
+      recompenseClanSusoda:
+        honor: 1
+        discple: 1
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

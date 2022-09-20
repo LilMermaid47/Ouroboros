@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: QuestANewProjectWell
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'New Project : Well'
+    questGiverName: Neutral peasant
+    questDescription: The river is dry again. We should build a new well. Who should
+      lead the construction of this dangerous project?
+    choice1Name: Huangsei
+    choice1Description: "Our members are strong as dragons. We can dig and build
+      the well ourselves.\r"
+    choice1Reveal: After a tumultuous and dangerous construction, the new well is
+      usable.
+    choice2Name: Susoda
+    choice2Description: "I propose to buy some slaves and put them on work duty.\r"
+    choice2Reveal: The slaves did a good job and the Susoda convert them into their
+      clan.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 25
+      recompenseClanSusoda:
+        honor: 0
+        discple: 0
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 2
+        discple: -1
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 35
+      recompenseClanSusoda:
+        honor: 1
+        discple: 1
+        devotion: 0
+      recompenseClanHuangsei:
+        honor: 0
+        discple: 0
+        devotion: 0
+      AdditiveQuest: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+  requirementChoice1:
+    moneyCost: 0
+    templeReadiness: 0
+    ClanSusoda:
+      honor: 0
+      discple: 0
+      devotion: 0
+    ClanHuangsei:
+      honor: 0
+      discple: 0
+      devotion: 0
+  requirementChoice2:
+    moneyCost: 20
+    templeReadiness: 0
+    ClanSusoda:
+      honor: 0
+      discple: 0
+      devotion: 0
+    ClanHuangsei:
+      honor: 0
+      discple: 0
+      devotion: 0
