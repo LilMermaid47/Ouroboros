@@ -15,7 +15,6 @@ public class UIController : MonoBehaviour
     [SerializeField]
     private GameObject InGameMenuUI;
 
-
     [SerializeField]
     private FirstMenuBtn MenuBtn;
 
@@ -131,6 +130,11 @@ public class UIController : MonoBehaviour
         TextRessources.BalanceClanHuangsei.UpdateMaxValue(balanceIncrease);
         TextRessources.BalanceClanSusoda.UpdateMaxValue(balanceIncrease);
     }
+    public void SetMaxBalance(int balanceIncrease)
+    {
+        TextRessources.BalanceClanHuangsei.setValue(balanceIncrease);
+        TextRessources.BalanceClanSusoda.setValue(balanceIncrease);
+    }
 
     public void ChangeDisciple(Clan nom, int disciple)
     {
@@ -162,6 +166,7 @@ public class UIController : MonoBehaviour
     private void RevealChoice(string txtChoice)
     {
         TextQuest.DescriptionQuest.text = txtChoice;
+        ActivateNextPerson();
         ShowBtn(false);
     }
 
@@ -169,8 +174,18 @@ public class UIController : MonoBehaviour
     {
         FirstChoiceBtnActivate(true);
         SecondChoiceBtnActivate(true);
+        NextPersonBtnActivate(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
+    }    
+    
+    private void ActivateNextPerson()
+    {
+        FirstChoiceBtnActivate(false);
+        SecondChoiceBtnActivate(false);
+        NextPersonBtnActivate(true);
+
+        EventSystem.current.SetSelectedGameObject(BtnQuest.NextPerson.gameObject);
     }
 
     public void FirstChoiceBtnActivate(bool status)
@@ -181,13 +196,20 @@ public class UIController : MonoBehaviour
     public void SecondChoiceBtnActivate(bool status)
     {
         BtnQuest.SecondChoice.interactable = status;
+    }    
+    
+    private void NextPersonBtnActivate(bool status)
+    {
+        BtnQuest.NextPerson.interactable = status;
     }
 
     private void ShowBtn(bool status)
     {
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
+        BtnQuest.NextPerson.gameObject.SetActive(!status);
     }
+
     private void ShowQuest(bool status)
     {
         QuestUI.SetActive(status);
@@ -280,6 +302,7 @@ public class BtnQuest
 {
     public Button FirstChoice;
     public Button SecondChoice;
+    public Button NextPerson;
 
     public TMPro.TextMeshProUGUI FirstChoiceTxt;
     public TMPro.TextMeshProUGUI SecondChoiceTxt;
