@@ -458,6 +458,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978800773}
   m_CullTransparentMesh: 1
+--- !u!1 &1186735521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 347422645113704671, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1186735525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186735521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipToShow: Show how ready the temple is :)
 --- !u!1001 &1195783224
 PrefabInstance:
   m_ObjectHideFlags: 0

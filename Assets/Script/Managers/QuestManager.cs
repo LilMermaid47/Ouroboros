@@ -9,12 +9,15 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField]
     int argent = 0;
-    public int yinYangBalance = 0;
-    float templeReadiness = 0;
+    [SerializeField]
+    float templeReadinessToAchieve = 100;
     [SerializeField]
     ClanDefinition clanSusoda = new ClanDefinition(0, 0, 0);
     [SerializeField]
     ClanDefinition clanHuangsei = new ClanDefinition(0, 0, 0);
+
+    int yinYangBalance = 0;
+    float templeReadiness = 0;
 
     public Level level;
     public RandomQuestList randomQuestList;
@@ -40,7 +43,7 @@ public class QuestManager : MonoBehaviour
         uIController.IncreaseMaxBalance(99);
 
         uIController.SetQuest(currentQuest);
-        uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, templeReadiness / templeReadinessToAchieve, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
     }
 
     //Come fill all the null element in the level list by random quest in the RandomQuestList
@@ -92,7 +95,7 @@ public class QuestManager : MonoBehaviour
 
         yinYangBalance = YinYangCalculator();
 
-        uIController.SetRessources(argent, yinYangBalance, templeReadiness, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, templeReadiness / templeReadinessToAchieve, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
 
         if(reward.unlockQuestChoice.unlockedQuest != null)
         {
