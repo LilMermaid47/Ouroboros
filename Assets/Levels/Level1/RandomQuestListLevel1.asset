@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9203901580429584f94e23dda202315f, type: 3}
   m_Name: RandomQuestListLevel1
   m_EditorClassIdentifier: 
-  randomQuestList: []
+  randomQuestList:
+  - {fileID: 11400000, guid: e48bd45d325de0f45b6e478e91e8645d, type: 2}
+  - {fileID: 11400000, guid: c51717b0b375e1d45be8b01579f7e73d, type: 2}
+  - {fileID: 11400000, guid: f86cbacf7cc65c24e8687ee0be54383e, type: 2}
+  - {fileID: 11400000, guid: 832fc9e05757a254e92437f230f80702, type: 2}
+  - {fileID: 11400000, guid: ed87ccc46bbb5dd4d8edc3a129195125, type: 2}
+  - {fileID: 11400000, guid: 4f731d6eb65a4f64b8d0f40435aca987, type: 2}
+  - {fileID: 11400000, guid: 9a73fc2d36bf34b44aff93e3151a0d10, type: 2}
+  - {fileID: 11400000, guid: b2ee28c8005e88a47a39e5f84bf3d52c, type: 2}

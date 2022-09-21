@@ -44,6 +44,7 @@ public class QuestManager : MonoBehaviour
 
         uIController.SetQuest(currentQuest);
         uIController.SetRessources(argent, yinYangBalance, templeReadiness / templeReadinessToAchieve, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
     }
 
     //Come fill all the null element in the level list by random quest in the RandomQuestList
@@ -68,7 +69,7 @@ public class QuestManager : MonoBehaviour
         {
             currentQuest = filledLevel.questList[currentQuestIndex];
             uIController.SetQuest(currentQuest);
-
+            uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
         }
         else
         {

@@ -154,6 +154,11 @@ public class UIController : MonoBehaviour
         TextRessources.TempleReadiness.text = $"{readiness}%";
     }
 
+    public void SetNbQuestLeft(int nbQuest)
+    {
+        TextRessources.nbQuestLeft.text = nbQuest.ToString();
+    }
+
     public void RevealChoice1()
     {
         RevealChoice(CurrentQuest.questDefinition.choice1Reveal);
@@ -286,6 +291,7 @@ public class TextRessources
     public TMPro.TextMeshProUGUI DiscipleHuangsei;
     public TMPro.TextMeshProUGUI Yuan;
     public TMPro.TextMeshProUGUI TempleReadiness;
+    public TMPro.TextMeshProUGUI nbQuestLeft;
     public BalanceBar BalanceClanSusoda;
     public BalanceBar BalanceClanHuangsei;
 }
