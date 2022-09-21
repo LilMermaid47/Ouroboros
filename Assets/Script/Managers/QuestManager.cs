@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour
     UIController uIController;
 
     int currentQuestIndex = 0;
-    Quest currentQuest;
+    public Quest currentQuest;
 
     private void Start()
     {
