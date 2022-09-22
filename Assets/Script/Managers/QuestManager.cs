@@ -117,6 +117,8 @@ public class QuestManager : MonoBehaviour
     {
         if (yinYangBalance > 100 || yinYangBalance < -100)
             uIController.Defeat();
+        else if (argent < 0)
+            uIController.Defeat();
     }
 
     public void AddQuest(int index, Quest questToAdd)
