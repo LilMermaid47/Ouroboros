@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    [Header("Valeur de DEBUG")]
+    public int yinYangBalance = 0;
+
+
     [Header("Valeur de départ du niveau")]
     public float clanHonorDevotionModifier = 0.2f;
 
@@ -16,7 +20,6 @@ public class QuestManager : MonoBehaviour
     [SerializeField]
     ClanDefinition clanHuangsei = new ClanDefinition(0, 0, 0);
 
-    int yinYangBalance = 0;
     float templeReadiness = 0;
 
     public Level level;
