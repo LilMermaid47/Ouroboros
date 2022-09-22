@@ -76,8 +76,16 @@ public class QuestManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("LvlCompleted");
+            CheckIfPlayerWon();
         }
+    }
+
+    private void CheckIfPlayerWon()
+    {
+        if (templeReadiness >= templeReadinessToAchieve)
+            uIController.Victory();
+        else
+            uIController.Defeat();
     }
 
     public void UpdateStatChoix1()
