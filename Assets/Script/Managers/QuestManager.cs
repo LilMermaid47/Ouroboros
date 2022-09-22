@@ -43,7 +43,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetMaxBalance(100);
 
         uIController.SetQuest(currentQuest);
-        uIController.SetRessources(argent, yinYangBalance, templeReadiness / templeReadinessToAchieve, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
     }
 
@@ -90,13 +90,13 @@ public class QuestManager : MonoBehaviour
     private void QuestReward(Reward reward)
     {
         argent += reward.moneyReward;
-        templeReadiness += templeReadiness;
+        templeReadiness += reward.templeReadiness;
         clanHuangsei.ClanReward(reward.recompenseClanHuangsei);
         clanSusoda.ClanReward(reward.recompenseClanSusoda);
 
         yinYangBalance = YinYangCalculator();
 
-        uIController.SetRessources(argent, yinYangBalance, templeReadiness / templeReadinessToAchieve, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
 
         if(reward.unlockQuestChoice.unlockedQuest != null)
         {
@@ -119,8 +119,18 @@ public class QuestManager : MonoBehaviour
 
     private int YinYangCalculator()
     {
+        int yinYangBalance = 0;
         float susodaPower = (1 - clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.honor + (1 + clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.devotion;
         float huangseiPower = (1 + clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.honor + (1 - clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.devotion;
-        return (int) (susodaPower - huangseiPower);
+        
+        if(susodaPower > huangseiPower)
+        {
+            yinYangBalance += (int)(susodaPower - huangseiPower);
+        }
+        else
+        {
+            yinYangBalance -= (int)(huangseiPower - susodaPower);
+        }
+        return yinYangBalance;
     }
 }

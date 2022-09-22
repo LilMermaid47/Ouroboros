@@ -102,7 +102,7 @@ public class UIController : MonoBehaviour
         }
         else if (currentBalance < 0)
         {
-            BalanceClan(Clan.Huangsei, currentBalance);
+            BalanceClan(Clan.Huangsei, -currentBalance);
             BalanceClan(Clan.Susoda, 0);
         }
         else
