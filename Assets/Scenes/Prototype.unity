@@ -337,6 +337,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6748923719403591727, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
 --- !u!1 &1195783225 stripped
@@ -447,6 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4415b1725b422994db31393bafff7a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yinYangBalance: 0
   clanHonorDevotionModifier: 0.2
   argent: 0
   templeReadinessToAchieve: 100

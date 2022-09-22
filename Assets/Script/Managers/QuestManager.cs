@@ -98,7 +98,7 @@ public class QuestManager : MonoBehaviour
         clanSusoda.ClanReward(reward.recompenseClanSusoda);
 
         yinYangBalance = YinYangCalculator();
-
+           
         uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
 
         if(reward.unlockQuestChoice.unlockedQuest != null)
@@ -108,6 +108,15 @@ public class QuestManager : MonoBehaviour
             else
                 InsertQuest(reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
         }
+
+        CheckIfStillWinning();
+
+    }
+
+    private void CheckIfStillWinning()
+    {
+        if (yinYangBalance > 100 || yinYangBalance < -100)
+            uIController.Defeat();
     }
 
     public void AddQuest(int index, Quest questToAdd)
