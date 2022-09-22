@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
 
     [Header("Valeur de départ du niveau")]
     public float clanHonorDevotionModifier = 0.2f;
+    public int maxClanBalance = 100;
 
     [SerializeField]
     int argent = 0;
@@ -43,7 +44,7 @@ public class QuestManager : MonoBehaviour
         SideQuestFiller();
         currentQuest = filledLevel.questList[currentQuestIndex];
 
-        uIController.SetMaxBalance(100);
+        uIController.SetMaxBalance(maxClanBalance);
 
         uIController.SetQuest(currentQuest);
         uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
@@ -123,7 +124,7 @@ public class QuestManager : MonoBehaviour
 
     private void CheckIfStillWinning()
     {
-        if (yinYangBalance > 100 || yinYangBalance < -100)
+        if (yinYangBalance > maxClanBalance || yinYangBalance < -maxClanBalance)
             uIController.Defeat();
         else if (argent < 0)
             uIController.Defeat();
