@@ -15,9 +15,9 @@ MonoBehaviour:
   questDefinition:
     questName: 'New project : Temple repairs'
     questGiverName: Neutral peasant
-    questDescription: Master X, the temple is in ruins. The faithful fear that the
-      roof will fall on their heads. We have to do something before the rats decide
-      to hunt us! How do you want to attract followers in such a place?
+    questDescription: Master Fangshi, the temple is in ruins. The faithful fear that
+      the roof will fall on their heads. We have to do something before the rats
+      decide to hunt us! How do you want to attract followers in such a place?
     choice1Name: Repair the roof
     choice1Description: You are right, the temple must be repaired if we are to be
       ready to protect the village.
@@ -34,11 +34,11 @@ MonoBehaviour:
       recompenseClanSusoda:
         honor: 0
         discple: 0
-        devotion: 3
+        devotion: 4
       recompenseClanHuangsei:
         honor: 0
         discple: 0
-        devotion: 3
+        devotion: 2
       AdditiveQuest: 0
       unlockQuestChoice:
         nbQuestLater: 0

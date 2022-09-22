@@ -42,7 +42,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 0
+      moneyReward: -20
       templeReadiness: 35
       recompenseClanSusoda:
         honor: 1

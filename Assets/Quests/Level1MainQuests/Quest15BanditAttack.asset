@@ -30,22 +30,22 @@ MonoBehaviour:
     choice2Reveal: The Susoda clan poisoned all the bandits without any damage. The
       village is grateful for their excellent work!
     rewardChoice1:
-      moneyReward: 5
+      moneyReward: 20
       templeReadiness: -10
       recompenseClanSusoda:
         honor: -2
-        discple: -3
+        discple: 0
         devotion: 0
       recompenseClanHuangsei:
-        honor: -2
-        discple: -3
+        honor: 0
+        discple: -2
         devotion: 0
       AdditiveQuest: 0
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 5
+      moneyReward: 20
       templeReadiness: 10
       recompenseClanSusoda:
         honor: 2

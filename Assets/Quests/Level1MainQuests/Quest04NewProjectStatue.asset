@@ -46,7 +46,7 @@ MonoBehaviour:
       recompenseClanSusoda:
         honor: 0
         discple: 0
-        devotion: 0
+        devotion: 2
       recompenseClanHuangsei:
         honor: 0
         discple: 0

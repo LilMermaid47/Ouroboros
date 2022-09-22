@@ -10,44 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: QuestANewProjectWell
+  m_Name: QuestBSusodaDemand
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: 'New Project : Well'
-    questGiverName: Neutral peasant
-    questDescription: The river is dry again. We should build a new well. Who should
-      lead the construction of this dangerous project?
-    choice1Name: Huangsei
-    choice1Description: "Our members are strong as dragons. We can dig and build
-      the well ourselves.\r"
-    choice1Reveal: After a tumultuous and dangerous construction, the new well is
-      usable.
-    choice2Name: Susoda
-    choice2Description: "I propose to buy some slaves and put them on work duty.\r"
-    choice2Reveal: The slaves did a good job and the Susoda convert them into their
+    questName: "Susoda\u2019s demand "
+    questGiverName: Yu, the matriarch of Susoda clan
+    questDescription: We want to build a community garden where everyone can grow
+      vegetables and medicinal plants. Do you want to fund us?
+    choice1Name: Accept
+    choice1Description: The temple gives their permission and fund to help the Susoda
       clan.
+    choice1Reveal: The Susoda clan has completed the landscaping of the garden. The
+      village can now enjoy fresh vegetables and medicinal plants.
+    choice2Name: Refuse
+    choice2Description: The temple refuses the offer.
+    choice2Reveal: The head of the Susoda clan leaves without showing the slightest
+      emotion. Is she hiding something?
     rewardChoice1:
-      moneyReward: 0
-      templeReadiness: 25
+      moneyReward: -10
+      templeReadiness: 10
       recompenseClanSusoda:
+        honor: 1
+        discple: 0
+        devotion: 2
+      recompenseClanHuangsei:
         honor: 0
         discple: 0
         devotion: 0
-      recompenseClanHuangsei:
-        honor: 2
-        discple: -1
-        devotion: 0
       AdditiveQuest: 0
       unlockQuestChoice:
-        nbQuestLater: 0
-        unlockedQuest: {fileID: 0}
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 11400000, guid: b5e72871607437c4f888c3c7501609f1, type: 2}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 35
+      templeReadiness: -5
       recompenseClanSusoda:
-        honor: 1
-        discple: 1
-        devotion: 0
+        honor: -1
+        discple: 0
+        devotion: -1
       recompenseClanHuangsei:
         honor: 0
         discple: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
   requirementChoice1:
-    moneyCost: 0
+    moneyCost: 20
     templeReadiness: 0
     ClanSusoda:
       honor: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
       discple: 0
       devotion: 0
   requirementChoice2:
-    moneyCost: 20
+    moneyCost: 0
     templeReadiness: 0
     ClanSusoda:
       honor: 0

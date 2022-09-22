@@ -37,9 +37,9 @@ MonoBehaviour:
         discple: 0
         devotion: 0
       recompenseClanHuangsei:
-        honor: -1
-        discple: -1
-        devotion: -1
+        honor: 0
+        discple: 0
+        devotion: 0
       AdditiveQuest: 0
       unlockQuestChoice:
         nbQuestLater: 0
@@ -48,9 +48,9 @@ MonoBehaviour:
       moneyReward: 0
       templeReadiness: 0
       recompenseClanSusoda:
-        honor: -1
-        discple: -1
-        devotion: -1
+        honor: 0
+        discple: 0
+        devotion: 0
       recompenseClanHuangsei:
         honor: 0
         discple: 0

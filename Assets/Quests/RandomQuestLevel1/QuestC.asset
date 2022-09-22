@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: QuestANewProjectWell 2
+  m_Name: QuestC
   m_EditorClassIdentifier: 
   questDefinition:
     questName: 'New Project : Well'
@@ -57,7 +57,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
   requirementChoice1:
-    moneyCost: 0
+    moneyCost: 20
     templeReadiness: 0
     ClanSusoda:
       honor: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
       discple: 0
       devotion: 0
   requirementChoice2:
-    moneyCost: 20
+    moneyCost: 0
     templeReadiness: 0
     ClanSusoda:
       honor: 0
