@@ -113,9 +113,9 @@ public class QuestManager : MonoBehaviour
         if(reward.unlockQuestChoice.unlockedQuest != null)
         {
             if (reward.AdditiveQuest)
-                AddQuest(reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
+                AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
             else
-                InsertQuest(reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
+                InsertQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
         }
 
         CheckIfStillWinning();
