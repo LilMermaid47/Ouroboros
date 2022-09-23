@@ -58,7 +58,6 @@ public class Reward
     public ClanDefinition recompenseClanSusoda;
     public ClanDefinition recompenseClanHuangsei;
 
-    public bool AdditiveQuest;
     public UnlockedQuest unlockQuestChoice;
 }
 

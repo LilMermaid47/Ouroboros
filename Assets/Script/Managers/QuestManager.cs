@@ -112,14 +112,10 @@ public class QuestManager : MonoBehaviour
 
         if (reward.unlockQuestChoice.unlockedQuest != null)
         {
-            if (reward.AdditiveQuest)
-                AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
-            else
-                InsertQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
+            AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
+
+            CheckIfStillWinning();
         }
-
-        CheckIfStillWinning();
-
     }
 
     private void CheckIfStillWinning()
@@ -136,14 +132,6 @@ public class QuestManager : MonoBehaviour
             index = filledLevel.questList.Count;
 
         filledLevel.questList.Insert(index, questToAdd);
-    }
-
-    public void InsertQuest(int index, Quest questToAdd)
-    {
-        if (index > filledLevel.questList.Count)
-            index = filledLevel.questList.Count - 1;
-
-        filledLevel.questList[index] = questToAdd;
     }
 
     private int YinYangCalculator()
