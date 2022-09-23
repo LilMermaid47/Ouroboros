@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    [Header("GameObject des differents UI.")]
     [SerializeField]
     private GameObject QuestUI;
     [SerializeField]
@@ -15,6 +16,11 @@ public class UIController : MonoBehaviour
     [SerializeField]
     private GameObject InGameMenuUI;
 
+    [Header("Texte de defaite")]
+    [SerializeField]
+    private TMPro.TextMeshProUGUI DefeatTxt;
+
+    [Header("Bouton selectionner par default")]
     [SerializeField]
     private FirstMenuBtn MenuBtn;
 
@@ -24,6 +30,10 @@ public class UIController : MonoBehaviour
     private TextQuest TextQuest;
     [SerializeField]
     private BtnQuest BtnQuest;
+
+    [Header("Texte affiche lors de la defaite")]
+    [SerializeField]
+    private LossText Loss;
 
     private Ouroboros PlayerInputs;
 
@@ -242,6 +252,31 @@ public class UIController : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(MenuBtn.DefeatFirstChoice);
     }
 
+    public void Defeat(DefeatType defeatType)
+    {
+        string txt = "";
+
+        switch (defeatType)
+        {
+            case DefeatType.HuangseiLoss:
+                txt = Loss.HuangseiLoss;
+                break;
+            case DefeatType.SusodaLoss:
+                txt = Loss.SusodaLoss;
+                break;
+            case DefeatType.ReadinessLoss:
+                txt = Loss.ReadinessLoss;
+                break;
+            case DefeatType.MoneyLoss:
+                txt = Loss.MoneyLoss;
+                break;
+        }
+
+        DefeatTxt.text = txt;
+
+        Defeat();
+    }
+
     public void PauseMenuActive(bool status)
     {
         if (status && !PlayerInputs.InGameMenu.Pause.enabled)
@@ -323,8 +358,25 @@ public class FirstMenuBtn
     public GameObject DefeatFirstChoice;
 }
 
+[Serializable]
+public class LossText
+{
+    public string HuangseiLoss;
+    public string SusodaLoss;
+    public string ReadinessLoss;
+    public string MoneyLoss;
+}
+
 public enum Clan
 {
     Huangsei,
     Susoda
+}
+
+public enum DefeatType
+{
+    HuangseiLoss,
+    SusodaLoss,
+    ReadinessLoss,
+    MoneyLoss
 }

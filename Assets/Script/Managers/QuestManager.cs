@@ -87,7 +87,7 @@ public class QuestManager : MonoBehaviour
         if (templeReadiness >= templeReadinessToAchieve)
             uIController.Victory();
         else
-            uIController.Defeat();
+            uIController.Defeat(DefeatType.ReadinessLoss);
     }
 
     public void UpdateStatChoix1()
@@ -119,12 +119,17 @@ public class QuestManager : MonoBehaviour
 
     private void CheckIfStillWinning()
     {
-        if (yinYangBalance > maxClanBalance || yinYangBalance < -maxClanBalance)
-            uIController.Defeat();
+        if (yinYangBalance > maxClanBalance)
+            uIController.Defeat(DefeatType.HuangseiLoss);
+        else if (yinYangBalance < -maxClanBalance)
+            uIController.Defeat(DefeatType.SusodaLoss);
         else if (argent < 0)
-            uIController.Defeat();
-        else if (clanHuangsei.discple <= 0 || clanSusoda.discple <= 0)
-            uIController.Defeat();
+            uIController.Defeat(DefeatType.MoneyLoss);
+        else if (clanHuangsei.discple <= 0)
+            uIController.Defeat(DefeatType.HuangseiLoss);
+        else if (clanSusoda.discple <= 0)
+            uIController.Defeat(DefeatType.SusodaLoss);
+
     }
 
     public void AddQuest(int index, Quest questToAdd)
