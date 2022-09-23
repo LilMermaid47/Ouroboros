@@ -79,6 +79,7 @@ public class QuestManager : MonoBehaviour
         {
             CheckIfPlayerWon();
         }
+        CheckIfStillWinning();
     }
 
     private void CheckIfPlayerWon()
@@ -113,8 +114,6 @@ public class QuestManager : MonoBehaviour
         if (reward.unlockQuestChoice.unlockedQuest != null)
         {
             AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
-
-            CheckIfStillWinning();
         }
     }
 
