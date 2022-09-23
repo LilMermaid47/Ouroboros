@@ -107,10 +107,10 @@ public class QuestManager : MonoBehaviour
         clanSusoda.ClanReward(reward.recompenseClanSusoda);
 
         yinYangBalance = YinYangCalculator();
-           
+
         uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
 
-        if(reward.unlockQuestChoice.unlockedQuest != null)
+        if (reward.unlockQuestChoice.unlockedQuest != null)
         {
             if (reward.AdditiveQuest)
                 AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
@@ -132,11 +132,17 @@ public class QuestManager : MonoBehaviour
 
     public void AddQuest(int index, Quest questToAdd)
     {
+        if (index > filledLevel.questList.Count)
+            index = filledLevel.questList.Count;
+
         filledLevel.questList.Insert(index, questToAdd);
     }
 
     public void InsertQuest(int index, Quest questToAdd)
     {
+        if (index > filledLevel.questList.Count)
+            index = filledLevel.questList.Count - 1;
+
         filledLevel.questList[index] = questToAdd;
     }
 
@@ -145,8 +151,8 @@ public class QuestManager : MonoBehaviour
         int yinYangBalance = 0;
         float susodaPower = (1 - clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.honor + (1 + clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.devotion;
         float huangseiPower = (1 + clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.honor + (1 - clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.devotion;
-        
-        if(susodaPower > huangseiPower)
+
+        if (susodaPower > huangseiPower)
         {
             yinYangBalance += (int)(susodaPower - huangseiPower);
         }
