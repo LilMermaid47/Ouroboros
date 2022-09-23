@@ -46,7 +46,7 @@ MonoBehaviour:
       templeReadiness: 35
       recompenseClanSusoda:
         honor: 1
-        discple: 1
+        discple: 4
         devotion: 0
       recompenseClanHuangsei:
         honor: 0

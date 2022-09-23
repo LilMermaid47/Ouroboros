@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest17
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: Quest17 The Great means
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Great means
@@ -30,7 +30,7 @@ MonoBehaviour:
       The project almost fell through, but the Susodas insisted on taking over the
       project. They trained about ten wolves.
     rewardChoice1:
-      moneyReward: -15
+      moneyReward: -30
       templeReadiness: 30
       recompenseClanSusoda:
         honor: 0
@@ -38,19 +38,19 @@ MonoBehaviour:
         devotion: 0
       recompenseClanHuangsei:
         honor: 0
-        discple: 1
+        discple: 5
         devotion: 2
       AdditiveQuest: 0
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 5
+      moneyReward: 10
       templeReadiness: 15
       recompenseClanSusoda:
         honor: 1
-        discple: -2
-        devotion: 2
+        discple: -3
+        devotion: 4
       recompenseClanHuangsei:
         honor: 0
         discple: 0
@@ -59,3 +59,25 @@ MonoBehaviour:
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
+  requirementChoice1:
+    moneyCost: 0
+    templeReadiness: 0
+    ClanSusoda:
+      honor: 0
+      discple: 0
+      devotion: 0
+    ClanHuangsei:
+      honor: 0
+      discple: 0
+      devotion: 0
+  requirementChoice2:
+    moneyCost: 30
+    templeReadiness: 0
+    ClanSusoda:
+      honor: 0
+      discple: 0
+      devotion: 0
+    ClanHuangsei:
+      honor: 0
+      discple: 0
+      devotion: 0

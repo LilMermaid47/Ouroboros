@@ -452,17 +452,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yinYangBalance: 0
-  clanHonorDevotionModifier: 0.2
-  argent: 0
+  clanHonorDevotionModifier: 0.05
+  maxClanBalance: 100
+  argent: 20
   templeReadinessToAchieve: 100
   clanSusoda:
-    honor: 10
-    discple: 10
-    devotion: 10
+    honor: 5
+    discple: 5
+    devotion: 5
   clanHuangsei:
-    honor: 10
-    discple: 10
-    devotion: 10
+    honor: 5
+    discple: 5
+    devotion: 5
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}

@@ -27,7 +27,7 @@ MonoBehaviour:
     choice2Reveal: The head of the Susoda clan leaves without showing the slightest
       emotion. Is she hiding something?
     rewardChoice1:
-      moneyReward: -10
+      moneyReward: -20
       templeReadiness: 10
       recompenseClanSusoda:
         honor: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
         honor: 0
         discple: 0
         devotion: 0
-      AdditiveQuest: 0
+      AdditiveQuest: 1
       unlockQuestChoice:
         nbQuestLater: 3
         unlockedQuest: {fileID: 11400000, guid: b5e72871607437c4f888c3c7501609f1, type: 2}

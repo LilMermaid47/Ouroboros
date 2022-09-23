@@ -34,7 +34,7 @@ MonoBehaviour:
         devotion: -1
       recompenseClanHuangsei:
         honor: 0
-        discple: 2
+        discple: 1
         devotion: 1
       AdditiveQuest: 0
       unlockQuestChoice:
