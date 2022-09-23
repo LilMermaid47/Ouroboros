@@ -124,6 +124,8 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat();
         else if (argent < 0)
             uIController.Defeat();
+        else if (clanHuangsei.discple <= 0 || clanSusoda.discple <= 0)
+            uIController.Defeat();
     }
 
     public void AddQuest(int index, Quest questToAdd)
