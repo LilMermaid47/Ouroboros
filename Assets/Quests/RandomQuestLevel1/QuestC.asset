@@ -13,22 +13,21 @@ MonoBehaviour:
   m_Name: QuestC
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: 'New Project : Well'
-    questGiverName: Neutral peasant
-    questDescription: The river is dry again. We should build a new well. Who should
-      lead the construction of this dangerous project?
-    choice1Name: Huangsei
-    choice1Description: "Our members are strong as dragons. We can dig and build
-      the well ourselves.\r"
-    choice1Reveal: After a tumultuous and dangerous construction, the new well is
-      usable.
-    choice2Name: Susoda
-    choice2Description: "I propose to buy some slaves and put them on work duty.\r"
-    choice2Reveal: The slaves did a good job and the Susoda convert them into their
+    questName: Huangsei's demand
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questDescription: "We want to set up a wacth tower that would allow us to see
+      the arrival of potential invaders.\r"
+    choice1Name: Accept
+    choice1Description: The temple gives their permission and fund to help the Huangsei
       clan.
+    choice1Reveal: The Huangsei clan has completed the construction of a watch tower.
+      The villagers feel safe even if a man died during construction.
+    choice2Name: Refuse
+    choice2Description: The temple refuses the offer.
+    choice2Reveal: The head of the Huangsei clan does not hesitate to show his disapproval.
     rewardChoice1:
-      moneyReward: 0
-      templeReadiness: 25
+      moneyReward: -20
+      templeReadiness: 20
       recompenseClanSusoda:
         honor: 0
         discple: 0
@@ -39,17 +38,17 @@ MonoBehaviour:
         devotion: 0
       AdditiveQuest: 0
       unlockQuestChoice:
-        nbQuestLater: 0
-        unlockedQuest: {fileID: 0}
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 11400000, guid: 594c6e9f0296eaf459c0d7ac57fff07c, type: 2}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 35
+      templeReadiness: -5
       recompenseClanSusoda:
-        honor: 1
-        discple: 1
+        honor: 0
+        discple: 0
         devotion: 0
       recompenseClanHuangsei:
-        honor: 0
+        honor: -1
         discple: 0
         devotion: 0
       AdditiveQuest: 0

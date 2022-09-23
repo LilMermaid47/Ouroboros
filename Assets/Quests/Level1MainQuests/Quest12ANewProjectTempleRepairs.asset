@@ -29,7 +29,7 @@ MonoBehaviour:
     choice2Reveal: "You called several merchants who showed you their merchandise
       in order to acquire the best gift to the clans of your choice.\r"
     rewardChoice1:
-      moneyReward: 0
+      moneyReward: -30
       templeReadiness: 30
       recompenseClanSusoda:
         honor: 0

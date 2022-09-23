@@ -28,7 +28,7 @@ MonoBehaviour:
       is disappointed to have lost their caravans.
     rewardChoice1:
       moneyReward: 10
-      templeReadiness: 0
+      templeReadiness: -10
       recompenseClanSusoda:
         honor: 0
         discple: 0
@@ -45,12 +45,12 @@ MonoBehaviour:
       moneyReward: 0
       templeReadiness: 0
       recompenseClanSusoda:
-        honor: -2
+        honor: 0
         discple: -1
         devotion: 0
       recompenseClanHuangsei:
         honor: -2
-        discple: -1
+        discple: 0
         devotion: 0
       AdditiveQuest: 0
       unlockQuestChoice:

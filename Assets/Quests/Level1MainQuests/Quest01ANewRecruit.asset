@@ -32,7 +32,7 @@ MonoBehaviour:
         discple: 0
         devotion: 0
       recompenseClanHuangsei:
-        honor: 0.5
+        honor: 1
         discple: 1
         devotion: 0
       AdditiveQuest: 0
