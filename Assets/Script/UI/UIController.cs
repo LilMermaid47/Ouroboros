@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -77,7 +78,7 @@ public class UIController : MonoBehaviour
     public void SetRessources(int argent, int yinYangBalance, float templeReadiness)
     {
         SetArgent(argent);
-        SetCurrentBalance(yinYangBalance);
+        StartCoroutine(ChangeBalance(yinYangBalance));
         SetReadiness(templeReadiness);
     }
     public void SetRessources(Clan premierClan, int premierClanDisciple, Clan secondClan, int secondClanDisciple)
@@ -119,7 +120,25 @@ public class UIController : MonoBehaviour
         {
             BalanceClan(Clan.Huangsei, 0);
             BalanceClan(Clan.Susoda, 0);
-        }        
+        }
+    }
+
+    int lastBalance = 0;
+    float Maxtime = 1f;
+    private IEnumerator ChangeBalance(int newCurrentBalance)
+    {
+        float timer = 0;
+
+        float diff = (newCurrentBalance - lastBalance);
+
+        while (timer < Maxtime)
+        {
+            yield return 0;
+            timer += Time.deltaTime;
+            SetCurrentBalance((int)(lastBalance + (diff * timer) / Maxtime));
+        }
+
+        lastBalance = newCurrentBalance;
     }
 
     private void BalanceClan(Clan nom, int balance)
@@ -192,8 +211,8 @@ public class UIController : MonoBehaviour
         NextPersonBtnActivate(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
-    }    
-    
+    }
+
     private void ActivateNextPerson()
     {
         FirstChoiceBtnActivate(false);
@@ -211,8 +230,8 @@ public class UIController : MonoBehaviour
     public void SecondChoiceBtnActivate(bool status)
     {
         BtnQuest.SecondChoice.interactable = status;
-    }    
-    
+    }
+
     private void NextPersonBtnActivate(bool status)
     {
         BtnQuest.NextPerson.interactable = status;
@@ -281,7 +300,7 @@ public class UIController : MonoBehaviour
     {
         if (status && !PlayerInputs.InGameMenu.Pause.enabled)
             PlayerInputs.InGameMenu.Pause.Enable();
-        else if(PlayerInputs.InGameMenu.Pause.enabled)
+        else if (PlayerInputs.InGameMenu.Pause.enabled)
             PlayerInputs.InGameMenu.Pause.Disable();
 
     }
