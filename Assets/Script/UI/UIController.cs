@@ -166,7 +166,7 @@ public class UIController : MonoBehaviour
 
     public void SetNbQuestLeft(int nbQuest)
     {
-        TextRessources.nbQuestLeft.text = nbQuest.ToString();
+        TextRessources.nbQuestLeft.text = $"Nombre d'audience restante:{nbQuest}%";
     }
 
     public void RevealChoice1()
