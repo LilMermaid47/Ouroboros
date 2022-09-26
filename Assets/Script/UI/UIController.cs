@@ -40,6 +40,9 @@ public class UIController : MonoBehaviour
 
     private Quest CurrentQuest;
 
+    public float timeTransitionAnimationBalance = 1f;
+    public float timeTransitionAnimationMoneyAndReadiness = 1f;
+
     private void Awake()
     {
         QuestUI.SetActive(false);
@@ -77,9 +80,9 @@ public class UIController : MonoBehaviour
 
     public void SetRessources(int argent, int yinYangBalance, float templeReadiness)
     {
-        SetArgent(argent);
+        StartCoroutine(ChangeArgent(argent));
         StartCoroutine(ChangeBalance(yinYangBalance));
-        SetReadiness(templeReadiness);
+        StartCoroutine(ChangeReadiness(templeReadiness));
     }
     public void SetRessources(Clan premierClan, int premierClanDisciple, Clan secondClan, int secondClanDisciple)
     {
@@ -104,6 +107,23 @@ public class UIController : MonoBehaviour
         TextRessources.Yuan.text = $"{argent}¥";
     }
 
+    int lastArgent = 0;
+    private IEnumerator ChangeArgent(int argent)
+    {
+        float timerArgent = 0;
+
+        float diff = (argent - lastArgent);
+
+        while (timerArgent < timeTransitionAnimationMoneyAndReadiness)
+        {
+            yield return 0;
+            timerArgent += Time.deltaTime;
+            SetArgent((int)(lastArgent + (diff * timerArgent) / timeTransitionAnimationMoneyAndReadiness));
+        }
+
+        lastArgent = argent;
+    }
+
     public void SetCurrentBalance(int currentBalance)
     {
         if (currentBalance > 0)
@@ -124,18 +144,17 @@ public class UIController : MonoBehaviour
     }
 
     int lastBalance = 0;
-    float Maxtime = 1f;
     private IEnumerator ChangeBalance(int newCurrentBalance)
     {
-        float timer = 0;
+        float timerBalance = 0;
 
         float diff = (newCurrentBalance - lastBalance);
 
-        while (timer < Maxtime)
+        while (timerBalance < timeTransitionAnimationMoneyAndReadiness)
         {
             yield return 0;
-            timer += Time.deltaTime;
-            SetCurrentBalance((int)(lastBalance + (diff * timer) / Maxtime));
+            timerBalance += Time.deltaTime;
+            SetCurrentBalance((int)(lastBalance + (diff * timerBalance) / timeTransitionAnimationMoneyAndReadiness));
         }
 
         lastBalance = newCurrentBalance;
@@ -181,6 +200,23 @@ public class UIController : MonoBehaviour
     public void SetReadiness(float readiness)
     {
         TextRessources.TempleReadiness.text = $"{readiness}%";
+    }
+
+    float lastReadiness = 0;
+    private IEnumerator ChangeReadiness(float newReadiness)
+    {
+        float timerReadiness = 0;
+
+        float diff = (newReadiness - lastReadiness);
+
+        while (timerReadiness < timeTransitionAnimationBalance)
+        {
+            yield return 0;
+            timerReadiness += Time.deltaTime;
+            SetReadiness((int)(lastReadiness + (diff * timerReadiness) / timeTransitionAnimationBalance));
+        }
+
+        lastReadiness = newReadiness;
     }
 
     public void SetNbQuestLeft(int nbQuest)
