@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,6 +35,7 @@ public class SoundManager : MonoBehaviour
     {
         AudioClip currentClip = moneySoundStart;
 
+        int lastRandom = -1;
         while (timer > 0)
         {
             m_AudioSource.clip = currentClip;
@@ -41,7 +43,15 @@ public class SoundManager : MonoBehaviour
             timer -= currentClip.length;
             yield return new WaitForSeconds(currentClip.length);
 
-            currentClip = moneySoundsRandom[Random.Range(0, moneySoundsRandom.Length)];
+            int random = UnityEngine.Random.Range(0, moneySoundsRandom.Length);
+
+            while(random == lastRandom)
+            {
+                random = UnityEngine.Random.Range(0, moneySoundsRandom.Length);
+            }
+            lastRandom = random;
+
+            currentClip = moneySoundsRandom[random];
         }
     }
 }
