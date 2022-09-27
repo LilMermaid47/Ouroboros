@@ -225,6 +225,18 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 1514027704516871365, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: timeTransitionAnimationBalance
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514027704516871365, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: timeTransitionAnimationReadiness
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514027704516871365, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: timeTransitionAnimationMoneyAndReadiness
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2288583761477538890, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -233,6 +245,38 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundStart
+      value: 
+      objectReference: {fileID: 8300000, guid: b7a6499a3584bfc4ea230992e4338e54, type: 3}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 066f80b27b805aa4092b29ee4af7fbf1, type: 3}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 288f860161e0b1242bc05f0a76978987, type: 3}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a9b808614f43be5489e9a91c7ca6c2d0, type: 3}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: e5040b799ac34594996192cbb854153b, type: 3}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: b33c0132e91839a42adaed7fff65aff8, type: 3}
+    - target: {fileID: 2370185612353173009, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: moneySoundsRandom.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: fa7f4471e19c12d4fa5a9457e4140751, type: 3}
     - target: {fileID: 3577320312164063574, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

@@ -14329,8 +14329,9 @@ MonoBehaviour:
       envaders.
     MoneyLoss: The lack of basic need cause the last of the resident of the monastery
       to leave. You are left alone to stop the invasion.
-  timeTransitionAnimationBalance: 1
-  timeTransitionAnimationMoneyAndReadiness: 1
+  timeTransitionAnimationBalance: 0.05
+  timeTransitionAnimationMoney: 0.1
+  timeTransitionAnimationReadiness: 0.2
 --- !u!114 &91823783448212853
 MonoBehaviour:
   m_ObjectHideFlags: 0
