@@ -16,6 +16,8 @@ public class UIController : MonoBehaviour
     private GameObject DefeatUI;
     [SerializeField]
     private GameObject InGameMenuUI;
+    [SerializeField]
+    private GameObject GymMenu;
 
     [Header("Texte de defaite")]
     [SerializeField]
@@ -49,6 +51,9 @@ public class UIController : MonoBehaviour
         VictoryUI.SetActive(false);
         DefeatUI.SetActive(false);
         InGameMenuUI.SetActive(false);
+
+        if(GymMenu != null)
+            GymMenu.SetActive(false);
     }
 
     private void Start()
@@ -66,8 +71,8 @@ public class UIController : MonoBehaviour
 
         if (CurrentQuest != null)
         {
-            TextQuest.NomQuest.text = CurrentQuest.questDefinition.questGiverName;
-            TextQuest.DescriptionQuest.text = CurrentQuest.questDefinition.questDescription;
+            TextQuest.NomQuest.text = CurrentQuest.questDefinition.questName;
+            TextQuest.DescriptionQuest.text = $"{CurrentQuest.questDefinition.questDescription}\n\n\t{CurrentQuest.questDefinition.questGiverName}";
 
             BtnQuest.FirstChoiceTxt.text = CurrentQuest.questDefinition.choice1Name;
             BtnQuest.SecondChoiceTxt.text = CurrentQuest.questDefinition.choice2Name;
@@ -221,7 +226,7 @@ public class UIController : MonoBehaviour
 
     public void SetNbQuestLeft(int nbQuest)
     {
-        TextRessources.nbQuestLeft.text = $"Nombre d'audience restante:{nbQuest}";
+        TextRessources.nbQuestLeft.text = $"Nombre d'audience restante: {nbQuest}";
     }
 
     public void RevealChoice1()
@@ -366,6 +371,11 @@ public class UIController : MonoBehaviour
 
             EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
         }
+    }
+
+    public void OpenGymMenu()
+    {
+        GymMenu.SetActive(true);
     }
 
     private void OnDestroy()

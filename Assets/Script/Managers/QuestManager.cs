@@ -156,4 +156,50 @@ public class QuestManager : MonoBehaviour
         }
         return yinYangBalance;
     }
+
+    public Level GetFilledLevel()
+    {
+        return filledLevel;
+    }
+
+    public Quest GetActiveQuest()
+    {
+        return currentQuest;
+    }
+
+    public ClanDefinition GetHuangseiClan()
+    {
+        return clanHuangsei;
+    }
+
+    public ClanDefinition GetSusodaClan()
+    {
+        return clanSusoda;
+    }
+
+    public float GetReadiness()
+    {
+        return templeReadiness;
+    }
+
+    public int GetMoney()
+    {
+        return argent;
+    }
+
+    public void ChangeValue(int balance, float readiness, int money, ClanDefinition huangsei, ClanDefinition susoda)
+    {
+        argent = money;
+        maxClanBalance = balance;
+        templeReadiness = readiness;
+
+        clanHuangsei = huangsei;
+        clanSusoda = susoda;
+
+        uIController.IncreaseMaxBalance(maxClanBalance);
+
+        yinYangBalance = YinYangCalculator();
+
+        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+    }
 }

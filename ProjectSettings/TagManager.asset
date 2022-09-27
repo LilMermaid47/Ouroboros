@@ -6,6 +6,8 @@ TagManager:
   tags:
   - HealthBar
   - Canvas
+  - GymMenu
+  - QuestManager
   layers:
   - Default
   - TransparentFX
