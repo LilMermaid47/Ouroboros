@@ -175,21 +175,10 @@ public class UIController : MonoBehaviour
         float diff = (newCurrentBalance - lastBalance);
         float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationBalance);
 
-<<<<<<< HEAD
         if (diff == 0)
             SetCurrentBalance(newCurrentBalance);
         else
         {
-=======
-        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationBalance);
-
-        if (diff == 0)
-        {
-            SetReadiness(newCurrentBalance);
-        }
-        else
-        {
->>>>>>> origin/main
             while (timerBalance < timeForTransition)
             {
                 yield return 0;
