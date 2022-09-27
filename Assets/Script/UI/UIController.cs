@@ -46,7 +46,7 @@ public class UIController : MonoBehaviour
     private SoundManager soundManager;
 
     public float timeTransitionAnimationBalance = 1f;
-    public float timeTransitionAnimationMoneyAndReadiness = 1f;
+    public float timeTransitionAnimationMoneyAndReadiness = 0.25f;
 
     private void Awake()
     {
@@ -124,7 +124,7 @@ public class UIController : MonoBehaviour
 
         float diff = (argent - lastArgent);
 
-        float timeForTransition = Mathf.Abs(diff * 0.25f);
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationMoneyAndReadiness);
 
         if (diff == 0)
         {
@@ -232,11 +232,13 @@ public class UIController : MonoBehaviour
 
         float diff = (newReadiness - lastReadiness);
 
-        while (timerReadiness < timeTransitionAnimationBalance)
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationMoneyAndReadiness);
+
+        while (timerReadiness < timeForTransition)
         {
             yield return 0;
             timerReadiness += Time.deltaTime;
-            SetReadiness((int)(lastReadiness + (diff * timerReadiness) / timeTransitionAnimationBalance));
+            SetReadiness((int)(lastReadiness + (diff * timerReadiness) / timeForTransition));
         }
 
         lastReadiness = newReadiness;
