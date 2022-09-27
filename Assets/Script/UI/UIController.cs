@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(SoundManager))]
 public class UIController : MonoBehaviour
 {
     [Header("GameObject des differents UI.")]
@@ -42,6 +43,8 @@ public class UIController : MonoBehaviour
 
     private Quest CurrentQuest;
 
+    private SoundManager soundManager;
+
     public float timeTransitionAnimationBalance = 1f;
     public float timeTransitionAnimationMoneyAndReadiness = 1f;
 
@@ -52,7 +55,7 @@ public class UIController : MonoBehaviour
         DefeatUI.SetActive(false);
         InGameMenuUI.SetActive(false);
 
-        if(GymMenu != null)
+        if (GymMenu != null)
             GymMenu.SetActive(false);
     }
 
@@ -63,6 +66,8 @@ public class UIController : MonoBehaviour
         PlayerInputs.InGameMenu.Pause.performed += InGameMenuPressed;
 
         PauseMenuActive(true);
+
+        soundManager = GetComponent<SoundManager>();
     }
 
     public void SetQuest(Quest quest)
@@ -119,11 +124,24 @@ public class UIController : MonoBehaviour
 
         float diff = (argent - lastArgent);
 
-        while (timerArgent < timeTransitionAnimationMoneyAndReadiness)
+        float timeForTransition = Mathf.Abs(diff * 0.25f);
+
+        if (diff == 0)
         {
-            yield return 0;
-            timerArgent += Time.deltaTime;
-            SetArgent((int)(lastArgent + (diff * timerArgent) / timeTransitionAnimationMoneyAndReadiness));
+            SetArgent(argent);
+        }
+        else
+        {
+            if (diff > 0)
+            {
+                soundManager.MoneyIsGoingUpFor(timeForTransition);
+            }
+            while (timerArgent < timeForTransition)
+            {
+                yield return 0;
+                timerArgent += Time.deltaTime;
+                SetArgent((int)(lastArgent + (diff * timerArgent) / timeForTransition));
+            }
         }
 
         lastArgent = argent;
