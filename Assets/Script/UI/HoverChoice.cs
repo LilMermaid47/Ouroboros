@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [Header("Image to put lamps in")]
     public Image yuanLamp;
     public Image balanceLamp;
     public Image readinessLamp;
@@ -13,10 +14,11 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public Image huangseiDiscipleLamp;
     public Image susodaDiscipleLamp;
 
-
+    [Header("Sprite of lamps")]
     public Sprite lampOff;
     public Sprite lampOn;
 
+    [Header("Other values")]
     public QuestManager questManager;
     public bool isLeftGong;
     private float timeToWait = 0.3f;
@@ -33,6 +35,14 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         HoverTooltipManager.OnMouseNotHover();
         TurnLampOff();
     }
+
+    public void ChoiceWasMade()
+    {
+        StopAllCoroutines();
+        HoverTooltipManager.OnMouseNotHover();
+        TurnLampOff();
+    }
+
     private void ShowMessage()
     {
         if (isLeftGong)

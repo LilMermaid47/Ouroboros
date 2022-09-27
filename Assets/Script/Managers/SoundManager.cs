@@ -20,12 +20,6 @@ public class SoundManager : MonoBehaviour
         m_AudioSource.loop = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void MoneyIsGoingUpFor(float timer)
     {
         StartCoroutine(MoneyGoingUpSfx(timer));
@@ -35,6 +29,7 @@ public class SoundManager : MonoBehaviour
     {
         AudioClip currentClip = moneySoundStart;
 
+        int random = UnityEngine.Random.Range(0, moneySoundsRandom.Length);
         int lastRandom = -1;
         while (timer > 0)
         {
@@ -42,8 +37,6 @@ public class SoundManager : MonoBehaviour
             m_AudioSource.Play();
             timer -= currentClip.length;
             yield return new WaitForSeconds(currentClip.length);
-
-            int random = UnityEngine.Random.Range(0, moneySoundsRandom.Length);
 
             while(random == lastRandom)
             {
