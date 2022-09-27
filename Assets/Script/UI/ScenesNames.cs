@@ -6,7 +6,7 @@ public class ScenesNames : MonoBehaviour
 }
 public enum SceneList
 {
-    GymAriel,
+    Gym,
     Prototype,
     MainMenu,
     Level1,
