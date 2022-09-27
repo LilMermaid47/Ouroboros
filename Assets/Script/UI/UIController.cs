@@ -46,7 +46,8 @@ public class UIController : MonoBehaviour
     private SoundManager soundManager;
 
     public float timeTransitionAnimationBalance = 1f;
-    public float timeTransitionAnimationMoneyAndReadiness = 0.25f;
+    public float timeTransitionAnimationMoney = 0.1f;
+    public float timeTransitionAnimationReadiness = 0.5f;
 
     private void Awake()
     {
@@ -124,7 +125,7 @@ public class UIController : MonoBehaviour
 
         float diff = (argent - lastArgent);
 
-        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationMoneyAndReadiness);
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationMoney);
 
         if (diff == 0)
         {
@@ -172,12 +173,18 @@ public class UIController : MonoBehaviour
         float timerBalance = 0;
 
         float diff = (newCurrentBalance - lastBalance);
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationBalance);
 
-        while (timerBalance < timeTransitionAnimationMoneyAndReadiness)
+        if (diff == 0)
+            SetCurrentBalance(newCurrentBalance);
+        else
         {
-            yield return 0;
-            timerBalance += Time.deltaTime;
-            SetCurrentBalance((int)(lastBalance + (diff * timerBalance) / timeTransitionAnimationMoneyAndReadiness));
+            while (timerBalance < timeForTransition)
+            {
+                yield return 0;
+                timerBalance += Time.deltaTime;
+                SetCurrentBalance((int)(lastBalance + (diff * timerBalance) / timeForTransition));
+            }
         }
 
         lastBalance = newCurrentBalance;
@@ -232,7 +239,7 @@ public class UIController : MonoBehaviour
 
         float diff = (newReadiness - lastReadiness);
 
-        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationMoneyAndReadiness);
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationReadiness);
 
         while (timerReadiness < timeForTransition)
         {
@@ -395,7 +402,8 @@ public class UIController : MonoBehaviour
 
     public void OpenGymMenu()
     {
-        GymMenu.SetActive(true);
+        if(GymMenu != null)
+            GymMenu.SetActive(true);
     }
 
     private void OnDestroy()
