@@ -137,7 +137,11 @@ public class GymManager : MonoBehaviour
         int newQuestPosition = ValidateQuestIndex();
 
         if (newQuest != null)
+        {
             QuestManager.AddQuest(newQuestPosition, newQuest);
+            CreateQuestList();
+            ResetInputFields();
+        }
         else
             Debug.Log("Invalid Quest!");
     }
@@ -148,7 +152,7 @@ public class GymManager : MonoBehaviour
 
         if (!EmptyField())
         {
-            newQuest = new Quest();
+            newQuest = Quest.CreateInstance<Quest>();
             newQuest.questDefinition = CreateDefinition();            
         }
 
@@ -205,12 +209,33 @@ public class GymManager : MonoBehaviour
     //Need to check empty fields or set defaults values...
     private bool EmptyField()
     {
-        bool empty = true;
+        string fieldText;
+        bool empty = false;
 
-        Debug.Log("TO DO!!!");
+        TMP_InputField[] field = AddQuestMenu.GetComponentsInChildren<TMP_InputField>();
+
+        for (int i = 0; !empty && i < field.Length; i++)
+        {
+            fieldText = field[i].text;
+
+            if (string.IsNullOrWhiteSpace(fieldText))
+            {
+                empty = true;
+            }
+        }
 
         return empty;
+    }
 
+    private void ResetInputFields()
+    {
+        TMP_InputField[] field = AddQuestMenu.GetComponentsInChildren<TMP_InputField>();
+
+        for (int i = 0; i < field.Length; i++)
+        {
+            field[i].text = "";
+        }
+        SetNewQuestValues();
     }
 
     private int ValidateQuestIndex()
