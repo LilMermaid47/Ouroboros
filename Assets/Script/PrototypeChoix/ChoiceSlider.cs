@@ -27,13 +27,20 @@ public class ChoiceSlider : MonoBehaviour
             choiceSlider.value = 0;
             choiceSlider.gameObject.SetActive(false);
         }
-        else if(choiceSlider.value <= -5)
+        else if(choiceSlider.value <= -10)
         {
             hoverChoiceGauche.ShowMessage();
+            hoverChoiceGauche.ShowImpactOfChoice();
         }
-        else if(choiceSlider.value >= 5)
+        else if(choiceSlider.value >= 10)
         {
             hoverChoiceDroit.ShowMessage();
+            hoverChoiceDroit.ShowImpactOfChoice();
+        }
+        else
+        {
+            hoverChoiceGauche.OnPointerExit();
+            hoverChoiceGauche.TurnLampOff();
         }
     }
     public void EnableSlider()

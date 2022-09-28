@@ -32,7 +32,12 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         HoverTooltipManager.OnMouseNotHover();
         TurnLampOff();
     }
-
+    public void OnPointerExit()
+    {
+        StopAllCoroutines();
+        HoverTooltipManager.OnMouseNotHover();
+        TurnLampOff();
+    }
     public void ChoiceWasMade()
     {
         StopAllCoroutines();
@@ -48,7 +53,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             HoverTooltipManager.OnMouseHover(questManager.currentQuest.questDefinition.choice2Description, Input.mousePosition);
     }
 
-    private void ShowImpactOfChoice()
+    public void ShowImpactOfChoice()
     {
         Reward reward;
         if (isLeftGong)
@@ -64,7 +69,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             balanceLamp.sprite = lampOn;
     }
 
-    private void TurnLampOff()
+    public void TurnLampOff()
     {
         readinessLamp.sprite = lampOff;
         yuanLamp.sprite = lampOff;
