@@ -236,7 +236,7 @@ public class UIController : MonoBehaviour
 
     public void SetReadiness(float readiness)
     {
-        TextRessources.TempleReadiness.text = $"{readiness}%";
+        TextRessources.TempleReadiness.text = $"{readiness} / 100";
     }
 
     float lastReadiness = 0;
