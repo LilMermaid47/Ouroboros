@@ -101,7 +101,7 @@ public class QuestManager : MonoBehaviour
     {
         argent += reward.moneyReward;
         templeReadiness += reward.templeReadiness;
-
+        yinYangBalance += reward.yinYangBalance;
         uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
 
         if (reward.unlockQuestChoice.unlockedQuest != null)
