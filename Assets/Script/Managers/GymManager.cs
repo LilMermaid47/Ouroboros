@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GymManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject AddQuestMenu;
+    [SerializeField]
+    private GameObject PopUp;
 
     [SerializeField]
     private GymQuestInfo GymQuestInfo;
@@ -121,6 +124,19 @@ public class GymManager : MonoBehaviour
         AddQuestMenu.SetActive(false);
     }
 
+    public void PopUpWindow(string information)
+    {
+        PopUp.SetActive(true);
+        SetInterractible(false);
+        PopUp.GetComponentInChildren<TextMeshProUGUI>().text = information;
+    }
+
+    public void ClosePopUpWindow()
+    {
+        SetInterractible(true);
+        PopUp.SetActive(false);
+    }
+
     public void ApplyChanges()
     {
         QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.MaxYinYang.text), int.Parse(GymRessourcesInfo.YinYangBalance.text), float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text), int.Parse(GymRessourcesInfo.NbDisciple.text), float.Parse(GymRessourcesInfo.Ki.text));
@@ -141,9 +157,10 @@ public class GymManager : MonoBehaviour
             QuestManager.AddQuest(newQuestPosition, newQuest);
             CreateQuestList();
             ResetInputFields();
+            PopUpWindow("Quest added.");
         }
         else
-            Debug.Log("Invalid Quest!");
+            PopUpWindow("Quest Invalid!");
     }
 
     private Quest ValidatedQuest()
@@ -205,8 +222,6 @@ public class GymManager : MonoBehaviour
         return newReward;
     }
 
-
-    //Need to check empty fields or set defaults values...
     private bool EmptyField()
     {
         string fieldText;
@@ -253,6 +268,24 @@ public class GymManager : MonoBehaviour
             newQuestPosition = lastPosition;
 
         return newQuestPosition;
+    }
+
+    private void SetInterractible(bool value)
+    {
+        Button[] allButtons = gameObject.GetComponentsInChildren<Button>();
+        TMP_InputField[] allInputs = gameObject.GetComponentsInChildren<TMP_InputField>();
+
+        foreach (Button item in allButtons)
+        {
+            item.interactable = value;
+        }
+
+        foreach (TMP_InputField item in allInputs)
+        {
+            item.interactable = value;
+        }
+
+        PopUp.GetComponentInChildren<Button>().interactable = !value;
     }
 }
 
