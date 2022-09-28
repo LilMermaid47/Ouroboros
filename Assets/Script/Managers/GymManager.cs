@@ -68,10 +68,11 @@ public class GymManager : MonoBehaviour
         GymQuestInfo.QuestDesc.text = $"{questDefinition.questDescription}\n\n\t{questDefinition.questGiverName,10:C}";
         GymQuestInfo.Choice1Info.text = $"Name: {questDefinition.choice1Name}\n\nDefinition: {questDefinition.choice1Description}\n\nReveal: {questDefinition.choice1Reveal}";
         GymQuestInfo.Choice2Info.text = $"Name: {questDefinition.choice2Name}\n\nDefinition: {questDefinition.choice2Description}\n\nReveal: {questDefinition.choice2Reveal}";
-        GymQuestInfo.Reward1.text = $"Money: {rewardChoice1.moneyReward}\nTemple Readiness: {rewardChoice1.templeReadiness}\n\nHuangsei:\nHonor: {rewardChoice1.recompenseClanHuangsei.honor}\nDisciple: {rewardChoice1.recompenseClanHuangsei.discple}\n" +
-            $"Devotion: {rewardChoice1.recompenseClanHuangsei.devotion}\n\nSusoda:\nHonor: {rewardChoice1.recompenseClanSusoda.honor}\nDisciple {rewardChoice1.recompenseClanSusoda.discple}\nDevotion: {rewardChoice1.recompenseClanSusoda.devotion}";
-        GymQuestInfo.Reward2.text = $"Money: {rewardChoice2.moneyReward}\nTemple Readiness: {rewardChoice2.templeReadiness}\n\nHuangsei:\nHonor: {rewardChoice2.recompenseClanHuangsei.honor}\nDisciple: {rewardChoice2.recompenseClanHuangsei.discple}\n" +
-            $"Devotion: {rewardChoice2.recompenseClanHuangsei.devotion}\n\nSusoda:\nHonor: {rewardChoice2.recompenseClanSusoda.honor}\nDisciple {rewardChoice2.recompenseClanSusoda.discple}\nDevotion: {rewardChoice2.recompenseClanSusoda.devotion}";
+        GymQuestInfo.Reward1.text = $"Money: {rewardChoice1.moneyReward}\nTemple Readiness: {rewardChoice1.templeReadiness}\n\nHuangsei:\nHonor: \nDisciple: \n" +
+            $"Devotion: \n\nSusoda:\nHonor: \nDisciple \nDevotion: ";
+
+        GymQuestInfo.Reward2.text = $"Money: {rewardChoice2.moneyReward}\nTemple Readiness: {rewardChoice2.templeReadiness}\n\nHuangsei:\nHonor: \nDisciple: \n" +
+            $"Devotion: \n\nSusoda:\nHonor: \nDisciple \nDevotion: ";
     }
 
     private void CreateQuestList()
@@ -93,17 +94,6 @@ public class GymManager : MonoBehaviour
 
     private void SetRessources()
     {
-        ClanDefinition huangsei = QuestManager.GetHuangseiClan();
-        ClanDefinition susoda = QuestManager.GetSusodaClan();
-
-        GymRessourcesInfo.HuangseiHonor.text = $"{huangsei.honor}";
-        GymRessourcesInfo.HuangseiDisciple.text = $"{huangsei.discple}";
-        GymRessourcesInfo.HuangseiDevotion.text = $"{huangsei.devotion}";
-
-        GymRessourcesInfo.SusodaHonor.text = $"{susoda.honor}";
-        GymRessourcesInfo.SusodaDisciple.text = $"{susoda.discple}";
-        GymRessourcesInfo.SusodaDevotion.text = $"{susoda.devotion}";
-
         GymRessourcesInfo.YinYang.text = $"{QuestManager.maxClanBalance}";
         GymRessourcesInfo.Readiness.text = $"{QuestManager.GetReadiness()}";
         GymRessourcesInfo.Money.text = $"{QuestManager.GetMoney()}";
@@ -116,10 +106,8 @@ public class GymManager : MonoBehaviour
 
     public void ApplyChanges()
     {
-        ClanDefinition huangsei = new ClanDefinition(float.Parse(GymRessourcesInfo.HuangseiHonor.text), int.Parse(GymRessourcesInfo.HuangseiDisciple.text), float.Parse(GymRessourcesInfo.HuangseiDevotion.text));
-        ClanDefinition susoda = new ClanDefinition(float.Parse(GymRessourcesInfo.SusodaHonor.text), int.Parse(GymRessourcesInfo.SusodaDisciple.text), float.Parse(GymRessourcesInfo.SusodaDevotion.text));     
-        
-        QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.YinYang.text),float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text), huangsei, susoda);
+
+        QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.YinYang.text),float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text));
     }
 }
 

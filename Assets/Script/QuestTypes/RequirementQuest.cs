@@ -21,7 +21,4 @@ public class Requirement
 {
     public int moneyCost;
     public float templeReadiness;
-
-    public ClanDefinition ClanSusoda;
-    public ClanDefinition ClanHuangsei;
 }

@@ -471,5 +471,6 @@ public enum DefeatType
     HuangseiLoss,
     SusodaLoss,
     ReadinessLoss,
-    MoneyLoss
+    MoneyLoss,
+    KiLoss
 }

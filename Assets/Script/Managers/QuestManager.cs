@@ -16,12 +16,9 @@ public class QuestManager : MonoBehaviour
     int argent = 0;
     [SerializeField]
     float templeReadinessToAchieve = 100;
-    [SerializeField]
-    ClanDefinition clanSusoda = new ClanDefinition(0, 0, 0);
-    [SerializeField]
-    ClanDefinition clanHuangsei = new ClanDefinition(0, 0, 0);
 
     float templeReadiness = 0;
+    float ki = 0;
 
     public Level level;
     public RandomQuestList randomQuestList;
@@ -47,7 +44,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetMaxBalance(maxClanBalance);
 
         uIController.SetQuest(currentQuest);
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
     }
 
@@ -104,12 +101,8 @@ public class QuestManager : MonoBehaviour
     {
         argent += reward.moneyReward;
         templeReadiness += reward.templeReadiness;
-        clanHuangsei.ClanReward(reward.recompenseClanHuangsei);
-        clanSusoda.ClanReward(reward.recompenseClanSusoda);
 
-        yinYangBalance = YinYangCalculator();
-
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
 
         if (reward.unlockQuestChoice.unlockedQuest != null)
         {
@@ -125,11 +118,8 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.SusodaLoss);
         else if (argent < 0)
             uIController.Defeat(DefeatType.MoneyLoss);
-        else if (clanHuangsei.discple <= 0)
-            uIController.Defeat(DefeatType.HuangseiLoss);
-        else if (clanSusoda.discple <= 0)
-            uIController.Defeat(DefeatType.SusodaLoss);
-
+        else if (ki < 0)
+            uIController.Defeat(DefeatType.KiLoss);
     }
 
     public void AddQuest(int index, Quest questToAdd)
@@ -138,23 +128,6 @@ public class QuestManager : MonoBehaviour
             index = filledLevel.questList.Count;
 
         filledLevel.questList.Insert(index, questToAdd);
-    }
-
-    private int YinYangCalculator()
-    {
-        int yinYangBalance = 0;
-        float susodaPower = (1 - clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.honor + (1 + clanHonorDevotionModifier) * clanSusoda.discple * clanSusoda.devotion;
-        float huangseiPower = (1 + clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.honor + (1 - clanHonorDevotionModifier) * clanHuangsei.discple * clanHuangsei.devotion;
-
-        if (susodaPower > huangseiPower)
-        {
-            yinYangBalance += (int)(susodaPower - huangseiPower);
-        }
-        else
-        {
-            yinYangBalance -= (int)(huangseiPower - susodaPower);
-        }
-        return yinYangBalance;
     }
 
     public Level GetFilledLevel()
@@ -167,16 +140,6 @@ public class QuestManager : MonoBehaviour
         return currentQuest;
     }
 
-    public ClanDefinition GetHuangseiClan()
-    {
-        return clanHuangsei;
-    }
-
-    public ClanDefinition GetSusodaClan()
-    {
-        return clanSusoda;
-    }
-
     public float GetReadiness()
     {
         return templeReadiness;
@@ -187,19 +150,14 @@ public class QuestManager : MonoBehaviour
         return argent;
     }
 
-    public void ChangeValue(int balance, float readiness, int money, ClanDefinition huangsei, ClanDefinition susoda)
+    public void ChangeValue(int balance, float readiness, int money)
     {
         argent = money;
         maxClanBalance = balance;
         templeReadiness = readiness;
 
-        clanHuangsei = huangsei;
-        clanSusoda = susoda;
-
         uIController.IncreaseMaxBalance(maxClanBalance);
 
-        yinYangBalance = YinYangCalculator();
-
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, Clan.Susoda, clanSusoda.discple, Clan.Huangsei, clanHuangsei.discple);
+        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
     }
 }

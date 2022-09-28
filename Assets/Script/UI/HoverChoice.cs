@@ -11,9 +11,6 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public Image balanceLamp;
     public Image readinessLamp;
 
-    public Image huangseiDiscipleLamp;
-    public Image susodaDiscipleLamp;
-
     [Header("Sprite of lamps")]
     public Sprite lampOff;
     public Sprite lampOn;
@@ -63,13 +60,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             readinessLamp.sprite = lampOn;
         if (reward.moneyReward != 0)
             yuanLamp.sprite = lampOn;
-        if (reward.recompenseClanSusoda.discple != 0)
-            susodaDiscipleLamp.sprite = lampOn;
-        if (reward.recompenseClanHuangsei.discple != 0)
-            huangseiDiscipleLamp.sprite = lampOn;
-
-        if (reward.recompenseClanSusoda.devotion != 0 || reward.recompenseClanSusoda.honor != 0
-            || reward.recompenseClanHuangsei.devotion != 0 || reward.recompenseClanHuangsei.honor != 0)
+        if (reward.yinYangBalance != 0)
             balanceLamp.sprite = lampOn;
     }
 
@@ -78,9 +69,6 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         readinessLamp.sprite = lampOff;
         yuanLamp.sprite = lampOff;
         balanceLamp.sprite = lampOff;
-
-        susodaDiscipleLamp.sprite = lampOff;
-        huangseiDiscipleLamp.sprite = lampOff;
     }
 
     private IEnumerator StartTimer()
