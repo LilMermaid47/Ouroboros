@@ -78,7 +78,8 @@ public class UIController : MonoBehaviour
         if (CurrentQuest != null)
         {
             TextQuest.NomQuest.text = CurrentQuest.questDefinition.questName;
-            TextQuest.DescriptionQuest.text = $"{CurrentQuest.questDefinition.questDescription}\n\n\t{CurrentQuest.questDefinition.questGiverName}";
+            TextQuest.DescriptionQuest.text = $"{CurrentQuest.questDefinition.questDescription}";
+            TextQuest.QuestGiver.text = $"{CurrentQuest.questDefinition.questGiverName}";
 
             BtnQuest.FirstChoiceTxt.text = CurrentQuest.questDefinition.choice1Name;
             BtnQuest.SecondChoiceTxt.text = CurrentQuest.questDefinition.choice2Name;
@@ -439,6 +440,7 @@ public class TextQuest
 {
     public TMPro.TextMeshProUGUI NomQuest;
     public TMPro.TextMeshProUGUI DescriptionQuest;
+    public TMPro.TextMeshProUGUI QuestGiver;
 }
 
 [Serializable]
