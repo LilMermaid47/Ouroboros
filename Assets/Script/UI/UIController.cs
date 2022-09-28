@@ -241,6 +241,9 @@ public class UIController : MonoBehaviour
 
         float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationReadiness);
 
+        if (diff == 0)
+            SetReadiness(newReadiness);
+
         while (timerReadiness < timeForTransition)
         {
             yield return 0;
