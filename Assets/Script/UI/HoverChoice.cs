@@ -20,23 +20,33 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public bool isLeftGong;
     private float timeToWait = 0.3f;
 
+    public bool disableOnHover = false;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        StopAllCoroutines();
-        StartCoroutine(StartTimer());
+        if (!disableOnHover)
+        {
+            StopAllCoroutines();
+            StartCoroutine(StartTimer());
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        StopAllCoroutines();
-        HoverTooltipManager.OnMouseNotHover();
-        TurnLampOff();
+        if (!disableOnHover)
+        {
+            StopAllCoroutines();
+            HoverTooltipManager.OnMouseNotHover();
+            TurnLampOff();
+        }
     }
     public void OnPointerExit()
     {
-        StopAllCoroutines();
-        HoverTooltipManager.OnMouseNotHover();
-        TurnLampOff();
+        if (!disableOnHover)
+        {
+            StopAllCoroutines();
+            HoverTooltipManager.OnMouseNotHover();
+            TurnLampOff();
+        }
     }
     public void ChoiceWasMade()
     {

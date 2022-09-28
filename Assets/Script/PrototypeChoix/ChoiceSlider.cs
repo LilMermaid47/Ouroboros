@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ChoiceSlider : MonoBehaviour
 {
+    public bool showTooltip = true;
+
     public QuestManager questManager;
     public UIController uiController;
     public Slider choiceSlider;
@@ -27,12 +29,12 @@ public class ChoiceSlider : MonoBehaviour
             choiceSlider.value = 0;
             choiceSlider.gameObject.SetActive(false);
         }
-        else if(choiceSlider.value <= -10)
+        else if(choiceSlider.value <= -10 && showTooltip)
         {
             hoverChoiceGauche.ShowMessage();
             hoverChoiceGauche.ShowImpactOfChoice();
         }
-        else if(choiceSlider.value >= 10)
+        else if(choiceSlider.value >= 10 && showTooltip)
         {
             hoverChoiceDroit.ShowMessage();
             hoverChoiceDroit.ShowImpactOfChoice();
