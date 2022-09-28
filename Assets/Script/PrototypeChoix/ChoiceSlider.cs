@@ -43,6 +43,12 @@ public class ChoiceSlider : MonoBehaviour
             hoverChoiceGauche.TurnLampOff();
         }
     }
+
+    public void SliderToZero()
+    {
+        choiceSlider.value = 0;
+    }
+
     public void EnableSlider()
     {
         choiceSlider.gameObject.SetActive(true);
