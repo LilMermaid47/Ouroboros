@@ -40,7 +40,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         TurnLampOff();
     }
 
-    private void ShowMessage()
+    public void ShowMessage()
     {
         if (isLeftGong)
             HoverTooltipManager.OnMouseHover(questManager.currentQuest.questDefinition.choice1Description, Input.mousePosition);

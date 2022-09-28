@@ -21,4 +21,5 @@ public class Requirement
 {
     public int moneyCost;
     public float templeReadiness;
+    public int kiCost;
 }
