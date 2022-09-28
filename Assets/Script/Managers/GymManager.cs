@@ -5,9 +5,14 @@ using TMPro;
 public class GymManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject AddQuestMenu;
+
+    [SerializeField]
     private GymQuestInfo GymQuestInfo;
     [SerializeField]
     private GymRessourcesInfo GymRessourcesInfo;
+    [SerializeField]
+    private GymNewQuest NewQuest;
 
     private Quest ActiveQuest;
     private Level QuestList;
@@ -68,11 +73,9 @@ public class GymManager : MonoBehaviour
         GymQuestInfo.QuestDesc.text = $"{questDefinition.questDescription}\n\n\t{questDefinition.questGiverName,10:C}";
         GymQuestInfo.Choice1Info.text = $"Name: {questDefinition.choice1Name}\n\nDefinition: {questDefinition.choice1Description}\n\nReveal: {questDefinition.choice1Reveal}";
         GymQuestInfo.Choice2Info.text = $"Name: {questDefinition.choice2Name}\n\nDefinition: {questDefinition.choice2Description}\n\nReveal: {questDefinition.choice2Reveal}";
-        GymQuestInfo.Reward1.text = $"Money: {rewardChoice1.moneyReward}\nTemple Readiness: {rewardChoice1.templeReadiness}\n\nHuangsei:\nHonor: \nDisciple: \n" +
-            $"Devotion: \n\nSusoda:\nHonor: \nDisciple \nDevotion: ";
+        GymQuestInfo.Reward1.text = $"Money: {rewardChoice1.moneyReward}\nTemple Readiness: {rewardChoice1.templeReadiness}\nYin Yang Balance: {rewardChoice1.yinYangBalance}\nNombreDisciple: {rewardChoice1.nbDisciple}\nKi: {rewardChoice1.nbKi}";
 
-        GymQuestInfo.Reward2.text = $"Money: {rewardChoice2.moneyReward}\nTemple Readiness: {rewardChoice2.templeReadiness}\n\nHuangsei:\nHonor: \nDisciple: \n" +
-            $"Devotion: \n\nSusoda:\nHonor: \nDisciple \nDevotion: ";
+        GymQuestInfo.Reward2.text = $"Money: {rewardChoice2.moneyReward}\nTemple Readiness: {rewardChoice2.templeReadiness}\nYin Yang Balance: {rewardChoice2.yinYangBalance}\nNombreDisciple: {rewardChoice2.nbDisciple}\nKi: {rewardChoice2.nbKi}";
     }
 
     private void CreateQuestList()
@@ -94,9 +97,12 @@ public class GymManager : MonoBehaviour
 
     private void SetRessources()
     {
-        GymRessourcesInfo.YinYang.text = $"{QuestManager.maxClanBalance}";
+        GymRessourcesInfo.MaxYinYang.text = $"{QuestManager.maxClanBalance}";
+        GymRessourcesInfo.YinYangBalance.text = $"{QuestManager.yinYangBalance}";
         GymRessourcesInfo.Readiness.text = $"{QuestManager.GetReadiness()}";
         GymRessourcesInfo.Money.text = $"{QuestManager.GetMoney()}";
+        GymRessourcesInfo.NbDisciple.text = $"{QuestManager.GetDisciple()}";
+        GymRessourcesInfo.Ki.text = $"{QuestManager.GetKi()}";
     }
 
     public void CloseGymMenu()
@@ -104,10 +110,124 @@ public class GymManager : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void OpenAddQuestMenu()
+    {
+        AddQuestMenu.SetActive(true);
+        SetNewQuestValues();
+    }
+
+    public void CloseAddQuestMenu()
+    {
+        AddQuestMenu.SetActive(false);
+    }
+
     public void ApplyChanges()
     {
+        QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.MaxYinYang.text), int.Parse(GymRessourcesInfo.YinYangBalance.text), float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text), int.Parse(GymRessourcesInfo.NbDisciple.text), float.Parse(GymRessourcesInfo.Ki.text));
+    }
 
-        QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.YinYang.text),float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text));
+    private void SetNewQuestValues()
+    {
+        NewQuest.QuestPosition.text = $"{QuestManager.GetCurrentQuestPosition() + 2}";
+    }
+
+    public void AddQuest()
+    {
+        Quest newQuest = ValidatedQuest();
+        int newQuestPosition = ValidateQuestIndex();
+
+        if (newQuest != null)
+            QuestManager.AddQuest(newQuestPosition, newQuest);
+        else
+            Debug.Log("Invalid Quest!");
+    }
+
+    private Quest ValidatedQuest()
+    {
+        Quest newQuest = null;
+
+        if (!EmptyField())
+        {
+            newQuest = new Quest();
+            newQuest.questDefinition = CreateDefinition();            
+        }
+
+        return newQuest;
+    }
+
+    private QuestDefinition CreateDefinition()
+    {
+        QuestDefinition newDefinition = new QuestDefinition();
+
+        newDefinition.questName = NewQuest.Name.text;
+        newDefinition.questDescription = NewQuest.Description.text;
+        newDefinition.questGiverName = NewQuest.QuestGiver.text;
+        newDefinition.choice1Name = NewQuest.Choice1Name.text;
+        newDefinition.choice1Description = NewQuest.Choice2Desc.text;
+        newDefinition.choice1Reveal = NewQuest.Choice1Reveal.text;
+        newDefinition.choice2Name = NewQuest.Choice2Name.text;
+        newDefinition.choice2Description = NewQuest.Choice2Desc.text;
+        newDefinition.choice2Reveal = NewQuest.Choice2Reveal.text;
+
+        newDefinition.rewardChoice1 = CreateReward1();
+        newDefinition.rewardChoice2 = CreateReward2();
+
+        return newDefinition;
+    }
+
+    private Reward CreateReward1()
+    {
+        Reward newReward = new Reward();
+
+        newReward.moneyReward = int.Parse(NewQuest.Reward1Money.text);
+        newReward.templeReadiness = float.Parse(NewQuest.Reward1Readiness.text);
+        newReward.yinYangBalance = int.Parse(NewQuest.Reward1Balance.text);
+        newReward.nbDisciple = int.Parse(NewQuest.Reward1Disciple.text);
+        newReward.nbKi = int.Parse(NewQuest.Reward1Ki.text);
+
+        return newReward;
+    }    
+    
+    private Reward CreateReward2()
+    {
+        Reward newReward = new Reward();
+
+        newReward.moneyReward = int.Parse(NewQuest.Reward2Money.text);
+        newReward.templeReadiness = float.Parse(NewQuest.Reward2Readiness.text);
+        newReward.yinYangBalance = int.Parse(NewQuest.Reward2Balance.text);
+        newReward.nbDisciple = int.Parse(NewQuest.Reward2Disciple.text);
+        newReward.nbKi = int.Parse(NewQuest.Reward2Ki.text);
+
+        return newReward;
+    }
+
+
+    //Need to check empty fields or set defaults values...
+    private bool EmptyField()
+    {
+        bool empty = true;
+
+        Debug.Log("TO DO!!!");
+
+        return empty;
+
+    }
+
+    private int ValidateQuestIndex()
+    {
+        int newQuestPosition = 0;
+        int currentPosition = QuestManager.GetCurrentQuestPosition();
+        int lastPosition = QuestManager.GetFilledLevel().questList.Count-1;
+
+        if (!NewQuest.QuestPosition.text.Equals(""))
+            newQuestPosition = int.Parse(NewQuest.QuestPosition.text) -1;
+
+        if (newQuestPosition < currentPosition)
+            newQuestPosition = currentPosition;
+        else if(newQuestPosition > lastPosition)
+            newQuestPosition = lastPosition;
+
+        return newQuestPosition;
     }
 }
 
@@ -126,13 +246,35 @@ public class GymQuestInfo
 [Serializable]
 public class GymRessourcesInfo
 {
-    public TMP_InputField HuangseiHonor;
-    public TMP_InputField HuangseiDisciple;
-    public TMP_InputField HuangseiDevotion;
-    public TMP_InputField SusodaHonor;
-    public TMP_InputField SusodaDisciple;
-    public TMP_InputField SusodaDevotion;
-    public TMP_InputField YinYang;
-    public TMP_InputField Readiness;
     public TMP_InputField Money;
+    public TMP_InputField Readiness;
+    public TMP_InputField MaxYinYang;
+    public TMP_InputField YinYangBalance;
+    public TMP_InputField NbDisciple;
+    public TMP_InputField Ki;
+}
+
+[Serializable]
+public class GymNewQuest
+{
+    public TMP_InputField Name;
+    public TMP_InputField Description;
+    public TMP_InputField QuestGiver;
+    public TMP_InputField QuestPosition;
+    public TMP_InputField Choice1Name;
+    public TMP_InputField Choice1Desc;
+    public TMP_InputField Choice1Reveal;
+    public TMP_InputField Reward1Money;
+    public TMP_InputField Reward1Readiness;
+    public TMP_InputField Reward1Balance;
+    public TMP_InputField Reward1Disciple;
+    public TMP_InputField Reward1Ki;
+    public TMP_InputField Choice2Name;
+    public TMP_InputField Choice2Desc;
+    public TMP_InputField Choice2Reveal;
+    public TMP_InputField Reward2Money;
+    public TMP_InputField Reward2Readiness;
+    public TMP_InputField Reward2Balance;
+    public TMP_InputField Reward2Disciple;
+    public TMP_InputField Reward2Ki;
 }

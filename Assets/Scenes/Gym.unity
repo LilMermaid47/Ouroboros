@@ -744,6 +744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GymMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 58805340220494364, guid: 08e37c207d3e4dd4096501d83d4426f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 58805340220494367, guid: 08e37c207d3e4dd4096501d83d4426f1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -864,14 +868,6 @@ MonoBehaviour:
   maxClanBalance: 100
   argent: 0
   templeReadinessToAchieve: 100
-  clanSusoda:
-    honor: 10
-    discple: 10
-    devotion: 10
-  clanHuangsei:
-    honor: 10
-    discple: 10
-    devotion: 10
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}

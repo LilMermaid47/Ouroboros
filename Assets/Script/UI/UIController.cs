@@ -95,6 +95,13 @@ public class UIController : MonoBehaviour
         StartCoroutine(ChangeBalance(yinYangBalance));
         StartCoroutine(ChangeReadiness(templeReadiness));
     }
+    public void SetRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, float ki)
+    {
+
+        SetRessources(argent, yinYangBalance, templeReadiness);
+    }
+
+    /*
     public void SetRessources(Clan premierClan, int premierClanDisciple, Clan secondClan, int secondClanDisciple)
     {
         ChangeDisciple(premierClan, premierClanDisciple);
@@ -106,12 +113,12 @@ public class UIController : MonoBehaviour
         SetRessources(argent, yinYangBalance, templeReadiness);
         ChangeDisciple(nom, disciple);
     }
-
+    
     public void SetRessources(int argent, int yinYangBalance, float templeReadiness, Clan premierClan, int premierClanDisciple, Clan secondClan, int secondClanDisciple)
     {
         SetRessources(argent, yinYangBalance, templeReadiness);
         SetRessources(premierClan, premierClanDisciple, secondClan, secondClanDisciple);
-    }
+    }*/
 
     public void SetArgent(int argent)
     {

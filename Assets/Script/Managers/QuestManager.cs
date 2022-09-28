@@ -19,6 +19,7 @@ public class QuestManager : MonoBehaviour
 
     float templeReadiness = 0;
     float ki = 0;
+    int disciple = 0;
 
     public Level level;
     public RandomQuestList randomQuestList;
@@ -150,11 +151,30 @@ public class QuestManager : MonoBehaviour
         return argent;
     }
 
-    public void ChangeValue(int balance, float readiness, int money)
+    public int GetDisciple()
+    {
+        return disciple;
+    }
+
+    public float GetKi()
+    {
+        return ki;
+    }
+
+    public int GetCurrentQuestPosition()
+    {
+        return currentQuestIndex;
+    }
+
+    public void ChangeValue(int maxYinYang, int balance, float readiness, int money, int nbDisciple, float nbKi)
     {
         argent = money;
-        maxClanBalance = balance;
+        maxClanBalance = maxYinYang;
+        yinYangBalance = balance;
         templeReadiness = readiness;
+        ki = nbKi;
+        disciple = nbDisciple;
+        
 
         uIController.IncreaseMaxBalance(maxClanBalance);
 
