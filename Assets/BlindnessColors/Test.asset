@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37fe4e351babe024fa36b437248ee411, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  Name: Test
+  HuangseiPrimary: {r: 255, g: 192, b: 0, a: 1}
+  HuangseiSecondary: {r: 142, g: 69, b: 23, a: 1}
+  SusodaPrimary: {r: 149, g: 0, b: 179, a: 1}
+  SusodaSecondary: {r: 242, g: 199, b: 245, a: 1}

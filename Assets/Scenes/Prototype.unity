@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &10393134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1375.1475
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 645.4361
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -166.70053
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291144, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573375893133291145, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
+      propertyPath: m_Name
+      value: PersistantData
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60b0eebfbaeef44fba9c7d1b9d47f62, type: 3}
 --- !u!1 &481477051
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +394,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8081255942472499893, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081255943418659562, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081255943418659562, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
 --- !u!1 &1195783225 stripped
@@ -452,14 +533,6 @@ MonoBehaviour:
   maxClanBalance: 100
   argent: 20
   templeReadinessToAchieve: 100
-  clanSusoda:
-    honor: 5
-    discple: 5
-    devotion: 5
-  clanHuangsei:
-    honor: 5
-    discple: 5
-    devotion: 5
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}
