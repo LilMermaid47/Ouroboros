@@ -28,53 +28,27 @@ MonoBehaviour:
       clan.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 25
-      recompenseClanSusoda:
-        honor: 0
-        discple: 0
-        devotion: 0
-      recompenseClanHuangsei:
-        honor: 2
-        discple: -1
-        devotion: 0
-      AdditiveQuest: 0
+      templeReadiness: 10
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -10
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: -20
-      templeReadiness: 35
-      recompenseClanSusoda:
-        honor: 1
-        discple: 4
-        devotion: 0
-      recompenseClanHuangsei:
-        honor: 0
-        discple: 0
-        devotion: 0
-      AdditiveQuest: 0
+      templeReadiness: 15
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 10
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
   requirementChoice1:
     moneyCost: 0
     templeReadiness: 0
-    ClanSusoda:
-      honor: 0
-      discple: 0
-      devotion: 0
-    ClanHuangsei:
-      honor: 0
-      discple: 0
-      devotion: 0
+    kiCost: 0
   requirementChoice2:
     moneyCost: 20
     templeReadiness: 0
-    ClanSusoda:
-      honor: 0
-      discple: 0
-      devotion: 0
-    ClanHuangsei:
-      honor: 0
-      discple: 0
-      devotion: 0
+    kiCost: 0

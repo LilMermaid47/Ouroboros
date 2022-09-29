@@ -30,54 +30,28 @@ MonoBehaviour:
       The project almost fell through, but the Susodas insisted on taking over the
       project. They trained about ten wolves.
     rewardChoice1:
-      moneyReward: -30
+      moneyReward: -25
       templeReadiness: 30
-      recompenseClanSusoda:
-        honor: 0
-        discple: 0
-        devotion: 0
-      recompenseClanHuangsei:
-        honor: 0
-        discple: 5
-        devotion: 2
-      AdditiveQuest: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -15
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 10
       templeReadiness: 15
-      recompenseClanSusoda:
-        honor: 1
-        discple: -3
-        devotion: 4
-      recompenseClanHuangsei:
-        honor: 0
-        discple: 0
-        devotion: 0
-      AdditiveQuest: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
   requirementChoice1:
-    moneyCost: 0
+    moneyCost: 25
     templeReadiness: 0
-    ClanSusoda:
-      honor: 0
-      discple: 0
-      devotion: 0
-    ClanHuangsei:
-      honor: 0
-      discple: 0
-      devotion: 0
+    kiCost: 0
   requirementChoice2:
     moneyCost: 30
     templeReadiness: 0
-    ClanSusoda:
-      honor: 0
-      discple: 0
-      devotion: 0
-    ClanHuangsei:
-      honor: 0
-      discple: 0
-      devotion: 0
+    kiCost: 0

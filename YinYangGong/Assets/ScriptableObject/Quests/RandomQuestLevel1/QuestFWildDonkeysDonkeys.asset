@@ -29,31 +29,19 @@ MonoBehaviour:
       to make good use of it.\r"
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 20
-      recompenseClanSusoda:
-        honor: 0
-        discple: 0
-        devotion: 0
-      recompenseClanHuangsei:
-        honor: 0
-        discple: 0
-        devotion: 0
-      AdditiveQuest: 0
+      templeReadiness: 25
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 15
+      moneyReward: 20
       templeReadiness: 5
-      recompenseClanSusoda:
-        honor: 0
-        discple: 0
-        devotion: 0
-      recompenseClanHuangsei:
-        honor: 0
-        discple: 0
-        devotion: 0
-      AdditiveQuest: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

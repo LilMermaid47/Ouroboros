@@ -28,32 +28,20 @@ MonoBehaviour:
     choice2Reveal: "The Susoda clan doesn't seem particularly upset by the loss of
       a greenhouse.\r"
     rewardChoice1:
-      moneyReward: 0
-      templeReadiness: -5
-      recompenseClanSusoda:
-        honor: 0
-        discple: 0
-        devotion: 0
-      recompenseClanHuangsei:
-        honor: 2
-        discple: 0
-        devotion: -1
-      AdditiveQuest: 0
+      moneyReward: 100
+      templeReadiness: 5
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -5
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 0
-      templeReadiness: -5
-      recompenseClanSusoda:
-        honor: 2
-        discple: 0
-        devotion: -1
-      recompenseClanHuangsei:
-        honor: 0
-        discple: 0
-        devotion: 0
-      AdditiveQuest: 0
+      moneyReward: 100
+      templeReadiness: 5
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 5
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
