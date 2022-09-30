@@ -282,10 +282,6 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1707705097}
-    - target: {fileID: 1084708292397861494, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2288583761477538890, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -395,26 +391,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5168634292443443257, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8081255943418659562, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8081255943418659562, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}

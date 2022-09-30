@@ -101,8 +101,8 @@ public class UIController : MonoBehaviour
     }
     public void SetRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, float ki)
     {
-
         SetRessources(argent, yinYangBalance, templeReadiness);
+        ChangeDisciple(disciple);
     }
 
     /*
@@ -226,17 +226,14 @@ public class UIController : MonoBehaviour
         TextRessources.BalanceClanSusoda.setValue(balanceIncrease);
     }
 
-    public void ChangeDisciple(Clan nom, int disciple)
+    public void ChangeDisciple( int disciple)
     {
-        switch (nom)
-        {
-            case Clan.Huangsei:
-                TextRessources.DiscipleHuangsei.text = $"{disciple}";
-                break;
-            case Clan.Susoda:
-                TextRessources.DiscipleSusoda.text = $"{disciple}";
-                break;
-        }
+        TextRessources.Disciple.text = $"{disciple} disciple";
+    }
+
+    public void ChangeKi(int ki)
+    {
+        TextRessources.Ki.text = $"{ki} ki";
     }
 
     public void SetReadiness(float readiness)
@@ -416,7 +413,7 @@ public class UIController : MonoBehaviour
 
     public void OpenGymMenu()
     {
-        if(GymMenu != null)
+        if (GymMenu != null)
             GymMenu.SetActive(true);
     }
 
@@ -429,8 +426,8 @@ public class UIController : MonoBehaviour
 [Serializable]
 public class TextRessources
 {
-    public TMPro.TextMeshProUGUI DiscipleSusoda;
-    public TMPro.TextMeshProUGUI DiscipleHuangsei;
+    public TMPro.TextMeshProUGUI Disciple;
+    public TMPro.TextMeshProUGUI Ki;
     public TMPro.TextMeshProUGUI Yuan;
     public TMPro.TextMeshProUGUI TempleReadiness;
     public TMPro.TextMeshProUGUI nbQuestLeft;
