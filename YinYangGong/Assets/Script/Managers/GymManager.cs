@@ -139,7 +139,7 @@ public class GymManager : MonoBehaviour
 
     public void ApplyChanges()
     {
-        QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.MaxYinYang.text), int.Parse(GymRessourcesInfo.YinYangBalance.text), float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text), int.Parse(GymRessourcesInfo.NbDisciple.text), float.Parse(GymRessourcesInfo.Ki.text));
+        QuestManager.ChangeValue(int.Parse(GymRessourcesInfo.MaxYinYang.text), int.Parse(GymRessourcesInfo.YinYangBalance.text), float.Parse(GymRessourcesInfo.Readiness.text), int.Parse(GymRessourcesInfo.Money.text), int.Parse(GymRessourcesInfo.NbDisciple.text), int.Parse(GymRessourcesInfo.Ki.text));
     }
 
     private void SetNewQuestValues()
