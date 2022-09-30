@@ -47,7 +47,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetMaxBalance(maxClanBalance);
 
         uIController.SetQuest(currentQuest);
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
+        uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
     }
 
@@ -107,7 +107,7 @@ public class QuestManager : MonoBehaviour
         yinYangBalance += reward.yinYangBalance;
         disciple += reward.nbDisciple;
         ki += reward.nbKi;
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
+        uIController.SetRewardsRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
 
         if (reward.unlockQuestChoice.unlockedQuest != null)
         {
@@ -182,6 +182,6 @@ public class QuestManager : MonoBehaviour
 
         uIController.IncreaseMaxBalance(maxClanBalance);
 
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100,disciple,ki);
+        uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100,disciple,ki);
     }
 }
