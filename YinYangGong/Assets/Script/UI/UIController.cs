@@ -99,10 +99,11 @@ public class UIController : MonoBehaviour
         StartCoroutine(ChangeBalance(yinYangBalance));
         StartCoroutine(ChangeReadiness(templeReadiness));
     }
-    public void SetRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, float ki)
+    public void SetRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
     {
         SetRessources(argent, yinYangBalance, templeReadiness);
         ChangeDisciple(disciple);
+        ChangeKi(ki);
     }
 
     /*
