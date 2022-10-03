@@ -27,7 +27,7 @@ MonoBehaviour:
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 5
-      nbDisciple: 0
+      nbDisciple: -1
       nbKi: 0
       yinYangBalance: -10
       unlockQuestChoice:
@@ -36,7 +36,7 @@ MonoBehaviour:
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 5
-      nbDisciple: 0
+      nbDisciple: -1
       nbKi: 0
       yinYangBalance: 10
       unlockQuestChoice:
