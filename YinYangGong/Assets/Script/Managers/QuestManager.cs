@@ -11,15 +11,17 @@ public class QuestManager : MonoBehaviour
     [Header("Valeur de départ du niveau")]
     public float clanHonorDevotionModifier = 0.2f;
     public int maxClanBalance = 100;
-
+    [SerializeField]
+    int disciple = 0;
+    [SerializeField]
+    int ki = 0;
     [SerializeField]
     int argent = 0;
     [SerializeField]
     float templeReadinessToAchieve = 100;
 
     float templeReadiness = 0;
-    float ki = 0;
-    int disciple = 0;
+
 
     public Level level;
     public RandomQuestList randomQuestList;
@@ -45,7 +47,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetMaxBalance(maxClanBalance);
 
         uIController.SetQuest(currentQuest);
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
+        uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
     }
 
@@ -103,7 +105,9 @@ public class QuestManager : MonoBehaviour
         argent += reward.moneyReward;
         templeReadiness += reward.templeReadiness;
         yinYangBalance += reward.yinYangBalance;
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
+        disciple += reward.nbDisciple;
+        ki += reward.nbKi;
+        uIController.SetRewardsRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
 
         if (reward.unlockQuestChoice.unlockedQuest != null)
         {
@@ -166,7 +170,7 @@ public class QuestManager : MonoBehaviour
         return currentQuestIndex;
     }
 
-    public void ChangeValue(int maxYinYang, int balance, float readiness, int money, int nbDisciple, float nbKi)
+    public void ChangeValue(int maxYinYang, int balance, float readiness, int money, int nbDisciple, int nbKi)
     {
         argent = money;
         maxClanBalance = maxYinYang;
@@ -174,10 +178,10 @@ public class QuestManager : MonoBehaviour
         templeReadiness = readiness;
         ki = nbKi;
         disciple = nbDisciple;
-        
+
 
         uIController.IncreaseMaxBalance(maxClanBalance);
 
-        uIController.SetRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100);
+        uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100,disciple,ki);
     }
 }

@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 [RequireComponent(typeof(SoundManager))]
 public class UIController : MonoBehaviour
@@ -45,6 +48,7 @@ public class UIController : MonoBehaviour
 
     private SoundManager soundManager;
 
+    public float timeTransitionAnimation = 0.1f;
     public float timeTransitionAnimationBalance = 1f;
     public float timeTransitionAnimationMoney = 0.1f;
     public float timeTransitionAnimationReadiness = 0.5f;
@@ -69,9 +73,6 @@ public class UIController : MonoBehaviour
         PlayerInputs.InGameMenu.Pause.performed += InGameMenuPressed;
 
         PauseMenuActive(true);
-
-        if (Time.timeScale == 0)
-            Time.timeScale = 1f;
     }
 
     public void SetQuest(Quest quest)
@@ -93,36 +94,35 @@ public class UIController : MonoBehaviour
             Debug.LogWarning("No quest receved.");
     }
 
-    public void SetRessources(int argent, int yinYangBalance, float templeReadiness)
+    public void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness)
     {
-        StartCoroutine(ChangeArgent(argent));
-        StartCoroutine(ChangeBalance(yinYangBalance));
-        StartCoroutine(ChangeReadiness(templeReadiness));
-    }
-    public void SetRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, float ki)
-    {
+        SetArgent(argent);
+        SetCurrentBalance(yinYangBalance);
+        SetReadiness(templeReadiness);
 
-        SetRessources(argent, yinYangBalance, templeReadiness);
     }
-
-    /*
-    public void SetRessources(Clan premierClan, int premierClanDisciple, Clan secondClan, int secondClanDisciple)
+    public void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
     {
-        ChangeDisciple(premierClan, premierClanDisciple);
-        ChangeDisciple(secondClan, secondClanDisciple);
+        SetStartingRessources(argent, yinYangBalance, templeReadiness);
+        SetDisciple(disciple);
+        SetKi(ki);
     }
 
-    public void SetRessources(int argent, int yinYangBalance, float templeReadiness, Clan nom, int disciple)
+    public async void SetRewardsRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
     {
-        SetRessources(argent, yinYangBalance, templeReadiness);
-        ChangeDisciple(nom, disciple);
+        List<Task> taskList = new List<Task>();
+
+        HideBtn();
+
+        taskList.Add(ChangeArgent(argent));
+        taskList.Add(ChangeBalance(yinYangBalance));
+        taskList.Add(ChangeReadiness(templeReadiness));
+        taskList.Add(ChangeDisciple(disciple));
+        taskList.Add(ChangeKi(ki));
+
+        await Task.WhenAll(taskList);
+        ActivateNextBtn();
     }
-    
-    public void SetRessources(int argent, int yinYangBalance, float templeReadiness, Clan premierClan, int premierClanDisciple, Clan secondClan, int secondClanDisciple)
-    {
-        SetRessources(argent, yinYangBalance, templeReadiness);
-        SetRessources(premierClan, premierClanDisciple, secondClan, secondClanDisciple);
-    }*/
 
     public void SetArgent(int argent)
     {
@@ -130,7 +130,7 @@ public class UIController : MonoBehaviour
     }
 
     int lastArgent = 0;
-    private IEnumerator ChangeArgent(int argent)
+    private async Task ChangeArgent(int argent)
     {
         float timerArgent = 0;
 
@@ -151,7 +151,7 @@ public class UIController : MonoBehaviour
 
             while (timerArgent < timeForTransition)
             {
-                yield return 0;
+                await Task.Yield();
                 timerArgent += Time.deltaTime;
                 SetArgent((int)(lastArgent + (diff * timerArgent) / timeForTransition));
             }
@@ -180,7 +180,7 @@ public class UIController : MonoBehaviour
     }
 
     int lastBalance = 0;
-    private IEnumerator ChangeBalance(int newCurrentBalance)
+    private async Task ChangeBalance(int newCurrentBalance)
     {
         float timerBalance = 0;
 
@@ -193,7 +193,7 @@ public class UIController : MonoBehaviour
         {
             while (timerBalance < timeForTransition)
             {
-                yield return 0;
+                await Task.Yield();
                 timerBalance += Time.deltaTime;
                 SetCurrentBalance((int)(lastBalance + (diff * timerBalance) / timeForTransition));
             }
@@ -226,17 +226,56 @@ public class UIController : MonoBehaviour
         TextRessources.BalanceClanSusoda.setValue(balanceIncrease);
     }
 
-    public void ChangeDisciple(Clan nom, int disciple)
+    public void SetDisciple( int disciple)
     {
-        switch (nom)
+        TextRessources.Disciple.text = $"{disciple} disciple";
+    }
+
+    int lastDisciple = 0;
+    private async Task ChangeDisciple(int newDisciple)
+    {
+        float timerDisciple = 0;
+
+        float diff = (newDisciple - lastDisciple);
+
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimation);
+
+        if (diff == 0)
+            SetDisciple(newDisciple);
+        while (timerDisciple < timeForTransition)
         {
-            case Clan.Huangsei:
-                TextRessources.DiscipleHuangsei.text = $"{disciple}";
-                break;
-            case Clan.Susoda:
-                TextRessources.DiscipleSusoda.text = $"{disciple}";
-                break;
+            await Task.Yield();
+            timerDisciple += Time.deltaTime;
+            SetDisciple((int)(lastDisciple + (diff * timerDisciple) / timeForTransition));
         }
+
+        lastDisciple = newDisciple;
+    }
+
+    public void SetKi(int ki)
+    {
+        TextRessources.Ki.text = $"{ki} ki";
+    }
+
+    int lastKi = 0;
+    private async Task ChangeKi(int newKi)
+    {
+        float timerKi = 0;
+
+        float diff = (newKi - lastKi);
+
+        float timeForTransition = Mathf.Abs(diff * timeTransitionAnimation);
+
+        if (diff == 0)
+            SetKi(newKi);
+        while (timerKi < timeForTransition)
+        {
+            await Task.Yield();
+            timerKi += Time.deltaTime;
+            SetKi((int)(lastKi + (diff * timerKi) / timeForTransition));
+        }
+
+        lastKi = newKi;
     }
 
     public void SetReadiness(float readiness)
@@ -245,7 +284,7 @@ public class UIController : MonoBehaviour
     }
 
     float lastReadiness = 0;
-    private IEnumerator ChangeReadiness(float newReadiness)
+    private async Task ChangeReadiness(float newReadiness)
     {
         float timerReadiness = 0;
 
@@ -257,7 +296,7 @@ public class UIController : MonoBehaviour
             SetReadiness(newReadiness);
         while (timerReadiness < timeForTransition)
         {
-            yield return 0;
+            await Task.Yield();
             timerReadiness += Time.deltaTime;
             SetReadiness((int)(lastReadiness + (diff * timerReadiness) / timeForTransition));
         }
@@ -282,8 +321,7 @@ public class UIController : MonoBehaviour
     private void RevealChoice(string txtChoice)
     {
         TextQuest.DescriptionQuest.text = txtChoice;
-        ActivateNextPerson();
-        ShowBtn(false);
+        TextQuest.QuestGiver.text = "";
     }
 
     private void ActivateBtn()
@@ -293,6 +331,12 @@ public class UIController : MonoBehaviour
         NextPersonBtnActivate(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
+    }
+
+    private void ActivateNextBtn()
+    {
+        ActivateNextPerson();
+        ShowBtn(false);
     }
 
     private void ActivateNextPerson()
@@ -324,6 +368,13 @@ public class UIController : MonoBehaviour
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
         BtnQuest.NextPerson.gameObject.SetActive(!status);
+    }
+
+    private void HideBtn()
+    {
+        BtnQuest.FirstChoice.gameObject.SetActive(false);
+        BtnQuest.SecondChoice.gameObject.SetActive(false);
+        BtnQuest.NextPerson.gameObject.SetActive(false);
     }
 
     private void ShowQuest(bool status)
@@ -402,21 +453,17 @@ public class UIController : MonoBehaviour
 
         if (!menuOpened)
         {
-            Time.timeScale = 0f;
-
             EventSystem.current.SetSelectedGameObject(MenuBtn.InGameMenuFirstChoice);
         }
         else
         {
-            Time.timeScale = 1f;
-
             EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
         }
     }
 
     public void OpenGymMenu()
     {
-        if(GymMenu != null)
+        if (GymMenu != null)
             GymMenu.SetActive(true);
     }
 
@@ -429,8 +476,8 @@ public class UIController : MonoBehaviour
 [Serializable]
 public class TextRessources
 {
-    public TMPro.TextMeshProUGUI DiscipleSusoda;
-    public TMPro.TextMeshProUGUI DiscipleHuangsei;
+    public TMPro.TextMeshProUGUI Disciple;
+    public TMPro.TextMeshProUGUI Ki;
     public TMPro.TextMeshProUGUI Yuan;
     public TMPro.TextMeshProUGUI TempleReadiness;
     public TMPro.TextMeshProUGUI nbQuestLeft;
