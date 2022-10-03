@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest1G2
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Blessing day
+    questGiverName: Yu, the matriarch of Susoda clan
+    questDescription: "\u201CThe tree! The tree has been reborn from the dead! I
+      think if we give it <b>more prayers</b>, it will grow faster and bigger. Don't
+      lose faith!\u201D"
+    choice1Name: Cut the tree
+    choice1Description: We should cut it before it is too late. We can use this wood
+      to protect ourselves.
+    choice1Reveal: We make arrows and spears with the wood. We are ready to fight!
+    choice2Name: Pray to the Moon Goddess
+    choice2Description: Praying and meditating are our strengths. Give us everything!
+    choice2Reveal: The flowers don't stop blooming. Birds are nesting and bees are
+      making honey. I predict a sweet spring with newborn children.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 20
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -20
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 3
+      nbKi: 0
+      yinYangBalance: 30
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

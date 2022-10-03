@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest105
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: A New Recruit
+    questGiverName: Neutral peasant
+    questDescription: "\u201C I want to train and become a monk, but I don't know
+      <b>which clan</b> would be more interesting. What practice do you recommend?\u201D"
+    choice1Name: Fire magic
+    choice1Description: Mastering fire would make you a seasoned warrior.
+    choice1Reveal: The Huangsei clan trained the new devotee. He is now an important
+      member of the Sun Clan.
+    choice2Name: Earth magic
+    choice2Description: Mastering the land would make life easier for many villagers.
+    choice2Reveal: The head of the Susoda clan personally trained the new member.
+      He is now a helpful hand to the Moon clan and the village.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: -1
+      nbKi: 0
+      yinYangBalance: -10
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: -1
+      nbKi: 0
+      yinYangBalance: 10
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

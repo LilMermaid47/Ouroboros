@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest103
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: General Store
+    questGiverName: Caifu, the merchant
+    questDescription: "\u201C I had been promised a building for my shop, but there
+      is no longer any available. There are two interesting places, but they already
+      <b>belong to a clan</b>. Which of the two are you offering me?\u201D\r"
+    choice1Name: Huangsei
+    choice1Description: The house serves as a warehouse for the clan. The Huangsei
+      clan is not likely to be too disappointed by this loss.
+    choice1Reveal: The Huangsei clan is happy to help the merchant open up his shop.
+    choice2Name: Susoda
+    choice2Description: "This is one of their many greenhouses. One less shouldn't
+      hurt them too much. \r"
+    choice2Reveal: The Susoda clan doesn't seem particularly upset by the loss of
+      a greenhouse.
+    rewardChoice1:
+      moneyReward: 100
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 5
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 100
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -5
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

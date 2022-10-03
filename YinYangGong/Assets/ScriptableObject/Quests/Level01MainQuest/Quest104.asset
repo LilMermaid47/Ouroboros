@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest104
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Buying Peace (NO EFFECT)
+    questGiverName: Angry peasant
+    questDescription: "\u201CA quarrel between the two clans broke out near my sheepfold,
+      and they killed my beloved goats. I demand the<b> annihilation </b>of one of
+      the two clans!\u201D"
+    choice1Name: Huangsei
+    choice1Description: The Clan of the Sun constitutes seasoned warriors adept in
+      fire and air.
+    choice1Reveal: With the help of the Susoda clan, the village wiped out the Huangsei
+      clan in a bloody battle.
+    choice2Name: Susoda
+    choice2Description: The Moon Clan is led by a mystical old lady who uses the
+      water and the land to good advantage.
+    choice2Reveal: The Susoda clan is no more. They have been killed to the last.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

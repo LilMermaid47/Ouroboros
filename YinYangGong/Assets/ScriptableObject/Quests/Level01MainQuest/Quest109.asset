@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest109
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: "Bendan\u2019s Pig"
+    questGiverName: Bendan the mad
+    questDescription: "\u201CI lost my favorite pig in the mountains. The mountain's
+      path is <b>dangerous</b>. I need help finding it. Which clan can help me?\u201D\r\n"
+    choice1Name: Huangsei
+    choice1Description: The Huangsei clan is ready to do anything to help the villagers.
+    choice1Reveal: The searches were unsuccessful. Several members fell into a sinkhole
+      and died. We lost our weapons and our precious map.
+    choice2Name: Susoda
+    choice2Description: The Susoda Clan knows of a few mushrooms that attract pigs.
+    choice2Reveal: The searches were unsuccessful. The mushrooms attracted a bear
+      which killed several members and villagers. We sold the bear pelt at a reasonable
+      price.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: -10
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 15
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 10
+      templeReadiness: -15
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -15
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: Quest1C1
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: "Huangsei\u2019s Demand"
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questDescription: "\u201CWe want to set up a <b>watchtower</b> that would allow
+      us to see the arrival of potential invaders.\u201D"
+    choice1Name: Accept the offer
+    choice1Description: The temple gives their permission and funds to help the Huangsei
+      clan.
+    choice1Reveal: The Huangsei clan has completed the construction of a watch tower.
+      The villagers feel safe even if a man died during construction.
+    choice2Name: Refuse the offer
+    choice2Description: The temple refuses the offer.
+    choice2Reveal: The head of the Huangsei clan does not hesitate to show his disapproval.
+    rewardChoice1:
+      moneyReward: -20
+      templeReadiness: 20
+      nbDisciple: -1
+      nbKi: 0
+      yinYangBalance: -10
+      unlockQuestChoice:
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 11400000, guid: 996ef94de452da54c8b2fa6d3324ccb2, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: -5
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 5
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+  requirementChoice1:
+    moneyCost: 20
+    templeReadiness: 0
+    kiCost: 0
+  requirementChoice2:
+    moneyCost: 0
+    templeReadiness: 0
+    kiCost: 0

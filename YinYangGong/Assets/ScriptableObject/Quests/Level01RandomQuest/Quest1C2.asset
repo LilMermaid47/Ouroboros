@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest1C2
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Huangsei vs. Bandits
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questDescription: "\u201CBandits captured our <b>outpost </b>this morning. They
+      killed everyone. What do we do?\u201D\r"
+    choice1Name: Retake the outpost
+    choice1Description: We must take it back from the bandits. The outpost is a strategic
+      place for our defense
+    choice1Reveal: The Huangsei clan took back the outpost from the bandits, and
+      we managed to ambush them. The village is grateful for their excellent work!
+    choice2Name: Defend the village
+    choice2Description: Defending the villagers is our priority. Let's leave the
+      outpost.
+    choice2Reveal: The bandits attacked us again, and we used our watchtowers to
+      eliminate them. Fortunately, the village is saved.
+    rewardChoice1:
+      moneyReward: 10
+      templeReadiness: 20
+      nbDisciple: -1
+      nbKi: 0
+      yinYangBalance: -10
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 10
+      templeReadiness: 10
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

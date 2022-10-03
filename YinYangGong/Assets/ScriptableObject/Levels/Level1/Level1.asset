@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   questList:
-  - {fileID: 11400000, guid: 5e0f8983658628c4ea37d5340b8f0553, type: 2}
-  - {fileID: 11400000, guid: 0039d2cd755094648827bb93850915c7, type: 2}
-  - {fileID: 11400000, guid: 0bb3cd7aa41667c4d9696b0b05afea11, type: 2}
-  - {fileID: 11400000, guid: dfc69b02f6f27ac4eb2dfff26d4e6147, type: 2}
+  - {fileID: 11400000, guid: 35a3be2c2173dc64ba19d2e939e1dcb4, type: 2}
+  - {fileID: 11400000, guid: f06962f88201cfe4f83962f956abad65, type: 2}
+  - {fileID: 11400000, guid: 0bde77b8d40fd804d92644b274857411, type: 2}
+  - {fileID: 11400000, guid: fe991b4e6b3531945b5df0a6edb394cf, type: 2}
+  - {fileID: 11400000, guid: e5f15e2d192c99c4e9d5f57b2de76b73, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 9c44c1fc16bc3d243b777c18781ebef5, type: 2}
+  - {fileID: 11400000, guid: a2fe5181724263d4c925ef398487a00c, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 485af9204b3b107458c7abfd247c1a2b, type: 2}
+  - {fileID: 11400000, guid: d9fa9c3b6d5b2a440a391597fdbd66c8, type: 2}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 7c70216dd10aac3478236888f4ecb955, type: 2}
-  - {fileID: 11400000, guid: feccf7fb86938784bbd2e78759d816f3, type: 2}
+  - {fileID: 11400000, guid: 07ddc9f9ea282f44a86158b0572b996f, type: 2}
+  - {fileID: 11400000, guid: 7f73139c05ec28746a03cc0f2260d574, type: 2}

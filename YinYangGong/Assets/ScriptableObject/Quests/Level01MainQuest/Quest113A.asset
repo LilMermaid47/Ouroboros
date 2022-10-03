@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: Quest113A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'New Project: Temple Repairs'
+    questGiverName: Neutral peasant
+    questDescription: "\u201CMaster Fangshi, the temple is in ruins. The faithful
+      fear the roof will fall on their heads because of the rotten wood. It smells
+      terrible, and we got more rats here than followers. How do you want to <b>attract
+      followers</b> in such a place?\""
+    choice1Name: Repair the roof
+    choice1Description: You are right; the temple must be repaired if we are to be
+      ready to protect the village.
+    choice1Reveal: 'Both clans volunteered to repair the temple. In addition, they
+      took the opportunity to set up altars of their respective deities.
+
+'
+    choice2Name: Give a gift to clans
+    choice2Description: Repairs will wait; I was planning to give a gift to one of
+      the clans to improve our relations.
+    choice2Reveal: You called several merchants who showed you their merchandise
+      to acquire the best gift for the clans of your choice.
+    rewardChoice1:
+      moneyReward: -30
+      templeReadiness: 30
+      nbDisciple: 1
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 11400000, guid: 4e9ea746e9287db46ac2078a946d43a6, type: 2}
+  requirementChoice1:
+    moneyCost: 30
+    templeReadiness: 0
+    kiCost: 0
+  requirementChoice2:
+    moneyCost: 0
+    templeReadiness: 0
+    kiCost: 0
