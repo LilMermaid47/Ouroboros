@@ -9,9 +9,9 @@ public enum SceneList
     Gym,
     Prototype,
     MainMenu,
-    Level1,
-    Level2,
-    Level3,
+    Level01,
+    Level02,
+    Level03,
     Credit,
     GymSlider,
     GymSliderEtPopUp

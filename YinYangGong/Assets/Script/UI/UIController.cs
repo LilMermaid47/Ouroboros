@@ -1,12 +1,10 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using static UnityEngine.GraphicsBuffer;
 
 [RequireComponent(typeof(SoundManager))]
 public class UIController : MonoBehaviour
@@ -149,7 +147,7 @@ public class UIController : MonoBehaviour
                 soundManager.MoneyIsGoingUpFor(timeForTransition);
             }
 
-            while (timerArgent < timeForTransition)
+            while (timerArgent < timeForTransition+1)
             {
                 await Task.Yield();
                 timerArgent += Time.deltaTime;
