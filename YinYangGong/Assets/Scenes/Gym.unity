@@ -504,13 +504,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1707705097}
     - target: {fileID: 1195783231, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: kiLamp
+      value: 
+      objectReference: {fileID: 1708612252}
+    - target: {fileID: 1195783231, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 1195783231, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: disciplesLamp
+      value: 
+      objectReference: {fileID: 1796406997}
+    - target: {fileID: 1282616989, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: kiLamp
+      value: 
+      objectReference: {fileID: 1708612252}
     - target: {fileID: 1282616989, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 1282616989, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: disciplesLamp
+      value: 
+      objectReference: {fileID: 1796406997}
     - target: {fileID: 2005790122, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -634,6 +650,14 @@ PrefabInstance:
     - target: {fileID: 5168634292443443257, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359454551602478923, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_Name
+      value: KiLamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985947426020157510, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_Name
+      value: DiscipleLamp
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942472499892, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_RootOrder
@@ -947,6 +971,8 @@ MonoBehaviour:
   yinYangBalance: 0
   clanHonorDevotionModifier: 0.05
   maxClanBalance: 100
+  disciple: 0
+  ki: 0
   argent: 0
   templeReadinessToAchieve: 100
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
@@ -966,6 +992,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1708612252 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2218280217365979297, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1796406997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 869846857774445617, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2008135171
 GameObject:
   m_ObjectHideFlags: 0

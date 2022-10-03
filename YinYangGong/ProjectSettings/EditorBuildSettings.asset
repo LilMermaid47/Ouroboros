@@ -24,10 +24,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Credit.unity
     guid: 9a47ac38589476346bbad7cd9a63772b
   - enabled: 1
-    path: Assets/Scenes/Scene1.unity
+    path: Assets/Scenes/ProtoShop1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Scene2.unity
+    path: Assets/Scenes/ProtoShop2.unity
     guid: 9cd0ab3a22239ba4a8c1eebcea1135f1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a7aa5bdd8cb8a7a4f8cb825c300c14cf, type: 2}

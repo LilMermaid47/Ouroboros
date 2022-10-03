@@ -10,6 +10,8 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public Image yuanLamp;
     public Image balanceLamp;
     public Image readinessLamp;
+    public Image disciplesLamp;
+    public Image kiLamp;
 
     [Header("Sprite of lamps")]
     public Sprite lampOff;
@@ -77,6 +79,10 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             yuanLamp.sprite = lampOn;
         if (reward.yinYangBalance != 0)
             balanceLamp.sprite = lampOn;
+        if (reward.nbDisciple !=0)
+            disciplesLamp.sprite = lampOn;
+        if (reward.nbKi != 0)
+            kiLamp.sprite = lampOn;
     }
 
     public void TurnLampOff()
@@ -84,6 +90,8 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         readinessLamp.sprite = lampOff;
         yuanLamp.sprite = lampOff;
         balanceLamp.sprite = lampOff;
+        disciplesLamp.sprite = lampOff;
+        kiLamp.sprite = lampOff;
     }
 
     private IEnumerator StartTimer()

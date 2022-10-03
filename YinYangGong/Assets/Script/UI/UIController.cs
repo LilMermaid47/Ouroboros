@@ -226,7 +226,7 @@ public class UIController : MonoBehaviour
         TextRessources.BalanceClanSusoda.setValue(balanceIncrease);
     }
 
-    public void SetDisciple( int disciple)
+    public void SetDisciple(int disciple)
     {
         TextRessources.Disciple.text = $"{disciple} disciple";
     }
@@ -240,15 +240,15 @@ public class UIController : MonoBehaviour
 
         float timeForTransition = Mathf.Abs(diff * timeTransitionAnimation);
 
-        if (diff == 0)
-            SetDisciple(newDisciple);
-        while (timerDisciple < timeForTransition)
-        {
-            await Task.Yield();
-            timerDisciple += Time.deltaTime;
-            SetDisciple((int)(lastDisciple + (diff * timerDisciple) / timeForTransition));
-        }
+        if (diff != 0)
+            while (timerDisciple < timeForTransition)
+            {
+                await Task.Yield();
+                timerDisciple += Time.deltaTime;
+                SetDisciple((int)(lastDisciple + (diff * timerDisciple) / timeForTransition));
+            }
 
+        SetDisciple(newDisciple);
         lastDisciple = newDisciple;
     }
 
