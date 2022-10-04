@@ -117,9 +117,9 @@ public class QuestManager : MonoBehaviour
 
     private void CheckIfStillWinning()
     {
-        if (yinYangBalance > maxClanBalance)
+        if (yinYangBalance >= maxClanBalance)
             uIController.Defeat(DefeatType.HuangseiLoss);
-        else if (yinYangBalance < -maxClanBalance)
+        else if (yinYangBalance <= -maxClanBalance)
             uIController.Defeat(DefeatType.SusodaLoss);
         else if (argent < 0)
             uIController.Defeat(DefeatType.MoneyLoss);

@@ -5966,7 +5966,6 @@ MonoBehaviour:
   uiController: {fileID: 1514027704516871365}
   questChoiceUiParent: {fileID: 5143994815096363176}
   questUi: {fileID: 843886357774710455}
-  gongsUi: {fileID: 0}
   description: {fileID: 2430773315124913733}
   acceptChoice: {fileID: 8695037538787691210}
   refuseChoice: {fileID: 8652696101088852747}
