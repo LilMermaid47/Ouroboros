@@ -28,7 +28,7 @@ MonoBehaviour:
     choice2Reveal: The Susoda clan doesn't seem particularly upset by the loss of
       a greenhouse.
     rewardChoice1:
-      moneyReward: 100
+      moneyReward: 50
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
@@ -37,7 +37,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 100
+      moneyReward: 50
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0

@@ -15,8 +15,8 @@ MonoBehaviour:
   questDefinition:
     questName: 'A Crazy Present '
     questGiverName: Bendan the mad
-    questDescription: "/\u201C I want to give you a beautiful lotus flower. I thought
-      of you when I saw it /\""
+    questDescription: "\u201C I want to give you a beautiful lotus flower. I thought
+      of you when I saw it \""
     choice1Name: Accept
     choice1Description: This flower is beautiful, it would make a beautiful decoration
       in the temple.

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Arisen
-    questGiverName: 'Sun Wukong, the strange men '
+    questGiverName: 'Sun Wukong, the strange man '
     questDescription: "\u201C I am a <b>traveling preacher</b> looking for a roof
       for the night. Would you be kind enough to welcome me?\u201D"
     choice1Name: 'Accept '

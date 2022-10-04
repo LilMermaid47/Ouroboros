@@ -22,11 +22,13 @@ MonoBehaviour:
     choice1Name: Sharpened the swords
     choice1Description: 'Sharp swords can cut anything! '
     choice1Reveal: If we continue to prepare ourselves enough, the army of demons
-      will not be able to resist us!
+      will not be able to resist us! We need to have <b>at least 100% of readiness</b>
+      if we want to win against them.
     choice2Name: Give each adult a shield
-    choice2Description: ' Let''s protect all those who can fight!'
+    choice2Description: ' Let''s protect all those who can''t fight!'
     choice2Reveal: If we continue to prepare ourselves enough, the army of demons
-      will not be able to resist us!
+      will not be able to resist us! We need to have <b>at least 100% of readiness</b>
+      if we want to win against them.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 10
