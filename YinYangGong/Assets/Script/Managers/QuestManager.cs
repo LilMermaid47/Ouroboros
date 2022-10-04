@@ -72,6 +72,13 @@ public class QuestManager : MonoBehaviour
         if (currentQuestIndex < filledLevel.questList.Count)
         {
             currentQuest = filledLevel.questList[currentQuestIndex];
+
+            if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
+            {
+                RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
+                CheckRequirement(requirementQuest);
+            }
+
             uIController.SetQuest(currentQuest);
             uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
         }
@@ -80,6 +87,32 @@ public class QuestManager : MonoBehaviour
             CheckIfPlayerWon();
         }
         CheckIfStillWinning();
+    }
+
+    private void CheckRequirement(RequirementQuest requirementQuest)
+    {
+        if (requirementQuest.requirementChoice1.templeReadiness < templeReadiness ||
+            requirementQuest.requirementChoice1.moneyCost < argent ||
+            requirementQuest.requirementChoice1.kiCost < ki ||
+            requirementQuest.requirementChoice1.disciples < disciple)
+        {
+            uIController.FirstChoiceBtnActivate(false);
+        }
+        else
+        {
+            uIController.FirstChoiceBtnActivate(true);
+        }
+        if (requirementQuest.requirementChoice2.templeReadiness < templeReadiness ||
+            requirementQuest.requirementChoice2.moneyCost < argent ||
+            requirementQuest.requirementChoice2.kiCost < ki ||
+            requirementQuest.requirementChoice2.disciples < disciple)
+        {
+            uIController.SecondChoiceBtnActivate(false);
+        }
+        else
+        {
+            uIController.SecondChoiceBtnActivate(true);
+        }
     }
 
     private void CheckIfPlayerWon()
@@ -182,6 +215,6 @@ public class QuestManager : MonoBehaviour
 
         uIController.IncreaseMaxBalance(maxClanBalance);
 
-        uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100,disciple,ki);
+        uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
     }
 }
