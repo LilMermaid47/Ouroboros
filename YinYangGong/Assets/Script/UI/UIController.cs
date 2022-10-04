@@ -97,13 +97,17 @@ public class UIController : MonoBehaviour
         SetArgent(argent);
         SetCurrentBalance(yinYangBalance);
         SetReadiness(templeReadiness);
-
+        lastArgent = argent;
+        lastBalance = yinYangBalance;
+        lastReadiness = templeReadiness;
     }
     public void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
     {
         SetStartingRessources(argent, yinYangBalance, templeReadiness);
         SetDisciple(disciple);
         SetKi(ki);
+        lastDisciple = disciple;
+        lastKi = ki;
     }
 
     public async void SetRewardsRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
@@ -136,24 +140,21 @@ public class UIController : MonoBehaviour
 
         float timeForTransition = Mathf.Abs(diff * timeTransitionAnimationMoney);
 
-        if (diff == 0)
-        {
-            SetArgent(argent);
-        }
-        else
+        if (diff != 0)
         {
             if (diff > 0)
             {
                 soundManager.MoneyIsGoingUpFor(timeForTransition);
             }
 
-            while (timerArgent < timeForTransition+1)
+            while (timerArgent < timeForTransition)
             {
                 await Task.Yield();
                 timerArgent += Time.deltaTime;
                 SetArgent((int)(lastArgent + (diff * timerArgent) / timeForTransition));
             }
         }
+        SetArgent(argent);
 
         lastArgent = argent;
     }

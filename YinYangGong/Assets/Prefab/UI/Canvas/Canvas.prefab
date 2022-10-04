@@ -4579,7 +4579,7 @@ MonoBehaviour:
       to leave. You are left alone to stop the invasion.
   timeTransitionAnimation: 0.1
   timeTransitionAnimationBalance: 0.05
-  timeTransitionAnimationMoney: 0.1
+  timeTransitionAnimationMoney: 0.015
   timeTransitionAnimationReadiness: 0.2
 --- !u!114 &91823783448212853
 MonoBehaviour:
