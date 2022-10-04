@@ -20,7 +20,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     [Header("Other values")]
     public QuestManager questManager;
     public bool isLeftGong;
-    private float timeToWait = 0.3f;
+    private float timeToWait = 0.1f;
 
     public bool disableOnHover = false;
     public void OnPointerEnter(PointerEventData eventData)
@@ -96,9 +96,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     private IEnumerator StartTimer()
     {
-        yield return new WaitForSeconds(timeToWait / 2);
+        yield return new WaitForSeconds(timeToWait);
         ShowImpactOfChoice();
-        yield return new WaitForSeconds(timeToWait / 2);
-        ShowMessage();
     }
 }

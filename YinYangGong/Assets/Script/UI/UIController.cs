@@ -35,6 +35,8 @@ public class UIController : MonoBehaviour
     private TextQuest TextQuest;
     [SerializeField]
     private BtnQuest BtnQuest;
+    [SerializeField]
+    private QuestChoiceUi questChoiceUi;
 
     [Header("Texte affiche lors de la defaite")]
     [SerializeField]
@@ -310,17 +312,16 @@ public class UIController : MonoBehaviour
 
     public void RevealChoice1()
     {
-        RevealChoice(CurrentQuest.questDefinition.choice1Reveal);
+        RevealChoice(true, CurrentQuest.questDefinition.choice1Description);
     }
     public void RevealChoice2()
     {
-        RevealChoice(CurrentQuest.questDefinition.choice2Reveal);
+        RevealChoice(false, CurrentQuest.questDefinition.choice2Description);
     }
 
-    private void RevealChoice(string txtChoice)
+    private void RevealChoice(bool isChoice1, string txtChoice)
     {
-        TextQuest.DescriptionQuest.text = txtChoice;
-        TextQuest.QuestGiver.text = "";
+        questChoiceUi.ShowChoice(isChoice1, txtChoice);
     }
 
     private void ActivateBtn()
@@ -362,7 +363,14 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.interactable = status;
     }
 
-    private void ShowBtn(bool status)
+    public void MakeButtonInvisible(bool status)
+    {
+        BtnQuest.FirstChoice.gameObject.SetActive(status);
+        BtnQuest.SecondChoice.gameObject.SetActive(status);
+        BtnQuest.NextPerson.gameObject.SetActive(status);
+    }
+
+    public void ShowBtn(bool status)
     {
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
