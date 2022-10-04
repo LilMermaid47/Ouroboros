@@ -4876,7 +4876,7 @@ MonoBehaviour:
       to leave. You are left alone to stop the invasion.
   timeTransitionAnimation: 0.1
   timeTransitionAnimationBalance: 0.05
-  timeTransitionAnimationMoney: 0.015
+  timeTransitionAnimationMoney: 0.05
   timeTransitionAnimationReadiness: 0.2
 --- !u!114 &91823783448212853
 MonoBehaviour:
@@ -5246,7 +5246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7519988811892873835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6633341570103409926}
+        m_TargetAssemblyTypeName: QuestChoiceUi, Assembly-CSharp
+        m_MethodName: AcceptChoice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5143994815096363176
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,7 +5580,7 @@ GameObject:
   - component: {fileID: 5092095605115898240}
   - component: {fileID: 2218280217365979297}
   m_Layer: 5
-  m_Name: YuanLamp
+  m_Name: KiLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6916,7 +6928,7 @@ GameObject:
   - component: {fileID: 7164833072790990795}
   - component: {fileID: 869846857774445617}
   m_Layer: 5
-  m_Name: YuanLamp
+  m_Name: DiscipleLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

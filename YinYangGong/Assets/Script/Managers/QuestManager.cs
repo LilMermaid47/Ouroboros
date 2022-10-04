@@ -9,7 +9,6 @@ public class QuestManager : MonoBehaviour
 
 
     [Header("Valeur de départ du niveau")]
-    public float clanHonorDevotionModifier = 0.2f;
     public int maxClanBalance = 100;
     [SerializeField]
     int disciple = 0;
