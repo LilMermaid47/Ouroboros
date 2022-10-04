@@ -14,6 +14,6 @@ public enum SceneList
     Level03,
     Credit,
     GymSlider,
-    GymSliderEtPopUp
-
+    GymSliderEtPopUp,
+    Shop
 }
