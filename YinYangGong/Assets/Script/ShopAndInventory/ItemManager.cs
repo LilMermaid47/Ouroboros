@@ -13,6 +13,9 @@ public class ItemManager : MonoBehaviour
     [SerializeField]
     private Color UnselectedColor = Color.clear;
 
+    private UIController uiController;
+
+
     [SerializeField]
     protected int NumberOfAvailableItemSlots = 10;
 
@@ -25,6 +28,7 @@ public class ItemManager : MonoBehaviour
 
     private void Start()
     {
+        uiController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<UIController>();
         ItemSlotControllers = new ItemSlotController[NumberOfAvailableItemSlots];
 
         for (int i = 0; i < NumberOfAvailableItemSlots; ++i)
@@ -46,6 +50,7 @@ public class ItemManager : MonoBehaviour
                 ItemSlotControllers[i].SetItemDetails(StartingItems[i].Item, StartingItems[i].Quantity);
             }
         }
+        gameObject.SetActive(false);
     }
 
     public bool HasItem(Item ItemToFind)
@@ -88,6 +93,18 @@ public class ItemManager : MonoBehaviour
             {
                 ExistingSlotControllerWithItem.ClearItemDetails();
             }
+        }
+    }
+    
+    public void UseItem()
+    {
+        Item currentItem = CurrentlySelectedItemSlotController.GetItem();
+
+        if (currentItem != null)
+        {
+            uiController.ShowHideShop();
+            currentItem.UseItem();
+            RemoveItem(currentItem);
         }
     }
 

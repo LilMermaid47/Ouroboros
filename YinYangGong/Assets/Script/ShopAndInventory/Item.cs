@@ -10,4 +10,14 @@ public abstract class Item : ScriptableObject
     public Sprite Icon;
     public int Cost = 0;
     public bool bIsStackable = false;
+
+    public abstract TypeOfItem ItemType();
+    public abstract void UseItem();
 }
+
+public enum TypeOfItem
+{
+    ConsumableItem,
+    UpgradeItem
+}
+

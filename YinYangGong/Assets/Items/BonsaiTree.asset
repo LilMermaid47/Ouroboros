@@ -17,3 +17,4 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 2edd96405959bfb4b8b13aaf832ecd72, type: 3}
   Cost: 20
   bIsStackable: 0
+  consumableItemList: 1

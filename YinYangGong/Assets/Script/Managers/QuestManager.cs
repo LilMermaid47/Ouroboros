@@ -191,6 +191,12 @@ public class QuestManager : MonoBehaviour
         return argent;
     }
 
+    public void RemoveMoney(int money)
+    {
+        argent -= money;
+        uIController.SetArgent(argent);
+    }
+
     public int GetDisciple()
     {
         return disciple;
@@ -219,5 +225,10 @@ public class QuestManager : MonoBehaviour
         uIController.SetMaxBalance(maxClanBalance);
 
         uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
+    }
+
+    public bool HasEnoughMoney(int Cost)
+    {
+        return Cost <= argent;
     }
 }

@@ -14,16 +14,19 @@ public class StoreItemManager : ItemManager
         {            
             PlayerInventoryManager = FoundObjects[0].GetComponent<InventoryItemManager>();
         }
+        questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<QuestManager>();
     }
+
+    private QuestManager questManager;
 
     public void AttemptPurchaseSelectedItem()
     {
         if (PlayerInventoryManager != null && 
             CurrentlySelectedItemSlotController != null && 
             CurrentlySelectedItemSlotController.GetItem() != null && 
-            PlayerInventoryManager.HasEnoughMoney(CurrentlySelectedItemSlotController.GetItem().Cost))
+            questManager.HasEnoughMoney(CurrentlySelectedItemSlotController.GetItem().Cost))
         {
-            PlayerInventoryManager.RemoveMoney(CurrentlySelectedItemSlotController.GetItem().Cost);
+            questManager.RemoveMoney(CurrentlySelectedItemSlotController.GetItem().Cost);
             PlayerInventoryManager.AddItem(CurrentlySelectedItemSlotController.GetItem());
             RemoveItem(CurrentlySelectedItemSlotController);
         }
