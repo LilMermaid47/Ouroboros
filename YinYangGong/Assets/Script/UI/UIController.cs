@@ -25,6 +25,7 @@ public class UIController : MonoBehaviour
     [SerializeField]
     private GameObject InventoryUi;
 
+
     [Header("Texte de defaite")]
     [SerializeField]
     private TMPro.TextMeshProUGUI DefeatTxt;
@@ -143,6 +144,11 @@ public class UIController : MonoBehaviour
 
         await Task.WhenAll(taskList);
         ActivateNextBtn();
+    }
+
+    private void MakeAllButtonInvisible(bool status)
+    {
+        BtnQuest.ButtonObject.SetActive(status);
     }
 
     public void SetArgent(int argent)
@@ -419,6 +425,7 @@ public class UIController : MonoBehaviour
         VictoryUI.SetActive(true);
 
         PauseMenuActive(false);
+        MakeAllButtonInvisible(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.VictoryFirstChoice);
     }
@@ -428,7 +435,7 @@ public class UIController : MonoBehaviour
 
         QuestUI.SetActive(false);
         DefeatUI.SetActive(true);
-
+        MakeAllButtonInvisible(false);
         PauseMenuActive(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.DefeatFirstChoice);
@@ -451,6 +458,9 @@ public class UIController : MonoBehaviour
                 break;
             case DefeatType.MoneyLoss:
                 txt = Loss.MoneyLoss;
+                break;
+            case DefeatType.DiscipleLoss:
+                txt = Loss.DiscipleLoss;
                 break;
         }
 
@@ -524,6 +534,7 @@ public class TextQuest
 [Serializable]
 public class BtnQuest
 {
+    public GameObject ButtonObject;
     public Button FirstChoice;
     public Button SecondChoice;
     public Button NextPerson;
@@ -548,6 +559,7 @@ public class LossText
     public string SusodaLoss;
     public string ReadinessLoss;
     public string MoneyLoss;
+    public string DiscipleLoss;
 }
 
 public enum Clan
@@ -562,5 +574,6 @@ public enum DefeatType
     SusodaLoss,
     ReadinessLoss,
     MoneyLoss,
+    DiscipleLoss,
     KiLoss
 }

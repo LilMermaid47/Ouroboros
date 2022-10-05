@@ -72,14 +72,15 @@ public class QuestManager : MonoBehaviour
         {
             currentQuest = filledLevel.questList[currentQuestIndex];
 
+            uIController.SetQuest(currentQuest);
+            uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
+
             if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
             {
                 RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
                 CheckRequirement(requirementQuest);
             }
 
-            uIController.SetQuest(currentQuest);
-            uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
         }
         else
         {
@@ -90,27 +91,28 @@ public class QuestManager : MonoBehaviour
 
     private void CheckRequirement(RequirementQuest requirementQuest)
     {
-        if (requirementQuest.requirementChoice1.templeReadiness < templeReadiness ||
-            requirementQuest.requirementChoice1.moneyCost < argent ||
-            requirementQuest.requirementChoice1.kiCost < ki ||
-            requirementQuest.requirementChoice1.disciples < disciple)
-        {
-            uIController.FirstChoiceBtnActivate(false);
-        }
-        else
+        if (requirementQuest.requirementChoice1.templeReadiness <= templeReadiness &&
+            requirementQuest.requirementChoice1.moneyCost <= argent &&
+            requirementQuest.requirementChoice1.kiCost <= ki &&
+            requirementQuest.requirementChoice1.disciples <= disciple)
         {
             uIController.FirstChoiceBtnActivate(true);
         }
-        if (requirementQuest.requirementChoice2.templeReadiness < templeReadiness ||
-            requirementQuest.requirementChoice2.moneyCost < argent ||
-            requirementQuest.requirementChoice2.kiCost < ki ||
-            requirementQuest.requirementChoice2.disciples < disciple)
+        else
         {
-            uIController.SecondChoiceBtnActivate(false);
+            uIController.FirstChoiceBtnActivate(false);
+        }
+
+        if (requirementQuest.requirementChoice2.templeReadiness <= templeReadiness &&
+            requirementQuest.requirementChoice2.moneyCost <= argent &&
+            requirementQuest.requirementChoice2.kiCost <= ki &&
+            requirementQuest.requirementChoice2.disciples <= disciple)
+        {
+            uIController.SecondChoiceBtnActivate(true);
         }
         else
         {
-            uIController.SecondChoiceBtnActivate(true);
+            uIController.SecondChoiceBtnActivate(false);
         }
     }
 
@@ -157,6 +159,8 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.MoneyLoss);
         else if (ki < 0)
             uIController.Defeat(DefeatType.KiLoss);
+        else if (disciple < 0)
+            uIController.Defeat(DefeatType.DiscipleLoss);
     }
 
     public void AddQuest(int index, Quest questToAdd)

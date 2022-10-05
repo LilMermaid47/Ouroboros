@@ -447,12 +447,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1399530352}
-  m_Father: {fileID: 3577320312555771938}
-  m_RootOrder: 10
+  m_Father: {fileID: 93274355071026586}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 827, y: 0}
+  m_AnchoredPosition: {x: 827, y: 382}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &127761686
@@ -1788,6 +1788,7 @@ RectTransform:
   - {fileID: 84031584}
   - {fileID: 3577320312164063579}
   - {fileID: 3577320312245532114}
+  - {fileID: 127761682}
   m_Father: {fileID: 3577320312555771938}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5113,7 +5114,6 @@ RectTransform:
   - {fileID: 157809727884606015}
   - {fileID: 978800774}
   - {fileID: 8081255942472499892}
-  - {fileID: 127761682}
   - {fileID: 4704488188459528842}
   - {fileID: 7612883797883140678}
   m_Father: {fileID: 0}
@@ -5223,6 +5223,7 @@ MonoBehaviour:
     DescriptionQuest: {fileID: 1218619122466935151}
     QuestGiver: {fileID: 1513867646}
   BtnQuest:
+    ButtonObject: {fileID: 35041227125107292}
     FirstChoice: {fileID: 3577320312164063574}
     SecondChoice: {fileID: 3577320312245532112}
     NextPerson: {fileID: 84031585}
@@ -5238,6 +5239,7 @@ MonoBehaviour:
       envaders.
     MoneyLoss: The lack of basic need cause the last of the resident of the monastery
       to leave. You are left alone to stop the invasion.
+    DiscipleLoss: 
   timeTransitionAnimation: 0.1
   timeTransitionAnimationBalance: 0.05
   timeTransitionAnimationMoney: 0.05
@@ -8275,7 +8277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7612883798962811743, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7612883798962811743, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8414,7 +8416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704488187435445729, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4704488187435445729, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8530,14 +8532,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
---- !u!1 &4704488188459528854 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4704488187435445757, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
-  m_PrefabInstance: {fileID: 1161486187}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4704488188459528842 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4704488187435445729, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
+  m_PrefabInstance: {fileID: 1161486187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4704488188459528854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4704488187435445757, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
   m_PrefabInstance: {fileID: 1161486187}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2505152955224666365
@@ -8673,16 +8675,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
---- !u!224 &8818945787286029557 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
-  m_PrefabInstance: {fileID: 2505152955224666365}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2070514412349128608 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4503571814610030429, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
-  m_PrefabInstance: {fileID: 2505152955224666365}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7536697779759254385 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5355815576942492556, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
@@ -8694,6 +8686,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d56cfb0a63a302428335571c1b5a204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8818945787286029557 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
+  m_PrefabInstance: {fileID: 2505152955224666365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2070514412349128608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4503571814610030429, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
+  m_PrefabInstance: {fileID: 2505152955224666365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8843965862219699342
 PrefabInstance:
   m_ObjectHideFlags: 0
