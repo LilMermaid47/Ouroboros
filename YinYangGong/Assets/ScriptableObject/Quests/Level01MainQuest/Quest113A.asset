@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: 'New Project: Temple Repairs'
     questGiverName: Neutral peasant
+    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201CMaster Fangshi, the temple is in ruins. The faithful
       fear the roof will fall on their heads because of the rotten wood. It smells
       terrible, and we got more rats here than followers. How do you want to <b>attract
@@ -53,7 +54,9 @@ MonoBehaviour:
     moneyCost: 30
     templeReadiness: 0
     kiCost: 0
+    disciples: 0
   requirementChoice2:
     moneyCost: 0
     templeReadiness: 0
     kiCost: 0
+    disciples: 0

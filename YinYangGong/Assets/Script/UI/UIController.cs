@@ -24,6 +24,8 @@ public class UIController : MonoBehaviour
     private GameObject ShopUi;
     [SerializeField]
     private GameObject InventoryUi;
+    [SerializeField]
+    private Image QuestGiver;
 
 
     [Header("Texte de defaite")]
@@ -98,6 +100,10 @@ public class UIController : MonoBehaviour
 
             BtnQuest.FirstChoiceTxt.text = CurrentQuest.questDefinition.choice1Name;
             BtnQuest.SecondChoiceTxt.text = CurrentQuest.questDefinition.choice2Name;
+
+            if(quest.questDefinition.questGiverSprite != null)
+                QuestGiver.sprite = quest.questDefinition.questGiverSprite;
+
             ShowQuest(true);
             ActivateBtn();
         }
@@ -252,7 +258,7 @@ public class UIController : MonoBehaviour
 
     public void SetDisciple(int disciple)
     {
-        TextRessources.Disciple.text = $"{disciple} disciple";
+        TextRessources.Disciple.text = $"{disciple}";
     }
 
     int lastDisciple = 0;
@@ -278,7 +284,7 @@ public class UIController : MonoBehaviour
 
     public void SetKi(int ki)
     {
-        TextRessources.Ki.text = $"{ki} ki";
+        TextRessources.Ki.text = $"{ki}";
     }
 
     int lastKi = 0;
@@ -330,7 +336,7 @@ public class UIController : MonoBehaviour
 
     public void SetNbQuestLeft(int nbQuest)
     {
-        TextRessources.nbQuestLeft.text = $"Nombre d'audience restante: {nbQuest}";
+        TextRessources.nbQuestLeft.text = $"Audience left: {nbQuest}";
     }
 
     public void RevealChoice1()

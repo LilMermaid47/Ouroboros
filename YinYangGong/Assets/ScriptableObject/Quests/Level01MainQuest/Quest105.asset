@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: A New Recruit
     questGiverName: Neutral peasant
+    questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
     questDescription: "\u201C I want to train and become a monk, but I don't know
       <b>which clan</b> would be more interesting. What practice do you recommend?\u201D"
     choice1Name: Fire magic

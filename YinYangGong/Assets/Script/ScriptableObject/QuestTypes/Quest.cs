@@ -28,6 +28,8 @@ public class QuestDefinition
     public string questName;
     public string questGiverName;
 
+    public Sprite questGiverSprite;
+
     [TextArea(minLines:2, maxLines:5)]
     public string questDescription;
 

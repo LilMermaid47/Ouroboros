@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Buying Peace (NO EFFECT)
     questGiverName: Angry peasant
+    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201CA quarrel between the two clans broke out near my sheepfold,
       and they killed my beloved goats. I demand the<b> annihilation </b>of one of
       the two clans!\u201D"

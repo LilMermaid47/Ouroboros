@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Sick Pig
     questGiverName: Bendan the mad
+    questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
     questDescription: '"I found my pig. It was hidden under a bridge. But ever since
       I found it, I have noticed it is ill. Nobody wants to help me. Please have
       mercy on my sick pig. I don''t know what to do to cure it. " '
