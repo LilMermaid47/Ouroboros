@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 1707705097}
   m_Layer: 0
   m_Name: QuestManager
-  m_TagString: Untagged
+  m_TagString: QuestManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,7 +513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yinYangBalance: 0
-  clanHonorDevotionModifier: 0.05
   maxClanBalance: 100
   disciple: 0
   ki: 0

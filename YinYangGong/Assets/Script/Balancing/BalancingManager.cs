@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
-using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 
 public class BalancingManager: MonoBehaviour
 {
@@ -198,7 +197,6 @@ public class BalancingManager: MonoBehaviour
             {
                 stack = new AIStack(stack.QuestIndex + 1, stack, side);
             }
-            Debug.Log(currentLevel.questList.Count);
         }
         while (stack != null && stack.QuestIndex != 0);
     }
