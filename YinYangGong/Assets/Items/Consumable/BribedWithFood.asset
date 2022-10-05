@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b4094accaa418548a2ce912648ec20b, type: 3}
-  m_Name: TestItem
+  m_Name: BribedWithFood
   m_EditorClassIdentifier: 
-  Name: TestItem
-  Description: 
-  Icon: {fileID: 21300000, guid: 2c9955a5fd6a89c4299c15341fe75c9f, type: 3}
-  Cost: 5
-  bIsStackable: 1
+  Name: Bribed with Food
+  Description: Objet qui augmente le nombre de disciples.
+  Icon: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+  Cost: 20
+  bIsStackable: 0
+  consumableItemList: 4

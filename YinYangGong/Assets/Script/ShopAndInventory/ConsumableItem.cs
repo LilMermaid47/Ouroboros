@@ -23,10 +23,12 @@ public class ConsumableItem : Item
             case ConsumableItemList.EquilibriumPotion:
                 break;
             case ConsumableItemList.BribedWithFood:
+                questManager.AddDisciple((int)Random.Range(1,3));
                 break;
             case ConsumableItemList.KiEnergyPotion:
                 break;
             case ConsumableItemList.GetReady:
+                questManager.AddReadiness(Random.Range(4, 8));
                 break;
             case ConsumableItemList.WealthPotion:
                 break;

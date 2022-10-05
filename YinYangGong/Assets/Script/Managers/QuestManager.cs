@@ -185,6 +185,11 @@ public class QuestManager : MonoBehaviour
     {
         return templeReadiness;
     }
+    public void AddReadiness(float newReadiness)
+    {
+        templeReadiness += newReadiness;
+        uIController.SetReadiness(templeReadiness);
+    }
 
     public int GetMoney()
     {
@@ -201,7 +206,11 @@ public class QuestManager : MonoBehaviour
     {
         return disciple;
     }
-
+    public void AddDisciple(int newDisciple)
+    {
+        disciple += newDisciple;
+        uIController.SetDisciple(disciple);
+    }
     public float GetKi()
     {
         return ki;
