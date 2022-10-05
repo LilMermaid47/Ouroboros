@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest203
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'Piggy Bite '
+    questGiverName: A Huangsei member and Bendan the mad
+    questDescription: "\u201C Bendan's pig bit a village child. The parents want
+      redress and compensation. Who should we punish for this crime? \u201C"
+    choice1Name: "Bendan\u2019s fault"
+    choice1Description: The pig belongs to Bendan, it is its owner who must receive
+      the punishment. He will have to help the villagers in the paddy fields.
+    choice1Reveal: Bendan is not very happy with his punishment. Through his faults,
+      we lost some crops.
+    choice2Name: "Pig\u2019s fault"
+    choice2Description: The animal must be punished, it is uncontrollable and dangerous.
+      The animal will receive lashes for the example.
+    choice2Reveal: Bendan is angry with the Temple. The Huangsei clan found this
+      gesture inappropriate and violent.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: -10
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 10
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
