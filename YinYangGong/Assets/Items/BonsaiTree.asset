@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b4094accaa418548a2ce912648ec20b, type: 3}
-  m_Name: TestItem
+  m_Name: BonsaiTree
   m_EditorClassIdentifier: 
-  Name: TestItem
-  Description: 
-  Icon: {fileID: 21300000, guid: 2c9955a5fd6a89c4299c15341fe75c9f, type: 3}
-  Cost: 5
-  bIsStackable: 1
+  Name: Bonsai Tree
+  Description: Objet qui permet de passer une audience (personnage et ses choix.)
+  Icon: {fileID: 21300000, guid: 2edd96405959bfb4b8b13aaf832ecd72, type: 3}
+  Cost: 20
+  bIsStackable: 0

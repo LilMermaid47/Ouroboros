@@ -57,7 +57,7 @@ public class ItemSlotController : MonoBehaviour
 
         Icon.sprite = Item.Icon;
         Icon.enabled = true;
-        QuantityText.text = Item.bIsStackable ? Quantity.ToString() : "";
+        QuantityText.text = Quantity.ToString();
     }
 
     public void ClearItemDetails()
