@@ -20,6 +20,10 @@ public class UIController : MonoBehaviour
     private GameObject InGameMenuUI;
     [SerializeField]
     private GameObject GymMenu;
+    [SerializeField]
+    private GameObject ShopUi;
+    [SerializeField]
+    private GameObject InventoryUi;
 
     [Header("Texte de defaite")]
     [SerializeField]
@@ -100,6 +104,13 @@ public class UIController : MonoBehaviour
             Debug.LogWarning("No quest receved.");
     }
 
+    public void ShowHideShop()
+    {   
+        ShopUi.SetActive(!ShopUi.activeSelf);
+        InventoryUi.SetActive(!InventoryUi.activeSelf);
+        MakeButtonInvisibleExceptNextPerson(!ShopUi.activeSelf);
+        QuestUI.SetActive(!QuestUI.activeSelf);
+    }
     public void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness)
     {
         SetArgent(argent);
@@ -374,6 +385,12 @@ public class UIController : MonoBehaviour
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
         BtnQuest.NextPerson.gameObject.SetActive(status);
+    }
+
+    private void MakeButtonInvisibleExceptNextPerson(bool status)
+    {
+        BtnQuest.FirstChoice.gameObject.SetActive(status);
+        BtnQuest.SecondChoice.gameObject.SetActive(status);
     }
 
     public void ShowBtn(bool status)
