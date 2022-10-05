@@ -557,6 +557,52 @@ public class @Ouroboros : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""QuestChoice"",
+            ""id"": ""ebc4d1bf-4982-487c-9ac4-d335611e4eba"",
+            ""actions"": [
+                {
+                    ""name"": ""Accepter"",
+                    ""type"": ""Button"",
+                    ""id"": ""5cf05214-53f5-4846-8f6f-d19121d39cba"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""GoBack"",
+                    ""type"": ""Button"",
+                    ""id"": ""c8c05121-dcf8-49b9-b1ea-ee378e28a62c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""95329bcd-c0e1-450d-94a3-cb5dbc04bb7f"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Accepter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d18734da-d192-475b-95ca-ceb187905223"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GoBack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -659,6 +705,10 @@ public class @Ouroboros : IInputActionCollection, IDisposable
         // InGameMenu
         m_InGameMenu = asset.FindActionMap("InGameMenu", throwIfNotFound: true);
         m_InGameMenu_Pause = m_InGameMenu.FindAction("Pause", throwIfNotFound: true);
+        // QuestChoice
+        m_QuestChoice = asset.FindActionMap("QuestChoice", throwIfNotFound: true);
+        m_QuestChoice_Accepter = m_QuestChoice.FindAction("Accepter", throwIfNotFound: true);
+        m_QuestChoice_GoBack = m_QuestChoice.FindAction("GoBack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -842,6 +892,47 @@ public class @Ouroboros : IInputActionCollection, IDisposable
         }
     }
     public InGameMenuActions @InGameMenu => new InGameMenuActions(this);
+
+    // QuestChoice
+    private readonly InputActionMap m_QuestChoice;
+    private IQuestChoiceActions m_QuestChoiceActionsCallbackInterface;
+    private readonly InputAction m_QuestChoice_Accepter;
+    private readonly InputAction m_QuestChoice_GoBack;
+    public struct QuestChoiceActions
+    {
+        private @Ouroboros m_Wrapper;
+        public QuestChoiceActions(@Ouroboros wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Accepter => m_Wrapper.m_QuestChoice_Accepter;
+        public InputAction @GoBack => m_Wrapper.m_QuestChoice_GoBack;
+        public InputActionMap Get() { return m_Wrapper.m_QuestChoice; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(QuestChoiceActions set) { return set.Get(); }
+        public void SetCallbacks(IQuestChoiceActions instance)
+        {
+            if (m_Wrapper.m_QuestChoiceActionsCallbackInterface != null)
+            {
+                @Accepter.started -= m_Wrapper.m_QuestChoiceActionsCallbackInterface.OnAccepter;
+                @Accepter.performed -= m_Wrapper.m_QuestChoiceActionsCallbackInterface.OnAccepter;
+                @Accepter.canceled -= m_Wrapper.m_QuestChoiceActionsCallbackInterface.OnAccepter;
+                @GoBack.started -= m_Wrapper.m_QuestChoiceActionsCallbackInterface.OnGoBack;
+                @GoBack.performed -= m_Wrapper.m_QuestChoiceActionsCallbackInterface.OnGoBack;
+                @GoBack.canceled -= m_Wrapper.m_QuestChoiceActionsCallbackInterface.OnGoBack;
+            }
+            m_Wrapper.m_QuestChoiceActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Accepter.started += instance.OnAccepter;
+                @Accepter.performed += instance.OnAccepter;
+                @Accepter.canceled += instance.OnAccepter;
+                @GoBack.started += instance.OnGoBack;
+                @GoBack.performed += instance.OnGoBack;
+                @GoBack.canceled += instance.OnGoBack;
+            }
+        }
+    }
+    public QuestChoiceActions @QuestChoice => new QuestChoiceActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -921,5 +1012,10 @@ public class @Ouroboros : IInputActionCollection, IDisposable
     public interface IInGameMenuActions
     {
         void OnPause(InputAction.CallbackContext context);
+    }
+    public interface IQuestChoiceActions
+    {
+        void OnAccepter(InputAction.CallbackContext context);
+        void OnGoBack(InputAction.CallbackContext context);
     }
 }

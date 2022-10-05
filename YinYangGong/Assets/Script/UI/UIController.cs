@@ -45,7 +45,7 @@ public class UIController : MonoBehaviour
     private Ouroboros PlayerInputs;
 
     private Quest CurrentQuest;
-
+    private QuestManager questManager;
     private SoundManager soundManager;
 
     public float timeTransitionAnimation = 0.1f;
@@ -71,8 +71,14 @@ public class UIController : MonoBehaviour
         PlayerInputs = new Ouroboros();
 
         PlayerInputs.InGameMenu.Pause.performed += InGameMenuPressed;
-
+        PlayerInputs.QuestChoice.Accepter.performed += AccepterChoice;
+        questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<QuestManager>();
         PauseMenuActive(true);
+    }
+
+    private void AccepterChoice(InputAction.CallbackContext obj)
+    {
+        questManager.NextQuest();
     }
 
     public void SetQuest(Quest quest)
@@ -455,8 +461,6 @@ public class UIController : MonoBehaviour
         bool menuOpened = InGameMenuUI.activeSelf;
 
         InGameMenuUI.SetActive(!menuOpened);
-
-        ShowBtn(menuOpened);
 
         if (!menuOpened)
         {

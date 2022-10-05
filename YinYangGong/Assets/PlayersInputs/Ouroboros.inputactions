@@ -544,6 +544,52 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "QuestChoice",
+            "id": "ebc4d1bf-4982-487c-9ac4-d335611e4eba",
+            "actions": [
+                {
+                    "name": "Accepter",
+                    "type": "Button",
+                    "id": "5cf05214-53f5-4846-8f6f-d19121d39cba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "GoBack",
+                    "type": "Button",
+                    "id": "c8c05121-dcf8-49b9-b1ea-ee378e28a62c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "95329bcd-c0e1-450d-94a3-cb5dbc04bb7f",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accepter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d18734da-d192-475b-95ca-ceb187905223",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GoBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
