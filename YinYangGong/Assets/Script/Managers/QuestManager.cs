@@ -212,7 +212,7 @@ public class QuestManager : MonoBehaviour
         disciple = nbDisciple;
 
 
-        uIController.IncreaseMaxBalance(maxClanBalance);
+        uIController.SetMaxBalance(maxClanBalance);
 
         uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
     }

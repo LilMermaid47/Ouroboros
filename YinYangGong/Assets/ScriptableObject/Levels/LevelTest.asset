@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: LevelTest
   m_EditorClassIdentifier: 
   questList:
-  - {fileID: 11400000, guid: 7ed5e5da9dd090642b55b0599800774e, type: 2}
+  - {fileID: 11400000, guid: 5e0f8983658628c4ea37d5340b8f0553, type: 2}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 4416bb5e55a793e41b9a1efa7e85b0d8, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0039d2cd755094648827bb93850915c7, type: 2}
