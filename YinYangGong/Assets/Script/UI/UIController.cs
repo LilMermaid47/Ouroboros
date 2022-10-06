@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,21 +12,13 @@ public class UIController : MonoBehaviour
 {
     [Header("GameObject des differents UI.")]
     [SerializeField]
-    private GameObject QuestUI;
+    private GameUI UIMenu;
+
     [SerializeField]
-    private GameObject VictoryUI;
+    private GameObject NPCQueue;
+
     [SerializeField]
-    private GameObject DefeatUI;
-    [SerializeField]
-    private GameObject InGameMenuUI;
-    [SerializeField]
-    private GameObject GymMenu;
-    [SerializeField]
-    private GameObject ShopUi;
-    [SerializeField]
-    private GameObject InventoryUi;
-    [SerializeField]
-    private Image QuestGiver;
+    private RectTransform ScrollBackground;
 
 
     [Header("Texte de defaite")]
@@ -60,17 +53,19 @@ public class UIController : MonoBehaviour
     public float timeTransitionAnimationMoney = 0.1f;
     public float timeTransitionAnimationReadiness = 0.5f;
 
+    private Image[] NPCFileImage;
+
     private void Awake()
     {
         soundManager = gameObject.GetComponent<SoundManager>();
 
-        QuestUI.SetActive(false);
-        VictoryUI.SetActive(false);
-        DefeatUI.SetActive(false);
-        InGameMenuUI.SetActive(false);
+        UIMenu.QuestUI.SetActive(false);
+        UIMenu.VictoryUI.SetActive(false);
+        UIMenu.DefeatUI.SetActive(false);
+        UIMenu.InGameMenuUI.SetActive(false);
 
-        if (GymMenu != null)
-            GymMenu.SetActive(false);
+        if (UIMenu.GymMenu != null)
+            UIMenu.GymMenu.SetActive(false);
     }
 
     private void Start()
@@ -81,6 +76,10 @@ public class UIController : MonoBehaviour
         PlayerInputs.QuestChoice.Accepter.performed += AccepterChoice;
         questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<QuestManager>();
         PauseMenuActive(true);
+        HideBtn();
+
+        if(NPCQueue != null)
+            NPCFileImage = NPCQueue.GetComponentsInChildren<Image>();
     }
 
     private void AccepterChoice(InputAction.CallbackContext obj)
@@ -94,6 +93,8 @@ public class UIController : MonoBehaviour
 
         if (CurrentQuest != null)
         {
+            TextQuest.QuestInformation.SetActive(false);
+
             TextQuest.NomQuest.text = CurrentQuest.questDefinition.questName;
             TextQuest.DescriptionQuest.text = $"{CurrentQuest.questDefinition.questDescription}";
             TextQuest.QuestGiver.text = $"{CurrentQuest.questDefinition.questGiverName}";
@@ -101,8 +102,9 @@ public class UIController : MonoBehaviour
             BtnQuest.FirstChoiceTxt.text = CurrentQuest.questDefinition.choice1Name;
             BtnQuest.SecondChoiceTxt.text = CurrentQuest.questDefinition.choice2Name;
 
-            if(quest.questDefinition.questGiverSprite != null)
-                QuestGiver.sprite = quest.questDefinition.questGiverSprite;
+            HideBtn();
+
+            OpeningScroll();
 
             ShowQuest(true);
             ActivateBtn();
@@ -112,11 +114,11 @@ public class UIController : MonoBehaviour
     }
 
     public void ShowHideShop()
-    {   
-        ShopUi.SetActive(!ShopUi.activeSelf);
-        InventoryUi.SetActive(!InventoryUi.activeSelf);
-        MakeButtonInvisibleExceptNextPerson(!ShopUi.activeSelf);
-        QuestUI.SetActive(!QuestUI.activeSelf);
+    {
+        UIMenu.ShopUi.SetActive(!UIMenu.ShopUi.activeSelf);
+        UIMenu.InventoryUi.SetActive(!UIMenu.InventoryUi.activeSelf);
+        MakeButtonInvisibleExceptNextPerson(!UIMenu.ShopUi.activeSelf);
+        UIMenu.QuestUI.SetActive(!UIMenu.QuestUI.activeSelf);
     }
     public void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness)
     {
@@ -284,8 +286,16 @@ public class UIController : MonoBehaviour
 
     public void SetKi(int ki)
     {
-        TextRessources.Ki.text = $"{ki}";
+        TextRessources.KiBar.UpdateValue(ki);
     }
+
+    public void SetMaxKi(int maxKi)
+    {
+        if (maxKi == 0)
+            TextRessources.KiBar.HideBar();
+
+        TextRessources.KiBar.setValue(maxKi);
+    }    
 
     int lastKi = 0;
     private async Task ChangeKi(int newKi)
@@ -337,6 +347,60 @@ public class UIController : MonoBehaviour
     public void SetNbQuestLeft(int nbQuest)
     {
         TextRessources.nbQuestLeft.text = $"Audience left: {nbQuest}";
+    }
+
+    public void SetNPCFile(Level niveau)
+    {
+        int NPCLeft = NPCFileImage.Length;
+
+        for (int i = 0; NPCLeft >= 0 && i < NPCFileImage.Length; i++)
+        {
+            NPCLeft--;
+            NPCFileImage[NPCLeft].sprite = niveau.questList[i].questDefinition.questGiverSprite;
+        }
+    }
+
+    public void UpdateNPCList(Level niveau, int questIndex)
+    {
+        Sprite questGiverSprite;
+
+        for (int i = NPCFileImage.Length - 1; i > 0; i--)
+        {
+            if (NPCFileImage[i - 1].sprite != null)
+            {
+                HideSprite(NPCFileImage[i], false);
+                NPCFileImage[i].sprite = NPCFileImage[i - 1].sprite;
+            }
+            else
+                HideSprite(NPCFileImage[i], true);
+        }
+
+        if (questIndex + 2 < niveau.questList.Count)
+        {
+            questGiverSprite = niveau.questList[questIndex + 2].questDefinition.questGiverSprite;
+
+            if (questGiverSprite != null)
+            {
+                HideSprite(NPCFileImage[0], false);
+                NPCFileImage[0].sprite = questGiverSprite;
+            }
+            else
+                HideSprite(NPCFileImage[0], true);
+
+        }
+        else
+            HideSprite(NPCFileImage[0], true);
+    }
+
+    private void HideSprite(Image image, bool status)
+    {
+        if (status)
+        {
+            image.enabled = false;
+            image.sprite = null;
+        }
+        else
+            image.enabled = true;
     }
 
     public void RevealChoice1()
@@ -419,16 +483,36 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.gameObject.SetActive(false);
     }
 
+    private async void OpeningScroll()
+    {
+        Vector2 normalSize = ScrollBackground.sizeDelta;
+        int sizeIncrease = 50;
+        int openingScrollDelay = 60;
+
+        ScrollBackground.sizeDelta = new Vector2(0,normalSize.y);
+
+        for (int i = 0; i < normalSize.x; i += sizeIncrease)
+        {
+            ScrollBackground.sizeDelta = new Vector2(i, normalSize.y);
+            await Task.Delay(openingScrollDelay);
+        }
+
+        ScrollBackground.sizeDelta = normalSize;
+
+        TextQuest.QuestInformation.SetActive(true);
+        ShowBtn(true);
+    }
+
     private void ShowQuest(bool status)
     {
-        QuestUI.SetActive(status);
-        ShowBtn(status);
+        UIMenu.QuestUI.SetActive(status);
+        //ShowBtn(status);
     }
 
     public void Victory()
     {
-        QuestUI.SetActive(false);
-        VictoryUI.SetActive(true);
+        UIMenu.QuestUI.SetActive(false);
+        UIMenu.VictoryUI.SetActive(true);
 
         PauseMenuActive(false);
         MakeAllButtonInvisible(false);
@@ -439,8 +523,8 @@ public class UIController : MonoBehaviour
     public void Defeat()
     {
 
-        QuestUI.SetActive(false);
-        DefeatUI.SetActive(true);
+        UIMenu.QuestUI.SetActive(false);
+        UIMenu.DefeatUI.SetActive(true);
         MakeAllButtonInvisible(false);
         PauseMenuActive(false);
 
@@ -491,9 +575,9 @@ public class UIController : MonoBehaviour
 
     public void OpenInGameMenu()
     {
-        bool menuOpened = InGameMenuUI.activeSelf;
+        bool menuOpened = UIMenu.InGameMenuUI.activeSelf;
 
-        InGameMenuUI.SetActive(!menuOpened);
+        UIMenu.InGameMenuUI.SetActive(!menuOpened);
 
         if (!menuOpened)
         {
@@ -507,8 +591,8 @@ public class UIController : MonoBehaviour
 
     public void OpenGymMenu()
     {
-        if (GymMenu != null)
-            GymMenu.SetActive(true);
+        if (UIMenu.GymMenu != null)
+            UIMenu.GymMenu.SetActive(true);
     }
 
     private void OnDestroy()
@@ -518,15 +602,28 @@ public class UIController : MonoBehaviour
 }
 
 [Serializable]
+public class GameUI
+{
+    public GameObject QuestUI;
+    public GameObject VictoryUI;
+    public GameObject DefeatUI;
+    public GameObject InGameMenuUI;
+    public GameObject GymMenu;
+    public GameObject ShopUi;
+    public GameObject InventoryUi;
+}
+
+
+[Serializable]
 public class TextRessources
 {
     public TMPro.TextMeshProUGUI Disciple;
-    public TMPro.TextMeshProUGUI Ki;
     public TMPro.TextMeshProUGUI Yuan;
     public TMPro.TextMeshProUGUI TempleReadiness;
     public TMPro.TextMeshProUGUI nbQuestLeft;
     public BalanceBar BalanceClanSusoda;
     public BalanceBar BalanceClanHuangsei;
+    public BalanceBar KiBar;
 }
 
 [Serializable]
@@ -535,6 +632,8 @@ public class TextQuest
     public TMPro.TextMeshProUGUI NomQuest;
     public TMPro.TextMeshProUGUI DescriptionQuest;
     public TMPro.TextMeshProUGUI QuestGiver;
+
+    public GameObject QuestInformation;
 }
 
 [Serializable]

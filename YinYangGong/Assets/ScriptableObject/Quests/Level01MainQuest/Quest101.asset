@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Assume One's Wrongs
     questGiverName: Liliang, the Magistrate
+    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: '"<color=#FF2299>Master monk</color>, I trust you now. Since
       we found this abomination, I can no longer hide my face. If your prediction
       is correct, they''re coming in droves! I hope it isn''t too late.What can we
