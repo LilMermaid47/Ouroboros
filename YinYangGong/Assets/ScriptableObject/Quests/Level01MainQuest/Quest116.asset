@@ -21,8 +21,8 @@ MonoBehaviour:
       mercy on my sick pig. I don''t know what to do to cure it. " '
     choice1Name: Kill the pig
     choice1Description: His pig looks bad, there's nothing we can do for him. It
-      is better to shoot it down.
-    choice1Reveal: Bendan walks away angrily. He shouts that he will never let anyone
+      is better to put it down.
+    choice1Reveal: Bendan walks away angrily. He shouts that he will never let <b>anyone</b>
       touch his favorite pig.
     choice2Name: Susoda Clan Healing
     choice2Description: The Susoda clan has already treated several sick people.
