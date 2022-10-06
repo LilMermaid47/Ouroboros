@@ -16,23 +16,26 @@ MonoBehaviour:
     questName: Assume One's Wrongs
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
-    questDescription: '"<color=#FF2299>Master monk</color>, I trust you now. Since
-      we found this abomination, I can no longer hide my face. If your prediction
-      is correct, they''re coming in droves! I hope it isn''t too late.What can we
-      do to<b> prepare ourselves </b>?"'
+    questDescription: '"<color=#FF2299>Master monk</color>, I trust you now. After
+      the fight that my people had to make for our survival yesterday, I can''t be
+      delusional anymore. You said these abominations are coming from the army of
+      a monstrous King. If your prediction is correct, they''re coming in droves!
+      I hope it isn''t too late.What can we do to<b> prepare ourselves </b>?"'
     choice1Name: Sharpened the swords
-    choice1Description: 'Sharp swords can cut anything! '
+    choice1Description: Sharp swords can cut anything, even demons with fangs and
+      claws.
     choice1Reveal: If we continue to prepare ourselves enough, the army of demons
       will not be able to resist us! We need to have <b>at least 100% of readiness</b>
       if we want to win against them.
     choice2Name: Give each adult a shield
-    choice2Description: ' Let''s protect all those who can''t fight!'
+    choice2Description: ' Let''s protect all those who can''t fight! Our people are
+      our most valuable ressource.'
     choice2Reveal: If we continue to prepare ourselves enough, the army of demons
       will not be able to resist us! We need to have <b>at least 100% of readiness</b>
       if we want to win against them.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 10
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
@@ -41,7 +44,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 10
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
