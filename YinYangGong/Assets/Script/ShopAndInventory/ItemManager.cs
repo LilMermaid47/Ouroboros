@@ -108,6 +108,12 @@ public class ItemManager : MonoBehaviour
         }
     }
 
+    public void UseItem(Item item)
+    {
+        item.UseItem();
+        RemoveItem(item);
+    }
+
     protected void RemoveItem(ItemSlotController SlotControllerContainingItem)
     {
         if (SlotControllerContainingItem.GetQuantity() > 1)

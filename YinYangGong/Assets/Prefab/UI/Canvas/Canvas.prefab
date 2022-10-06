@@ -5699,6 +5699,7 @@ MonoBehaviour:
     FirstChoice: {fileID: 3577320312164063574}
     SecondChoice: {fileID: 3577320312245532112}
     NextPerson: {fileID: 84031585}
+    ShopButton: {fileID: 127761684}
     FirstChoiceTxt: {fileID: 3577320310845196079}
     SecondChoiceTxt: {fileID: 3577320312117959555}
   questChoiceUi: {fileID: 6633341570103409926}

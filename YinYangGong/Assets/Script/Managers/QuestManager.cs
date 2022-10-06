@@ -74,6 +74,17 @@ public class QuestManager : MonoBehaviour
 
     public void NextQuest()
     {
+        if (currentQuest.QuestType() == TypeOfQuest.MerchantQuest)
+        {
+            MerchantQuest merchantQuest = (MerchantQuest)currentQuest;
+
+            if(choice1WasMade)
+                MerchantQuestReward(merchantQuest.itemChoice1.item);
+            else
+                MerchantQuestReward(merchantQuest.itemChoice2.item);
+        }
+
+
         currentQuestIndex++;
         if (currentQuestIndex < filledLevel.questList.Count)
         {
@@ -88,11 +99,6 @@ public class QuestManager : MonoBehaviour
                 RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
                 CheckRequirement(requirementQuest);
             }
-            else if (currentQuest.QuestType() == TypeOfQuest.MerchantQuest)
-            {
-                //MerchantQuest merchantQuest
-            }
-
         }
         else
         {
@@ -156,14 +162,27 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.ReadinessLoss);
     }
 
+    public InventoryItemManager InventoryItemManager;
+
+
+    private bool choice1WasMade= false;
     public void UpdateStatChoix1()
     {
         QuestReward(currentQuest.questDefinition.rewardChoice1);
+        choice1WasMade = true;
     }
 
     public void UpdateStatChoix2()
     {
         QuestReward(currentQuest.questDefinition.rewardChoice2);
+        choice1WasMade = false;
+    }
+
+    private void MerchantQuestReward(Item item)
+    {
+        InventoryItemManager.AddItem(item);
+        if(item.ItemType() == TypeOfItem.UpgradeItem)
+            InventoryItemManager.UseItem(item);
     }
 
     private void QuestReward(Reward reward)
@@ -191,7 +210,7 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.MoneyLoss);
         else if (ki < 0)
             uIController.Defeat(DefeatType.KiLoss);
-        else if (disciple < 0)
+        else if (disciple <= 0)
             uIController.Defeat(DefeatType.DiscipleLoss);
     }
 

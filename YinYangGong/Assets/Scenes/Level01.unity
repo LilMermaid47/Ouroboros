@@ -340,6 +340,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 127761681, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 127761684, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 4
@@ -1167,6 +1171,7 @@ MonoBehaviour:
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}
+  InventoryItemManager: {fileID: 711386451}
 --- !u!4 &1707705098
 Transform:
   m_ObjectHideFlags: 0

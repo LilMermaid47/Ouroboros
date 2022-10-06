@@ -25,6 +25,7 @@ public class UpgradeableItem : Item
         switch (upgradeItemList) 
         {
             case UpgradeItemList.Shop:
+                uIController.EnableShop(true);
                 break;
             case UpgradeItemList.GoldenBuddhaStatue:
                 questManager.SetArgentBonus(bonus);
