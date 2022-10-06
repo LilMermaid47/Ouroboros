@@ -10,26 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest1J
+  m_Name: Quest1L
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: 'A Crazy Present '
-    questGiverName: Bendan the mad
+    questName: "War\u2019s preparation"
+    questGiverName: A member of Susoda
     questGiverSprite: {fileID: 0}
-    questDescription: "\u201C I want to give you a beautiful <b>lotus flower</b>.
-      I thought of you when I saw it \""
-    choice1Name: Accept
-    choice1Description: This flower is beautiful, it would make a beautiful decoration
-      in the temple.
-    choice1Reveal: The flower seems to be <b>magical</b>, but it looks dead. Maybe
-      one day, we will learn its effects.
-    choice2Name: Refuse
-    choice2Description: The flower looks already rotting.
-    choice2Reveal: "The madman leaves the temple cursing a bonsa\xEF. Also, he fights
-      to the death with it."
+    questDescription: "\u201C The clan members would like to prepare against the
+      demons that keep approaching day by day. What do you advise us to do?\u201D"
+    choice1Name: Craft arrows
+    choice1Description: The specialty of the<b> Susoda is archery</b>. Let's put
+      them on this task.
+    choice1Reveal: They made a ton of arrows. We are ready to fight.
+    choice2Name: Build trenches
+    choice2Description: Trenches are essential. Let them build them around the village.
+    choice2Reveal: The trenches are not very successful. Will they be effective enough?
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
@@ -38,7 +36,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: -5
+      templeReadiness: 5
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0

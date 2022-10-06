@@ -23,14 +23,14 @@ MonoBehaviour:
       new store.</b>\""
     choice1Name: Huangsei
     choice1Description: The Clan of the Sun constitutes seasoned warriors adept in
-      fire and air. Killing them will be a great loose for the town. Who will protect
+      fire and air. Killing them would be a great loose for the town. Who would protect
       us?
     choice1Reveal: With the help of the Susoda clan, the village wiped out the Huangsei
       clan in a bloody battle.
     choice2Name: Susoda
     choice2Description: The Moon Clan is led by a mystical old lady who uses the
       water and the land to good advantage. If we lose this clan, who will help us
-      have crops and medicine?
+      with crops and medicine?
     choice2Reveal: The Susoda clan is no more. They have been killed to the last.
     rewardChoice1:
       moneyReward: 0

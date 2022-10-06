@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: "Susoda\u2019s Demand"
     questGiverName: Yu, the matriarch of Susoda clan
+    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201C We want to build a community garden where everyone
       can grow vegetables and medicinal plants. Do you want to fund us?\u201D"
     choice1Name: Accept the offer
@@ -28,7 +29,7 @@ MonoBehaviour:
       emotion. Is she hiding something?
     rewardChoice1:
       moneyReward: -10
-      templeReadiness: 10
+      templeReadiness: 15
       nbDisciple: -1
       nbKi: 0
       yinYangBalance: 10
@@ -48,7 +49,9 @@ MonoBehaviour:
     moneyCost: 10
     templeReadiness: 0
     kiCost: 0
+    disciples: 0
   requirementChoice2:
     moneyCost: 0
     templeReadiness: 0
     kiCost: 0
+    disciples: 0
