@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: 'A Crazy Present '
     questGiverName: Bendan the mad
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
     questDescription: "\u201C I want to give you a beautiful <b>lotus flower</b>.
       I thought of you when I saw it \""
     choice1Name: Accept

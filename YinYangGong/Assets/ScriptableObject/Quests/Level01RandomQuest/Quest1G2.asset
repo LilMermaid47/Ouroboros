@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Blessing day
     questGiverName: Yu, the matriarch of Susoda clan
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questDescription: "\u201CThe tree! The tree has been reborn from the dead! I
       think if we give it <b>more prayers</b>, it will grow faster and bigger. Don't
       lose faith!\u201D"

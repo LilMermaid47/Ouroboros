@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Lucky Toad
     questGiverName: Jin Chan
+    questGiverSprite: {fileID: 21300000, guid: 55a9b14b52e21824db366e0d29074f43, type: 3}
     questDescription: "\u201C Gua gua, gua gua gua gua gua gua. Gua gua, gua gua,
       gua, gua gua gua.\u201D"
     choice1Name: 'Accept '
@@ -47,7 +48,9 @@ MonoBehaviour:
     moneyCost: 20
     templeReadiness: 0
     kiCost: 0
+    disciples: 0
   requirementChoice2:
     moneyCost: 0
     templeReadiness: 0
     kiCost: 0
+    disciples: 0

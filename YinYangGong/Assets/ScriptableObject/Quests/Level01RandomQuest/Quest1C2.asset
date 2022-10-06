@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Huangsei vs. Bandits
     questGiverName: Rilou, the patriarch of Huangsei clan
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questDescription: "\u201CBandits captured our <b>outpost </b>this morning. They
       killed everyone. What do we do?\u201D\r"
     choice1Name: Retake the outpost
