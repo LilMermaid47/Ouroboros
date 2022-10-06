@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Gift of Friendship
     questGiverName: Caifu, the merchant
+    questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
     questDescription: "\u201CI managed to get you the most <b>beautiful gifts</b>
       in the country. I await your decision. Who did you want to give it to?\u201D"
     choice1Name: Clan Huangsei

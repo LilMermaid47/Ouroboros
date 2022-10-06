@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Susoda vs. Bandits
     questGiverName: Yu, the matriarch of the Susoda clan
+    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201CBandits attacked the village last night. They injured
       a few people before leaving. Our scouts have found their <b>camp nearby</b>.
       With our new garden, we can use the <b>plants to help us</b>.\u201D\r"

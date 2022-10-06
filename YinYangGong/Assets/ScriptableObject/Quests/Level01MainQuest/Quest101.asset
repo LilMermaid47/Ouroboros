@@ -16,11 +16,11 @@ MonoBehaviour:
     questName: Assume One's Wrongs
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
-    questDescription: '"<color=#FF2299>Master monk</color>, I trust you now. After
-      the fight that my people had to make for our survival yesterday, I can''t be
-      delusional anymore. You said these abominations are coming from the army of
-      a monstrous King. If your prediction is correct, they''re coming in droves!
-      I hope it isn''t too late.What can we do to<b> prepare ourselves </b>?"'
+    questDescription: '"<color=#702963>Master monk</color>, I trust you now. After
+      the fight that my people did for our survival yesterday, I can''t be delusional
+      anymore. You said these abominations are coming from the army of a monstrous
+      King. If your prediction is correct, they''re coming in droves! I hope it isn''t
+      too late.What can we do to<b> prepare ourselves </b>?"'
     choice1Name: Sharpened the swords
     choice1Description: Sharp swords can cut anything, even demons with fangs and
       claws.
