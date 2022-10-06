@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: "Susoda\u2019s Demand"
     questGiverName: Yu, the matriarch of Susoda clan
-    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questDescription: "\u201C We want to build a community garden where everyone
       can grow vegetables and medicinal plants. Do you want to fund us?\u201D"
     choice1Name: Accept the offer

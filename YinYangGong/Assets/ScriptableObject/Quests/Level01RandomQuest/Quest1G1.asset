@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Mother Tree
     questGiverName: Yu, the matriarch of Susoda clan
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questDescription: "\u201CThe leaves of our mother tree are turning black and
       falling. Our prayers are useless. We must try another remedy. Otherwise, I
       fear that a curse will fall on our community. The last time, women stop having
