@@ -463,7 +463,7 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.gameObject.SetActive(status);
     }
 
-    private void MakeButtonInvisibleExceptNextPerson(bool status)
+    public void MakeButtonInvisibleExceptNextPerson(bool status)
     {
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);

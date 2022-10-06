@@ -24,6 +24,7 @@ public class QuestChoiceUi : MonoBehaviour
 
     public void ShowChoice(bool choice1, string descriptionString)
     {
+        MakeChoiceButtonInvisible(true);
         ActivateListener(true);
         leftGongChoice = choice1;
         uiController.MakeButtonInvisible(false);
@@ -34,13 +35,29 @@ public class QuestChoiceUi : MonoBehaviour
 
     public void AcceptChoice()
     {
+        MakeChoiceButtonInvisible(false);
+
         if (leftGongChoice)
             questManager.UpdateStatChoix1();
         else
             questManager.UpdateStatChoix2();
 
-        questChoiceUiParent.SetActive(false);
+        ShowResultOfChoice();
         ActivateListener(false);
+    }
+
+    private void MakeChoiceButtonInvisible(bool status)
+    {
+        acceptChoice.gameObject.SetActive(status);
+        refuseChoice.gameObject.SetActive(status);
+    }
+
+    public void ShowResultOfChoice()
+    {
+        if (leftGongChoice)
+            description.text = questManager.currentQuest.questDefinition.choice1Reveal;
+        else
+            description.text = questManager.currentQuest.questDefinition.choice2Reveal;
     }
 
     public void CancelChoice()
@@ -49,6 +66,11 @@ public class QuestChoiceUi : MonoBehaviour
         questUi.SetActive(true);
         questChoiceUiParent.SetActive(false);
         ActivateListener(false);
+    }
+
+    public void SetUiActive(bool status)
+    {
+        questChoiceUiParent.SetActive(status);
     }
 
     private void ActivateListener(bool isActive)
