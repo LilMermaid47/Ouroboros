@@ -15,17 +15,20 @@ MonoBehaviour:
   questDefinition:
     questName: Vanished Caravans
     questGiverName: A Member of clan Huangsei
-    questDescription: "\u201C We were expecting caravans, but they never showed up.
-      Maybe it got lost or got attacked. Can we still save the merchants?\u201D"
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: "\u201C We were expecting <b>caravans</b>, but they never showed
+      up. Maybe it got lost or got attacked. Can we still save the merchants?\u201D"
     choice1Name: Send an escort of soldiers
     choice1Description: Let's not take any risks. Let's send fifteen soldiers.
     choice1Reveal: After several weeks, the soldiers never returned. The Huangsei
-      clan has been apologizing with gifts ever since.
+      clan has been <b>apologizing with gifts and gold</b> ever since. They feel
+      responsible for sending our men into a deadly trap.
     choice2Name: Send a scout
     choice2Description: Let's send a Susoda scout who will give us a better report
       of the situation.
-    choice2Reveal: After several weeks, the scout never returned. The Huangsei clan
-      is disappointed to have lost their caravans.
+    choice2Reveal: After several weeks, the Susoda scout never returned. Did they
+      keep the caravans for themselves? The Huangsei clan is disappointed to have
+      lost their caravans.
     rewardChoice1:
       moneyReward: 10
       templeReadiness: -10

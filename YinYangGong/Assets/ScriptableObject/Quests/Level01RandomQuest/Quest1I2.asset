@@ -15,10 +15,12 @@ MonoBehaviour:
   questDefinition:
     questName: Three Legs Gifts
     questGiverName: Neutral Peasant
+    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201C We just received a strange gift. Do you want us to
       open it?\u201D"
     choice1Name: Accept
-    choice1Description: "The gift is full of swampy plants and moss. Is it weird?\r"
+    choice1Description: "The gift is full of <b>swampy</b> plants and moss. Is it
+      weird?\r"
     choice1Reveal: "We found a lot of money in that gift. Are we blessed from the
       god?\r"
     choice2Name: Refuse

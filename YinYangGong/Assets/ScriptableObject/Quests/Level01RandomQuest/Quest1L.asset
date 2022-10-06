@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest1L
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: "War\u2019s preparation"
+    questGiverName: A member of Susoda
+    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questDescription: "\u201C The clan members would like to prepare against the
+      demons that keep approaching day by day. What do you advise us to do?\u201D"
+    choice1Name: Craft arrows
+    choice1Description: The specialty of the<b> Susoda is archery</b>. Let's put
+      them on this task.
+    choice1Reveal: They made a ton of arrows. We are ready to fight.
+    choice2Name: Build trenches
+    choice2Description: Trenches are essential. Let them build them around the village.
+    choice2Reveal: The trenches are not very successful. Will they be effective enough?
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 15
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 5
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

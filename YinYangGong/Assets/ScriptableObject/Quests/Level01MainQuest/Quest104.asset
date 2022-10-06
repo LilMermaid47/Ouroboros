@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Quest104
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: Buying Peace (NO EFFECT)
+    questName: Buying Peace
     questGiverName: Angry peasant
-    questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
     questDescription: "\u201CA quarrel between the two clans broke out near my sheepfold,
       and they killed my beloved goats. I demand the<b> annihilation </b>of one of
       the two clans!\u201D\n\n\"This person is blinded by hatred. Giving him a magnificent
@@ -23,30 +23,30 @@ MonoBehaviour:
       new store.</b>\""
     choice1Name: Huangsei
     choice1Description: The Clan of the Sun constitutes seasoned warriors adept in
-      fire and air. Killing them will be a great loose for the town. Who will protect
+      fire and air. Killing them would be a great loose for the town. Who would protect
       us?
     choice1Reveal: With the help of the Susoda clan, the village wiped out the Huangsei
       clan in a bloody battle.
     choice2Name: Susoda
     choice2Description: The Moon Clan is led by a mystical old lady who uses the
       water and the land to good advantage. If we lose this clan, who will help us
-      have crops and medicine?
+      with crops and medicine?
     choice2Reveal: The Susoda clan is no more. They have been killed to the last.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
-      nbDisciple: 0
+      templeReadiness: -50
+      nbDisciple: -4
       nbKi: 0
-      yinYangBalance: 0
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 0
-      nbDisciple: 0
+      templeReadiness: -50
+      nbDisciple: -4
       nbKi: 0
-      yinYangBalance: 0
+      yinYangBalance: -50
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
