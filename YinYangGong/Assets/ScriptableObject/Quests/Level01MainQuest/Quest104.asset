@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Quest104
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: Buying Peace (NO EFFECT)
+    questName: Buying Peace
     questGiverName: Angry peasant
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
     questDescription: "\u201CA quarrel between the two clans broke out near my sheepfold,
@@ -34,19 +34,19 @@ MonoBehaviour:
     choice2Reveal: The Susoda clan is no more. They have been killed to the last.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
-      nbDisciple: 0
+      templeReadiness: -50
+      nbDisciple: -4
       nbKi: 0
-      yinYangBalance: 0
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 0
-      nbDisciple: 0
+      templeReadiness: -50
+      nbDisciple: -4
       nbKi: 0
-      yinYangBalance: 0
+      yinYangBalance: -50
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
