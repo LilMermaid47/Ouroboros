@@ -281,6 +281,9 @@ public class UIController : MonoBehaviour
 
     public void SetMaxKi(int maxKi)
     {
+        if (maxKi == 0)
+            TextRessources.KiBar.HideBar();
+
         TextRessources.KiBar.setValue(maxKi);
     }    
 

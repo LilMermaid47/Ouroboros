@@ -417,6 +417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4009543372131754056, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_Name
+      value: NpcQueue
+      objectReference: {fileID: 0}
     - target: {fileID: 4315055328438607090, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -293.8
@@ -770,6 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yinYangBalance: 0
   maxClanBalance: 50
+  maxKi: 0
   disciple: 4
   ki: 0
   argent: 50

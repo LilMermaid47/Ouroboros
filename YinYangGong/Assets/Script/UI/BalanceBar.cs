@@ -42,4 +42,9 @@ public class BalanceBar : MonoBehaviour
     {
         Slider.maxValue += MaxValueIncrease;
     }
+
+    public void HideBar()
+    {
+        transform.parent.gameObject.SetActive(false);
+    }
 }
