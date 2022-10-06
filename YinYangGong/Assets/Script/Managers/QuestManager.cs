@@ -88,6 +88,10 @@ public class QuestManager : MonoBehaviour
                 RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
                 CheckRequirement(requirementQuest);
             }
+            else if (currentQuest.QuestType() == TypeOfQuest.MerchantQuest)
+            {
+                //MerchantQuest merchantQuest
+            }
 
         }
         else

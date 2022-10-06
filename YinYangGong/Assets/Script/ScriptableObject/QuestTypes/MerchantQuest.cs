@@ -6,6 +6,7 @@ using UnityEngine;
 public class MerchantQuest : Quest
 {
     public int itemPrice;
+    public Item item;
 
     public override TypeOfQuest QuestType()
     {
