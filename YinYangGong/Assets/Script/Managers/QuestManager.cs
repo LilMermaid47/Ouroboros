@@ -136,13 +136,13 @@ public class QuestManager : MonoBehaviour
     {
         string reason = "";
 
-        if (requirement.templeReadiness <= templeReadiness)
+        if (requirement.templeReadiness >= templeReadiness)
             reason = "<b><u>Temple readiness\ntoo low!</b></u>";
-        else if (requirement.moneyCost <= argent)
+        else if (requirement.moneyCost >= argent)
             reason = "<b><u>Not enough Yuan!</b></u>";
-        else if (requirement.kiCost <= ki)
+        else if (requirement.kiCost >= ki)
             reason = "<b><u>Not enough Ki!</b></u>";
-        else if (requirement.disciples <= disciple)
+        else if (requirement.disciples >= disciple)
             reason = "<b><u>You need more disciples!</b></u>";
 
         return reason;
