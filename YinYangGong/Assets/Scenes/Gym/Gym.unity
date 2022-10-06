@@ -503,6 +503,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 127761682, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 978800774, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1195783231, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: questManager
       value: 
@@ -515,12 +523,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 157809727884606015, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1084708292397861494, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1514027704516871365, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: GymMenu
+      value: 
+      objectReference: {fileID: 646706712}
+    - target: {fileID: 1514027704516871365, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: UIMenu.GymMenu
       value: 
       objectReference: {fileID: 646706712}
     - target: {fileID: 2288583761477538890, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
@@ -627,6 +643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4704488188459528842, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5168634292443443257, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -639,13 +659,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: KiLamp
       objectReference: {fileID: 0}
+    - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612883797883140678, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 7985947426020157510, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_Name
       value: DiscipleLamp
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942472499892, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942739958330, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
@@ -953,14 +985,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yinYangBalance: 0
-  clanHonorDevotionModifier: 0.05
   maxClanBalance: 100
+  maxKi: 0
   disciple: 0
   ki: 0
   argent: 0
   templeReadinessToAchieve: 100
-  level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
-  randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
+  level: {fileID: 11400000, guid: f7cbb94d79290c345ad8be1e7c823afa, type: 2}
+  randomQuestList: {fileID: 11400000, guid: f1a8e7d15323deb449f12908d0dd20d1, type: 2}
   currentQuest: {fileID: 0}
 --- !u!4 &1707705098
 Transform:
