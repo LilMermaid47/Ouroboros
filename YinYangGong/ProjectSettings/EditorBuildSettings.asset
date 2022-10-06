@@ -9,18 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 5be1a9fbf06dc814394f9e7ce1011b14
   - enabled: 1
-    path: Assets/Scenes/Gym/Gym.unity
-    guid: e9366a38cd104064581224ced2585484
-  - enabled: 1
-    path: Assets/Scenes/Gym/GymSlider.unity
-    guid: efb5bed7ceedfa345ac53f28cf975d57
-  - enabled: 1
-    path: Assets/Scenes/Gym/GymSliderEtPopUp.unity
-    guid: 9a07a0c23e9bef74499b2e48f4609a2d
-  - enabled: 1
-    path: Assets/Scenes/Prototype.unity
-    guid: 297a6ce71dea18042aa4deed498d4eb1
-  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: 9decc4806f2358d44b8e1c34d07d5a9c
   - enabled: 1
