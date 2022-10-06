@@ -5703,15 +5703,14 @@ MonoBehaviour:
     SecondChoiceTxt: {fileID: 3577320312117959555}
   questChoiceUi: {fileID: 6633341570103409926}
   Loss:
-    HuangseiLoss: Susoda's superiority allowed them to remove the Huangsei clan from
-      the monastery.
-    SusodaLoss: Huangsei's superiority allowed them to remove the Susoda clan from
-      the monastery.
-    ReadinessLoss: The monastery suffered a devastating defeat at the hand of the
-      invaders.
+    HuangseiLoss: Susoda's mischievous ways of doing things allowed them to remove
+      the Huangsei clan from the town.
+    SusodaLoss: Huangsei warriors killed Susoda members. It was a bloodbath.
+    ReadinessLoss: The Temple and the town were destroyed by the demons' army.
     MoneyLoss: The lack of money caused the last of the residents to leave. You cannot
       continue like this.
-    DiscipleLoss: 
+    DiscipleLoss: You are alone in the empty Temple. Shame on you and your forgotten
+      gods.
   timeTransitionAnimation: 0.1
   timeTransitionAnimationBalance: 0.05
   timeTransitionAnimationMoney: 0.05

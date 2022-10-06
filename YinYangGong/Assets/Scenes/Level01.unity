@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 16.851
       objectReference: {fileID: 0}
+    - target: {fileID: 256463676917744987, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1651261857329457167, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -782,7 +786,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c5236a19649da7645af7340f899b2fad, type: 2}
     - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.data[0].Quantity
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.data[1].Quantity
@@ -1160,9 +1164,9 @@ MonoBehaviour:
   yinYangBalance: 0
   maxClanBalance: 50
   maxKi: 0
-  disciple: 4
+  disciple: 3
   ki: 0
-  argent: 0
+  argent: 40
   templeReadinessToAchieve: 100
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
