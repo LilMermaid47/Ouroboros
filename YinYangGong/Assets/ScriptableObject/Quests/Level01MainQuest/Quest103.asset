@@ -21,13 +21,16 @@ MonoBehaviour:
       <b>belong to a clan</b>. Which of the two are you offering me?\u201D\r"
     choice1Name: Huangsei
     choice1Description: The house serves as a warehouse for the clan. The Huangsei
-      clan is not likely to be too disappointed by this loss.
-    choice1Reveal: The Huangsei clan is happy to help the merchant open up his shop.
+      clan will be  disappointed by this loss.
+    choice1Reveal: The Huangsei clan is happy to help the merchant open up his shop,
+      but they have lost influence. Caifu runs a wonderful store and invites us to
+      visit him.
     choice2Name: Susoda
-    choice2Description: "This is one of their many greenhouses. One less shouldn't
-      hurt them too much. \r"
+    choice2Description: 'This is one of their many greenhouses. One less could hurt
+      them a little bit. '
     choice2Reveal: The Susoda clan doesn't seem particularly upset by the loss of
-      a greenhouse.
+      a greenhouse but they have lost influence. Caifu runs a wonderful store and
+      invites us to visit him.
     rewardChoice1:
       moneyReward: 50
       templeReadiness: 0
