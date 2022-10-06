@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
 
     [Header("Valeur de départ du niveau")]
     public int maxClanBalance = 100;
+    public int maxKi = 100;
     [SerializeField]
     int disciple = 0;
     [SerializeField]
@@ -44,10 +45,13 @@ public class QuestManager : MonoBehaviour
         currentQuest = filledLevel.questList[currentQuestIndex];
 
         uIController.SetMaxBalance(maxClanBalance);
+        uIController.SetMaxKi(maxKi);
 
         uIController.SetQuest(currentQuest);
         uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
+        uIController.SetNPCFile(filledLevel);
+
     }
 
     //Come fill all the null element in the level list by random quest in the RandomQuestList
@@ -74,6 +78,7 @@ public class QuestManager : MonoBehaviour
 
             uIController.SetQuest(currentQuest);
             uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
+            uIController.UpdateNPCList(filledLevel, currentQuestIndex);
 
             if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
             {

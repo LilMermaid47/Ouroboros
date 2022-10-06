@@ -15,6 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: 'New Project : Statue'
     questGiverName: A member of Susoda and one from Huangsei
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questDescription: "\u201C We want to build a new monument, but the<b> two clans
       do not get along</b>. Please choose the clan that will get a new monument.\u201D"
     choice1Name: Huangsei

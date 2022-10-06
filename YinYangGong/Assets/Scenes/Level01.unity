@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704488186993578532, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 141.99997
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4704488187323285755, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.y
@@ -565,6 +565,18 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340248919345148839, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: tipToShow
+      value: "Quantit\xE9 de Ki du temple"
+      objectReference: {fileID: 0}
     - target: {fileID: 7612883796993493512, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -643,9 +655,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7612883798838517741, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 141.99997
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2892259036581208187, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
 --- !u!1 &1195783225 stripped
 GameObject:
