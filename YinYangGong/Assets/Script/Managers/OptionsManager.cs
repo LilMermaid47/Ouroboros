@@ -58,6 +58,8 @@ public class OptionsManager : MonoBehaviour
     private void OnEnable()
     {
         EventSystem.current.SetSelectedGameObject(FirstOptionMenuChoice);
+        EventSystem.current.firstSelectedGameObject = FirstOptionMenuChoice;
+
 
         VolumeSlider.onValueChanged.AddListener((valueVolume) =>
         {
@@ -73,6 +75,7 @@ public class OptionsManager : MonoBehaviour
     private void OnDisable()
     {
         EventSystem.current.SetSelectedGameObject(FirstMainMenuChoice);
+        EventSystem.current.firstSelectedGameObject = FirstMainMenuChoice;
         VolumeSlider.onValueChanged.RemoveAllListeners();
         BlindessDropdown.onValueChanged.RemoveAllListeners();
     }

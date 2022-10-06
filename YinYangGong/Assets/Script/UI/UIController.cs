@@ -426,6 +426,7 @@ public class UIController : MonoBehaviour
         NextPersonBtnActivate(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
+        EventSystem.current.firstSelectedGameObject = MenuBtn.GameFirstChoice;
     }
 
     private void ActivateNextBtn()
@@ -441,6 +442,7 @@ public class UIController : MonoBehaviour
         NextPersonBtnActivate(true);
 
         EventSystem.current.SetSelectedGameObject(BtnQuest.NextPerson.gameObject);
+        EventSystem.current.firstSelectedGameObject = BtnQuest.NextPerson.gameObject;
     }
 
     public void FirstChoiceBtnActivate(bool status)
