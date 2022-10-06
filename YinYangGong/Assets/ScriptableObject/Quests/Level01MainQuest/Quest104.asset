@@ -18,9 +18,9 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
     questDescription: "\u201CA quarrel between the two clans broke out near my sheepfold,
       and they killed my beloved goats. I demand the<b> annihilation </b>of one of
-      the two clans!\u201D\n\n\"This person is blinded by hatred. Giving him a magnificent
-      Bonsai might help him forget his dead goats. By chance, we just opened a<b>
-      new store.</b>\""
+      the two clans!\u201D\n\n\"This person is blinded by hatred. Giving him a <b>magnificent
+      Bonsai, the perfect goodbye gift</b> might help him forget his dead goats.
+      By chance, we just opened a<b> new store.</b>\""
     choice1Name: Huangsei
     choice1Description: The Clan of the Sun constitutes seasoned warriors adept in
       fire and air. Killing them would be a great loose for the town. Who would protect

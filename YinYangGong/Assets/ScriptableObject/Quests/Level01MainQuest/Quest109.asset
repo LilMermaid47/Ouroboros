@@ -25,8 +25,8 @@ MonoBehaviour:
     choice2Name: Susoda
     choice2Description: The Susoda Clan knows of a few mushrooms that attract pigs.
     choice2Reveal: The searches were unsuccessful. The mushrooms attracted a bear
-      which killed several members and villagers. We sold the bear pelt at a reasonable
-      price.
+      which killed several members and villagers. We <b>sold the bear pelt</b> at
+      a reasonable price.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -10

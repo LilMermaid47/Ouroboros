@@ -21,15 +21,17 @@ MonoBehaviour:
     choice1Name: Huangsei
     choice1Description: We want a statue of the Sun God to light up the lives of
       villagers and give them hope.
-    choice1Reveal: The clan built a statue of the Sun God with ease. The influence
-      of the Huangsei grows in the town. If they take too much power, they will overtrone
-      the other clan. We don't want a civil war. Don't let this happen !
+    choice1Reveal: The clan built a statue of the Sun God with ease. The<b> influence
+      of the Huangsei</b> grows in the town. If they take too much power, they will
+      overtrone the other clan. We don't want a civil war. Don't let this happen
+      !
     choice2Name: Susoda
     choice2Description: A statue of the Moon Goddess would attract her graces for
       fertile fields.
-    choice2Reveal: The clan built a statue of the moon goddess with ease. The influence
-      of the Susoda grows in the town. If they take too much power, they will overtrone
-      the other clan. We don't want a civil war. Don't let this happen !
+    choice2Reveal: The clan built a statue of the moon goddess with ease. The<b>
+      influence of the Susoda grows</b> in the town. If they take too much power,
+      they will overtrone the other clan. We don't want a civil war. Don't let this
+      happen !
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

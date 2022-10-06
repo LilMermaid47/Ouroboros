@@ -23,16 +23,16 @@ MonoBehaviour:
     choice1Description: The house serves as a warehouse for the clan. The Huangsei
       clan will be  disappointed by this loss.
     choice1Reveal: The Huangsei clan is happy to help the merchant open up his shop,
-      but they have lost influence. Caifu runs a wonderful store and invites us to
-      visit him.
+      but they have<b> lost influence</b>. Caifu runs a wonderful store and invites
+      us to<b> visit him</b>.
     choice2Name: Susoda
     choice2Description: 'This is one of their many greenhouses. One less could hurt
       them a little bit. '
     choice2Reveal: The Susoda clan doesn't seem particularly upset by the loss of
-      a greenhouse but they have lost influence. Caifu runs a wonderful store and
-      invites us to visit him.
+      a greenhouse but they have <b>lost influence</b>. Caifu runs a wonderful store
+      and invites us to<b> visit him</b>.
     rewardChoice1:
-      moneyReward: 50
+      moneyReward: 100
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 50
+      moneyReward: 100
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
