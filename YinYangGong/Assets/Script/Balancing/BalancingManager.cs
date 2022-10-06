@@ -7,7 +7,6 @@ using UnityEngine;
 public class BalancingManager: MonoBehaviour
 {
     [Header("Valeur de départ du niveau")]
-    public float ClanHonorDevotionModifier = 0.2f;
     public int MaxClanBalance = 100;
     [SerializeField]
     private int StartingDisciple = 0;

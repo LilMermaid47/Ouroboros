@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 452876971}
     m_SelectOnDown: {fileID: 1142019247}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 801954327}
     m_SelectOnDown: {fileID: 3942824}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -1159,7 +1159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &486850885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1538,6 +1538,7 @@ GameObject:
   - component: {fileID: 801954329}
   - component: {fileID: 801954328}
   - component: {fileID: 801954327}
+  - component: {fileID: 801954331}
   m_Layer: 5
   m_Name: PlayBtn
   m_TagString: Untagged
@@ -1561,7 +1562,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 1082324754}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 452876971}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -1591,11 +1592,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 339073895}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: ActivateGymMenu
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 801954331}
+          m_ObjectArgumentAssemblyTypeName: ScenesNames, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1659,6 +1660,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 124}
   m_SizeDelta: {x: 500, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &801954331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801954326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36796bdad5701704ca5f2a48b7bb9e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: 3
 --- !u!1 &817609453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942303590014, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942303590015, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_Pivot.x
@@ -3489,23 +3503,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942573014769, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942573014769, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8081255942573014769, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8081255943518053921, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8081255943518053921, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97fca732cfab7fb438a0e1bfb222e009, type: 3}

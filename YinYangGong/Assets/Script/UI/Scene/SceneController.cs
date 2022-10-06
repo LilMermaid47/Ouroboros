@@ -7,14 +7,10 @@ public class SceneController : MonoBehaviour
     [SerializeField]
     private GameObject MainMenu;
     [SerializeField]
-    private GameObject Gym;
-    [SerializeField]
     private GameObject Level;
 
     [SerializeField]
     private GameObject FirstMainMenuBtn;
-    [SerializeField]
-    private GameObject FirstGymMenuBtn;
     [SerializeField]
     private GameObject FirstLevelMenuBtn;
 
@@ -45,29 +41,16 @@ public class SceneController : MonoBehaviour
     public void ActivateMainMenu()
     {
         MainMenu.SetActive(true);
-        Gym.SetActive(false);
         Level.SetActive(false);
 
 
         EventSystem.current.SetSelectedGameObject(FirstMainMenuBtn);
-        EventSystem.current.firstSelectedGameObject = FirstGymMenuBtn;
-    }
-
-    public void ActivateGymMenu()
-    {
-        MainMenu.SetActive(false);
-        Gym.SetActive(true);
-        Level.SetActive(false);
-
-
-        EventSystem.current.SetSelectedGameObject(FirstGymMenuBtn);
-        EventSystem.current.firstSelectedGameObject = FirstGymMenuBtn;
+        EventSystem.current.firstSelectedGameObject = FirstMainMenuBtn;
     }
 
     public void ActivateLevelMenu()
     {
         MainMenu.SetActive(false);
-        Gym.SetActive(false);
         Level.SetActive(true);
 
 

@@ -113,6 +113,8 @@ public class UIController : MonoBehaviour
             Debug.LogWarning("No quest receved.");
     }
 
+    bool nextPersonWasVisible = false;
+
     public void ShowHideShop()
     {
         UIMenu.ShopUi.SetActive(!UIMenu.ShopUi.activeSelf);
@@ -424,6 +426,7 @@ public class UIController : MonoBehaviour
         NextPersonBtnActivate(false);
 
         EventSystem.current.SetSelectedGameObject(MenuBtn.GameFirstChoice);
+        EventSystem.current.firstSelectedGameObject = MenuBtn.GameFirstChoice;
     }
 
     private void ActivateNextBtn()
@@ -439,6 +442,7 @@ public class UIController : MonoBehaviour
         NextPersonBtnActivate(true);
 
         EventSystem.current.SetSelectedGameObject(BtnQuest.NextPerson.gameObject);
+        EventSystem.current.firstSelectedGameObject = BtnQuest.NextPerson.gameObject;
     }
 
     public void FirstChoiceBtnActivate(bool status)
@@ -571,6 +575,11 @@ public class UIController : MonoBehaviour
         Defeat();
     }
 
+    public void EnableShop(bool status)
+    {
+        BtnQuest.ShopButton.gameObject.SetActive(status);
+    }
+
     public void PauseMenuActive(bool status)
     {
         if (status && !PlayerInputs.InGameMenu.Pause.enabled)
@@ -655,6 +664,7 @@ public class BtnQuest
     public Button FirstChoice;
     public Button SecondChoice;
     public Button NextPerson;
+    public Button ShopButton;
 
     public TextMeshProUGUI FirstChoiceTxt;
     public TextMeshProUGUI SecondChoiceTxt;
