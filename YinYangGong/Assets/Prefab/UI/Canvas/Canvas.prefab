@@ -2077,7 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipToShow: "Quantit\xE9 d'argent du temple"
+  tipToShow: Temple money Yuan
 --- !u!1 &256463676917744987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2340,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipToShow: Show how ready the temple is :)
+  tipToShow: Readiness
+--- !u!1 &522653174463342184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5241985976881160586}
+  - component: {fileID: 353495176376682095}
+  - component: {fileID: 4864180820945501092}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5241985976881160586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522653174463342184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8166553717731263449}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -261, y: 437.00354}
+  m_SizeDelta: {x: 100, y: 137.894}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &353495176376682095
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522653174463342184}
+  m_CullTransparentMesh: 1
+--- !u!114 &4864180820945501092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522653174463342184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2010724654849e045a0c0f20c4b1a084, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &678388571892188084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2940,7 +3015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipToShow: Balance des pouvoirs entres les clans
+  tipToShow: Huangsei Balance
 --- !u!1 &2209429810770977483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,6 +3047,8 @@ RectTransform:
   - {fileID: 4168388008790184038}
   - {fileID: 5503548480001993415}
   - {fileID: 1548452838215084629}
+  - {fileID: 5241985976881160586}
+  - {fileID: 5262324285105811204}
   m_Father: {fileID: 3577320312555771938}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4168,7 +4245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipToShow: "Quantit\xE9 d'argent du temple"
+  tipToShow: Temple's disciples
 --- !u!1 &3187723657023249729
 GameObject:
   m_ObjectHideFlags: 0
@@ -5729,10 +5806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 0}
-  Gym: {fileID: 0}
   Level: {fileID: 0}
   FirstMainMenuBtn: {fileID: 0}
-  FirstGymMenuBtn: {fileID: 0}
   FirstLevelMenuBtn: {fileID: 0}
 --- !u!114 &277566642
 MonoBehaviour:
@@ -6231,7 +6306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipToShow: Balance des pouvoirs entres les clans
+  tipToShow: Susoda Balance
 --- !u!1 &5005714416230549809
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,6 +7632,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 240.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &7498098937995409233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5262324285105811204}
+  - component: {fileID: 8573999921995521969}
+  - component: {fileID: 8320313034558205306}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5262324285105811204
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498098937995409233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8166553717731263449}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 256, y: 435.7}
+  m_SizeDelta: {x: 100, y: 135.29}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8573999921995521969
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498098937995409233}
+  m_CullTransparentMesh: 1
+--- !u!114 &8320313034558205306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498098937995409233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d781140233159a34ebc972cc84771ea3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &7543816656342095161
 GameObject:
   m_ObjectHideFlags: 0
@@ -9660,16 +9810,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
---- !u!1 &2070514412349128608 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4503571814610030429, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
-  m_PrefabInstance: {fileID: 2505152955224666365}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &8818945787286029557 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
-  m_PrefabInstance: {fileID: 2505152955224666365}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7536697779759254385 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5355815576942492556, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
@@ -9681,6 +9821,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d56cfb0a63a302428335571c1b5a204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8818945787286029557 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
+  m_PrefabInstance: {fileID: 2505152955224666365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2070514412349128608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4503571814610030429, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
+  m_PrefabInstance: {fileID: 2505152955224666365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6845460840382330347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9802,11 +9952,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
---- !u!224 &457345652257898979 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
-  m_PrefabInstance: {fileID: 6845460840382330347}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1489666429043920487 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5355815576942492556, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
@@ -9818,6 +9963,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d56cfb0a63a302428335571c1b5a204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &457345652257898979 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
+  m_PrefabInstance: {fileID: 6845460840382330347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8843965862219699342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9940,6 +10090,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4503571814610030429, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
   m_PrefabInstance: {fileID: 8843965862219699342}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &2457614333580566662 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
+  m_PrefabInstance: {fileID: 8843965862219699342}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3526241526132797186 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5355815576942492556, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
@@ -9951,8 +10106,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d56cfb0a63a302428335571c1b5a204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &2457614333580566662 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6388117679344137224, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
-  m_PrefabInstance: {fileID: 8843965862219699342}
-  m_PrefabAsset: {fileID: 0}
