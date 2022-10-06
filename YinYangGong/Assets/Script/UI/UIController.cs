@@ -17,6 +17,9 @@ public class UIController : MonoBehaviour
     [SerializeField]
     private GameObject NPCQueue;
 
+    [SerializeField]
+    private RectTransform ScrollBackground;
+
 
     [Header("Texte de defaite")]
     [SerializeField]
@@ -73,6 +76,7 @@ public class UIController : MonoBehaviour
         PlayerInputs.QuestChoice.Accepter.performed += AccepterChoice;
         questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<QuestManager>();
         PauseMenuActive(true);
+        HideBtn();
 
         if(NPCQueue != null)
             NPCFileImage = NPCQueue.GetComponentsInChildren<Image>();
@@ -89,12 +93,18 @@ public class UIController : MonoBehaviour
 
         if (CurrentQuest != null)
         {
+            TextQuest.QuestInformation.SetActive(false);
+
             TextQuest.NomQuest.text = CurrentQuest.questDefinition.questName;
             TextQuest.DescriptionQuest.text = $"{CurrentQuest.questDefinition.questDescription}";
             TextQuest.QuestGiver.text = $"{CurrentQuest.questDefinition.questGiverName}";
 
             BtnQuest.FirstChoiceTxt.text = CurrentQuest.questDefinition.choice1Name;
             BtnQuest.SecondChoiceTxt.text = CurrentQuest.questDefinition.choice2Name;
+
+            HideBtn();
+
+            OpeningScroll();
 
             ShowQuest(true);
             ActivateBtn();
@@ -473,10 +483,30 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.gameObject.SetActive(false);
     }
 
+    private async void OpeningScroll()
+    {
+        Vector2 normalSize = ScrollBackground.sizeDelta;
+        int sizeIncrease = 50;
+        int openingScrollDelay = 60;
+
+        ScrollBackground.sizeDelta = new Vector2(0,normalSize.y);
+
+        for (int i = 0; i < normalSize.x; i += sizeIncrease)
+        {
+            ScrollBackground.sizeDelta = new Vector2(i, normalSize.y);
+            await Task.Delay(openingScrollDelay);
+        }
+
+        ScrollBackground.sizeDelta = normalSize;
+
+        TextQuest.QuestInformation.SetActive(true);
+        ShowBtn(true);
+    }
+
     private void ShowQuest(bool status)
     {
         UIMenu.QuestUI.SetActive(status);
-        ShowBtn(status);
+        //ShowBtn(status);
     }
 
     public void Victory()
@@ -602,6 +632,8 @@ public class TextQuest
     public TMPro.TextMeshProUGUI NomQuest;
     public TMPro.TextMeshProUGUI DescriptionQuest;
     public TMPro.TextMeshProUGUI QuestGiver;
+
+    public GameObject QuestInformation;
 }
 
 [Serializable]
