@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public class ItemDescriptionController : MonoBehaviour
 {
@@ -11,11 +12,11 @@ public class ItemDescriptionController : MonoBehaviour
     public TMP_Text itemPrice;
     public TMP_Text itemDescription;
 
-    public void SetItemDescription(Sprite spriteItem, string nameOfItem, string priceOfItem, string descriptionOfItem)
+    public void SetItemDescription(Item item)
     {
-        itemImage.sprite = spriteItem;
-        itemName.text = nameOfItem;
-        itemPrice.text = priceOfItem;
-        itemDescription.text = descriptionOfItem;
+        itemImage.sprite = item.Icon;
+        itemName.text = item.Name;
+        itemPrice.text = $"{item.Cost}¥"; 
+        itemDescription.text = item.Description;
     }
 }

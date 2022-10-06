@@ -6,6 +6,9 @@ public class StoreItemManager : ItemManager
 {
     private InventoryItemManager PlayerInventoryManager = null;
 
+    [SerializeField]
+    private ItemDescriptionController itemDescriptionController;
+
     private void Awake()
     {
         GameObject[] FoundObjects = GameObject.FindGameObjectsWithTag("InventoryManager");
@@ -30,5 +33,11 @@ public class StoreItemManager : ItemManager
             PlayerInventoryManager.AddItem(CurrentlySelectedItemSlotController.GetItem());
             RemoveItem(CurrentlySelectedItemSlotController);
         }
+    }
+
+    public override void HandleItemSlotControllerSelected(ItemSlotController NewSelectedItemController)
+    {
+        base.HandleItemSlotControllerSelected(NewSelectedItemController);
+        itemDescriptionController.SetItemDescription(NewSelectedItemController.GetItem());
     }
 }

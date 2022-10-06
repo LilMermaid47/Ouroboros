@@ -133,7 +133,7 @@ public class ItemManager : MonoBehaviour
         return null;
     }
 
-    protected void HandleItemSlotControllerSelected(ItemSlotController NewSelectedItemController)
+    public virtual void HandleItemSlotControllerSelected(ItemSlotController NewSelectedItemController)
     {
         if (CurrentlySelectedItemSlotController != null)
         {
@@ -141,5 +141,7 @@ public class ItemManager : MonoBehaviour
         }        
         CurrentlySelectedItemSlotController = NewSelectedItemController;
         CurrentlySelectedItemSlotController.SelectionButtonImage.color = SelectedColor;
+
+
     }
 }

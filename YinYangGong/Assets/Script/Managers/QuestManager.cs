@@ -22,6 +22,9 @@ public class QuestManager : MonoBehaviour
 
     float templeReadiness = 0;
 
+    private float argentBonus = 1f;
+    private float discipleBonus = 1f;
+    private float kiBonus = 1f;
 
     public Level level;
     public RandomQuestList randomQuestList;
@@ -96,29 +99,49 @@ public class QuestManager : MonoBehaviour
 
     private void CheckRequirement(RequirementQuest requirementQuest)
     {
-        if (requirementQuest.requirementChoice1.templeReadiness <= templeReadiness &&
-            requirementQuest.requirementChoice1.moneyCost <= argent &&
-            requirementQuest.requirementChoice1.kiCost <= ki &&
-            requirementQuest.requirementChoice1.disciples <= disciple)
+        Requirement requirement = requirementQuest.requirementChoice1;
+
+        if (requirement.templeReadiness <= templeReadiness &&
+            requirement.moneyCost <= argent &&
+            requirement.kiCost <= ki &&
+            requirement.disciples <= disciple)
         {
             uIController.FirstChoiceBtnActivate(true);
         }
         else
         {
-            uIController.FirstChoiceBtnActivate(false);
+            uIController.DisableFirstChoiceBtn(DisableReason(requirement));
         }
 
-        if (requirementQuest.requirementChoice2.templeReadiness <= templeReadiness &&
-            requirementQuest.requirementChoice2.moneyCost <= argent &&
-            requirementQuest.requirementChoice2.kiCost <= ki &&
-            requirementQuest.requirementChoice2.disciples <= disciple)
+        requirement = requirementQuest.requirementChoice2;
+
+        if (requirement.templeReadiness <= templeReadiness &&
+            requirement.moneyCost <= argent &&
+            requirement.kiCost <= ki &&
+            requirement.disciples <= disciple)
         {
             uIController.SecondChoiceBtnActivate(true);
         }
         else
         {
-            uIController.SecondChoiceBtnActivate(false);
+            uIController.DisableSecondChoiceBtn(DisableReason(requirement));
         }
+    }
+
+    private string DisableReason(Requirement requirement)
+    {
+        string reason = "";
+
+        if (requirement.templeReadiness <= templeReadiness)
+            reason = "<b><u>Temple readiness\ntoo low!</b></u>";
+        else if (requirement.moneyCost <= argent)
+            reason = "<b><u>Not enough Yuan!</b></u>";
+        else if (requirement.kiCost <= ki)
+            reason = "<b><u>Not enough Ki!</b></u>";
+        else if (requirement.disciples <= disciple)
+            reason = "<b><u>You need more disciples!</b></u>";
+
+        return reason;
     }
 
     private void CheckIfPlayerWon()
@@ -141,11 +164,11 @@ public class QuestManager : MonoBehaviour
 
     private void QuestReward(Reward reward)
     {
-        argent += reward.moneyReward;
+        argent += Mathf.FloorToInt(reward.moneyReward * argentBonus);
         templeReadiness += reward.templeReadiness;
         yinYangBalance += reward.yinYangBalance;
-        disciple += reward.nbDisciple;
-        ki += reward.nbKi;
+        disciple += Mathf.FloorToInt(reward.nbDisciple * discipleBonus);
+        ki += Mathf.FloorToInt(reward.nbKi * kiBonus);
         uIController.SetRewardsRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
 
         if (reward.unlockQuestChoice.unlockedQuest != null)
@@ -207,6 +230,11 @@ public class QuestManager : MonoBehaviour
         uIController.SetArgent(argent);
     }
 
+    public void SetArgentBonus(float bonus)
+    {
+        argentBonus += bonus;
+    }    
+
     public int GetDisciple()
     {
         return disciple;
@@ -216,9 +244,20 @@ public class QuestManager : MonoBehaviour
         disciple += newDisciple;
         uIController.SetDisciple(disciple);
     }
+
+    public void SetDiscipleBonus(float bonus)
+    {
+        discipleBonus += bonus;
+    }
+
     public float GetKi()
     {
         return ki;
+    }
+
+    public void SetKiBonus(float bonus)
+    {
+        kiBonus += bonus;
     }
 
     public int GetCurrentQuestPosition()

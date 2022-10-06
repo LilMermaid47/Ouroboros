@@ -1,7 +1,7 @@
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -446,9 +446,21 @@ public class UIController : MonoBehaviour
         BtnQuest.FirstChoice.interactable = status;
     }
 
+    public void DisableFirstChoiceBtn(string reason)
+    {
+        FirstChoiceBtnActivate(false);
+        BtnQuest.FirstChoiceTxt.text += $"\n{reason}";
+    }
+
     public void SecondChoiceBtnActivate(bool status)
     {
         BtnQuest.SecondChoice.interactable = status;
+    }
+
+    public void DisableSecondChoiceBtn(string reason)
+    {
+        SecondChoiceBtnActivate(false);
+        BtnQuest.SecondChoiceTxt.text += $"\n{reason}";
     }
 
     private void NextPersonBtnActivate(bool status)
@@ -463,7 +475,7 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.gameObject.SetActive(status);
     }
 
-    public void MakeButtonInvisibleExceptNextPerson(bool status)
+    private void MakeButtonInvisibleExceptNextPerson(bool status)
     {
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
@@ -617,10 +629,10 @@ public class GameUI
 [Serializable]
 public class TextRessources
 {
-    public TMPro.TextMeshProUGUI Disciple;
-    public TMPro.TextMeshProUGUI Yuan;
-    public TMPro.TextMeshProUGUI TempleReadiness;
-    public TMPro.TextMeshProUGUI nbQuestLeft;
+    public TextMeshProUGUI Disciple;
+    public TextMeshProUGUI Yuan;
+    public TextMeshProUGUI TempleReadiness;
+    public TextMeshProUGUI nbQuestLeft;
     public BalanceBar BalanceClanSusoda;
     public BalanceBar BalanceClanHuangsei;
     public BalanceBar KiBar;
@@ -629,9 +641,9 @@ public class TextRessources
 [Serializable]
 public class TextQuest
 {
-    public TMPro.TextMeshProUGUI NomQuest;
-    public TMPro.TextMeshProUGUI DescriptionQuest;
-    public TMPro.TextMeshProUGUI QuestGiver;
+    public TextMeshProUGUI NomQuest;
+    public TextMeshProUGUI DescriptionQuest;
+    public TextMeshProUGUI QuestGiver;
 
     public GameObject QuestInformation;
 }
@@ -644,8 +656,8 @@ public class BtnQuest
     public Button SecondChoice;
     public Button NextPerson;
 
-    public TMPro.TextMeshProUGUI FirstChoiceTxt;
-    public TMPro.TextMeshProUGUI SecondChoiceTxt;
+    public TextMeshProUGUI FirstChoiceTxt;
+    public TextMeshProUGUI SecondChoiceTxt;
 }
 
 [Serializable]
