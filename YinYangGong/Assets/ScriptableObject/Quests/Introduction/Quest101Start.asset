@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest101Start
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: First day
+    questGiverName: Monk
+    questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
+    questDescription: '"Several villagers request an audience with the Temple. Answer
+      to the best of your knowledge, and try not to favor one clan too much."
+
+
+      We
+      were to meet the villagers who had been waiting for several hours, but the
+      <b>magistrate Liliang</b> deigned to offer us her presence, a rare thing. You
+      remember that she is the <b>official leader</b> of the village. She rarely
+      leaves her wealth-filled palace to go to the common people. Maybe <b>yesterday''s
+      demon attack</b> made her realize how dangerous our warnings were.'
+    choice1Name: I understand
+    choice1Description: 
+    choice1Reveal: 
+    choice2Name: What ?
+    choice2Description: 
+    choice2Reveal: The monk sight and repeat what he just said.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000}

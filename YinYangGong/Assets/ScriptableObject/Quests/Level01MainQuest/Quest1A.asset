@@ -25,11 +25,11 @@ MonoBehaviour:
     choice2Name: Susoda
     choice2Description: I propose to <b>buy some slaves</b> and put them on work
       duty.
-    choice2Reveal: The slaves did a good job, and</b> we converted them into our
-      temple<b>.
+    choice2Reveal: The slaves did a good job, and</b> the Susoda clan converted them
+      <b>.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 10
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: -15
@@ -37,11 +37,11 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: -20
+      moneyReward: 0
       templeReadiness: 15
-      nbDisciple: 2
+      nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 15
+      yinYangBalance: 20
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

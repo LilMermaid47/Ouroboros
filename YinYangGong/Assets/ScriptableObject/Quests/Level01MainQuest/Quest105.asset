@@ -16,23 +16,21 @@ MonoBehaviour:
     questName: A New Start
     questGiverName: Neutral peasant
     questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
-    questDescription: "\u201CI'm sorry, Master Monk, I need to leave the Temple for
-      a clan. I want to train and become a magic monk, but I don't know <b>which
-      clan</b> would be more interesting. What practice do you recommend?\u201D"
+    questDescription: "\u201CMaster Monk,  I want to train and become a magic monk,
+      but I don't know <b>which clan</b> would be more interesting. What practice
+      do you recommend?\u201D"
     choice1Name: Fire magic
     choice1Description: Mastering fire would make you a seasoned warrior.
     choice1Reveal: The Huangsei clan trained the new devotee. He is now an important
-      member of the Sun Clan. <b>I can't afford to lose too many followers</b>. Otherwise,
-      there will be no more in the Temple.
+      member of the Sun Clan.
     choice2Name: Earth magic
     choice2Description: Mastering the land would make life easier for many villagers.
-    choice2Reveal: The head of the Susoda clan personally trained the new member.
-      He is now a helpful hand to the Moon clan and the village. <b>I can't afford
-      to lose too many followers</b>. Otherwise, there will be no more in the Temple.
+    choice2Reveal: 'The head of the Susoda clan personally trained the new member.
+      He is now a helpful hand to the Moon clan and the village. '
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
-      nbDisciple: -1
+      nbDisciple: 0
       nbKi: 0
       yinYangBalance: -10
       unlockQuestChoice:
@@ -41,7 +39,7 @@ MonoBehaviour:
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 0
-      nbDisciple: -1
+      nbDisciple: 0
       nbKi: 0
       yinYangBalance: 10
       unlockQuestChoice:

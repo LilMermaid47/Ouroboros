@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest1B2
+  m_Name: Quest108B2
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Susoda vs. Bandits
