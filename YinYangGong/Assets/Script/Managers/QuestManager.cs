@@ -206,12 +206,12 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.HuangseiLoss);
         else if (yinYangBalance <= -maxClanBalance)
             uIController.Defeat(DefeatType.SusodaLoss);
-        else if (argent < 0)
-            uIController.Defeat(DefeatType.MoneyLoss);
-        else if (ki < 0)
-            uIController.Defeat(DefeatType.KiLoss);
         else if (disciple <= 0)
             uIController.Defeat(DefeatType.DiscipleLoss);
+        else if (ki < 0)
+            uIController.Defeat(DefeatType.KiLoss);
+        else if (argent < 0)
+            uIController.Defeat(DefeatType.MoneyLoss);
     }
 
     public void AddQuest(int index, Quest questToAdd)

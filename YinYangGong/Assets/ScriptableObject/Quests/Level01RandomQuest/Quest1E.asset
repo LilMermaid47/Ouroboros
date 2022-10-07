@@ -27,8 +27,8 @@ MonoBehaviour:
     choice2Name: Lie
     choice2Description: I'm sorry, I have no place to offer you.
     choice2Reveal: The traveler left your temple and took refuge with the Huangsei
-      clan. Rilou, the chef, disapproves of your gesture and does not hide it. Some
-      villagers seem to agree with him.
+      clan. Rilou, the chef, disapproves of your gesture and does not hide it. Despite
+      this, he still acquired some members.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
