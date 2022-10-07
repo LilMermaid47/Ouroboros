@@ -50,6 +50,9 @@ public class ItemManager : MonoBehaviour
                 ItemSlotControllers[i].SetItemDetails(StartingItems[i].Item, StartingItems[i].Quantity);
             }
         }
+
+        HandleItemSlotControllerSelected(ItemSlotControllers[0]);
+
         gameObject.SetActive(false);
     }
 

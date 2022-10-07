@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Shop
   Description: Shop
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: df6f28a7716a58948a492e54be4619cb, type: 3}
   Cost: 0
   bIsStackable: 0
   upgradeItemList: 0
