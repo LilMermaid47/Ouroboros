@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest000
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: New Leader
+    questGiverName: Monk
+    questGiverSprite: {fileID: 0}
+    questDescription: '"My dear apprentice, it is time for you to become the <b>head
+      of the Temple</b>. I''m getting old, and I feel my body and mind losing balance.
+      Soon I''ll be dust in the wind.
+
+
+      Remember, Fubai Village is counting
+      on you. We, the Temple, <b>counsel and assist the community</b>. You will also
+      take my role as mediator. The two clans living in the village have <b>hated
+      each other</b> for millennia. A simple argument can quickly turn into a bloodbath.
+      Don''t be fooled by them.
+
+
+      Do you understand?'
+    choice1Name: Yes
+    choice1Description: I understand my new role.
+    choice1Reveal: The monk is relieved and seems happy.
+    choice2Name: No
+    choice2Description: I need my master to repeat.
+    choice2Reveal: The monk sight and repeat what he just said.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
