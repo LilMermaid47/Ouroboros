@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9db6a2bb60a9824abb292dbed93dce4, type: 3}
+  m_Name: Level1_DUMMY
+  m_EditorClassIdentifier: 
+  questList:
+  - {fileID: 11400000, guid: 35a3be2c2173dc64ba19d2e939e1dcb4, type: 2}
+  - {fileID: 11400000, guid: f06962f88201cfe4f83962f956abad65, type: 2}
+  - {fileID: 11400000, guid: 0563e95040cd2b6469ceb53f21913c2d, type: 2}
+  - {fileID: 11400000, guid: bd595d27d4f7fdf4eacef1dc71bafeb3, type: 2}
+  - {fileID: 11400000, guid: e5f15e2d192c99c4e9d5f57b2de76b73, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: a2fe5181724263d4c925ef398487a00c, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: d9fa9c3b6d5b2a440a391597fdbd66c8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 07ddc9f9ea282f44a86158b0572b996f, type: 2}
+  - {fileID: 11400000, guid: 7f73139c05ec28746a03cc0f2260d574, type: 2}

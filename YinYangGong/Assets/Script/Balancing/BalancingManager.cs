@@ -240,6 +240,8 @@ public class BalancingManager: MonoBehaviour
         {
             questToRemove = rewardToRemove.unlockQuestChoice.unlockedQuest;
 
+
+            //Add remove rewards to balance Player Stats.
             if (filledLevel.questList.Contains(questToRemove))
                 filledLevel.questList.Remove(questToRemove);
         }
@@ -305,6 +307,15 @@ public class BalancingManager: MonoBehaviour
         stats.nbDisciple += reward.nbDisciple;
         stats.nbKi += reward.nbKi;
         stats.yinYangBalance += reward.yinYangBalance;
+    }
+
+    private void RemoveRewards(PlayerStats stats, Reward reward)
+    {
+        stats.money -= reward.moneyReward;
+        stats.templeReadiness -= reward.templeReadiness;
+        stats.nbDisciple -= reward.nbDisciple;
+        stats.nbKi -= reward.nbKi;
+        stats.yinYangBalance -= reward.yinYangBalance;
     }
 
     private bool CheckWin(PlayerStats stats)
