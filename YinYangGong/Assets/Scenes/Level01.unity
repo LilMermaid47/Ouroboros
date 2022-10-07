@@ -556,6 +556,14 @@ PrefabInstance:
       propertyPath: m_fontSizeMax
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4704488186431316375, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_text
+      value: Inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704488186431316375, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4704488186486946513, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
