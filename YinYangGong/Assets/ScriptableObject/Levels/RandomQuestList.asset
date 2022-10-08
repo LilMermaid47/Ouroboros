@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomQuestList:
   - {fileID: 11400000, guid: f86cbacf7cc65c24e8687ee0be54383e, type: 2}
+  - {fileID: 11400000, guid: 968bad066ce8da24098bace7b6d767c6, type: 2}
+  - {fileID: 11400000, guid: 42d3b7663ed97b24c8b500ba28af24ac, type: 2}
