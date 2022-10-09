@@ -91,6 +91,8 @@ public class QuestChoiceUi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<QuestManager>();
+
         PlayerInputs = new Ouroboros();
         PlayerInputs.QuestChoice.Accepter.performed += AccepterChoice;
         PlayerInputs.QuestChoice.GoBack.performed += RefuserChoice;
