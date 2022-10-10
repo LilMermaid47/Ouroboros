@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: 'The Alchemist '
     questGiverName: A Member of Susoda clan
-    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questDescription: "\u201C We found out<b> who was stealing our plant supplies</b>.
       We also discovered his laboratory, where he<b> experimented with several strange
       potions</b> and mixtures. The Susoda clan thinks he might be useful to us.\u201D"

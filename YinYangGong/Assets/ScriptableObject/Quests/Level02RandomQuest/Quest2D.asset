@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Forbidden Marriage
     questGiverName: A Member of clan Huangsei & a member of clan Susoda
-    questGiverSprite: {fileID: 21300000, guid: e8102fc47d34510438d07b28b7d94584, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: 902c2adb1257c6e459892caf5960ee7e, type: 3}
     questDescription: "\u201C Master monk, we need your help. We are<b> in love </b>and
       want to live our passion in broad daylight. Unfortunately, <b>our respective
       clans do not endorse our union</b>. Maybe they would accept if the Temple would
@@ -31,7 +31,7 @@ MonoBehaviour:
     choice2Reveal: The lovers fled from the village. Clan honor is spotless.
     rewardChoice1:
       moneyReward: -40
-      templeReadiness: 50
+      templeReadiness: 40
       nbDisciple: 2
       nbKi: 0
       yinYangBalance: 0

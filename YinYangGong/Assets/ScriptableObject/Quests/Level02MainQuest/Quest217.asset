@@ -30,14 +30,14 @@ MonoBehaviour:
       moneyReward: 0
       templeReadiness: -10
       nbDisciple: -1
-      nbKi: -5
+      nbKi: -4
       yinYangBalance: 0
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: -10
+      templeReadiness: -25
       nbDisciple: -2
       nbKi: 0
       yinYangBalance: 0

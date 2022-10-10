@@ -542,7 +542,7 @@ MonoBehaviour:
   disciple: 8
   ki: 7
   argent: 100
-  templeReadinessToAchieve: 125
+  templeReadinessToAchieve: 120
   level: {fileID: 11400000, guid: d562e355565215f45a69c50c88485c3c, type: 2}
   randomQuestList: {fileID: 11400000, guid: b0ace92e95e19244eb95000ac4b3da16, type: 2}
   currentQuest: {fileID: 0}

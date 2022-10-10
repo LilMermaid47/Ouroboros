@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: 'Xiao '
     questGiverName: A Member of Susoda clan
-    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questDescription: "\u201C I just saw a creature enter the village. I'm not sure
       if it's a bird or an ape, but I'm sure it's a <b>bloodthirsty monster</b>.
       What do you propose to do?\u201D"
