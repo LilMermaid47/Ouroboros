@@ -16,26 +16,33 @@ MonoBehaviour:
     questName: Hungry Pig
     questGiverName: Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
-    questDescription: 'My pig is hungry, but I have no money to buy him food. <b>The
-      clans listen to you</b>. Demand it, and they''ll offer food for my pig.
-
-      Look
-      how beautiful it is. We can''t leave it like that.
+    questDescription: '"Watch out for that man and his pig. They bring bad luck."
 
 
-      Ouink ouink.'
-    choice1Name: 
-    choice1Description: 
-    choice1Reveal: 
-    choice2Name: 
-    choice2Description: 
-    choice2Reveal: 
+      "My
+      pig is hungry, but I have no money to buy him food. <b>The clans listen to
+      you</b>. Demand it, and they''ll offer food for my pig.
+
+      Look how beautiful
+      it is. We can''t leave it like that."
+
+
+      "Ouink ouink."'
+    choice1Name: Fresh fish
+    choice1Description: A fish freshly caught this morning by the fishermen of the
+      Huangsei clan should do the trick.
+    choice1Reveal: Oink Oink. Bendan's pig is happy. Unfortunately, the Huangsei
+      clan did not appreciate giving the madman a gift.
+    choice2Name: Bok choy
+    choice2Description: Susoda Clan bok choy are delicious and flavorful.
+    choice2Reveal: The Susoda clan doesn't like Bendan and his pig very much. The
+      cabbages offered to Bendan are less beautiful than he had hoped.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 0
+      yinYangBalance: 5
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
@@ -44,7 +51,7 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 0
+      yinYangBalance: -5
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
