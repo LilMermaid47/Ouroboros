@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest206A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: The Creature from the Sea
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: '"Our fishermen have fished out a <b>strange creature</b>.
+      It has the head of a fish and the legs of a man. Some think it''s coming from
+      the Di people, and others believe it''s a demon who came to attack us. What
+      are we going to do with this thing?"'
+    choice1Name: Kill it
+    choice1Description: 'Let''s kill it. It shouldn''t cause us any problems. It''s
+      half fish, and it looks delicious. '
+    choice1Reveal: The village has eaten the fish part of the creature and seems
+      reinvigorated.
+    choice2Name: Release it
+    choice2Description: Throw it in the river and pray to the gods it doesn't bring
+      its comrades back.
+    choice2Reveal: Yu, the head of the Susoda clan, had a vision of flying fish raining
+      down on the village. Something bad is coming.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 5
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -5
+      unlockQuestChoice:
+        nbQuestLater: 4
+        unlockedQuest: {fileID: 11400000, guid: 483d1d3cad4c9ab4b9d463c0b7160cef, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -10
+      unlockQuestChoice:
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 11400000, guid: cc0860734657e7147b4f772c9bcb5883, type: 2}

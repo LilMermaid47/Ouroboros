@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest212A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'The Strange Veggie '
+    questGiverName: Sun Wukong, the strange man
+    questGiverSprite: {fileID: 21300000, guid: 75d5933c8329df641810ce342d756987, type: 3}
+    questDescription: "\u201C I wanted to thank the village with this <b>wonderful
+      gift</b>. Here is a precious cabbage carved in jade. Legends say that it multiplies
+      the harvests. Use it well.\u201D"
+    choice1Name: Study it
+    choice1Description: We should study it in order to know the <b>magical effects</b>
+      of this cabbage. Perhaps we can increase its effects.
+    choice1Reveal: The man was right. Our harvests are prosperous and generous. Let's
+      hope to find other magical faculties in this cabbage and we could be happy
+      for years.
+    choice2Name: Sell it
+    choice2Description: Let's sell it, I don't trust this individual. This item must
+      be worth a small fortune.
+    choice2Reveal: We managed to sell the cabbage to a wealthy noble. He added it
+      to his collection and seemed more than happy.
+    rewardChoice1:
+      moneyReward: 10
+      templeReadiness: 20
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 11400000, guid: 75e142362dedc724499496031de0bd95, type: 2}
+    rewardChoice2:
+      moneyReward: 50
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 4
+        unlockedQuest: {fileID: 11400000, guid: 3287bdf30ceebe24bbc6b3b993be2558, type: 2}

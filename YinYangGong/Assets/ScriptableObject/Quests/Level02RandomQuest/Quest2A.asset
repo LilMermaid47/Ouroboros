@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest2A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Paying Again
+    questGiverName: Three angry peasants
+    questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
+    questDescription: "\u201C We have no more money! The tithe is <b>too high</b>!
+      Our children are hungry, and all we do is work.\u201D"
+    choice1Name: Reduce the tithe
+    choice1Description: I understand your concerns. I will lower the tithe by 10%
+      to accommodate you.
+    choice1Reveal: The villagers are happy with our decision. Our income has decreased,
+      but some peasants want to become disciples of the Temple.
+    choice2Name: Keep it as is
+    choice2Description: We live in difficult times, my friends. We all have to make
+      sacrifices!
+    choice2Reveal: The villagers are unhappy with our decision. However, with the
+      villagers' money, we could fortify our defenses.
+    rewardChoice1:
+      moneyReward: -20
+      templeReadiness: 0
+      nbDisciple: 2
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 20
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

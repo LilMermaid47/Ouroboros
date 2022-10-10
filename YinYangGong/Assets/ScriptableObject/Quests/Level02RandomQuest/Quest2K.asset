@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest2K
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Peaches of Immortality
+    questGiverName: Sun Wukong, the strange man
+    questGiverSprite: {fileID: 21300000, guid: 75d5933c8329df641810ce342d756987, type: 3}
+    questDescription: "\u201C I picked a basket of immortality peaches. Listen to
+      me, I don't <b>want to mislead</b> you; peaches don't really make you immortal.
+      However, they <b>give energy</b> to those who eat them. Which clan should I
+      offer them to?\u201D"
+    choice1Name: Huangsei
+    choice1Description: I think Rilou, the clan leader, loves this fruit.
+    choice1Reveal: All clan members fell ill. They need a few days off. Is it related
+      to peaches?
+    choice2Name: Susoda
+    choice2Description: Yu, the clan leader keeps saying that peaches are synonymous
+      with fertility.
+    choice2Reveal: All clan members fell ill. They need a few days off. Is it related
+      to peaches?
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: -15
+      nbDisciple: 0
+      nbKi: -2
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: -15
+      nbDisciple: 0
+      nbKi: -2
+      yinYangBalance: -25
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

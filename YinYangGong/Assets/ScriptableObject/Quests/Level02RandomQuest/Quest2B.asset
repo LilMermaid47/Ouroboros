@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest2B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'The Alchemist '
+    questGiverName: A Member of Susoda clan
+    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questDescription: "\u201C We found out<b> who was stealing our plant supplies</b>.
+      We also discovered his laboratory, where he<b> experimented with several strange
+      potions</b> and mixtures. The Susoda clan thinks he might be useful to us.\u201D"
+    choice1Name: Imprison him
+    choice1Description: Theft must be punished. Moreover, his talents as an alchemist
+      are dangerous for the village.
+    choice1Reveal: The Susoda clan hasn't come to the temple for a few days. This
+      is Yu's way of showing us her displeasure.
+    choice2Name: Recruit him
+    choice2Description: I trust you if the Susoda clan believes their talents can
+      serve the village.
+    choice2Reveal: The clan's new ally has concocted a very deadly poisonous gas.
+      A few villagers are dead, but we are ready to fight!
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -15
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 20
+      nbDisciple: -2
+      nbKi: 0
+      yinYangBalance: 15
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

@@ -15,21 +15,23 @@ MonoBehaviour:
   questDefinition:
     questName: 'Piggy Bite '
     questGiverName: A Huangsei member and Bendan the mad
+    questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
     questDescription: "\u201C Bendan's pig bit a village child. The parents want
-      redress and compensation. Who should we punish for this crime? \u201C"
+      <b>redress and compensation</b>. Who should we punish for this crime? \u201C"
     choice1Name: "Bendan\u2019s fault"
-    choice1Description: The pig belongs to Bendan, it is its owner who must receive
-      the punishment. He will have to help the villagers in the paddy fields.
-    choice1Reveal: Bendan is not very happy with his punishment. Through his faults,
-      we lost some crops.
+    choice1Description: The pig belongs to Bendan, and it is its owner who must receive
+      the punishment. But Bendan has no money. The Temple <b>will have to pay</b>
+      the parents for him.
+    choice1Reveal: Bendan is happy with his punishment. He knew the Temple would
+      help him.
     choice2Name: "Pig\u2019s fault"
-    choice2Description: The animal must be punished, it is uncontrollable and dangerous.
-      The animal will receive lashes for the example.
-    choice2Reveal: Bendan is angry with the Temple. The Huangsei clan found this
-      gesture inappropriate and violent.
+    choice2Description: The animal must be punished for its crime. it is <b>uncontrollable
+      and dangerous</b>. It will have to help the villagers in the paddy fields.
+    choice2Reveal: "Bendan is angry with the Temple. Through his pig faults, we lost
+      some crops.\r"
     rewardChoice1:
-      moneyReward: 0
-      templeReadiness: -10
+      moneyReward: -10
+      templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
@@ -38,7 +40,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: -10
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 10

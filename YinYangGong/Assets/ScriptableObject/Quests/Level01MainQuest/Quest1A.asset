@@ -25,8 +25,8 @@ MonoBehaviour:
     choice2Name: Susoda
     choice2Description: I propose to <b>buy some slaves</b> and put them on work
       duty.
-    choice2Reveal: The slaves did a good job, and</b> the Susoda clan converted them
-      <b>.
+    choice2Reveal: The slaves did a good job, and<b> the Susoda clan converted them
+      </b>.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15

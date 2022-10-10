@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest216
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'White Tiger '
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: "\u201C During our last hunt, we found the den of a marvelous
+      white tiger. The tiger kidnaps a few of our hunters. We believe we can kill
+      it and turn its fur into a <b>war chest worthy of our clan</b>!\u201D"
+    choice1Name: 'Chase the tiger '
+    choice1Description: The Huangsei clan is proud and threatening. I believe in
+      your strength! We need to save the hunters.
+    choice1Reveal: The Huangsei clan fought the white tiger. The tiger ate one or
+      two hunters, but the rest were well.
+    choice2Name: Stay here
+    choice2Description: The demons are approaching. We cannot afford to lose any
+      more members. Your clan is the pride of the village. Let's stay here and defend.
+    choice2Reveal: The Huangsei clan is flattered by the trust you have.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 2
+      nbKi: -2
+      yinYangBalance: -35
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 10
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -15
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

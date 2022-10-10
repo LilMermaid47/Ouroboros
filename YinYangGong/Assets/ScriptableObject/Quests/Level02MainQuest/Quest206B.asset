@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest206B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Gift from the Sea
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: "\u201C The<b> fish-like creature has returned</b> with some
+      warriors! As a reward for freeing them, they want to give us a <b>gift</b>.\""
+    choice1Name: Fish-warriors
+    choice1Description: They are formidable in battle, but they need to feed on <b>magic
+      shells</b> that we must craft.
+    choice1Reveal: Fish warriors are ready to defend the village.
+    choice2Name: Attack them
+    choice2Description: They travel with several relics of the sea that we could
+      resell at a high price.
+    choice2Reveal: You have exterminated the ocean creatures easily. Caifu, the merchant,
+      has sold some of their treasure.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 10
+      nbDisciple: 3
+      nbKi: -2
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 60
+      templeReadiness: -5
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 3
+        unlockedQuest: {fileID: 0}

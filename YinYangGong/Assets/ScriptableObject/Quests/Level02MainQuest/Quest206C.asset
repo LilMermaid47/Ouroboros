@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest206C
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'Revenge from the Sea '
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: "\u201C Another <b>fish-like creature has returned</b> to us.
+      It is with several other warriors, and they seem feral with their<b> precious
+      coral spears</b>. They have sent us an emissary asking for<b> reparation for
+      the death of their prince</b>.\u201D"
+    choice1Name: Attack them
+    choice1Description: Let's declare war. They are dangerous and monstrous.
+    choice1Reveal: The Merfolk are warriors as effective on land as in the sea. The
+      village still won the confrontation. Luckily their coral weapons are reselling
+      well.
+    choice2Name: Make peace
+    choice2Description: They want to receive several villagers, probably to eat them.
+      Accept their requests.
+    choice2Reveal: 'We gave several Temple disciples as a sacrifice. As a result,
+      the villagers develop a new hatred of monsters. I wouldn''t want to be the
+      next demon in the village. '
+    rewardChoice1:
+      moneyReward: 40
+      templeReadiness: -5
+      nbDisciple: 0
+      nbKi: -2
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 25
+      nbDisciple: -2
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
