@@ -208,7 +208,7 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.SusodaLoss);
         else if (disciple <= 0)
             uIController.Defeat(DefeatType.DiscipleLoss);
-        else if (ki < 0)
+        else if (ki <= 0)
             uIController.Defeat(DefeatType.KiLoss);
         else if (argent < 0)
             uIController.Defeat(DefeatType.MoneyLoss);
