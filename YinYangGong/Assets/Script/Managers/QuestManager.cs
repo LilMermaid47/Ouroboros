@@ -111,7 +111,7 @@ public class QuestManager : MonoBehaviour
     {
         Requirement requirement = requirementQuest.requirementChoice1;
 
-        if (requirement.templeReadiness <= templeReadiness &&
+        if ((requirement.templeReadiness <= templeReadiness|| requirement.templeReadiness == 0) &&
             requirement.moneyCost <= argent &&
             requirement.kiCost <= ki &&
             requirement.disciples <= disciple)
@@ -125,7 +125,7 @@ public class QuestManager : MonoBehaviour
 
         requirement = requirementQuest.requirementChoice2;
 
-        if (requirement.templeReadiness <= templeReadiness &&
+        if ((requirement.templeReadiness <= templeReadiness || requirement.templeReadiness == 0) &&
             requirement.moneyCost <= argent &&
             requirement.kiCost <= ki &&
             requirement.disciples <= disciple)

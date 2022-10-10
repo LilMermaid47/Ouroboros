@@ -69,6 +69,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/[Aa]ssets/[Ss]treamingAssets/
+/[Aa]ssets/[Ss]treamingAssets.meta
 Build/Deafening_Data/level0.resS
 Build/Deafening_Data/level1.resS
 Build/Deafening_Data/level2.resS
