@@ -32,7 +32,7 @@ MonoBehaviour:
       A few villagers also think the same.\r"
     rewardChoice1:
       moneyReward: -10
-      templeReadiness: -20
+      templeReadiness: -10
       nbDisciple: 3
       nbKi: 0
       yinYangBalance: 15
@@ -44,7 +44,7 @@ MonoBehaviour:
       templeReadiness: -5
       nbDisciple: -2
       nbKi: 0
-      yinYangBalance: 35
+      yinYangBalance: 25
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

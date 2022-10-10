@@ -33,7 +33,7 @@ MonoBehaviour:
       Wealth awaits us!
     rewardChoice1:
       moneyReward: 150
-      templeReadiness: 0
+      templeReadiness: 20
       nbDisciple: 0
       nbKi: 5
       yinYangBalance: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 100
-      templeReadiness: 10
+      templeReadiness: 20
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
