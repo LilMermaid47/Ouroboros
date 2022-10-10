@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: The Clans
     questGiverName: Monk
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
     questDescription: 'Since you are the new leader, each clan will come and give
       their respect to the Temple. Which do you want to see first? '
     choice1Name: Huangsei
@@ -32,7 +32,7 @@ MonoBehaviour:
       nbKi: 0
       yinYangBalance: 0
       unlockQuestChoice:
-        nbQuestLater: 0
+        nbQuestLater: 1
         unlockedQuest: {fileID: 11400000, guid: 20c97cc8b39bd3544b9e585e5af7ad75, type: 2}
     rewardChoice2:
       moneyReward: 0
@@ -41,5 +41,5 @@ MonoBehaviour:
       nbKi: 0
       yinYangBalance: 0
       unlockQuestChoice:
-        nbQuestLater: 0
-        unlockedQuest: {fileID: 0}
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: 043b6a0f1420e8c4596a49ca8621ed7b, type: 2}

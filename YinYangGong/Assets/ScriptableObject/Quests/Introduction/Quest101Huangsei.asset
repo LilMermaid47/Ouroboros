@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest101Huangsei
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Assume One's Wrongs
+    questGiverName: Liliang, the Magistrate
+    questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questDescription: '"Master monk, I trust you now. After the fight that my people
+      did for our survival yesterday, I can''t be delusional anymore. You said these
+      abominations are coming from the army of a monstrous King. If your prediction
+      is correct, they''re coming in droves! I hope it isn''t too late.What can we
+      do to<b> prepare ourselves </b><sprite name=readinessLogo>?"'
+    choice1Name: Sharpened the swords
+    choice1Description: Sharp swords can cut anything, even demons with fangs and
+      claws.
+    choice1Reveal: If we continue to prepare ourselves enough, the army of demons
+      will not be able to resist us! We need to have <b>at least 100% of readiness</b><sprite
+      name=readinessLogo> if we want to win against them.
+    choice2Name: Give each adult a shield
+    choice2Description: ' Let''s protect all those who can''t fight! Our people are
+      our most valuable ressource.'
+    choice2Reveal: If we continue to prepare ourselves enough, the army of demons
+      will not be able to resist us! We need to have <b>at least 100% of readiness</b><sprite
+      name=readinessLogo> if we want to win against them.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 15
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 15
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: New Leader
     questGiverName: Monk
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
     questDescription: '"My dear apprentice, it is time for you to become the <b>head
       of the Temple</b>. I''m getting old, and I feel my body and mind losing balance.
       Soon I''ll be dust in the wind.
@@ -52,4 +52,4 @@ MonoBehaviour:
       yinYangBalance: 0
       unlockQuestChoice:
         nbQuestLater: 0
-        unlockedQuest: {fileID: 0}
+        unlockedQuest: {fileID: 11400000}

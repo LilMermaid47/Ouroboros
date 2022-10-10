@@ -736,10 +736,6 @@ PrefabInstance:
       propertyPath: m_enableAutoSizing
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4860767619578811683, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 846.71
-      objectReference: {fileID: 0}
     - target: {fileID: 4930688107093968324, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.size
       value: 0
@@ -1180,12 +1176,12 @@ MonoBehaviour:
   yinYangBalance: 0
   maxClanBalance: 50
   maxKi: 0
-  disciple: 1
+  disciple: 3
   ki: 0
   argent: 40
   templeReadinessToAchieve: 100
-  level: {fileID: 11400000, guid: d6f4ae8c9dbe2634eb7f55e2ac78cc62, type: 2}
-  randomQuestList: {fileID: 11400000, guid: 8fb1c70168e29c1459ae44fe05b33ee6, type: 2}
+  level: {fileID: 11400000, guid: 343945426c480604891ef08213063bd8, type: 2}
+  randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}
   InventoryItemManager: {fileID: 711386451}
 --- !u!4 &1707705098
