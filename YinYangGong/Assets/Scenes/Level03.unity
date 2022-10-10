@@ -398,6 +398,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: KiLamp
       objectReference: {fileID: 0}
+    - target: {fileID: 6633341570103409926, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: questManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7985947426020157510, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_Name
       value: DiscipleLamp
@@ -514,13 +526,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yinYangBalance: 0
   maxClanBalance: 100
-  disciple: 0
+  maxKi: 100
+  disciple: 4
   ki: 0
   argent: 20
   templeReadinessToAchieve: 100
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}
+  InventoryItemManager: {fileID: 0}
 --- !u!4 &1707705098
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
@@ -28,13 +30,40 @@ public class BalancingManager: MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI LogTxt;
 
-    private int NbEnd = 0;
-    private int NbWin = 0;
-    private int NbLoss = 0;
+    private float NbWin = 0;
+    private float NbLoss = 0;
+
+    private List<string> LogList = new List<string>();
+
+    private string TxtDocumentName = $"{Application.streamingAssetsPath}/BalancingLogs/Log{DateTime.Now.ToString("dd-MM-yy")}.txt";
 
     private void Start()
     {
-        //creates a copy to not lose original data (important)
+        if (!Directory.Exists($"{Application.streamingAssetsPath}/BalancingLogs/"))
+        {
+            Directory.CreateDirectory($"{Application.streamingAssetsPath}/BalancingLogs/");
+        }
+
+        StartBotBtn();
+    }
+
+    public void StartBotBtn()
+    {
+        LogTxt.text = "";
+        QuestListTxt.text = "";
+
+        NbWin = 0;
+        NbLoss = 0;
+        
+        if (!File.Exists(TxtDocumentName))
+            File.WriteAllText(TxtDocumentName, $"Start Balancing Log: {DateTime.Now.ToString("dd/MM/yy  HH:mm")}\n\n");
+        else
+        {
+            File.Delete(TxtDocumentName);
+            File.WriteAllText(TxtDocumentName, $"Start Balancing Log: {DateTime.Now.ToString("dd/MM/yy  HH:mm")}\n");
+        }
+
+
         if (level != null && randomQuestList != null)
         {
             filledLevel = Instantiate(level);
@@ -47,10 +76,8 @@ public class BalancingManager: MonoBehaviour
         }
         else
             Debug.LogError($"List filled level is {filledLevel} and random quest list is {randomQuestList}.");
-
     }
 
-    //Come fill all the null element in the level list by random quest in the RandomQuestList
     private void SideQuestFiller()
     {
         for (int i = 0; i < level.questList.Count; i++)
@@ -84,7 +111,10 @@ public class BalancingManager: MonoBehaviour
 
     private void ShowEndLog()
     {
-        LogTxt.text = $"Nombre de fin: {NbEnd}\nNombre de Victoire: {NbWin}\nNombre de Defaites: {NbLoss}";
+        LogTxt.text = $"Nombre de fin: {NbWin + NbLoss}\nNombre de Victoire: {NbWin}\nNombre de Defaites: {NbLoss}\nWinrate:{NbWin/(NbWin+NbLoss)*100:0}%";
+
+        File.AppendAllText(TxtDocumentName, $"Nombre de fin: {NbWin + NbLoss}\nNombre de Victoire: {NbWin}\nNombre de Defaites: {NbLoss}\nWinrate:{NbWin / (NbWin + NbLoss) * 100:0}%\n\n");
+        File.AppendAllText(TxtDocumentName, string.Join("--------------------------------------------------------------------------------------------------------------------------------------------", LogList));
     }
 
     private async void StartBot()
@@ -161,33 +191,33 @@ public class BalancingManager: MonoBehaviour
 
             if (reward != null)
             {
-                reward = currentQuest.questDefinition.rewardChoice1;
-
-                SetRewards(stats, reward);
+                SetRewards(stats,stack, reward);
                 AddQuest(reward, currentLevel, stack.QuestIndex);
             }
 
-            if (CheckLoss(stats) || stack.QuestIndex >= currentLevel.questList.Count - 1)
-            {
-                if (CheckWin(stats))
+            if (reward == null || CheckLoss(stats) || stack.QuestIndex >= currentLevel.questList.Count - 1)
+            {                
+                if (CheckWin(stats) && stack.QuestIndex == currentLevel.questList.Count - 1)
                 {
                     NbWin++;
+                    CreateLog(stack, currentLevel, side, true);
                 }
-                else
+                else if (CheckLoss(stats) || (!CheckWin(stats) && stack.QuestIndex == currentLevel.questList.Count - 1))
+                {
                     NbLoss++;
+                    CreateLog(stack, currentLevel, side, false);
+                }
 
-                NbEnd++;
-
+                RemoveRewards(stats, stack);
                 RemoveQuest(stack, currentLevel, side);
 
-                if (stack.QuestIndex != 0 && stack.BotSideChoice == BotSideChoice.Both)
+                while (stack != null && stack.BotSideChoice == BotSideChoice.Both)
                 {
                     stack = stack.PreviousAIStack;
-                    RemoveQuest(stack, currentLevel, side);
 
-                    while (stack != null && stack.BotSideChoice == BotSideChoice.Both)
+                    if (stack != null)
                     {
-                        stack = stack.PreviousAIStack;
+                        RemoveRewards(stats, stack);
                         RemoveQuest(stack, currentLevel, side);
                     }
                 }
@@ -236,13 +266,11 @@ public class BalancingManager: MonoBehaviour
         Quest questToRemove = null;
         Reward rewardToRemove = RewardToRemove(stack, filledLevel, side);
 
-        if (rewardToRemove.unlockQuestChoice.unlockedQuest != null)
+        if (rewardToRemove != null)
         {
             questToRemove = rewardToRemove.unlockQuestChoice.unlockedQuest;
 
-
-            //Add remove rewards to balance Player Stats.
-            if (filledLevel.questList.Contains(questToRemove))
+            if (questToRemove != null && filledLevel.questList.Contains(questToRemove))
                 filledLevel.questList.Remove(questToRemove);
         }
     }
@@ -250,28 +278,33 @@ public class BalancingManager: MonoBehaviour
     private Reward RewardToRemove(AIStack stack, Level level, BotSideChoice side)
     {
         Reward rewardToRemove = null;
-        Quest currentQuest = level.questList[stack.QuestIndex];
+        Quest currentQuest = null;
 
-        if (side == BotSideChoice.Left)
+        if (stack.QuestIndex >= 0 && stack.QuestIndex < level.questList.Count - 1)
         {
-            if (stack.BotSideChoice == BotSideChoice.Right)
+            currentQuest = level.questList[stack.QuestIndex];
+
+            if (side == BotSideChoice.Left)
             {
-                rewardToRemove = currentQuest.questDefinition.rewardChoice1;
+                if (stack.BotSideChoice == BotSideChoice.Right)
+                {
+                    rewardToRemove = currentQuest.questDefinition.rewardChoice1;
+                }
+                else
+                {
+                    rewardToRemove = currentQuest.questDefinition.rewardChoice2;
+                }
             }
-            else
+            else if ((side == BotSideChoice.Right))
             {
-                rewardToRemove = currentQuest.questDefinition.rewardChoice2;
-            }
-        }
-        else if ((side == BotSideChoice.Right))
-        {
-            if (stack.BotSideChoice == BotSideChoice.Left)
-            {
-                rewardToRemove = currentQuest.questDefinition.rewardChoice2;
-            }
-            else
-            {
-                rewardToRemove = currentQuest.questDefinition.rewardChoice1;
+                if (stack.BotSideChoice == BotSideChoice.Left)
+                {
+                    rewardToRemove = currentQuest.questDefinition.rewardChoice2;
+                }
+                else
+                {
+                    rewardToRemove = currentQuest.questDefinition.rewardChoice1;
+                }
             }
         }
 
@@ -293,29 +326,26 @@ public class BalancingManager: MonoBehaviour
             else
                 requirement = requirementQuest.requirementChoice2;
 
-            if (stats.money < requirement.moneyCost || stats.templeReadiness < requirement.templeReadiness || stats.nbKi < requirement.kiCost)
+            if (stats.money < requirement.moneyCost || stats.templeReadiness < requirement.templeReadiness || stats.nbKi < requirement.kiCost || stats.nbDisciple < requirement.disciples)
                 passed = false;
         }
-
         return passed;
     }
 
-    private void SetRewards(PlayerStats stats, Reward reward)
+    private void SetRewards(PlayerStats stats, AIStack stack, Reward reward)
     {
         stats.money += reward.moneyReward;
         stats.templeReadiness += reward.templeReadiness;
         stats.nbDisciple += reward.nbDisciple;
         stats.nbKi += reward.nbKi;
         stats.yinYangBalance += reward.yinYangBalance;
+
+        stack.oldStats.SetStats(stats);
     }
 
-    private void RemoveRewards(PlayerStats stats, Reward reward)
+    private void RemoveRewards(PlayerStats stats, AIStack stack)
     {
-        stats.money -= reward.moneyReward;
-        stats.templeReadiness -= reward.templeReadiness;
-        stats.nbDisciple -= reward.nbDisciple;
-        stats.nbKi -= reward.nbKi;
-        stats.yinYangBalance -= reward.yinYangBalance;
+        stats.SetStats(stack.oldStats);
     }
 
     private bool CheckWin(PlayerStats stats)
@@ -333,6 +363,48 @@ public class BalancingManager: MonoBehaviour
         return lost;
     }
 
+    private void CreateLog(AIStack stack, Level currentLevel, BotSideChoice bot, bool victory)
+    {
+        int index;
+        string log = $"\n\nBot:{bot}  ";
+        string choice;
+
+        QuestDefinition questDefinition;
+        AIStack tempStack = stack;
+        List<AIStack> botPath = new List<AIStack>();
+
+        if (victory)
+            log += "Victory!\n\n";
+        else
+            log += "Loss!\n\n";
+
+        do
+        {
+            botPath.Insert(0,tempStack);
+            tempStack = tempStack.PreviousAIStack;
+        } 
+        while (tempStack != null);
+
+        foreach (AIStack item in botPath)
+        {
+            index = item.QuestIndex;
+            questDefinition = currentLevel.questList[index].questDefinition;
+
+            if (bot == BotSideChoice.Right && item.BotSideChoice == BotSideChoice.Both || bot == BotSideChoice.Left && item.BotSideChoice == BotSideChoice.Right)
+            {
+                choice = questDefinition.choice1Name;
+            }
+            else
+            {
+                choice = questDefinition.choice2Name;
+            }
+
+            log += $"Quest:{index}-{questDefinition.questName}\nChoice:{choice}\n{item.oldStats.ToString()}\n\n";
+        }
+
+        LogList.Add(log);
+    }
+
     public enum BotSideChoice
     {
         Right,
@@ -343,11 +415,20 @@ public class BalancingManager: MonoBehaviour
     [Serializable]
     public class PlayerStats
     {
-        public int money { get; set; } = 0;
-        public float templeReadiness { get; set; } = 0;
-        public int nbDisciple { get; set; } = 0;
-        public int nbKi { get; set; } = 0;
-        public int yinYangBalance { get; set; } = 0;
+        public int money = 0;
+        public float templeReadiness = 0;
+        public int nbDisciple = 0;
+        public int nbKi = 0;
+        public int yinYangBalance = 0;
+
+        public PlayerStats()
+        {
+            money = 0;
+            templeReadiness = 0;
+            nbDisciple = 0;
+            nbKi = 0;
+            yinYangBalance = 0;
+        }
 
         public PlayerStats(int playerMoney, float readiness, int disciple, int ki, int balance)
         {
@@ -357,15 +438,30 @@ public class BalancingManager: MonoBehaviour
             nbKi = ki;
             yinYangBalance = balance;
         }
+
+        public void SetStats(PlayerStats playerStats)
+        {
+            money = playerStats.money;
+            templeReadiness = playerStats.templeReadiness;
+            nbDisciple = playerStats.nbDisciple;
+            yinYangBalance = playerStats.yinYangBalance;
+            nbKi = playerStats.nbKi;
+        }
+
+        public override string ToString()
+        {
+            return $"Ki:{nbKi} \t||\t Money:{money} \t||\t Yin Yang Balance:{yinYangBalance} \t||\t Disciple:{nbDisciple} \t||\t TempleReadiness:{templeReadiness}";
+        }
     }
 
     [Serializable]
     private class AIStack
     {
-        public int QuestIndex { get; set; } = 0;
-        public AIStack PreviousAIStack { get; set; } = null;
+        public int QuestIndex = 0;
+        public AIStack PreviousAIStack = null;
+        public PlayerStats oldStats = new PlayerStats();
 
-        public BotSideChoice BotSideChoice { get; set; }
+        public BotSideChoice BotSideChoice;
 
         public AIStack(int questIndex, AIStack previousAIStack, BotSideChoice botSideChoice)
         {
