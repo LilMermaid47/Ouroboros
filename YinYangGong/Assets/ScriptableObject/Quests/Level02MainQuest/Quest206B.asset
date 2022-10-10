@@ -29,7 +29,7 @@ MonoBehaviour:
       has sold some of their treasure.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 10
+      templeReadiness: 20
       nbDisciple: 3
       nbKi: -2
       yinYangBalance: 0

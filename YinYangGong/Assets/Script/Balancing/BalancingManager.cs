@@ -366,7 +366,7 @@ public class BalancingManager: MonoBehaviour
     private void CreateLog(AIStack stack, Level currentLevel, BotSideChoice bot, bool victory)
     {
         int index;
-        string log = $"\n\nBot:{bot}  ";
+        string log = $"\n\nBot:{bot}";
         string choice;
 
         QuestDefinition questDefinition;
@@ -374,9 +374,9 @@ public class BalancingManager: MonoBehaviour
         List<AIStack> botPath = new List<AIStack>();
 
         if (victory)
-            log += "Victory!\n\n";
+            log += "\tVictory!\n\n";
         else
-            log += "Loss!\n\n";
+            log += LossReason(stack.oldStats);
 
         do
         {
@@ -403,6 +403,25 @@ public class BalancingManager: MonoBehaviour
         }
 
         LogList.Add(log);
+    }
+
+    private string LossReason(PlayerStats stats)
+    {
+        string loss = "\t";
+
+
+        if (stats.yinYangBalance <= -MaxClanBalance || stats.yinYangBalance >= MaxClanBalance)
+            loss += "Yin Yang Balance loss";
+        else if (stats.money < 0)
+            loss += "Money loss";
+        else if (stats.nbDisciple <= 0)
+            loss += "Disciple loss";
+        else if (stats.nbKi < 0)
+            loss += "Ki loss";
+
+        loss += "\n\n";
+
+        return loss;
     }
 
     public enum BotSideChoice
