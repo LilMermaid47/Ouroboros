@@ -23,28 +23,28 @@ MonoBehaviour:
     choice1Description: We can prepare mixtures that would help heal the wounds of
       our villagers.
     choice1Reveal: The Susoda clan has successfully prepared a cure for our villagers.
-      Unfortunately, the bandits attacked the village again and caused mayhem. The
-      Huangsei clan came to the defense of the village.
+      Unfortunately, the bandits attacked the village again. We were ready to welcome
+      them, and they fled with their tail between their legs.
     choice2Name: Poison the Bandits
     choice2Description: We can extract the sap of a poisonous plant dangerous to
       humans and dip our arrowheads into it.
-    choice2Reveal: The Susoda clan poisoned all the bandits without any damage. The
-      village is grateful for their excellent work!
+    choice2Reveal: The Susoda clan poisoned all the bandits with few flaws. The village
+      is grateful for receiving the gold from the bandits.
     rewardChoice1:
       moneyReward: 10
-      templeReadiness: -10
-      nbDisciple: 1
+      templeReadiness: 15
+      nbDisciple: 0
       nbKi: 0
-      yinYangBalance: -10
+      yinYangBalance: 10
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 10
-      templeReadiness: 10
+      moneyReward: 30
+      templeReadiness: 5
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 10
+      yinYangBalance: 20
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

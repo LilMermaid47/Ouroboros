@@ -17,7 +17,8 @@ MonoBehaviour:
     questGiverName: Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
     questDescription: "The clan leaders are back. Decide which one you want to meet
-      first. \n\nChoose wisely. Sometimes, they are not patient."
+      first. \n\nChoose wisely. Sometimes, they are not patient, and they may leave
+      if they are not chosen first."
     choice1Name: Huangsei
     choice1Description: Rilou looks like someone who wants to ask for permission.
     choice1Reveal: The leader approaches the Temple.

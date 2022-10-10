@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: The Great Means
     questGiverName: Liliang, the Magistrate
-    questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questDescription: "\u201C We have to find a new way to <b>defend ourselves</b>.
       Our militia is not enough. I need your advice.\u201C"
     choice1Name: Ancient monks
@@ -44,7 +44,7 @@ MonoBehaviour:
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 10
-      nbDisciple: -1
+      nbDisciple: 0
       nbKi: 0
       yinYangBalance: 10
       unlockQuestChoice:

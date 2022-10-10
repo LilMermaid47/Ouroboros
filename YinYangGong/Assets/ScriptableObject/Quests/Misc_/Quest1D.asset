@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: The Feast
     questGiverName: Liliang, the Magistrate
-    questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
+    questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questDescription: "\u201C I want to organize a feast in my honor, but my palace
       cannot accommodate the whole village. I can receive men or just women. <b>Who
       do you recommend?</b>\u201C\r"

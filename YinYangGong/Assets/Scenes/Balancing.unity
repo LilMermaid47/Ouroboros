@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxClanBalance: 50
-  StartingDisciple: 3
+  StartingDisciple: 1
   StartingKi: 0
   StartingArgent: 40
-  templeReadinessToAchieve: 100
-  level: {fileID: 11400000, guid: c803bab1003dd6442aa97a4c45692b50, type: 2}
-  randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
+  templeReadinessToAchieve: 90
+  level: {fileID: 11400000, guid: d6f4ae8c9dbe2634eb7f55e2ac78cc62, type: 2}
+  randomQuestList: {fileID: 11400000, guid: 8fb1c70168e29c1459ae44fe05b33ee6, type: 2}
   QuestListTxt: {fileID: 479196538}
   LogTxt: {fileID: 1141053427}
 --- !u!1 &479196536
