@@ -524,13 +524,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4415b1725b422994db31393bafff7a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yinYangBalance: 0
   maxClanBalance: 100
-  maxKi: 100
-  disciple: 4
-  ki: 0
-  argent: 20
-  templeReadinessToAchieve: 100
+  maxKi: 10
+  disciple: 7
+  ki: 5
+  argent: 80
+  templeReadinessToAchieve: 150
   level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
   randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
   currentQuest: {fileID: 0}

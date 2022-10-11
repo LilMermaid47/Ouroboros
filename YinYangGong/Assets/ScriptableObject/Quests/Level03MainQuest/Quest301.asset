@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest301
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Kid Apple
+    questGiverName: A Member of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
+    questDescription: "\u201CThe crime rate has been on the rise since the last attack.
+      Thefts, murders, and assaults are numerous. Maybe the fool was right, a curse
+      fell on us. Fortunately, I caught a child who stole an apple from me. What
+      sentence do you recommend?\u201D"
+    choice1Name: 'Cut off his hand '
+    choice1Description: Theft can only be punished by prompt punishment. Cut off
+      his thieving hand.
+    choice1Reveal: The child cried out when he lost his hand. The Huangsei clan is
+      proud of the sentence they received.
+    choice2Name: Community work
+    choice2Description: Let him come and work in the Temple so he can be taught good
+      manners.
+    choice2Reveal: The young boy now works at the temple. He doesn't seem to carry
+      the Huangsei clan in his heart.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -35
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 1
+      nbKi: 0
+      yinYangBalance: 5
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

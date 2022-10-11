@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest305
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Criminal on the Loose
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: "\u201C Someone wrote insults in blood on houses belonging
+      to our clan.\r\n We must punish this ungrateful gesture. If you help us, we
+      will strengthen our patrols to protect the village better.\u201D\r"
+    choice1Name: Accept
+    choice1Description: The Huangsei clan deserves our help. Their honor is sullied.
+    choice1Reveal: We helped the clan clean up the insults, and they kept their promise
+      to help the village. No suspects have been arrested.
+    choice2Name: Refuse
+    choice2Description: This gesture is trivial. Let's worry about more important
+      things like child abductions in the village.
+    choice2Reveal: I wonder what the purpose of this crime was.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 20
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -25
+      unlockQuestChoice:
+        nbQuestLater: 4
+        unlockedQuest: {fileID: 11400000, guid: 72bd3f3d10c874d418744b8975b1f7cd, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 5
+      unlockQuestChoice:
+        nbQuestLater: 4
+        unlockedQuest: {fileID: 11400000, guid: 4626131a2dd42c748be9a9ce4327a8b2, type: 2}
