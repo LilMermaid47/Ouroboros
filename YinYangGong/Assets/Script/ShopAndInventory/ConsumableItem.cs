@@ -71,6 +71,19 @@ public class ConsumableItem : Item
 
         questManager.SetYinYangBalance(newYinYang);
     }
+
+    int nbArgentWealthPotion = 20;
+    private void WealthPotion()
+    {
+        questManager.AddMoney(nbArgentWealthPotion);
+    }
+
+    private void SeerPotion()
+    {
+        //todo
+    }
+
+
 }
 
 public enum ConsumableItemList

@@ -263,6 +263,13 @@ public class QuestManager : MonoBehaviour
         uIController.SetArgent(argent);
     }
 
+    public void AddMoney(int money)
+    {
+        argent += money;
+        uIController.SetArgent(argent);
+    }
+
+
     public void SetArgentBonus(float bonus)
     {
         argentBonus += bonus;
