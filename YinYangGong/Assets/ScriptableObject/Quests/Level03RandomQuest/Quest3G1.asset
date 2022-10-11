@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: Quest1G1
+  m_Name: Quest3G1
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Mother Tree
@@ -23,31 +23,30 @@ MonoBehaviour:
     choice1Name: Contact the Shamans of the West
     choice1Description: Shamans have more advanced knowledge about diseased trees.
       Bringing one to the village should help us heal the tree, but they live <b>far
-      away</b>.We must send funds before bringing them to the town.
+      away</b>.So we need to send an emissary to their land.
     choice1Reveal: On his way to the village, the shaman was attacked and never reached
       his destination. The mother tree of Susoda is stunted and dry. So there's not
-      much more to do with it. Yu appreciated our efforts to save the tree. She will
-      pray for us.
+      much more to do with it.
     choice2Name: Cut the tree
     choice2Description: The tree is a lost cause. It should be cut down before the
-      wood goes moldy.
+      wood goes moldy. I am sure everybody wants to buy this wood.
     choice2Reveal: Yu angers the loggers who cut down the tree. We sold the magical
       wood. The Susoda clan is furious with the temple.
     rewardChoice1:
-      moneyReward: -20
+      moneyReward: -30
       templeReadiness: 0
-      nbDisciple: 0
+      nbDisciple: -2
       nbKi: 0
-      yinYangBalance: 10
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 3
         unlockedQuest: {fileID: 11400000, guid: e5f862355b1d7174da73abcffd051d13, type: 2}
     rewardChoice2:
-      moneyReward: 20
+      moneyReward: 50
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: -25
+      yinYangBalance: -80
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

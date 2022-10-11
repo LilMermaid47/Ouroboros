@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest1D
+  m_Name: Quest3H
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Feast
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questDescription: "\u201C I want to organize a feast in my honor, but my palace
-      cannot accommodate the whole village. I can receive men or just women. <b>Who
-      do you recommend?</b>\u201C\r"
+      cannot accommodate the whole village. I can receive men or just women.  I hope
+      it will not insult one clan. How can I know which clan is composed of men or
+      women? <b>Who do you recommend?</b>\u201C\r"
     choice1Name: The men
     choice1Description: The men of the village represent half of the inhabitants.
       Most are soldiers and enjoy contests and challenges.
@@ -27,24 +28,23 @@ MonoBehaviour:
     choice2Name: The women
     choice2Description: The village women are young and would appreciate a banquet
       followed by a dance party.
-    choice2Reveal: During the evening, the Susoda clan converted several women to
-      their clan. Yu, the leader never misses an opportunity to showcase her talents
-      as a speaker.
+    choice2Reveal: During the evening, Yu, the leader sing a sweet requiem. She never
+      misses an opportunity to showcase her talents as a singer.
     rewardChoice1:
-      moneyReward: 0
-      templeReadiness: 5
+      moneyReward: -10
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: -5
+      yinYangBalance: -50
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 0
-      templeReadiness: 10
-      nbDisciple: -1
+      moneyReward: -10
+      templeReadiness: 15
+      nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 10
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
