@@ -2150,7 +2150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 601, y: -241}
+  m_AnchoredPosition: {x: 537, y: -104}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6791893593228541232
@@ -2848,7 +2848,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0010376, y: 0.00024414}
-  m_SizeDelta: {x: 846.71, y: 417.76}
+  m_SizeDelta: {x: 850, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7118621148940302044
 CanvasRenderer:
@@ -2865,20 +2865,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175099477014316209}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.64705884}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 55f818d4ff7346244a0b983bcd127bee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3891,7 +3891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6089573394166130327
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4333,7 +4333,7 @@ GameObject:
   - component: {fileID: 8017150908006000207}
   - component: {fileID: 3241952043569178439}
   m_Layer: 5
-  m_Name: Foreground
+  m_Name: VillageBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4386,7 +4386,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6d3e47c19a64a7c43ae9d94edfe07109, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3548f6b3e7470a44d98b01955df838e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6322,7 +6322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2309618467965886059
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7198,7 +7198,7 @@ GameObject:
   - component: {fileID: 2401496606599433497}
   - component: {fileID: 6103600211067915805}
   m_Layer: 5
-  m_Name: Terrain
+  m_Name: TempleForeground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7251,7 +7251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 40d7927d917e30146b32acaa53cc5d36, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9ef0fdcf1a86264fb531d84eb6dcbca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
