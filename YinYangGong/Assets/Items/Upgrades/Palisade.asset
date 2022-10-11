@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Palisade
   Description: 'Donne + [ 1] readyness.  '
   Icon: {fileID: 21300000, guid: f1b11badec5a492418e44bf68a2c577c, type: 3}
-  Cost: 0
+  Cost: 20
   bIsStackable: 0
   upgradeItemList: 7
   bonus: 0.1

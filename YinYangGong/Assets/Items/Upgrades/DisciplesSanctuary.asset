@@ -16,7 +16,7 @@ MonoBehaviour:
   Description: "\xC0 chaque fois que le nombre de disciples augmente, tu en gagnes
     automatique + [1] disciple."
   Icon: {fileID: 21300000, guid: 6d3e47c19a64a7c43ae9d94edfe07109, type: 3}
-  Cost: 10
+  Cost: 60
   bIsStackable: 0
   upgradeItemList: 3
   bonus: 0.1

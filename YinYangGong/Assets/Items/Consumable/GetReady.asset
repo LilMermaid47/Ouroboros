@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Get Ready
   Description: "Augmente le nombre de pr\xE9paration du temple de [ ] points."
   Icon: {fileID: -5962389079421231736, guid: dc6395453429f6e4686399c24a76efb1, type: 3}
-  Cost: 120
+  Cost: 50
   bIsStackable: 0
   consumableItemList: 6

@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Bribed with Food
   Description: Objet qui augmente le nombre de disciples.
   Icon: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
-  Cost: 150
+  Cost: 50
   bIsStackable: 0
   consumableItemList: 4
