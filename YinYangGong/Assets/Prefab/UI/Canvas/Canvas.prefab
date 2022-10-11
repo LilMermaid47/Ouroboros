@@ -5792,7 +5792,7 @@ MonoBehaviour:
   timeTransitionAnimation: 0.1
   timeTransitionAnimationBalance: 0.05
   timeTransitionAnimationMoney: 0.05
-  timeTransitionAnimationReadiness: 0.2
+  timeTransitionAnimationReadiness: 0.08
 --- !u!114 &91823783448212853
 MonoBehaviour:
   m_ObjectHideFlags: 0
