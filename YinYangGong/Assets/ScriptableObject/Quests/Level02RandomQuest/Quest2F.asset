@@ -31,7 +31,7 @@ MonoBehaviour:
       they found nothing of the bird. The geyser of water was too strong for it.
     rewardChoice1:
       moneyReward: 15
-      templeReadiness: -10
+      templeReadiness: 10
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: -15

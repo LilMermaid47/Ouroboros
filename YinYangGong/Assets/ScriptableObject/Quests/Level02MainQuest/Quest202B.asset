@@ -30,7 +30,7 @@ MonoBehaviour:
     choice2Reveal: "We made a big loot. This trip wasn\u2019t for nothing."
     rewardChoice1:
       moneyReward: -30
-      templeReadiness: -10
+      templeReadiness: -15
       nbDisciple: -2
       nbKi: 0
       yinYangBalance: 0

@@ -33,7 +33,7 @@ MonoBehaviour:
       Wealth awaits us!
     rewardChoice1:
       moneyReward: 150
-      templeReadiness: 20
+      templeReadiness: 25
       nbDisciple: 0
       nbKi: 5
       yinYangBalance: 0
