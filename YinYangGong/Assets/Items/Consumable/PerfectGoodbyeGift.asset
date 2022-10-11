@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Perfect Goodbye Gift
   Description: Objet qui permet de passer une audience (personnage et ses choix.)
-  Icon: {fileID: 21300000, guid: 2edd96405959bfb4b8b13aaf832ecd72, type: 3}
+  Icon: {fileID: 21300000, guid: 1f613deca51f6194699d898767ca7c17, type: 3}
   Cost: 50
   bIsStackable: 0
   consumableItemList: 1

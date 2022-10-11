@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b4094accaa418548a2ce912648ec20b, type: 3}
-  m_Name: EquilibriumPotion
+  m_Name: WealthPotion
   m_EditorClassIdentifier: 
-  Name: Equilibrium Potion
-  Description: "Objet qui permet de ramener un petit \xE9quilibre dans ta barre de
-    yin yang. (Ram\xE8ne ta barre plus vers le neutre) "
-  Icon: {fileID: 21300000, guid: df6f28a7716a58948a492e54be4619cb, type: 3}
-  Cost: 10
+  Name: Wealth Potion
+  Description: "Augmente le nombre d'argent obtenu de [20 ] apr\xE8s un choix.  "
+  Icon: {fileID: -8276262488406422588, guid: dc6395453429f6e4686399c24a76efb1, type: 3}
+  Cost: 15
   bIsStackable: 0
-  consumableItemList: 3
+  consumableItemList: 7
