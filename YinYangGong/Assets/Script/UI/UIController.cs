@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -78,7 +80,7 @@ public class UIController : MonoBehaviour
         PauseMenuActive(true);
         HideBtn();
 
-        if(NPCQueue != null)
+        if (NPCQueue != null)
             NPCFileImage = NPCQueue.GetComponentsInChildren<Image>();
     }
 
@@ -96,7 +98,7 @@ public class UIController : MonoBehaviour
             TextQuest.QuestInformation.SetActive(false);
 
             TextQuest.NomQuest.text = CurrentQuest.questDefinition.questName;
-            TextQuest.DescriptionQuest.text = $"{CurrentQuest.questDefinition.questDescription}";
+
             TextQuest.QuestGiver.text = $"{CurrentQuest.questDefinition.questGiverName}";
 
             BtnQuest.FirstChoiceTxt.text = CurrentQuest.questDefinition.choice1Name;
@@ -111,6 +113,33 @@ public class UIController : MonoBehaviour
         }
         else
             Debug.LogWarning("No quest receved.");
+    }
+
+    float textspeed = 0.01f;
+    IEnumerator TypeLine(TMP_Text tmpText, string text)
+    {
+        tmpText.text = "";
+
+        for (int i = 0; i < text.Length; i++)
+        {
+            if (text[i] == '<')
+            {
+                string substring = "";
+                while (text[i] != '>')
+                {
+                    substring += text[i];
+                    i++;
+                }
+                substring += '>';
+                tmpText.text += substring;
+            }
+            else
+            {
+                tmpText.text += text[i];
+            }
+
+            yield return new WaitForSecondsRealtime(textspeed);
+        }
     }
 
     bool nextPersonWasVisible = false;
@@ -297,7 +326,7 @@ public class UIController : MonoBehaviour
             TextRessources.KiBar.HideBar();
 
         TextRessources.KiBar.setValue(maxKi);
-    }    
+    }
 
     int lastKi = 0;
     private async Task ChangeKi(int newKi)
@@ -505,7 +534,7 @@ public class UIController : MonoBehaviour
         int sizeIncrease = 50;
         int openingScrollDelay = 60;
 
-        ScrollBackground.sizeDelta = new Vector2(0,normalSize.y);
+        ScrollBackground.sizeDelta = new Vector2(0, normalSize.y);
 
         for (int i = 0; i < normalSize.x; i += sizeIncrease)
         {
@@ -517,6 +546,8 @@ public class UIController : MonoBehaviour
 
         TextQuest.QuestInformation.SetActive(true);
         ShowBtn(true);
+
+        StartCoroutine(TypeLine(TextQuest.DescriptionQuest, $"{CurrentQuest.questDefinition.questDescription}"));
     }
 
     private void ShowQuest(bool status)
