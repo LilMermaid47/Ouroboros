@@ -30,7 +30,7 @@ MonoBehaviour:
       the monster hasn't been seen again.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 10
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: -1
       yinYangBalance: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 5
+      templeReadiness: 15
       nbDisciple: -2
       nbKi: 0
       yinYangBalance: 0

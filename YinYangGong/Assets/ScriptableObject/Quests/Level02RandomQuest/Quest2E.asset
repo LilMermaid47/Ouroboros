@@ -40,7 +40,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: -15
-      templeReadiness: 15
+      templeReadiness: 25
       nbDisciple: 2
       nbKi: 1
       yinYangBalance: 25

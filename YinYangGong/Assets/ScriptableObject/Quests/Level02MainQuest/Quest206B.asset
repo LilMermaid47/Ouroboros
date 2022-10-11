@@ -39,7 +39,7 @@ MonoBehaviour:
     rewardChoice2:
       moneyReward: 60
       templeReadiness: -5
-      nbDisciple: 0
+      nbDisciple: -1
       nbKi: 0
       yinYangBalance: 0
       unlockQuestChoice:

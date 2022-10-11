@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Forbidden Marriage
-    questGiverName: A Member of clan Huangsei & a member of clan Susoda
+    questGiverName: of clan Susodaan Huangsei & a member of clan Susoda
     questGiverSprite: {fileID: 21300000, guid: 902c2adb1257c6e459892caf5960ee7e, type: 3}
     questDescription: "\u201C Master monk, we need your help. We are<b> in love </b>and
       want to live our passion in broad daylight. Unfortunately, <b>our respective

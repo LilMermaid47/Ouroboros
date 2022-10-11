@@ -28,10 +28,10 @@ MonoBehaviour:
     choice2Description: Let's attack it right away. Whether it is a monkey or a bird,
       our magic energy will exterminate it.
     choice2Reveal: The Huangsei Clan ignited their swords and burned the creature,
-      quickly dying.
+      it died quickly.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: -5
       nbDisciple: -2
       nbKi: 0
       yinYangBalance: 10
