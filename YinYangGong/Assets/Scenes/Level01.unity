@@ -318,6 +318,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1035587416 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1421067691397103173, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 1195783224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1166254280 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
@@ -372,6 +377,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1514027704516871365, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: ScrollBackground
+      value: 
+      objectReference: {fileID: 1035587416}
     - target: {fileID: 1651261857329457167, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -586,7 +595,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5dd9e01673c8d5f449e5ac0f1b0f39f5, type: 2}
     - target: {fileID: 4704488186993578532, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 4704488186993578532, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchoredPosition.y

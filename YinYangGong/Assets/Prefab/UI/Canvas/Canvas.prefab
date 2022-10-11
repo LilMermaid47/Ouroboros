@@ -5827,7 +5827,7 @@ MonoBehaviour:
     ShopUi: {fileID: 7612883797883140674}
     InventoryUi: {fileID: 4704488188459528854}
   NPCQueue: {fileID: 4009543372131754056}
-  ScrollBackground: {fileID: 4860767619578811683}
+  ScrollBackground: {fileID: 1421067691397103173}
   DefeatTxt: {fileID: 2889367204865398153}
   MenuBtn:
     GameFirstChoice: {fileID: 3577320312164063575}
