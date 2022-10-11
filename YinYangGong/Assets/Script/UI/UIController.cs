@@ -322,7 +322,7 @@ public class UIController : MonoBehaviour
 
     public void SetReadiness(float readiness)
     {
-        TextRessources.TempleReadiness.text = $"{readiness} / 100";
+        TextRessources.TempleReadiness.text = $"{Mathf.Round(readiness)} / 100";
     }
 
     float lastReadiness = 0;
