@@ -97,8 +97,7 @@ public class ConsumableItem : Item
 
     private void ReversePotion()
     {
-        //todo
-        throw new System.NotImplementedException();
+        questManager.LastQuest();
     }
 }
 

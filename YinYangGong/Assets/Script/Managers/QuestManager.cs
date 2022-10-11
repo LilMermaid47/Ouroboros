@@ -83,27 +83,47 @@ public class QuestManager : MonoBehaviour
                 MerchantQuestReward(merchantQuest.itemChoice2.item);
         }
 
-
         currentQuestIndex++;
+
         if (currentQuestIndex < filledLevel.questList.Count)
         {
-            currentQuest = filledLevel.questList[currentQuestIndex];
-
-            uIController.SetQuest(currentQuest);
-            uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
-            uIController.UpdateNPCList(filledLevel, currentQuestIndex);
-
-            if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
-            {
-                RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
-                CheckRequirement(requirementQuest);
-            }
+            UpdateCurrentQuest();
         }
         else
         {
             CheckIfPlayerWon();
         }
+
         CheckIfStillWinning();
+    }
+
+    public void LastQuest()
+    {
+        currentQuestIndex--;
+        if(currentQuestIndex < 0)
+            currentQuestIndex = 0;
+
+        if(lastReward != null)
+        {
+            RemoveQuestReward(lastReward);
+        }
+
+        UpdateCurrentQuest();
+    }
+
+    private void UpdateCurrentQuest()
+    {
+        currentQuest = filledLevel.questList[currentQuestIndex];
+
+        uIController.SetQuest(currentQuest);
+        uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
+        uIController.UpdateNPCList(filledLevel, currentQuestIndex);
+
+        if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
+        {
+            RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
+            CheckRequirement(requirementQuest);
+        }
     }
 
     private void CheckRequirement(RequirementQuest requirementQuest)
@@ -184,8 +204,12 @@ public class QuestManager : MonoBehaviour
             InventoryItemManager.UseItem(item);
     }
 
+
+    Reward lastReward;
     private void QuestReward(Reward reward)
     {
+        lastReward = reward;
+
         argent += Mathf.FloorToInt(reward.moneyReward * argentBonus);
         templeReadiness += reward.templeReadiness;
         yinYangBalance += reward.yinYangBalance;
@@ -197,6 +221,16 @@ public class QuestManager : MonoBehaviour
         {
             AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
         }
+    }
+
+    private void RemoveQuestReward(Reward reward)
+    {
+        argent -= Mathf.FloorToInt(reward.moneyReward * argentBonus);
+        templeReadiness -= reward.templeReadiness;
+        yinYangBalance -= reward.yinYangBalance;
+        disciple -= Mathf.FloorToInt(reward.nbDisciple * discipleBonus);
+        ki -= Mathf.FloorToInt(reward.nbKi * kiBonus);
+        uIController.SetRewardsRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
     }
 
     private void CheckIfStillWinning()

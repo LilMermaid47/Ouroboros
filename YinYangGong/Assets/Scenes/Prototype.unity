@@ -382,6 +382,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: StartingItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: StartingItems.Array.data[1].Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bea401022bac3946b062795ffeb8836, type: 2}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: StartingItems.Array.data[2].Item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bea401022bac3946b062795ffeb8836, type: 2}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: StartingItems.Array.data[1].Quantity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: StartingItems.Array.data[2].Quantity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -500,7 +520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4415b1725b422994db31393bafff7a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yinYangBalance: 0
   maxClanBalance: 100
   maxKi: 100
   disciple: 0

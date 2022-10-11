@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Reverse Potion
   Description: "Objet qui permet de revenir en arri\xE8re (et refaire ton choix)"
   Icon: {fileID: 21300000, guid: 0aa488ae3d23721489d1c664767efcfe, type: 3}
-  Cost: 15
+  Cost: 10
   bIsStackable: 0
   consumableItemList: 2
