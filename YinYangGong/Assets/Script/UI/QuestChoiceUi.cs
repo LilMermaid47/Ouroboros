@@ -30,34 +30,7 @@ public class QuestChoiceUi : MonoBehaviour
         uiController.MakeButtonInvisible(false);
         questUi.SetActive(false);
         questChoiceUiParent.SetActive(true);
-        StartCoroutine(TypeLine(description, descriptionString));
-    }
-
-    float textspeed = 0.01f;
-    IEnumerator TypeLine(TMP_Text tmpText, string text)
-    {
-        tmpText.text = "";
-
-        for (int i = 0; i < text.Length; i++)
-        {
-            if (text[i] == '<')
-            {
-                string substring = "";
-                while (text[i] != '>')
-                {
-                    substring += text[i];
-                    i++;
-                }
-                substring += '>';
-                tmpText.text += substring;
-            }
-            else
-            {
-                tmpText.text += text[i];
-            }
-
-            yield return new WaitForSecondsRealtime(textspeed);
-        }
+        description.text = descriptionString;
     }
 
     public void AcceptChoice()
