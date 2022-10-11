@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: Quest3E1
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Lucky Toad
+    questGiverName: Jin Chan
+    questGiverSprite: {fileID: 21300000, guid: 6112c71651237bf48a6798dc1ea4f368, type: 3}
+    questDescription: "\u201C Gua gua, gua gua gua gua gua gua. Gua gua, gua gua,
+      gua, gua gua gua.\u201D"
+    choice1Name: 'Accept '
+    choice1Description: What does this strange toad want? Money? Should I agree to
+      give it to him?
+    choice1Reveal: The toad takes the money, swallows it, and jumps to the exit.
+      Have I just been robbed?
+    choice2Name: Refuse
+    choice2Description: I have no time to waste on this odd amphibian.
+    choice2Reveal: 'The toad leaves as it arrived: by jumping.'
+    rewardChoice1:
+      moneyReward: -20
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 5
+        unlockedQuest: {fileID: 11400000, guid: 051ac9be64f390a41b77b6d51be23251, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+  requirementChoice1:
+    moneyCost: 20
+    templeReadiness: 0
+    kiCost: 0
+    disciples: 0
+  requirementChoice2:
+    moneyCost: 0
+    templeReadiness: 0
+    kiCost: 0
+    disciples: 0

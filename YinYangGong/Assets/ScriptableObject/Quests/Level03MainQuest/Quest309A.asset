@@ -21,7 +21,7 @@ MonoBehaviour:
       to make me pay for my crime. I need the help of the temple to protect me. Please
       enroll me in the Temple. \u201C"
     choice1Name: Accept
-    choice1Description: His crime is commonplace. Let's protect him.
+    choice1Description: Her crime is commonplace. Let's protect her.
     choice1Reveal: We have a new disciple in the temple.
     choice2Name: Refuse
     choice2Description: We promised to help the Huangsei clan, but I can't accept.

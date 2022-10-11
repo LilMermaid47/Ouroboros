@@ -282,6 +282,14 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 1707705097}
+    - target: {fileID: 1421067691397103173, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421067691397103173, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 2288583761477538890, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -528,10 +536,10 @@ MonoBehaviour:
   maxKi: 10
   disciple: 7
   ki: 5
-  argent: 80
+  argent: 100
   templeReadinessToAchieve: 150
-  level: {fileID: 11400000, guid: 55f12692c80ffea4ba2804d35666c1d3, type: 2}
-  randomQuestList: {fileID: 11400000, guid: 22c065f742e5e6641a036c6a49592c59, type: 2}
+  level: {fileID: 11400000, guid: 608a331432542d04ea02a7640c4d18f1, type: 2}
+  randomQuestList: {fileID: 11400000, guid: 670bfbe5afb958f43b702d1c9a2c11c8, type: 2}
   currentQuest: {fileID: 0}
   InventoryItemManager: {fileID: 0}
 --- !u!4 &1707705098
