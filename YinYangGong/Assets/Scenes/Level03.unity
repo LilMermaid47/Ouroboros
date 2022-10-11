@@ -270,26 +270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 84031585, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1707705097}
-    - target: {fileID: 1195783231, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: questManager
-      value: 
-      objectReference: {fileID: 1707705097}
-    - target: {fileID: 1282616989, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: questManager
-      value: 
-      objectReference: {fileID: 1707705097}
-    - target: {fileID: 1421067691397103173, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 1421067691397103173, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 75
-      objectReference: {fileID: 0}
     - target: {fileID: 2288583761477538890, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -298,14 +278,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3577320312164063574, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1707705097}
-    - target: {fileID: 3577320312245532112, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1707705097}
     - target: {fileID: 3577320312555771938, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -402,14 +374,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5359454551602478923, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_Name
-      value: KiLamp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6633341570103409926, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: questManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -417,10 +381,6 @@ PrefabInstance:
     - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7985947426020157510, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: m_Name
-      value: DiscipleLamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
