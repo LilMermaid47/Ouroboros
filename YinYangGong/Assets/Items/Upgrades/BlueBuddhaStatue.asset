@@ -16,7 +16,7 @@ MonoBehaviour:
   Description: "\xC0 chaque fois que le KI augmente, le joueur gagne automatiquement
     + [10]% point de Ki.  "
   Icon: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
-  Cost: 0
+  Cost: 40
   bIsStackable: 0
   upgradeItemList: 4
   bonus: 0.1
