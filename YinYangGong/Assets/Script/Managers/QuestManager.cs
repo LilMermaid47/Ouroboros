@@ -111,7 +111,6 @@ public class QuestManager : MonoBehaviour
         UpdateCurrentQuest();
     }
 
-
     private void UpdateCurrentQuest()
     {
         currentQuest = filledLevel.questList[currentQuestIndex];
