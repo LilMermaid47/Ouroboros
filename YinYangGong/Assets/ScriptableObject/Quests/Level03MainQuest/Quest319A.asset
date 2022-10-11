@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest319A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 
+    questGiverName: Tian-long
+    questGiverSprite: {fileID: 21300000, guid: fbfb027283264884e9399c025da1c676, type: 3}
+    questDescription: "\u201C I was flying quietly from one mountain to another when
+      I saw your ghetto. On the other hand, the Temple here is magnificent and would
+      make a nice home for me. Besides, there is a village of mortals ready to serve
+      me.\r\nOr maybe I don't want to stay here. Maybe I'm hungry and would leave
+      if fed your delicious followers. The <b>mallows</b> look exquisite. They have
+      a little something that makes me want to shove some down my throat.\u201D\r"
+    choice1Name: Kill the Dragon
+    choice1Description: Let's slay this dragon. His threats do not scare us.
+    choice1Reveal: The fight against the dragon was painful, but he left as he came.
+    choice2Name: Accept
+    choice2Description: Let him go with a full stomach. We cannot face this monster.
+    choice2Reveal: The dragon served in the Susoda clan and our members. The Susoda
+      clan was severely ravaged.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: -10
+      nbDisciple: 0
+      nbKi: -3
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: f80bcf951e7121a43b40d71b138f950b, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: -3
+      nbKi: 0
+      yinYangBalance: -70
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: f80bcf951e7121a43b40d71b138f950b, type: 2}

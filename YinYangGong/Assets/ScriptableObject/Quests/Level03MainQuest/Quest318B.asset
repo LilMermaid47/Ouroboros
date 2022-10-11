@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest318B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: A Mad Choice
+    questGiverName: Bendan the mad
+    questGiverSprite: {fileID: 21300000, guid: 68108d26a602ec94899c1bc4a8ce60d0, type: 3}
+    questDescription: "\u201C We asked both clans about Bendan's new pig. Both leaders
+      gave us concerning reports about the pig. Yu of Susoda offers us to exorcise
+      the pig. The Huangsei clan does not want to hear anything. He proposes that
+      the Temple take the pig as a disciple to observe its actions daily.\u201D\r\n\r\n\"
+      Hi, Master Monk. You asked for me?\r \""
+    choice1Name: The ritual
+    choice1Description: "The ritual\r\nThe tools necessary for the ritual are required,
+      but Yu assures us that the magical energy obtained should satisfy us.\r"
+    choice1Reveal: The pig had become an ordinary pig again. But it's still big and
+      curious.
+    choice2Name: Keep an eye open
+    choice2Description: The Huangsei clan is right. Therefore, it is up to the Temple
+      to assume its choices.
+    choice2Reveal: Strangely, the pig prays to look like the statues of the Temple.
+    rewardChoice1:
+      moneyReward: -25
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 1
+      yinYangBalance: 40
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: 5c1a996b00c018948802ebc2c21f0027, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 1
+      nbKi: 0
+      yinYangBalance: -40
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: fdd9adfe254d50a41a5215ba24f42de0, type: 2}

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest315D
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Doing nothing
+    questGiverName: Liliang, the Magistrate
+    questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questDescription: "\u201C You do nothing to help the village! A conflict between
+      the clans broke out. One accuses the other of deceit, the other accuses him
+      of hiding criminals worse than a painter. You absolutely must take a side.
+      Otherwise, the village risks going up in smoke!\u201D"
+    choice1Name: Huangsei
+    choice1Description: The Huangsei clan promised to protect us if we helped them.
+    choice1Reveal: We lost two disciples in the fight. Their leader told us that
+      members of the Susoda clan had attacked his elderly father's house. They went
+      overboard.
+    choice2Name: Susoda
+    choice2Description: The Susoda clan has promised to strengthen our KI if we offer
+      our help.
+    choice2Reveal: We lost two disciples in the fight. The matriarch advised us to
+      protect our young disciples. Times are tough, and minds are becoming corrupted
+      by demons.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 20
+      nbDisciple: -2
+      nbKi: 0
+      yinYangBalance: -60
+      unlockQuestChoice:
+        nbQuestLater: 2
+        unlockedQuest: {fileID: 11400000, guid: 416c2194b2b68a24e876462bc43010a3, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: -2
+      nbKi: 2
+      yinYangBalance: 60
+      unlockQuestChoice:
+        nbQuestLater: 2
+        unlockedQuest: {fileID: 11400000, guid: dcd9a456bd7856a47ac54ca6a2f86fe6, type: 2}

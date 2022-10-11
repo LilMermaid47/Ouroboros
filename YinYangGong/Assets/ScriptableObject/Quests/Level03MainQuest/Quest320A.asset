@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest320A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: 'Last Fight '
+    questGiverName: Sun Wukong, the strange man
+    questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
+    questDescription: "\u201C Well, well, what do we have here?\r\nAm I a liar, you
+      wonder? \r\nA jester poking amidst mortals whose bones will be shortly cleaned
+      or merely an intruder who came into this town to kill you all. \r\nIs it the
+      same thing? \r\nHaha, which one did you want? \r\nI would be end soon enough.\u201D\r"
+    choice1Name: Kill them
+    choice1Description: They'll never get us!
+    choice1Reveal: The Monkey King almost destroyed the city. The monsters flee when
+      their master has been killed. The Huangsei are helping to rebuild the houses
+      in the village, even those of the Susoda clan. Yu and her people tend to the
+      wounded, even those in the Huangsei clan. It's all over. The gods saved us.
+      The gods listened to our prayers because we kept the balance.
+    choice2Name: Attack them
+    choice2Description: Don't let them get us! Let's load!
+    choice2Reveal: The Monkey King almost destroyed the city. The monsters flee when
+      their master has been killed. The Huangsei are helping to rebuild the houses
+      in the village, even those of the Susoda clan. Yu and her people tend to the
+      wounded, even those in the Huangsei clan. It's all over. The gods saved us.
+      The gods listened to our prayers because we kept the balance.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: -20
+      nbDisciple: -4
+      nbKi: -4
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: -20
+      nbDisciple: -4
+      nbKi: -4
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
