@@ -1177,7 +1177,7 @@ MonoBehaviour:
   maxClanBalance: 50
   maxKi: 0
   disciple: 3
-  ki: 0
+  ki: 1
   argent: 40
   templeReadinessToAchieve: 100
   level: {fileID: 11400000, guid: 343945426c480604891ef08213063bd8, type: 2}
