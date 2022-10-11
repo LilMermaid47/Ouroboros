@@ -30,7 +30,7 @@ MonoBehaviour:
       precious than any wealth. It's just one caravan, but it will help the town.
     rewardChoice1:
       moneyReward: -30
-      templeReadiness: 20
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: -10
@@ -39,10 +39,10 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 5
+      templeReadiness: 15
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 30
+      yinYangBalance: 25
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

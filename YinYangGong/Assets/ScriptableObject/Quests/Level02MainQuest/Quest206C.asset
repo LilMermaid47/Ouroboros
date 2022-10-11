@@ -33,7 +33,7 @@ MonoBehaviour:
       next demon in the village. '
     rewardChoice1:
       moneyReward: 40
-      templeReadiness: -5
+      templeReadiness: -10
       nbDisciple: 0
       nbKi: -2
       yinYangBalance: 0

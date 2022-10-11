@@ -35,19 +35,19 @@ MonoBehaviour:
       without a trace.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: -5
       nbDisciple: -2
       nbKi: 0
-      yinYangBalance: 10
+      yinYangBalance: 15
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: -5
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: -30
+      yinYangBalance: -15
       unlockQuestChoice:
         nbQuestLater: 4
         unlockedQuest: {fileID: 0}

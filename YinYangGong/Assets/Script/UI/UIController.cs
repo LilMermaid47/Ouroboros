@@ -380,47 +380,31 @@ public class UIController : MonoBehaviour
         TextRessources.nbQuestLeft.text = $"Audience left: {nbQuest}";
     }
 
-    public void SetNPCFile(Level niveau)
+    public void SetNPCFile(Level niveau, int questIndex)
     {
+        Sprite questGiverSprite;
         int NPCLeft = NPCFileImage.Length;
 
         for (int i = 0; NPCLeft >= 0 && i < NPCFileImage.Length; i++)
         {
             NPCLeft--;
-            NPCFileImage[NPCLeft].sprite = niveau.questList[i].questDefinition.questGiverSprite;
-        }
-    }
 
-    public void UpdateNPCList(Level niveau, int questIndex)
-    {
-        Sprite questGiverSprite;
-
-        for (int i = NPCFileImage.Length - 1; i > 0; i--)
-        {
-            if (NPCFileImage[i - 1].sprite != null)
+            if (questIndex + i < niveau.questList.Count)
             {
-                HideSprite(NPCFileImage[i], false);
-                NPCFileImage[i].sprite = NPCFileImage[i - 1].sprite;
+                questGiverSprite = niveau.questList[questIndex + i].questDefinition.questGiverSprite;
+
+                if (questGiverSprite != null)
+                {
+                    HideSprite(NPCFileImage[NPCLeft], false);
+                    NPCFileImage[NPCLeft].sprite = questGiverSprite;
+                }
+                else
+                    HideSprite(NPCFileImage[NPCLeft], true);
+
             }
             else
-                HideSprite(NPCFileImage[i], true);
+                HideSprite(NPCFileImage[NPCLeft], true);
         }
-
-        if (questIndex + 2 < niveau.questList.Count)
-        {
-            questGiverSprite = niveau.questList[questIndex + 2].questDefinition.questGiverSprite;
-
-            if (questGiverSprite != null)
-            {
-                HideSprite(NPCFileImage[0], false);
-                NPCFileImage[0].sprite = questGiverSprite;
-            }
-            else
-                HideSprite(NPCFileImage[0], true);
-
-        }
-        else
-            HideSprite(NPCFileImage[0], true);
     }
 
     private void HideSprite(Image image, bool status)
@@ -531,14 +515,14 @@ public class UIController : MonoBehaviour
     private async void OpeningScroll()
     {
         Vector2 normalSize = ScrollBackground.sizeDelta;
-        int sizeIncrease = 50;
+        int sizeIncrease = 25;
         int openingScrollDelay = 60;
 
-        ScrollBackground.sizeDelta = new Vector2(0, normalSize.y);
+        ScrollBackground.sizeDelta = new Vector2(25, 25);
 
-        for (int i = 0; i < normalSize.x; i += sizeIncrease)
+        for (int i = 0; i < normalSize.x && i < normalSize.y; i += sizeIncrease)
         {
-            ScrollBackground.sizeDelta = new Vector2(i, normalSize.y);
+            ScrollBackground.sizeDelta = new Vector2(i * 2, i);
             await Task.Delay(openingScrollDelay);
         }
 

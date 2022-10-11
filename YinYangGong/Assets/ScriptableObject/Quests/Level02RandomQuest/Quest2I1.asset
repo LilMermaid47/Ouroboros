@@ -28,7 +28,7 @@ MonoBehaviour:
     choice2Reveal: 'The toad leaves as it arrived: by jumping.'
     rewardChoice1:
       moneyReward: -20
-      templeReadiness: 0
+      templeReadiness: -5
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0

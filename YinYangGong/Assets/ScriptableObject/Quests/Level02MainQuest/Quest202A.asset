@@ -30,7 +30,7 @@ MonoBehaviour:
     choice2Reveal: The merchant is disappointed that you did not consider his project.
     rewardChoice1:
       moneyReward: -50
-      templeReadiness: -10
+      templeReadiness: -15
       nbDisciple: -4
       nbKi: 0
       yinYangBalance: 0

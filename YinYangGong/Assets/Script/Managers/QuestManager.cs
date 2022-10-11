@@ -52,7 +52,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetQuest(currentQuest);
         uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
-        uIController.SetNPCFile(filledLevel);
+        uIController.SetNPCFile(filledLevel, currentQuestIndex);
 
     }
 
@@ -118,7 +118,7 @@ public class QuestManager : MonoBehaviour
 
         uIController.SetQuest(currentQuest);
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
-        uIController.UpdateNPCList(filledLevel, currentQuestIndex);
+        uIController.SetNPCFile(filledLevel, currentQuestIndex);
 
         if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
         {
