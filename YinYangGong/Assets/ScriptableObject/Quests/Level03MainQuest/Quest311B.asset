@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest311B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: "Huangsei\u2019s Porcelain "
+    questGiverName: A Member of  Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
+    questDescription: "\u201C An artist from the Huangsei clan made a beautiful porcelain
+      vase. A magical aura emanates from it and looks very expensive.\u201D"
+    choice1Name: Keep it
+    choice1Description: We should display it in the Temple. Let's show our pride
+      and our artistic talents.
+    choice1Reveal: "Our prayers before this vase are more effective. Our disciples
+      are full of magical power.\r"
+    choice2Name: Sell it
+    choice2Description: We need money. Hopefully not insulting the Huangsei clan.
+    choice2Reveal: The Huangsei clan was disappointed not to see their gift in the
+      Temple.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 2
+      yinYangBalance: -40
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 60
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 30
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}

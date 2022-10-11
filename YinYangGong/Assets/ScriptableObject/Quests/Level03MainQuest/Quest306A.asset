@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest306A
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: The Trial
+    questGiverName: Bendan the mad
+    questGiverSprite: {fileID: 21300000, guid: d76327ece2a2ed7448a51049732cae18, type: 3}
+    questDescription: "\u201C Bendan's pig murder trial is almost over. The evidence
+      is thin, but a member of the Susoda clan is the prime suspect. If we have the
+      support of the Temple, we are confident that the verdict will favor your decision.
+      What do you recommend? \u201D"
+    choice1Name: Death sentence
+    choice1Description: The crimes must stop. Let's send a clear message.
+    choice1Reveal: The Susoda clan disapproves of Temple support. But it looks like
+      they're up to something.
+    choice2Name: Absolution
+    choice2Description: Let's compensate Bendan instead. Then, he will be able to
+      buy a dozen pigs.
+    choice2Reveal: Bendan disagreed, but he was silent when he saw the coins offered
+      to him.
+    rewardChoice1:
+      moneyReward: -60
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -65
+      unlockQuestChoice:
+        nbQuestLater: 5
+        unlockedQuest: {fileID: 11400000, guid: 7b4a250915ecba243aaa6ceafc2ce16c, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 5
+        unlockedQuest: {fileID: 11400000, guid: cf5d7a55ecead584cbe11c00f91f4c92, type: 2}

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest309B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Something Wrong
+    questGiverName: A Member of Susoda clan
+    questGiverSprite: {fileID: 0}
+    questDescription: "\u201C I have done something wrong. I need the help of the
+      temple to protect me. Please enlist me in the Temple to atone for my crimes.\u201D"
+    choice1Name: Accept
+    choice1Description: The temple is always there to help the community. Let's protect
+      him.
+    choice1Reveal: We have a new disciple in the temple.
+    choice2Name: Refuse
+    choice2Description: His request is suspicious. I can not accept it.
+    choice2Reveal: The Susoda clan member leaves, scarred and on the edge of exploding
+      in tears.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 1
+      nbKi: 0
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 6
+        unlockedQuest: {fileID: 11400000, guid: f98eb878e84bd374d8c34e933b22ccdc, type: 2}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: -10
+      unlockQuestChoice:
+        nbQuestLater: 6
+        unlockedQuest: {fileID: 11400000, guid: 886da13c6cc669f49a7091740be9a124, type: 2}

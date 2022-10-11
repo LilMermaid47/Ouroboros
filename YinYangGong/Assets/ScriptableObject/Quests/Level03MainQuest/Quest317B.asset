@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest317B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Susoda Blessing
+    questGiverName: Yu, the matriarch of the Susoda clan
+    questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questDescription: "\u201C The Susoda clan is happy to know that you appreciate
+      our presence and our assistance to the villager. Having your support during
+      the last conflict was a balm on our bruised hearts.\r\n\r\nWe offer you two
+      gifts our clan is ready to give you, in addition to our support and a few gold
+      pieces.\u201D\r"
+    choice1Name: Poison arrows
+    choice1Description: We trust this type of poison against the demon. It burns
+      their guts on the inside.
+    choice1Reveal: 'Our new weapon increased our preparation against the demon. '
+    choice2Name: Water mage
+    choice2Description: A water mage is the strongest elemental mage it can exist.
+    choice2Reveal: 'Our new disciple increased our magic power. '
+    rewardChoice1:
+      moneyReward: 20
+      templeReadiness: 30
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 20
+      templeReadiness: 0
+      nbDisciple: 1
+      nbKi: 3
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
