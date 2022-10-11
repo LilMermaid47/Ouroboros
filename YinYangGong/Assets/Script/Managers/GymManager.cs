@@ -101,7 +101,7 @@ public class GymManager : MonoBehaviour
     private void SetRessources()
     {
         GymRessourcesInfo.MaxYinYang.text = $"{QuestManager.maxClanBalance}";
-        GymRessourcesInfo.YinYangBalance.text = $"{QuestManager.yinYangBalance}";
+        GymRessourcesInfo.YinYangBalance.text = $"{QuestManager.GetYinYangBalance()}";
         GymRessourcesInfo.Readiness.text = $"{QuestManager.GetReadiness()}";
         GymRessourcesInfo.Money.text = $"{QuestManager.GetMoney()}";
         GymRessourcesInfo.NbDisciple.text = $"{QuestManager.GetDisciple()}";

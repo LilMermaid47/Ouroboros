@@ -21,14 +21,15 @@ public class ConsumableItem : Item
             case ConsumableItemList.ReversePotion:
                 break;
             case ConsumableItemList.EquilibriumPotion:
+                EquilibriumPotion();
                 break;
             case ConsumableItemList.BribedWithFood:
-                questManager.AddDisciple((int)Random.Range(1,3));
+                BribedWithFood();
                 break;
             case ConsumableItemList.KiEnergyPotion:
                 break;
             case ConsumableItemList.GetReady:
-                questManager.AddReadiness(Random.Range(4, 8));
+                GetReady();
                 break;
             case ConsumableItemList.WealthPotion:
                 break;
@@ -37,6 +38,38 @@ public class ConsumableItem : Item
     public override TypeOfItem ItemType()
     {
         return TypeOfItem.ConsumableItem;
+    }
+
+    int readinessMin = 4;
+    int readinessMax = 8;
+    private void GetReady()
+    {
+        questManager.AddReadiness(Random.Range(readinessMin, readinessMax));
+    }
+
+    int bribedWithFoodMin = 4;
+    int bribedWithFoodMax = 8;
+    private void BribedWithFood()
+    {
+        questManager.AddReadiness(Random.Range(bribedWithFoodMin, bribedWithFoodMax));
+    }
+
+    int equlibriumYinYangDiff = 10;
+    private void EquilibriumPotion()
+    {
+        int currentYinYang = questManager.GetYinYangBalance();
+        int newYinYang;
+
+        if(currentYinYang > 0)
+        {
+            newYinYang = Mathf.Clamp(currentYinYang - equlibriumYinYangDiff, 0, 50);
+        }
+        else
+        {
+            newYinYang = Mathf.Clamp(currentYinYang + equlibriumYinYangDiff, -50, 0);
+        }
+
+        questManager.SetYinYangBalance(newYinYang);
     }
 }
 

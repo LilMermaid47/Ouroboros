@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    [Header("Valeur de DEBUG")]
-    public int yinYangBalance = 0;
+    int yinYangBalance = 0;
 
 
     [Header("Valeur de départ du niveau")]
@@ -240,6 +239,17 @@ public class QuestManager : MonoBehaviour
     {
         templeReadiness += newReadiness;
         uIController.SetReadiness(templeReadiness);
+    }
+
+    public int GetYinYangBalance()
+    {
+        return yinYangBalance;
+    }
+
+    public void SetYinYangBalance(int newYinYangBalance)
+    {
+        yinYangBalance = newYinYangBalance;
+        uIController.SetCurrentBalance(yinYangBalance);
     }
 
     public int GetMoney()
