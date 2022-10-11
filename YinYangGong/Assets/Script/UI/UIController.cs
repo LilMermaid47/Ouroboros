@@ -515,7 +515,7 @@ public class UIController : MonoBehaviour
     private async void OpeningScroll()
     {
         Vector2 normalSize = ScrollBackground.sizeDelta;
-        int sizeIncrease = 25;
+        int sizeIncrease = 60;
         int openingScrollDelay = 60;
 
         ScrollBackground.sizeDelta = new Vector2(25, 25);
