@@ -14,11 +14,13 @@ public class ConsumableItem : Item
         switch (consumableItemList)
         {
             case ConsumableItemList.SeerPotion:
+                SeerPotion();
                 break;
             case ConsumableItemList.PerfectGoodbyeGift:
                 questManager.NextQuest();
                 break;
             case ConsumableItemList.ReversePotion:
+                ReversePotion();
                 break;
             case ConsumableItemList.EquilibriumPotion:
                 EquilibriumPotion();
@@ -27,14 +29,17 @@ public class ConsumableItem : Item
                 BribedWithFood();
                 break;
             case ConsumableItemList.KiEnergyPotion:
+                KiEnergyPotion();
                 break;
             case ConsumableItemList.GetReady:
                 GetReady();
                 break;
             case ConsumableItemList.WealthPotion:
+                WealthPotion();
                 break;
         }
     }
+
     public override TypeOfItem ItemType()
     {
         return TypeOfItem.ConsumableItem;
@@ -81,9 +86,20 @@ public class ConsumableItem : Item
     private void SeerPotion()
     {
         //todo
+        throw new System.NotImplementedException();
     }
 
+    int nbKiEnergyPotion = 10;
+    private void KiEnergyPotion()
+    {
+        questManager.AddKi(nbKiEnergyPotion);
+    }
 
+    private void ReversePotion()
+    {
+        //todo
+        throw new System.NotImplementedException();
+    }
 }
 
 public enum ConsumableItemList

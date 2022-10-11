@@ -77,7 +77,7 @@ public class QuestManager : MonoBehaviour
         {
             MerchantQuest merchantQuest = (MerchantQuest)currentQuest;
 
-            if(choice1WasMade)
+            if (choice1WasMade)
                 MerchantQuestReward(merchantQuest.itemChoice1.item);
             else
                 MerchantQuestReward(merchantQuest.itemChoice2.item);
@@ -110,7 +110,7 @@ public class QuestManager : MonoBehaviour
     {
         Requirement requirement = requirementQuest.requirementChoice1;
 
-        if ((requirement.templeReadiness <= templeReadiness|| requirement.templeReadiness == 0) &&
+        if ((requirement.templeReadiness <= templeReadiness || requirement.templeReadiness == 0) &&
             requirement.moneyCost <= argent &&
             requirement.kiCost <= ki &&
             requirement.disciples <= disciple)
@@ -164,7 +164,7 @@ public class QuestManager : MonoBehaviour
     public InventoryItemManager InventoryItemManager;
 
 
-    private bool choice1WasMade= false;
+    private bool choice1WasMade = false;
     public void UpdateStatChoix1()
     {
         QuestReward(currentQuest.questDefinition.rewardChoice1);
@@ -180,7 +180,7 @@ public class QuestManager : MonoBehaviour
     private void MerchantQuestReward(Item item)
     {
         InventoryItemManager.AddItem(item);
-        if(item.ItemType() == TypeOfItem.UpgradeItem)
+        if (item.ItemType() == TypeOfItem.UpgradeItem)
             InventoryItemManager.UseItem(item);
     }
 
@@ -273,7 +273,7 @@ public class QuestManager : MonoBehaviour
     public void SetArgentBonus(float bonus)
     {
         argentBonus += bonus;
-    }    
+    }
 
     public int GetDisciple()
     {
@@ -293,6 +293,11 @@ public class QuestManager : MonoBehaviour
     public float GetKi()
     {
         return ki;
+    }
+
+    public void AddKi(int addedKi)
+    {
+        ki += addedKi;
     }
 
     public void SetKiBonus(float bonus)
