@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: Quest3B
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Hypebeast
+    questGiverName: Liliang, the Magistrate
+    questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questDescription: "\u201C I have just returned from a courtesy visit to the neighbouring
+      village. I'm completely jealous of their new weaponry. We don't have the means
+      to buy better ones. I suggest we attack them and rob them.\u201D"
+    choice1Name: Accept
+    choice1Description: They've been laughing at us for years. Prepare our soldiers.
+    choice1Reveal: We'd lost a few disciples, but the village had more weapons than
+      it needed. The Huangsei clan disagrees.
+    choice2Name: Refuse
+    choice2Description: "I cannot accept it. I have to pray to the gods for the magistrate\u2019s
+      lack of morality."
+    choice2Reveal: 'The magistrate left the temple disappointed with the lack of
+      support. Monks feel magically energized.
+
+'
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 40
+      nbDisciple: -3
+      nbKi: 0
+      yinYangBalance: 60
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 1
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+  requirementChoice1:
+    moneyCost: 0
+    templeReadiness: -20
+    kiCost: 0
+    disciples: 6
+  requirementChoice2:
+    moneyCost: 0
+    templeReadiness: 0
+    kiCost: 0
+    disciples: 0

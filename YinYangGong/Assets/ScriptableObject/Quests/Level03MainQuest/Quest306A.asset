@@ -30,7 +30,7 @@ MonoBehaviour:
     choice2Reveal: Bendan disagreed, but he was silent when he saw the coins offered
       to him.
     rewardChoice1:
-      moneyReward: -60
+      moneyReward: 0
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
         nbQuestLater: 5
         unlockedQuest: {fileID: 11400000, guid: 7b4a250915ecba243aaa6ceafc2ce16c, type: 2}
     rewardChoice2:
-      moneyReward: 0
+      moneyReward: -50
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0

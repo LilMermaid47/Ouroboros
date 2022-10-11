@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: Quest3A1
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Lion Statue
+    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questDescription: "\u201C O dear Master Fangshi, I want to gift you a magnificent
+      lion statue. We found it in an old abandoned temple and I immediately thought
+      of you when I saw it.\u201D"
+    choice1Name: Sell it
+    choice1Description: It's very kind of the Huangsei clan, but we need money.
+    choice1Reveal: This statue was worth a jackpot. The Huangsei clan is insulted
+      by our gesture.
+    choice2Name: Keep it
+    choice2Description: It will go very well with the statues of the temple. Hopefully,
+      it attracts followers.
+    choice2Reveal: The temple is doing better since the statue arrived in the village.
+    rewardChoice1:
+      moneyReward: 60
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 40
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 2
+      nbKi: 0
+      yinYangBalance: 25
+      unlockQuestChoice:
+        nbQuestLater: 5
+        unlockedQuest: {fileID: 11400000, guid: 5eccedf7847591e499d935496d565422, type: 2}
