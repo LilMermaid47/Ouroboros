@@ -106,7 +106,7 @@ public class UIController : MonoBehaviour
 
             HideBtn();
 
-            OpeningScroll();
+            //OpeningScroll();
 
             ShowQuest(true);
             ActivateBtn();
