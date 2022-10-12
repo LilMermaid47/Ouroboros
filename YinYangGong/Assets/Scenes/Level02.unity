@@ -554,10 +554,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7340248919345148839, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: tipToShow
-      value: The ki energy you have
-      objectReference: {fileID: 0}
     - target: {fileID: 7612883796993493512, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -565,6 +561,14 @@ PrefabInstance:
     - target: {fileID: 7612883796993493512, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612883797645616172, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_HorizontalScrollbarVisibility
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612883797780975689, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7612883798209891173, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
