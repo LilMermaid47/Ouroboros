@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest100
+  m_Name: Quest100.2
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Clans
     questGiverName: Gyatso the old Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
-    questDescription: 'Since you are the new leader, each clan will come and give
-      their respect to the Temple. Which do you want to see first? '
+    questDescription: Since you are the new leader, each <color=#0BB5FF> clan </color>
+      will come and give their respect to the Temple. Which one do you want to see
+      first?
     choice1Name: Huangsei
     choice1Description: The leader of the <color=#ca9c43>Huangsei</color> is a muscular
       and robust young man.
