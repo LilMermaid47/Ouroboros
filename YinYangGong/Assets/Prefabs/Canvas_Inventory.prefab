@@ -1063,6 +1063,7 @@ MonoBehaviour:
   - Item: {fileID: 0}
     Quantity: 5
   CurrencySlot: {fileID: 0}
+  itemDescriptionController: {fileID: 7358096124788466445}
 --- !u!1 &4704488187592474366
 GameObject:
   m_ObjectHideFlags: 0

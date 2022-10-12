@@ -430,10 +430,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 846.71
       objectReference: {fileID: 0}
-    - target: {fileID: 4930688107093968324, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-      propertyPath: itemDescriptionController
-      value: 
-      objectReference: {fileID: 1412448516}
     - target: {fileID: 5143994815096363176, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -667,17 +663,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1412448516 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7358096123628305510, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-  m_PrefabInstance: {fileID: 1195783224}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14988ff94a7c0ad408900dd17923e648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1707705096
 GameObject:
   m_ObjectHideFlags: 0
