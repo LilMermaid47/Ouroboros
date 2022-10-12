@@ -16,18 +16,23 @@ MonoBehaviour:
     questName: Hungry Pig
     questGiverName: Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
-    questDescription: '"Watch out for that man and his pig. They bring bad luck."
+    questDescription: '"<color=#0BB5FF>Watch out for that man and his pig. They bring</color>
+      <color=#FF6666>bad luck</color>."
 
+      
 
-      "My
-      pig is hungry, but I have no money to buy him food. <b>The clans listen to
-      you</b>. Demand it, and they''ll offer food for my pig.
+      "My pig is hungry, but I
+      have no money to buy him food. The clans listen to you. <color=#0BB5FF>Demand
+      it</color>, and they''ll offer food for my pig.
 
       Look how beautiful
       it is. We can''t leave it like that."
 
+      
 
-      "Ouink ouink."'
+      "Ouink ouink."
+
+'
     choice1Name: Fresh fish
     choice1Description: A fish freshly caught this morning by the fishermen of the
       Huangsei clan should do the trick.
