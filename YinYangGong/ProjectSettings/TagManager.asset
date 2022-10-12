@@ -8,6 +8,8 @@ TagManager:
   - Canvas
   - GymMenu
   - QuestManager
+  - InventoryManager
+  - LampManager
   layers:
   - Default
   - TransparentFX

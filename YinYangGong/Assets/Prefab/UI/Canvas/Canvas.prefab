@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 84031583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.221875, y: 1.5274999, z: 1}
   m_Children:
   - {fileID: 1841799623}
   - {fileID: 1490773409}
@@ -68,8 +68,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2a048f3cded2c4a4e8fab4001be32ed6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -138,6 +138,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: QuestChoiceUi, Assembly-CSharp
         m_MethodName: SetUiActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1195783231}
+        m_TargetAssemblyTypeName: HoverChoice, Assembly-CSharp
+        m_MethodName: TurnLampOff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1238,7 +1250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.4, y: 0}
+  m_AnchoredPosition: {x: -120, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1490773411
@@ -1440,14 +1452,14 @@ RectTransform:
   m_GameObject: {fileID: 1841799622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9625, y: 0.875, z: 1}
   m_Children: []
   m_Father: {fileID: 84031584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1841799625
@@ -1478,17 +1490,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next Person
+  m_text: Next Hearing
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 65c7148d51758fb45bd223d4b1f35bef, type: 2}
+  m_sharedMaterial: {fileID: 5291809797278727592, guid: 65c7148d51758fb45bd223d4b1f35bef, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294309365
+  m_fontColor: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1505,7 +1517,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.4
+  m_fontSize: 34.05
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1541,7 +1553,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 36.58075, y: 18.880386, z: 36.187378, w: 24.780518}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5828,7 +5840,7 @@ GameObject:
   - component: {fileID: 1195783231}
   m_Layer: 5
   m_Name: GongGauche
-  m_TagString: Untagged
+  m_TagString: LampManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10120,14 +10132,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7612883797775685365, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
-      propertyPath: m_CellSize.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612883797775685365, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
-      propertyPath: m_CellSize.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7612883797775685365, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
       propertyPath: m_Constraint
       value: 2
       objectReference: {fileID: 0}
@@ -10633,7 +10637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704488188121238863, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4704488188311756688, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
       propertyPath: m_AnchorMax.y

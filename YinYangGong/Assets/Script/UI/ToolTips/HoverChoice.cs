@@ -20,15 +20,13 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     [Header("Other values")]
     public QuestManager questManager;
     public bool isLeftGong;
-    private float timeToWait = 0.1f;
 
     public bool disableOnHover = false;
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!disableOnHover)
         {
-            StopAllCoroutines();
-            StartCoroutine(StartTimer());
+            ShowImpactOfChoice();
         }
     }
 
@@ -92,11 +90,5 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         balanceLamp.sprite = lampOff;
         disciplesLamp.sprite = lampOff;
         kiLamp.sprite = lampOff;
-    }
-
-    private IEnumerator StartTimer()
-    {
-        yield return new WaitForSeconds(timeToWait);
-        ShowImpactOfChoice();
     }
 }

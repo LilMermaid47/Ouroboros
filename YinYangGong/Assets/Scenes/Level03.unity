@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: NumberOfAvailableItemSlots
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7203876785063383388, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

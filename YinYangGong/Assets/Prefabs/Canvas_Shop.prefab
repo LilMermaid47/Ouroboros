@@ -874,7 +874,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 197.2, y: 216.9}
+  m_CellSize: {x: 75, y: 75}
   m_Spacing: {x: 37.5, y: 2}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -1713,6 +1713,7 @@ MonoBehaviour:
     Quantity: 5
   - Item: {fileID: 0}
     Quantity: 1
+  itemDescriptionController: {fileID: 0}
 --- !u!1 &7612883799068916053
 GameObject:
   m_ObjectHideFlags: 0

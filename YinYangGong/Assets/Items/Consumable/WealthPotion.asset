@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Wealth Potion
   Description: "Augmente le nombre d'argent obtenu de [20 ] apr\xE8s un choix.  "
   Icon: {fileID: -8276262488406422588, guid: dc6395453429f6e4686399c24a76efb1, type: 3}
-  Cost: 15
+  Cost: 70
   bIsStackable: 0
   consumableItemList: 7
