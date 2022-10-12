@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxClanBalance: 100
+  MaxKi: 10
   StartingDisciple: 7
   StartingKi: 5
   StartingArgent: 100
@@ -175,6 +176,7 @@ MonoBehaviour:
   randomQuestList: {fileID: 11400000, guid: 670bfbe5afb958f43b702d1c9a2c11c8, type: 2}
   QuestListTxt: {fileID: 479196538}
   LogTxt: {fileID: 1141053427}
+  BotBtn: {fileID: 1884276789}
 --- !u!1 &479196536
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,12 +1,13 @@
 using System;
 using System.IO;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
 
-public class BalancingManager: MonoBehaviour
+public class BalancingManager : MonoBehaviour
 {
     [Header("Valeur de départ du niveau")]
     public int MaxClanBalance = 100;
@@ -27,14 +28,18 @@ public class BalancingManager: MonoBehaviour
     private RandomQuestList tempQuestList;
 
     [SerializeField]
-    private TextMeshProUGUI QuestListTxt;    
+    private TextMeshProUGUI QuestListTxt;
     [SerializeField]
-    private TextMeshProUGUI LogTxt;
+    private TextMeshProUGUI LogTxt;    
+    [SerializeField]
+    private Button BotBtn;
 
     private float NbWin = 0;
     private float NbLoss = 0;
 
     private List<string> LogList = new List<string>();
+    private List<Task> TaskList = new List<Task>();
+    private bool TaskDone = false;
 
     private string TxtDocumentName = $"{Application.streamingAssetsPath}/BalancingLogs/Log{DateTime.Now.ToString("dd-MM-yy")}.txt";
 
@@ -44,6 +49,8 @@ public class BalancingManager: MonoBehaviour
         {
             Directory.CreateDirectory($"{Application.streamingAssetsPath}/BalancingLogs/");
         }
+
+        EnableBtn(false);
 
         StartBotBtn();
     }
@@ -110,125 +117,141 @@ public class BalancingManager: MonoBehaviour
         QuestListTxt.text = listQuest;
     }
 
-    private void ShowEndLog()
+    IEnumerator ShowEndLog()
     {
-        LogTxt.text = $"Nombre de fin: {NbWin + NbLoss}\nNombre de Victoire: {NbWin}\nNombre de Defaites: {NbLoss}\nWinrate:{NbWin/(NbWin+NbLoss)*100:0}%";
+        do
+        {
+            LogTxt.text = $"Nombre de fin: {NbWin + NbLoss}\nNombre de Victoire: {NbWin}\nNombre de Défaites: {NbLoss}\nWinrate:{NbWin / (NbWin + NbLoss) * 100:0}%";
+            yield return new WaitForSeconds(2);
+        }
+        while (!TaskDone);
+    }
 
+    IEnumerator CreateLog()
+    {
         File.AppendAllText(TxtDocumentName, $"Nombre de fin: {NbWin + NbLoss}\nNombre de Victoire: {NbWin}\nNombre de Defaites: {NbLoss}\nWinrate:{NbWin / (NbWin + NbLoss) * 100:0}%\n\n");
         File.AppendAllText(TxtDocumentName, string.Join("--------------------------------------------------------------------------------------------------------------------------------------------", LogList));
+
+        yield return 0;
+
+        LogTxt.text += "\n\nLog saved!";
+        EnableBtn(true);
     }
 
     private async void StartBot()
     {
-        List<Task> taskList = new List<Task>();
 
-        taskList.Add(Bot(BotSideChoice.Left));
-        taskList.Add(Bot(BotSideChoice.Right));
+        TaskList.Add(Bot(BotSideChoice.Left));
+        TaskList.Add(Bot(BotSideChoice.Right));
+        StartCoroutine(ShowEndLog());
 
-        await Task.WhenAll(taskList);
+        await Task.WhenAll(TaskList);
 
-        ShowEndLog();
+        TaskDone = true;        
+        StartCoroutine(CreateLog());
     }
 
     private async Task Bot(BotSideChoice side)
     {
-        PlayerStats stats = new PlayerStats(StartingArgent, 0, StartingDisciple, StartingKi, 0, MaxKi);
-        AIStack stack = new AIStack(0, null, side);
 
-        bool leftSide;
-        bool rightSide;
+            PlayerStats stats = new PlayerStats(StartingArgent, 0, StartingDisciple, StartingKi, 0, MaxKi);
+            AIStack stack = new AIStack(0, null, side);
 
-        Level currentLevel = Instantiate(filledLevel);
-        Quest currentQuest;
-        Reward reward = null;
+            bool leftSide;
+            bool rightSide;
 
-        await Task.Yield();
+            Level currentLevel = Instantiate(filledLevel);
+            Quest currentQuest;
+            Reward reward = null;
 
-        do
+        await Task.Run(() =>
         {
-            currentQuest = NextQuest(currentLevel, stack.QuestIndex);
-
-            leftSide = CheckRequirement(currentQuest, stats, BotSideChoice.Left);
-            rightSide = CheckRequirement(currentQuest, stats, BotSideChoice.Right);
-
-            if (side == BotSideChoice.Left)
+            do
             {
-                if (stack.BotSideChoice == BotSideChoice.Left && leftSide)
+                currentQuest = NextQuest(currentLevel, stack.QuestIndex);
+
+                leftSide = CheckRequirement(currentQuest, stats, BotSideChoice.Left);
+                rightSide = CheckRequirement(currentQuest, stats, BotSideChoice.Right);
+
+                if (side == BotSideChoice.Left)
                 {
-                    reward = currentQuest.questDefinition.rewardChoice1;
-                    stack.BotSideChoice = BotSideChoice.Right;
+                    if (stack.BotSideChoice == BotSideChoice.Left && leftSide)
+                    {
+                        reward = currentQuest.questDefinition.rewardChoice1;
+                        stack.BotSideChoice = BotSideChoice.Right;
+                    }
+                    else if (rightSide)
+                    {
+                        reward = currentQuest.questDefinition.rewardChoice2;
+                        stack.BotSideChoice = BotSideChoice.Both;
+                    }
+                    else
+                    {
+                        reward = null;
+                        stack.BotSideChoice = BotSideChoice.Both;
+                    }
                 }
-                else if (rightSide)
+                else if ((side == BotSideChoice.Right))
                 {
-                    reward = currentQuest.questDefinition.rewardChoice2;
-                    stack.BotSideChoice = BotSideChoice.Both;
+                    if (stack.BotSideChoice == BotSideChoice.Right && rightSide)
+                    {
+                        reward = currentQuest.questDefinition.rewardChoice2;
+                        stack.BotSideChoice = BotSideChoice.Left;
+                    }
+                    else if (leftSide)
+                    {
+                        reward = currentQuest.questDefinition.rewardChoice1;
+                        stack.BotSideChoice = BotSideChoice.Both;
+                    }
+                    else
+                    {
+                        reward = null;
+                        stack.BotSideChoice = BotSideChoice.Both;
+                    }
+                }
+                else
+                    Debug.LogError("Bot path is both.");
+
+                if (reward != null)
+                {
+                    SetRewards(stats, stack, reward);
+                    AddQuest(reward, currentLevel, stack.QuestIndex);
+                }
+
+                if (reward == null || CheckLoss(stats) || stack.QuestIndex >= currentLevel.questList.Count - 1)
+                {
+                    if (CheckWin(stats) && stack.QuestIndex == currentLevel.questList.Count - 1)
+                    {
+                        NbWin++;
+                        CreateLog(stack, currentLevel, side, true);
+                    }
+                    else if (CheckLoss(stats) || (!CheckWin(stats) && stack.QuestIndex == currentLevel.questList.Count - 1))
+                    {
+                        NbLoss++;
+                        CreateLog(stack, currentLevel, side, false);
+                    }
+
+                    RemoveRewards(stats, stack);
+                    RemoveQuest(stack, currentLevel, side);
+
+                    while (stack != null && stack.BotSideChoice == BotSideChoice.Both)
+                    {
+                        stack = stack.PreviousAIStack;
+
+                        if (stack != null)
+                        {
+                            RemoveRewards(stats, stack);
+                            RemoveQuest(stack, currentLevel, side);
+                        }
+                    }
                 }
                 else
                 {
-                    reward = null;
-                    stack.BotSideChoice = BotSideChoice.Both;
+                    stack = new AIStack(stack.QuestIndex + 1, stack, side);
                 }
             }
-            else if ((side == BotSideChoice.Right))
-            {
-                if (stack.BotSideChoice == BotSideChoice.Right && rightSide)
-                {
-                    reward = currentQuest.questDefinition.rewardChoice2;
-                    stack.BotSideChoice = BotSideChoice.Left;
-                }
-                else if (leftSide)
-                {
-                    reward = currentQuest.questDefinition.rewardChoice1;
-                    stack.BotSideChoice = BotSideChoice.Both;
-                }
-                else 
-                {
-                    reward = null;
-                    stack.BotSideChoice = BotSideChoice.Both;
-                }
-            }
-            else
-                Debug.LogError("Bot path is both.");
-
-            if (reward != null)
-            {
-                SetRewards(stats,stack, reward);
-                AddQuest(reward, currentLevel, stack.QuestIndex);
-            }
-
-            if (reward == null || CheckLoss(stats) || stack.QuestIndex >= currentLevel.questList.Count - 1)
-            {                
-                if (CheckWin(stats) && stack.QuestIndex == currentLevel.questList.Count - 1)
-                {
-                    NbWin++;
-                    CreateLog(stack, currentLevel, side, true);
-                }
-                else if (CheckLoss(stats) || (!CheckWin(stats) && stack.QuestIndex == currentLevel.questList.Count - 1))
-                {
-                    NbLoss++;
-                    CreateLog(stack, currentLevel, side, false);
-                }
-
-                RemoveRewards(stats, stack);
-                RemoveQuest(stack, currentLevel, side);
-
-                while (stack != null && stack.BotSideChoice == BotSideChoice.Both)
-                {
-                    stack = stack.PreviousAIStack;
-
-                    if (stack != null)
-                    {
-                        RemoveRewards(stats, stack);
-                        RemoveQuest(stack, currentLevel, side);
-                    }
-                }
-            }
-            else
-            {
-                stack = new AIStack(stack.QuestIndex + 1, stack, side);
-            }
-        }
-        while (stack != null && stack.QuestIndex != 0);
+            while (stack != null && stack.QuestIndex != 0);
+        });
     }
 
 
@@ -381,9 +404,9 @@ public class BalancingManager: MonoBehaviour
 
         do
         {
-            botPath.Insert(0,tempStack);
+            botPath.Insert(0, tempStack);
             tempStack = tempStack.PreviousAIStack;
-        } 
+        }
         while (tempStack != null);
 
         foreach (AIStack item in botPath)
@@ -425,6 +448,11 @@ public class BalancingManager: MonoBehaviour
         loss += "\n\n";
 
         return loss;
+    }
+
+    public void EnableBtn(bool status)
+    {
+        BotBtn.interactable = status; 
     }
 
     public enum BotSideChoice
