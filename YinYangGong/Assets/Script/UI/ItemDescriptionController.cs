@@ -14,9 +14,18 @@ public class ItemDescriptionController : MonoBehaviour
 
     public void SetItemDescription(Item item)
     {
-        itemImage.sprite = item.Icon;
-        itemName.text = item.Name;
-        itemPrice.text = $"{item.Cost}¥"; 
-        itemDescription.text = item.Description;
+        if(item != null)
+        {
+            itemImage.sprite = item.Icon;
+            itemName.text = item.Name;
+            itemPrice.text = $"{item.Cost}¥"; 
+            itemDescription.text = item.Description;
+        }
+        else
+        {
+            itemName.text = "";
+            itemPrice.text = "";
+            itemDescription.text = "";
+        }
     }
 }

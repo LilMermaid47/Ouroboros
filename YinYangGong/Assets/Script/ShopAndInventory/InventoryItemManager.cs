@@ -6,6 +6,8 @@ public class InventoryItemManager : ItemManager
 {
     [SerializeField]
     private ItemSlotController CurrencySlot = null;
+    [SerializeField]
+    private ItemDescriptionController itemDescriptionController;
 
     public bool HasEnoughMoney(int Cost)
     {
@@ -20,5 +22,11 @@ public class InventoryItemManager : ItemManager
     public void RemoveMoney(int QuantityToRemove)
     {
         CurrencySlot.RemoveQuantity(QuantityToRemove);
+    }
+
+    public override void HandleItemSlotControllerSelected(ItemSlotController NewSelectedItemController)
+    {
+        base.HandleItemSlotControllerSelected(NewSelectedItemController);
+        itemDescriptionController.SetItemDescription(NewSelectedItemController.GetItem());
     }
 }

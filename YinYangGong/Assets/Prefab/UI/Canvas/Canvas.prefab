@@ -7676,7 +7676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145a5b9dfc8dc644ad8340216a7ebc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipToShow: "Quantit\xE9 de Ki du temple"
+  tipToShow: The ki energy you have
 --- !u!1 &5882614588329808143
 GameObject:
   m_ObjectHideFlags: 0
