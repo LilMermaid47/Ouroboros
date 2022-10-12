@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxClanBalance: 100
   maxKi: 10
-  disciple: 7
+  disciple: 8
   ki: 2
   argent: 100
   templeReadinessToAchieve: 135
