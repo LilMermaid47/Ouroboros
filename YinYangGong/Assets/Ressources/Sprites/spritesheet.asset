@@ -85,26 +85,26 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 7
     m_Scale: 1
-    m_Name: spritesheet_7
-    m_HashCode: 1359929870
+    m_Name: argentLogo
+    m_HashCode: -1137863808
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 8
     m_Scale: 1
-    m_Name: spritesheet_8
-    m_HashCode: 1359929857
+    m_Name: plusLogo
+    m_HashCode: -697521103
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 9
     m_Scale: 1
-    m_Name: spritesheet_9
-    m_HashCode: 1359929856
+    m_Name: readinessLogo
+    m_HashCode: 232051195
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 10
     m_Scale: 1
-    m_Name: spritesheet_10
-    m_HashCode: 1928012600
+    m_Name: susodaLogo
+    m_HashCode: -1578438956
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
