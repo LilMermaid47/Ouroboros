@@ -16,18 +16,19 @@ MonoBehaviour:
     questName: 'Revenge from the Sea '
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
-    questDescription: "\u201C Another <b>fish-like creature has returned</b> to us.
-      It is with several other warriors, and they seem feral with their<b> precious
-      coral spears</b>. They have sent us an emissary asking for<b> reparation for
-      the death of their prince</b>.\u201D"
+    questDescription: "\u201C Another <color=#0BB5FF>fish-like creature has returned</color>
+      to us. It is with several other warriors, and they seem <color=#FF6666>feral</color>
+      with their <color=#0BB5FF>precious coral spears</color>. They have sent us
+      an emissary asking for reparation for the death of their prince.\u201D"
     choice1Name: Attack them
-    choice1Description: Let's declare war. They are dangerous and monstrous.
+    choice1Description: Let's <color=#FF6666>declare war</color>. They are dangerous
+      and monstrous.
     choice1Reveal: The Merfolk are warriors as effective on land as in the sea. The
       village still won the confrontation. Luckily their coral weapons are reselling
       well.
     choice2Name: Make peace
-    choice2Description: They want to receive several villagers, probably to eat them.
-      Accept their requests.
+    choice2Description: They want to receive <color=#0BB5FF>several villagers</color>,
+      probably to eat them. Accept their requests.
     choice2Reveal: 'We gave several Temple disciples as a sacrifice. As a result,
       the villagers develop a new hatred of monsters. I wouldn''t want to be the
       next demon in the village. '

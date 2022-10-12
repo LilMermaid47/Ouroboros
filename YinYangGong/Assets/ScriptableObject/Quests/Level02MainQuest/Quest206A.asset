@@ -16,13 +16,13 @@ MonoBehaviour:
     questName: The Creature from the Sea
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
-    questDescription: '"Our fishermen have fished out a <b>strange creature</b>.
+    questDescription: '"Our fishermen have fished out a <color=#0BB5FF>strange creature</color>.
       It has the head of a fish and the legs of a man. Some think it''s coming from
       the Di people, and others believe it''s a demon who came to attack us. What
       are we going to do with this thing?"'
     choice1Name: Kill it
     choice1Description: 'Let''s kill it. It shouldn''t cause us any problems. It''s
-      half fish, and it looks delicious. '
+      half fish, and it <color=#0BB5FF>looks delicious</color>. '
     choice1Reveal: The village has eaten the fish part of the creature and seems
       reinvigorated.
     choice2Name: Release it

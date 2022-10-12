@@ -17,12 +17,13 @@ MonoBehaviour:
     questGiverName: Caifu the Merchant
     questGiverSprite: {fileID: 21300000, guid: af298ddb0b9ea094b9b7330bbf20b70d, type: 3}
     questDescription: "\u201CI have good news about the ships we have sent to the
-      new continent. One returned with <b>gold, gems, and a strange yellow vegetable</b>.
-      On the other hand, they asked to have <b>soldiers</b> sent over to help them
-      protect the new land, or else we might lose it to enemies. \u201C"
+      new continent. One returned with <color=#0BB5FF>gold, gems, and a strange yellow
+      vegetable</color>. On the other hand, they asked to have <color=#0BB5FF>soldiers</color> 
+      sent over to help them protect the new land, or else we might lose it to enemies.
+      \u201C"
     choice1Name: Send tools and more people
-    choice1Description: We will help them. Let us sell what they have brought us
-      and send them reinforcement and protection.
+    choice1Description: We will help them. Let us <color=#0BB5FF>sell</color> what
+      they have brought us and send them reinforcement and protection.
     choice1Reveal: We sent a ship back to help our colony. I hope all goes well for
       them.
     choice2Name: Request their return
