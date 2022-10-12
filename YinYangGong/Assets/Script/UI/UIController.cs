@@ -145,7 +145,7 @@ public class UIController : MonoBehaviour
                         i++;
                     }
                     substring = "</color>";
-                    i += substring.Length;
+                    i += substring.Length-1;
 
                     string currentText = tmpText.text;
 
