@@ -4,36 +4,36 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    int yinYangBalance = 0;
+    protected int yinYangBalance = 0;
 
 
     [Header("Valeur de départ du niveau")]
     public int maxClanBalance = 100;
     public int maxKi = 100;
     [SerializeField]
-    int disciple = 0;
+    protected int disciple = 0;
     [SerializeField]
-    int ki = 0;
+    protected int ki = 0;
     [SerializeField]
-    int argent = 0;
+    protected int argent = 0;
     [SerializeField]
-    float templeReadinessToAchieve = 100;
+    protected float templeReadinessToAchieve = 100;
 
-    float templeReadiness = 0;
+    protected float templeReadiness = 0;
 
-    private float argentBonus = 1f;
-    private float discipleBonus = 1f;
-    private float kiBonus = 1f;
+    protected float argentBonus = 1f;
+    protected float discipleBonus = 1f;
+    protected float kiBonus = 1f;
 
     public Level level;
     public RandomQuestList randomQuestList;
 
-    private Level filledLevel;
-    private RandomQuestList tempQuestList;
+    protected Level filledLevel;
+    protected RandomQuestList tempQuestList;
 
-    UIController uIController;
+    protected UIController uIController;
 
-    int currentQuestIndex = 0;
+    protected int currentQuestIndex = 0;
     public Quest currentQuest;
 
     private void Start()
@@ -57,7 +57,7 @@ public class QuestManager : MonoBehaviour
     }
 
     //Come fill all the null element in the level list by random quest in the RandomQuestList
-    private void SideQuestFiller()
+    protected virtual void SideQuestFiller()
     {
         for (int i = 0; i < level.questList.Count; i++)
         {
@@ -71,7 +71,7 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    public void NextQuest()
+    public virtual void NextQuest()
     {
         if (currentQuest.QuestType() == TypeOfQuest.MerchantQuest)
         {
@@ -97,7 +97,7 @@ public class QuestManager : MonoBehaviour
         CheckIfStillWinning();
     }
 
-    public void LastQuest()
+    public virtual void LastQuest()
     {
         currentQuestIndex--;
         if(currentQuestIndex < 0)
@@ -112,7 +112,7 @@ public class QuestManager : MonoBehaviour
     }
 
 
-    private void UpdateCurrentQuest()
+    protected virtual void UpdateCurrentQuest()
     {
         currentQuest = filledLevel.questList[currentQuestIndex];
 
@@ -127,7 +127,7 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    private void CheckRequirement(RequirementQuest requirementQuest)
+    protected virtual void CheckRequirement(RequirementQuest requirementQuest)
     {
         Requirement requirement = requirementQuest.requirementChoice1;
 
@@ -158,7 +158,7 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    private string DisableReason(Requirement requirement)
+    protected virtual string DisableReason(Requirement requirement)
     {
         string reason = "";
 
@@ -174,7 +174,7 @@ public class QuestManager : MonoBehaviour
         return reason;
     }
 
-    private void CheckIfPlayerWon()
+    protected virtual void CheckIfPlayerWon()
     {
         if (templeReadiness >= templeReadinessToAchieve)
             uIController.Victory();
@@ -185,20 +185,20 @@ public class QuestManager : MonoBehaviour
     public InventoryItemManager InventoryItemManager;
 
 
-    private bool choice1WasMade = false;
-    public void UpdateStatChoix1()
+    protected bool choice1WasMade = false;
+    public virtual void UpdateStatChoix1()
     {
         QuestReward(currentQuest.questDefinition.rewardChoice1);
         choice1WasMade = true;
     }
 
-    public void UpdateStatChoix2()
+    public virtual void UpdateStatChoix2()
     {
         QuestReward(currentQuest.questDefinition.rewardChoice2);
         choice1WasMade = false;
     }
 
-    private void MerchantQuestReward(Item item)
+    protected virtual void MerchantQuestReward(Item item)
     {
         InventoryItemManager.AddItem(item);
         if (item.ItemType() == TypeOfItem.UpgradeItem)
@@ -207,7 +207,7 @@ public class QuestManager : MonoBehaviour
 
 
     Reward lastReward;
-    private void QuestReward(Reward reward)
+    protected virtual void QuestReward(Reward reward)
     {
         lastReward = reward;
 
@@ -224,7 +224,7 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    private void RemoveQuestReward(Reward reward)
+    protected virtual void RemoveQuestReward(Reward reward)
     {
         argent -= Mathf.FloorToInt(reward.moneyReward * argentBonus);
         templeReadiness -= reward.templeReadiness;
@@ -234,7 +234,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetRewardsRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
     }
 
-    private void CheckIfStillWinning()
+    protected virtual void CheckIfStillWinning()
     {
         if (yinYangBalance >= maxClanBalance)
             uIController.Defeat(DefeatType.HuangseiLoss);
@@ -248,7 +248,7 @@ public class QuestManager : MonoBehaviour
             uIController.Defeat(DefeatType.MoneyLoss);
     }
 
-    public void AddQuest(int index, Quest questToAdd)
+    public virtual void AddQuest(int index, Quest questToAdd)
     {
         if (index > filledLevel.questList.Count)
             index = filledLevel.questList.Count;
@@ -256,96 +256,96 @@ public class QuestManager : MonoBehaviour
         filledLevel.questList.Insert(index, questToAdd);
     }
 
-    public Level GetFilledLevel()
+    public virtual Level GetFilledLevel()
     {
         return filledLevel;
     }
 
-    public Quest GetActiveQuest()
+    public virtual Quest GetActiveQuest()
     {
         return currentQuest;
     }
 
-    public float GetReadiness()
+    public virtual float GetReadiness()
     {
         return templeReadiness;
     }
-    public void AddReadiness(float newReadiness)
+    public virtual void AddReadiness(float newReadiness)
     {
         templeReadiness += newReadiness;
         uIController.SetReadiness(templeReadiness);
     }
 
-    public int GetYinYangBalance()
+    public virtual int GetYinYangBalance()
     {
         return yinYangBalance;
     }
 
-    public void SetYinYangBalance(int newYinYangBalance)
+    public virtual void SetYinYangBalance(int newYinYangBalance)
     {
         yinYangBalance = newYinYangBalance;
         uIController.SetCurrentBalance(yinYangBalance);
     }
 
-    public int GetMoney()
+    public virtual int GetMoney()
     {
         return argent;
     }
 
-    public void RemoveMoney(int money)
+    public virtual void RemoveMoney(int money)
     {
         argent -= money;
         uIController.SetArgent(argent);
     }
 
-    public void AddMoney(int money)
+    public virtual void AddMoney(int money)
     {
         argent += money;
         uIController.SetArgent(argent);
     }
 
 
-    public void SetArgentBonus(float bonus)
+    public virtual void SetArgentBonus(float bonus)
     {
         argentBonus += bonus;
     }
 
-    public int GetDisciple()
+    public virtual int GetDisciple()
     {
         return disciple;
     }
-    public void AddDisciple(int newDisciple)
+    public virtual void AddDisciple(int newDisciple)
     {
         disciple += newDisciple;
         uIController.SetDisciple(disciple);
     }
 
-    public void SetDiscipleBonus(float bonus)
+    public virtual void SetDiscipleBonus(float bonus)
     {
         discipleBonus += bonus;
     }
 
-    public float GetKi()
+    public virtual float GetKi()
     {
         return ki;
     }
 
-    public void AddKi(int addedKi)
+    public virtual void AddKi(int addedKi)
     {
         ki += addedKi;
     }
 
-    public void SetKiBonus(float bonus)
+    public virtual void SetKiBonus(float bonus)
     {
         kiBonus += bonus;
     }
 
-    public int GetCurrentQuestPosition()
+    public virtual int GetCurrentQuestPosition()
     {
         return currentQuestIndex;
     }
 
-    public void ChangeValue(int maxYinYang, int balance, float readiness, int money, int nbDisciple, int nbKi)
+    public virtual void ChangeValue(int maxYinYang, int balance, float readiness, int money, int nbDisciple, int nbKi)
     {
         argent = money;
         maxClanBalance = maxYinYang;
@@ -360,7 +360,7 @@ public class QuestManager : MonoBehaviour
         uIController.SetStartingRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
     }
 
-    public bool HasEnoughMoney(int Cost)
+    public virtual bool HasEnoughMoney(int Cost)
     {
         return Cost <= argent;
     }
