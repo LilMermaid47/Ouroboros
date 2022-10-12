@@ -27,7 +27,7 @@ MonoBehaviour:
     choice2Description: I have no time to waste on this odd amphibian.
     choice2Reveal: 'The toad leaves as it arrived: by jumping.'
     rewardChoice1:
-      moneyReward: -20
+      moneyReward: -40
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
   requirementChoice1:
-    moneyCost: 20
+    moneyCost: 40
     templeReadiness: 0
     kiCost: 0
     disciples: 0

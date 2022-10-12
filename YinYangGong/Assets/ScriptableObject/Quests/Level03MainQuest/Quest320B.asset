@@ -39,9 +39,9 @@ MonoBehaviour:
       are saved without any damage. Except for one: Bendan has never been seen since."
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: -20
-      nbDisciple: -4
-      nbKi: -4
+      templeReadiness: -15
+      nbDisciple: -2
+      nbKi: -2
       yinYangBalance: 0
       unlockQuestChoice:
         nbQuestLater: 0

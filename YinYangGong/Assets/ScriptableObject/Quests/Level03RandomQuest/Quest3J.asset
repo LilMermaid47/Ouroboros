@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
+  m_Name: Quest3J
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: The Mysterious Source
+    questGiverName: Sun Wukong, the Strange Man
+    questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
+    questDescription: I found a magical source that gives good karma and youth. If
+      you pay me, I'll get it for you.
+    choice1Name: Accept
+    choice1Description: I need gold and the energy to be able to collect it.
+    choice1Reveal: It's been several weeks without any info about his trip. Was it
+      a lie? Does the source exist?
+    choice2Name: I'll do it
+    choice2Description: 'I don''t trust you. I''ll try to do it myself. '
+    choice2Reveal: The water didn't contain any magical element. You wasted your
+      energy for nothing, and the ones who drank the water died because it was poisoned.
+    rewardChoice1:
+      moneyReward: -10
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: -1
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: -2
+      nbKi: -2
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+  requirementChoice1:
+    moneyCost: 0
+    templeReadiness: 0
+    kiCost: 0
+    disciples: 0
+  requirementChoice2:
+    moneyCost: 0
+    templeReadiness: 0
+    kiCost: 3
+    disciples: 0

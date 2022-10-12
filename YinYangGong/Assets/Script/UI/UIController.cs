@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -14,48 +13,48 @@ public class UIController : MonoBehaviour
 {
     [Header("GameObject des differents UI.")]
     [SerializeField]
-    private GameUI UIMenu;
+    protected GameUI UIMenu;
 
     [SerializeField]
-    private GameObject NPCQueue;
+    protected GameObject NPCQueue;
 
     [SerializeField]
-    private RectTransform ScrollBackground;
+    protected RectTransform ScrollBackground;
 
 
     [Header("Texte de defaite")]
     [SerializeField]
-    private TMPro.TextMeshProUGUI DefeatTxt;
+    protected TextMeshProUGUI DefeatTxt;
 
     [Header("Bouton selectionner par default")]
     [SerializeField]
-    private FirstMenuBtn MenuBtn;
+    protected FirstMenuBtn MenuBtn;
 
     [SerializeField]
-    private TextRessources TextRessources;
+    protected TextRessources TextRessources;
     [SerializeField]
-    private TextQuest TextQuest;
+    protected TextQuest TextQuest;
     [SerializeField]
-    private BtnQuest BtnQuest;
+    protected BtnQuest BtnQuest;
     [SerializeField]
-    private QuestChoiceUi questChoiceUi;
+    protected QuestChoiceUi questChoiceUi;
 
     [Header("Texte affiche lors de la defaite")]
     [SerializeField]
-    private LossText Loss;
+    protected LossText Loss;
 
-    private Ouroboros PlayerInputs;
+    protected Ouroboros PlayerInputs;
 
-    private Quest CurrentQuest;
-    private QuestManager questManager;
-    private SoundManager soundManager;
+    protected Quest CurrentQuest;
+    protected QuestManager questManager;
+    protected SoundManager soundManager;
 
     public float timeTransitionAnimation = 0.1f;
     public float timeTransitionAnimationBalance = 1f;
     public float timeTransitionAnimationMoney = 0.1f;
     public float timeTransitionAnimationReadiness = 0.5f;
 
-    private Image[] NPCFileImage;
+    protected Image[] NPCFileImage;
 
     private void Awake()
     {
@@ -87,12 +86,12 @@ public class UIController : MonoBehaviour
         UIMenu.InventoryUi.SetActive(false);
     }
 
-    private void AccepterChoice(InputAction.CallbackContext obj)
+    protected virtual void AccepterChoice(InputAction.CallbackContext obj)
     {
         questManager.NextQuest();
     }
 
-    public void SetQuest(Quest quest)
+    public virtual void SetQuest(Quest quest)
     {
         CurrentQuest = quest;
 
@@ -119,7 +118,7 @@ public class UIController : MonoBehaviour
     }
 
     float textspeed = 0.01f;
-    IEnumerator TypeLine(TMP_Text tmpText, string text)
+    protected IEnumerator TypeLine(TMP_Text tmpText, string text)
     {
         tmpText.text = "";
 
@@ -171,7 +170,7 @@ public class UIController : MonoBehaviour
 
     bool nextPersonWasVisible = false;
 
-    public void ShowHideShop()
+    public virtual void ShowHideShop()
     {
         UIMenu.ShopUi.SetActive(!UIMenu.ShopUi.activeSelf);
         UIMenu.InventoryUi.SetActive(!UIMenu.InventoryUi.activeSelf);
@@ -188,7 +187,7 @@ public class UIController : MonoBehaviour
         lastBalance = yinYangBalance;
         lastReadiness = templeReadiness;
     }
-    public void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
+    public  void SetStartingRessources(int argent, int yinYangBalance, float templeReadiness, int disciple, int ki)
     {
         SetStartingRessources(argent, yinYangBalance, templeReadiness);
         SetDisciple(disciple);
@@ -213,12 +212,12 @@ public class UIController : MonoBehaviour
         ActivateNextBtn();
     }
 
-    private void MakeAllButtonInvisible(bool status)
+    protected void MakeAllButtonInvisible(bool status)
     {
         BtnQuest.ButtonObject.SetActive(status);
     }
 
-    public void SetArgent(int argent)
+    public virtual void SetArgent(int argent)
     {
         TextRessources.Yuan.text = $"{argent}¥";
     }
@@ -293,7 +292,7 @@ public class UIController : MonoBehaviour
         lastBalance = newCurrentBalance;
     }
 
-    private void BalanceClan(Clan nom, int balance)
+    protected void BalanceClan(Clan nom, int balance)
     {
         switch (nom)
         {
@@ -323,7 +322,7 @@ public class UIController : MonoBehaviour
     }
 
     int lastDisciple = 0;
-    private async Task ChangeDisciple(int newDisciple)
+    protected async Task ChangeDisciple(int newDisciple)
     {
         float timerDisciple = 0;
 
@@ -357,7 +356,7 @@ public class UIController : MonoBehaviour
     }
 
     int lastKi = 0;
-    private async Task ChangeKi(int newKi)
+    protected async Task ChangeKi(int newKi)
     {
         float timerKi = 0;
 
@@ -383,7 +382,7 @@ public class UIController : MonoBehaviour
     }
 
     float lastReadiness = 0;
-    private async Task ChangeReadiness(float newReadiness)
+    protected async Task ChangeReadiness(float newReadiness)
     {
         float timerReadiness = 0;
 
@@ -408,7 +407,7 @@ public class UIController : MonoBehaviour
         TextRessources.nbQuestLeft.text = $"Audience left: {nbQuest}";
     }
 
-    public void SetNPCFile(Level niveau, int questIndex)
+    public virtual void SetNPCFile(Level niveau, int questIndex)
     {
         Sprite questGiverSprite;
         int NPCLeft = NPCFileImage.Length;
@@ -435,7 +434,7 @@ public class UIController : MonoBehaviour
         }
     }
 
-    private void HideSprite(Image image, bool status)
+    protected void HideSprite(Image image, bool status)
     {
         if (status)
         {
@@ -455,12 +454,12 @@ public class UIController : MonoBehaviour
         RevealChoice(false, CurrentQuest.questDefinition.choice2Description);
     }
 
-    private void RevealChoice(bool isChoice1, string txtChoice)
+    protected void RevealChoice(bool isChoice1, string txtChoice)
     {
         questChoiceUi.ShowChoice(isChoice1, txtChoice);
     }
 
-    private void ActivateBtn()
+    protected void ActivateBtn()
     {
         FirstChoiceBtnActivate(true);
         SecondChoiceBtnActivate(true);
@@ -470,13 +469,13 @@ public class UIController : MonoBehaviour
         EventSystem.current.firstSelectedGameObject = MenuBtn.GameFirstChoice;
     }
 
-    private void ActivateNextBtn()
+    protected void ActivateNextBtn()
     {
         ActivateNextPerson();
         ShowBtn(false);
     }
 
-    private void ActivateNextPerson()
+    protected void ActivateNextPerson()
     {
         FirstChoiceBtnActivate(false);
         SecondChoiceBtnActivate(false);
@@ -520,7 +519,7 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.gameObject.SetActive(status);
     }
 
-    private void MakeButtonInvisibleExceptNextPerson(bool status)
+    protected void MakeButtonInvisibleExceptNextPerson(bool status)
     {
         BtnQuest.FirstChoice.gameObject.SetActive(status);
         BtnQuest.SecondChoice.gameObject.SetActive(status);
@@ -533,14 +532,14 @@ public class UIController : MonoBehaviour
         BtnQuest.NextPerson.gameObject.SetActive(!status);
     }
 
-    private void HideBtn()
+    protected void HideBtn()
     {
         BtnQuest.FirstChoice.gameObject.SetActive(false);
         BtnQuest.SecondChoice.gameObject.SetActive(false);
         BtnQuest.NextPerson.gameObject.SetActive(false);
     }
 
-    private async void OpeningScroll()
+    protected async void OpeningScroll()
     {
         Vector2 normalSize = ScrollBackground.sizeDelta;
         int sizeIncrease = 60;
@@ -563,7 +562,7 @@ public class UIController : MonoBehaviour
         StartCoroutine(TypeLine(TextQuest.DescriptionQuest, $"{CurrentQuest.questDefinition.questDescription}"));
     }
 
-    private void ShowQuest(bool status)
+    protected void ShowQuest(bool status)
     {
         UIMenu.QuestUI.SetActive(status);
         //ShowBtn(status);
@@ -633,7 +632,7 @@ public class UIController : MonoBehaviour
 
     }
 
-    private void InGameMenuPressed(InputAction.CallbackContext obj)
+    protected void InGameMenuPressed(InputAction.CallbackContext obj)
     {
         OpenInGameMenu();
     }
@@ -660,7 +659,7 @@ public class UIController : MonoBehaviour
             UIMenu.GymMenu.SetActive(true);
     }
 
-    private void OnDestroy()
+    protected void OnDestroy()
     {
         PlayerInputs.Dispose();
     }
