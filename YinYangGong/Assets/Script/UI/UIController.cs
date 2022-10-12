@@ -122,6 +122,7 @@ public class UIController : MonoBehaviour
 
         for (int i = 0; i < text.Length; i++)
         {
+            //if <>
             if (text[i] == '<')
             {
                 string substring = "";
@@ -130,8 +131,31 @@ public class UIController : MonoBehaviour
                     substring += text[i];
                     i++;
                 }
+                i++;
                 substring += '>';
                 tmpText.text += substring;
+
+                //if <color>
+                if (substring.Contains("color"))
+                {
+                    string coloredSubstring = "";
+                    while (text[i] != '<')
+                    {
+                        coloredSubstring += text[i];
+                        i++;
+                    }
+                    substring = "</color>";
+                    i += substring.Length;
+
+                    string currentText = tmpText.text;
+
+                    for (int z = 0; z < coloredSubstring.Length; z++)
+                    {
+                        currentText += coloredSubstring[z];
+                        tmpText.text = currentText + substring;
+                        yield return new WaitForSecondsRealtime(textspeed);
+                    }
+                }
             }
             else
             {
