@@ -22,8 +22,8 @@ MonoBehaviour:
       leader</color> of the village. She rarely leaves her wealth-filled palace to
       go to the common people. Maybe <color=#FF6666>yesterday's demon attack</color>
       made her realize how dangerous our warnings were.\r\n\r\nRemember, she likes
-      money and big projetcs. Be sure to have <color=#0BB5FF>Yuan</color>  when she
-      comes to see us.\r"
+      money and big projetcs. Be sure to have <color=#0BB5FF>Yuan</color><sprite
+      name=argentLogo>  when she comes to see us.\r"
     choice1Name: I understand
     choice1Description: "Liliang is also known by the name of \u201CBlue princess\u201D."
     choice1Reveal: The Magistrate walks to the Temple. Peasants and clan members

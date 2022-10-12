@@ -33,7 +33,7 @@ MonoBehaviour:
       a greenhouse but they have <color=#AB82FF>lost influence</color>. Caifu runs
       a wonderful store and invites us to <color=#0BB5FF>visit him</color>.
     rewardChoice1:
-      moneyReward: 60
+      moneyReward: 9
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 60
+      moneyReward: 9
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
