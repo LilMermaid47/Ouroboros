@@ -20,11 +20,12 @@ MonoBehaviour:
       as magnificent as me. Your village blocks the beautiful landscape. Burning
       you is the solution to my problems.\u201D"
     choice1Name: Using our KI
-    choice1Description: Our inner balance is our most powerful weapon.
+    choice1Description: Our <color=#0BB5FF>inner balance</color> is our most powerful
+      weapon.
     choice1Reveal: The dragon was pulverized with our magical power gifted from the
       gods.
     choice2Name: With axes et bows
-    choice2Description: There is nothing better than sharp blades!
+    choice2Description: There is nothing better than <color=#0BB5FF>sharp blades</color>!
     choice2Reveal: The dragon flees like a baby crying for her mom.
     rewardChoice1:
       moneyReward: 0

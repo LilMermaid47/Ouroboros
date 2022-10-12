@@ -16,18 +16,19 @@ MonoBehaviour:
     questName: A Strange Disease
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
-    questDescription: "\u201C A <b>strange disease</b> is raging in the village.
-      We have tried several remedies, but <b>nothing really seems to work</b>. Sick
-      people are expensive. We don't know what to do anymore.\u201D"
+    questDescription: "\u201C A <color=#FF6666>strange disease</color> is raging
+      in the village. We have tried several remedies, but nothing really seems to
+      work. Sick people are <color=#FF6666>expensive</color>. We don't know what
+      to do anymore.\u201D"
     choice1Name: Try to save the sick
-    choice1Description: Ask the <b>Susoda</b> clan to take care of the sick. They
-      are the best in this area.
-    choice1Reveal: The Susoda clan managed to heal several villagers, but the disease
-      took a lot of our resources.
+    choice1Description: Ask the <color=#AB82FF>Susoda</color> clan to take care of
+      the sick. They are the best in this area.
+    choice1Reveal: The <color=#AB82FF>Susoda</color> clan managed to heal several
+      villagers, but the disease took a lot of our resources.
     choice2Name: Burn the sick
     choice2Description: We shouldn't take any chances. Let us stop the progression
-      of the disease by burning the hospice and the sick.
-    choice2Reveal: "We have stopped the progression of the disease. The Huangsei
+      of the disease by <color=#FF6666>burning</color> the hospice and the sick.
+    choice2Reveal: "We have stopped the progression of the disease. The <color=#ca9c43>Huangsei</color>
       clan disapproved of our action, they accused us of killing innocent people.
       A few villagers also think the same.\r"
     rewardChoice1:

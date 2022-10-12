@@ -16,11 +16,13 @@ MonoBehaviour:
     questName: 'The Strange Veggie Collector '
     questGiverName: Peasant
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
-    questDescription: '"Master Fangshi, we have a problem! The <b>collector who bought
-      our jade cabbage</b> is back. He accuses us of selling him a <b>cursed artifact</b>.
-      He and his army want compensation for their losses."'
+    questDescription: '"Master Fangshi, we have a problem! The <color=#0BB5FF>collector
+      who bought our jade cabbage</color> is back. He accuses us of selling him a
+      <color=#0BB5FF>cursed artifact</color>. He and his army want compensation for
+      their losses."'
     choice1Name: Give them what they want
-    choice1Description: Let's give them back their money and give them our best warriors.
+    choice1Description: Let's <color=#0BB5FF>give them</color> back their <color=#0BB5FF>money</color>
+      and <color=#0BB5FF>give them</color> our best <color=#0BB5FF>warriors</color>.
       Maybe they'll spare us.
     choice1Reveal: They left as they came. Fortunately, no conflict arose.
     choice2Name: Confront them

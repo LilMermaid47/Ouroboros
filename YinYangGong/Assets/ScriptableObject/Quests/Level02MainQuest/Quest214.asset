@@ -19,15 +19,17 @@ MonoBehaviour:
     questDescription: "\u201C We are short on food. Some villagers even tried to
       steal common crops. We must find a solution.\u201D"
     choice1Name: Buy it
-    choice1Description: "Let\u2019s buy food from the neighboring village. In addition,
-      our relations with that village will improve.\r\n"
+    choice1Description: "Let\u2019s <color=#0BB5FF>buy</color> food from the neighboring
+      village. In addition, our <color=#0BB5FF>relations</color> with that village
+      <color=#0BB5FF>will improve</color>.\r\n"
     choice1Reveal: The villagers thanked the gods for this food. They are ready for
       any situation.
     choice2Name: Steal it
-    choice2Description: Send your best thieves and bring back several caravans of
-      food from the neighboring village.
-    choice2Reveal: The Susoda clan is received as heroes. Their offering is more
-      precious than any wealth. It's just one caravan, but it will help the town.
+    choice2Description: Send your <color=#0BB5FF>best thieves</color> and bring back
+      several caravans of food from the neighboring village.
+    choice2Reveal: The <color=#AB82FF>Susoda</color> clan is received as heroes.
+      Their offering is more precious than any wealth. It's just one caravan, but
+      it will help the town.
     rewardChoice1:
       moneyReward: -30
       templeReadiness: 15
