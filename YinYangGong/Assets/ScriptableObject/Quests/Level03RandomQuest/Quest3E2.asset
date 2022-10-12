@@ -27,7 +27,7 @@ MonoBehaviour:
     choice2Description: This smell is so bad that I don't want to take the risk.
     choice2Reveal: We threw the present in the river and never heard of it.
     rewardChoice1:
-      moneyReward: 60
+      moneyReward: 120
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0

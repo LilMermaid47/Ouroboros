@@ -32,7 +32,7 @@ MonoBehaviour:
       misses an opportunity to showcase her talents as a singer.
     rewardChoice1:
       moneyReward: -10
-      templeReadiness: 15
+      templeReadiness: 20
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: -40
@@ -41,7 +41,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: -10
-      templeReadiness: 15
+      templeReadiness: 20
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 40

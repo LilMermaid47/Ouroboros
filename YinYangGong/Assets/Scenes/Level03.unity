@@ -454,6 +454,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7468027423633345837, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468027423633345837, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468027423633345837, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7612883796993493512, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -589,7 +601,7 @@ MonoBehaviour:
   disciple: 7
   ki: 2
   argent: 100
-  templeReadinessToAchieve: 150
+  templeReadinessToAchieve: 135
   level: {fileID: 11400000, guid: 608a331432542d04ea02a7640c4d18f1, type: 2}
   randomQuestList: {fileID: 11400000, guid: 670bfbe5afb958f43b702d1c9a2c11c8, type: 2}
   currentQuest: {fileID: 0}
