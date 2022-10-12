@@ -17,7 +17,7 @@ MonoBehaviour:
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questDescription: "\u201C You do nothing to help the village! A conflict between
-      the clans broke out. One accuses the other of deceit, the other accuses him
+      the clans broke out. One accuses the other of deceit, the other accuses them
       of hiding criminals worse than a painter. You absolutely must take a side.
       Otherwise, the village risks going up in smoke!\u201D"
     choice1Name: Huangsei
@@ -36,7 +36,7 @@ MonoBehaviour:
       templeReadiness: 20
       nbDisciple: -2
       nbKi: 0
-      yinYangBalance: -60
+      yinYangBalance: -50
       unlockQuestChoice:
         nbQuestLater: 2
         unlockedQuest: {fileID: 11400000, guid: 416c2194b2b68a24e876462bc43010a3, type: 2}
@@ -45,7 +45,7 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: -2
       nbKi: 2
-      yinYangBalance: 60
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 2
         unlockedQuest: {fileID: 11400000, guid: dcd9a456bd7856a47ac54ca6a2f86fe6, type: 2}
