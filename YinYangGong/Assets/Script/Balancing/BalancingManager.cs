@@ -10,6 +10,7 @@ public class BalancingManager: MonoBehaviour
 {
     [Header("Valeur de départ du niveau")]
     public int MaxClanBalance = 100;
+    public int MaxKi = 10;
     [SerializeField]
     private int StartingDisciple = 0;
     [SerializeField]
@@ -131,7 +132,7 @@ public class BalancingManager: MonoBehaviour
 
     private async Task Bot(BotSideChoice side)
     {
-        PlayerStats stats = new PlayerStats(StartingArgent, 0, StartingDisciple, StartingKi, 0);
+        PlayerStats stats = new PlayerStats(StartingArgent, 0, StartingDisciple, StartingKi, 0, MaxKi);
         AIStack stack = new AIStack(0, null, side);
 
         bool leftSide;
@@ -418,6 +419,8 @@ public class BalancingManager: MonoBehaviour
             loss += "Disciple loss";
         else if (stats.nbKi < 0)
             loss += "Ki loss";
+        else
+            loss += "Readiness loss";
 
         loss += "\n\n";
 
@@ -439,6 +442,7 @@ public class BalancingManager: MonoBehaviour
         public int nbDisciple = 0;
         public int nbKi = 0;
         public int yinYangBalance = 0;
+        public int maxKi = 10;
 
         public PlayerStats()
         {
@@ -447,7 +451,8 @@ public class BalancingManager: MonoBehaviour
             nbDisciple = 0;
             nbKi = 0;
             yinYangBalance = 0;
-        }
+            maxKi = 10;
+    }
 
         public PlayerStats(int playerMoney, float readiness, int disciple, int ki, int balance)
         {
@@ -457,14 +462,26 @@ public class BalancingManager: MonoBehaviour
             nbKi = ki;
             yinYangBalance = balance;
         }
+        public PlayerStats(int playerMoney, float readiness, int disciple, int ki, int balance, int nbKi)
+        {
+            money = playerMoney;
+            templeReadiness = readiness;
+            nbDisciple = disciple;
+            nbKi = ki;
+            yinYangBalance = balance;
+            maxKi = nbKi;
+        }
 
-        public void SetStats(PlayerStats playerStats)
+    public void SetStats(PlayerStats playerStats)
         {
             money = playerStats.money;
             templeReadiness = playerStats.templeReadiness;
             nbDisciple = playerStats.nbDisciple;
             yinYangBalance = playerStats.yinYangBalance;
             nbKi = playerStats.nbKi;
+
+            if(nbKi > maxKi)
+                nbKi = maxKi;
         }
 
         public override string ToString()
