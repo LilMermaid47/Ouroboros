@@ -29,7 +29,7 @@ MonoBehaviour:
     choice2Reveal: Bendan curses the temple. Looks like he's up to something.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: -20
+      templeReadiness: -15
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
