@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
+  m_Name: QuestBalancing2
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: Before the Attack
+    questGiverName: Xida
+    questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
+    questDescription: "\"A dragon! I saw a giant scary dragon!\r\n\r\nIt was as big
+      as the mountains, and red as blood. Or maybe it was green like jade? It flew
+      right over the Magistrate's palace.\r\nYou'll see when it will come and kill
+      us all! It was a dragon!\r\"\n\r\nWe must prepare ourselves for the dragon
+      attack.\r "
+    choice1Name: Train Monk
+    choice1Description: "We need to train new pupils in case what she says is true.
+      Put them on watch duty tonight.\r"
+    choice1Reveal: The new trainees meditate et watch for the dragon's return.
+    choice2Name: Asking for donations
+    choice2Description: We need to make sure we have enough money in case we have
+      to pay for reinforcements.
+    choice2Reveal: The peasants were slightly angry about giving money, but they
+      did not want to die from a dragon. Since they did not have a lot of money,
+      they also prayed.
+    rewardChoice1:
+      moneyReward: 0
+      templeReadiness: 25
+      nbDisciple: 2
+      nbKi: 1
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: 5c1a996b00c018948802ebc2c21f0027, type: 2}
+    rewardChoice2:
+      moneyReward: 45
+      templeReadiness: 10
+      nbDisciple: 0
+      nbKi: 1
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: fdd9adfe254d50a41a5215ba24f42de0, type: 2}
