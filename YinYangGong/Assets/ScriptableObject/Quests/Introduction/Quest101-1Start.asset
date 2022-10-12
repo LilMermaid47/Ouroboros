@@ -10,31 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest000
+  m_Name: Quest101-1Start
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: New Leader
+    questName: First day
     questGiverName: Gyatso the old Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
-    questDescription: '"My dear apprentice, it is time for you to become the <color=#0BB5FF>head
-      of the Temple</color>. I''m getting old, and I feel my body and mind losing
-      balance. Soon I''ll be dust in the wind.
+    questDescription: '"Several villagers request an audience with the Temple. Answer
+      to the best of your knowledge, and try not to favor one clan too much."
 
 
-      Remember, Fubai Village is
-      counting on you. We, the Temple, <color=#0BB5FF>counsel and assist the community</color>.
-      You will also take my role as mediator. The two clans living in the village
-      have <color=#FF6666>hated each other</color> for millennia. A simple argument
-      can quickly turn into a bloodbath. Don''t be fooled by them.
-
-
-      Do you
-      understand?'
-    choice1Name: Yes
-    choice1Description: I understand my new role.
-    choice1Reveal: The monk is relieved and seems happy.
-    choice2Name: No
-    choice2Description: I need my master to repeat.
+      We
+      were to meet the villagers who had been waiting for several hours, but the
+      <b>magistrate Liliang</b> deigned to offer us her presence, a rare thing. You
+      remember that she is the <b>official leader</b> of the village. She rarely
+      leaves her wealth-filled palace to go to the common people. Maybe <b>yesterday''s
+      demon attack</b> made her realize how dangerous our warnings were.'
+    choice1Name: I understand
+    choice1Description: 
+    choice1Reveal: 
+    choice2Name: What ?
+    choice2Description: 
     choice2Reveal: The monk sight and repeat what he just said.
     rewardChoice1:
       moneyReward: 0
@@ -52,5 +48,5 @@ MonoBehaviour:
       nbKi: 0
       yinYangBalance: 0
       unlockQuestChoice:
-        nbQuestLater: 0
+        nbQuestLater: 1
         unlockedQuest: {fileID: 11400000}

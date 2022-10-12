@@ -17,19 +17,21 @@ MonoBehaviour:
     questGiverName: Yu, the matriarch of the Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questDescription: "\"Here is the apprentice who takes the place of his master.
-      I am <b>Yu</b>, the matriarch of the <b>Susoda clan</b>. I trust the Temple
-      will keep a good relationship with the Susoda clan, as its old master knew
-      how to do it. \n\nWe are happy to continue offering our <b>crops and medicine</b>
-      to help the Temple. It would be unfortunate to lose the Susoda clan's contribution
-      to the village.\""
+      I am <color=#AB82FF>Yu</color>, the matriarch of the <color=#AB82FF>Susoda
+      clan</color>. I trust the Temple will keep a good relationship with the Susoda
+      clan, as its old master knew how to do it. \n\nWe are happy to continue offering
+      our <color=#AB82FF>crops and medicine</color> to help the Temple. It would
+      be unfortunate to lose the Susoda clan's contribution to the village.\""
     choice1Name: Thank her
-    choice1Description: 
-    choice1Reveal: '"I warn you against Yu; her beautiful words are laced with <b>venom</b>.
-      Also, the <b>Susoda clan</b> has the best <b>archers</b> in the village."'
+    choice1Description: A greeting is always welcome.
+    choice1Reveal: '"I warn you against Yu; her beautiful words are laced with <color=#AB82FF>venom</color>.
+      Also, the <color=#AB82FF>Susoda clan</color> has the best <color=#AB82FF>archers</color>
+      in the village."'
     choice2Name: Give blessing
-    choice2Description: 
-    choice2Reveal: '"I warn you against Yu; her beautiful words are laced with <b>venom</b>.
-      Also, the <b>Susoda clan</b> has the best <b>archers</b> in the village."'
+    choice2Description: Yu love to receive a blessing.
+    choice2Reveal: '"I warn you against Yu; her beautiful words are laced with <color=#AB82FF>venom</color>.
+      Also, the <color=#AB82FF>Susoda clan</color> has the best <color=#AB82FF>archers</color>
+      in the village."'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

@@ -17,20 +17,20 @@ MonoBehaviour:
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questDescription: "\"Very happy to meet our new head of the Temple. Let me introduce
-      myself; I am <b>Rilou</b>, the patriarch of the <b>Huangsei clan</b>. \n\nOur
-      men are brave and know how to fight. The Huangsei clan never dishonored the
-      Temple, unlike the evil Susoda. Our<b> fire warriors</b> will always be available
-      to protect the village.\""
+      myself; I am <color=#ca9c43>Rilou</color>, the patriarch of the <color=#ca9c43>Huangsei
+      clan</color>. \n\nOur men are brave and know how to fight. The Huangsei clan
+      never dishonored the Temple, unlike the evil Susoda. Our<color=#ca9c43> fire
+      warriors</color> will always be available to protect the village.\""
     choice1Name: Thank him
-    choice1Description: 
-    choice1Reveal: '"The <b>Huangsei clan</b> proudly wears their <b>honor</b>-like
-      armor. They are hot-blooded and best at head-on combat. They are an essential
-      asset to the village."'
+    choice1Description: Rilou loves concrete signs of affection.
+    choice1Reveal: '"The <color=#ca9c43>Huangsei clan</color> proudly wears their
+      <color=#ca9c43>honor</color>-like armor. They are hot-blooded and best at head-on
+      combat. They are an essential asset to the village."'
     choice2Name: Give blessing
-    choice2Description: 
-    choice2Reveal: '"The <b>Huangsei clan</b> proudly wears their <b>honor</b>-like
-      armor. They are hot-blooded and best at head-on combat. They are an essential
-      asset to the village."'
+    choice2Description: A blessing is always welcome.
+    choice2Reveal: '"The <color=#ca9c43>Huangsei clan</color> proudly wears their
+      <color=#ca9c43>honor</color>-like armor. They are hot-blooded and best at head-on
+      combat. They are an essential asset to the village."'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
       yinYangBalance: -50
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 35a3be2c2173dc64ba19d2e939e1dcb4, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: 4c8976ca9b24ac74d9129f518b5b38ff, type: 2}
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 0
@@ -47,5 +47,5 @@ MonoBehaviour:
       nbKi: 0
       yinYangBalance: -50
       unlockQuestChoice:
-        nbQuestLater: 0
-        unlockedQuest: {fileID: 11400000, guid: 35a3be2c2173dc64ba19d2e939e1dcb4, type: 2}
+        nbQuestLater: 1
+        unlockedQuest: {fileID: 11400000, guid: 4c8976ca9b24ac74d9129f518b5b38ff, type: 2}
