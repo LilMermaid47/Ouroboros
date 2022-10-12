@@ -52,8 +52,6 @@ public class ItemManager : MonoBehaviour
         }
 
         HandleItemSlotControllerSelected(ItemSlotControllers[0]);
-
-        gameObject.SetActive(false);
     }
 
     public bool HasItem(Item ItemToFind)

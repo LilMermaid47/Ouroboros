@@ -82,6 +82,9 @@ public class UIController : MonoBehaviour
 
         if (NPCQueue != null)
             NPCFileImage = NPCQueue.GetComponentsInChildren<Image>();
+
+        UIMenu.ShopUi.SetActive(false);
+        UIMenu.InventoryUi.SetActive(false);
     }
 
     private void AccepterChoice(InputAction.CallbackContext obj)
@@ -172,6 +175,7 @@ public class UIController : MonoBehaviour
     {
         UIMenu.ShopUi.SetActive(!UIMenu.ShopUi.activeSelf);
         UIMenu.InventoryUi.SetActive(!UIMenu.InventoryUi.activeSelf);
+        UIMenu.ItemDescriptionUi.SetActive(UIMenu.InventoryUi.activeSelf);
         MakeButtonInvisibleExceptNextPerson(!UIMenu.ShopUi.activeSelf);
         UIMenu.QuestUI.SetActive(!UIMenu.QuestUI.activeSelf);
     }
@@ -671,6 +675,7 @@ public class GameUI
     public GameObject InGameMenuUI;
     public GameObject GymMenu;
     public GameObject ShopUi;
+    public GameObject ItemDescriptionUi;
     public GameObject InventoryUi;
 }
 
