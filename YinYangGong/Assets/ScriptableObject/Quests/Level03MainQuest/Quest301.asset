@@ -32,7 +32,7 @@ MonoBehaviour:
       the Huangsei clan in his heart.
     rewardChoice1:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: 10
       nbDisciple: 0
       nbKi: 0
       yinYangBalance: -35
@@ -41,7 +41,7 @@ MonoBehaviour:
         unlockedQuest: {fileID: 0}
     rewardChoice2:
       moneyReward: 0
-      templeReadiness: 0
+      templeReadiness: 5
       nbDisciple: 1
       nbKi: 0
       yinYangBalance: 5

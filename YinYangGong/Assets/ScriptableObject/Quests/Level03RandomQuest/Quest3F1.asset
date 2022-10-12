@@ -33,7 +33,7 @@ MonoBehaviour:
       nbKi: 0
       yinYangBalance: 0
       unlockQuestChoice:
-        nbQuestLater: 5
+        nbQuestLater: 4
         unlockedQuest: {fileID: 11400000, guid: 87753cc3dec35e54194b73bb4e9c3549, type: 2}
     rewardChoice2:
       moneyReward: 0
