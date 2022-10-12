@@ -36,7 +36,7 @@ MonoBehaviour:
       templeReadiness: 30
       nbDisciple: 4
       nbKi: 0
-      yinYangBalance: 80
+      yinYangBalance: 60
       unlockQuestChoice:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}

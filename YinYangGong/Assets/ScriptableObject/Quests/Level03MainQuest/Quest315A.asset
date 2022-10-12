@@ -35,7 +35,7 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: -1
       nbKi: 0
-      yinYangBalance: -50
+      yinYangBalance: -40
       unlockQuestChoice:
         nbQuestLater: 2
         unlockedQuest: {fileID: 11400000, guid: 416c2194b2b68a24e876462bc43010a3, type: 2}
@@ -44,7 +44,7 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 1
-      yinYangBalance: 50
+      yinYangBalance: 40
       unlockQuestChoice:
         nbQuestLater: 2
         unlockedQuest: {fileID: 11400000, guid: dcd9a456bd7856a47ac54ca6a2f86fe6, type: 2}

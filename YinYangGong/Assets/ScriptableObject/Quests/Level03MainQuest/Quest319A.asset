@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Quest319A
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: 
+    questName: "Red Dragon\u2019s Bargain"
     questGiverName: Tian-long
     questGiverSprite: {fileID: 21300000, guid: fbfb027283264884e9399c025da1c676, type: 3}
     questDescription: "\u201C I was flying quietly from one mountain to another when
@@ -43,7 +43,7 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: -3
       nbKi: 0
-      yinYangBalance: -70
+      yinYangBalance: -60
       unlockQuestChoice:
         nbQuestLater: 1
         unlockedQuest: {fileID: 11400000, guid: f80bcf951e7121a43b40d71b138f950b, type: 2}

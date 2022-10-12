@@ -15,7 +15,7 @@ MonoBehaviour:
   questDefinition:
     questName: Something Wrong
     questGiverName: A Member of Susoda clan
-    questGiverSprite: {fileID: 0}
+    questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questDescription: "\u201C I have done something wrong. I need the help of the
       temple to protect me. Please enlist me in the Temple to atone for my crimes.\u201D"
     choice1Name: Accept
