@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest103
+  m_Name: Quest006
   m_EditorClassIdentifier: 
   questDefinition:
     questName: General Store
@@ -18,19 +18,20 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
     questDescription: "\u201C I had been promised a building for my shop, but there
       is no longer any available. There are two interesting places, but they already
-      <b>belong to a clan</b>. Which of the two are you offering me?\u201D\r"
+      <color=#0BB5FF>belong to a clan</color>. Which of the two are you offering
+      me? \u201D"
     choice1Name: Huangsei
     choice1Description: The house serves as a warehouse for the clan. The Huangsei
-      clan will be  disappointed by this loss.
+      clan will be <color=#FF6666>disappointed by this loss</color>.
     choice1Reveal: The Huangsei clan is happy to help the merchant open up his shop,
-      but they have<b> lost influence</b>. Caifu runs a wonderful store and invites
-      us to<b> visit him</b>.
+      but they have <color=#ca9c43>lost influence</color>. Caifu runs a wonderful
+      store and invites us to <color=#0BB5FF>visit him</color>.
     choice2Name: Susoda
-    choice2Description: 'This is one of their many greenhouses. One less could hurt
-      them a little bit. '
+    choice2Description: This is one of their many greenhouses. <color=#FF6666>One
+      less could hurt them a little bit</color>.
     choice2Reveal: The Susoda clan doesn't seem particularly upset by the loss of
-      a greenhouse but they have <b>lost influence</b>. Caifu runs a wonderful store
-      and invites us to<b> visit him</b>.
+      a greenhouse but they have <color=#AB82FF>lost influence</color>. Caifu runs
+      a wonderful store and invites us to <color=#0BB5FF>visit him</color>.
     rewardChoice1:
       moneyReward: 60
       templeReadiness: 0

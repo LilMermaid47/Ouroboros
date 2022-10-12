@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest100BHuangsei
+  m_Name: Quest002AHuangsei
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Leader of Huangsei
@@ -36,16 +36,16 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: -50
+      yinYangBalance: -25
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 365b33e91af71da4091e232fba757253, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: f2c85dd31ea8e004aa2e6d3c8dd02dc5, type: 2}
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: -50
+      yinYangBalance: -25
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 365b33e91af71da4091e232fba757253, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: f2c85dd31ea8e004aa2e6d3c8dd02dc5, type: 2}

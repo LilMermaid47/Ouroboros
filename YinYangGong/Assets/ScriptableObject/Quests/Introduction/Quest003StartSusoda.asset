@@ -10,27 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest101StartSusoda
+  m_Name: Quest003StartSusoda
   m_EditorClassIdentifier: 
   questDefinition:
     questName: First day
     questGiverName: Gyatso the old Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
-    questDescription: '"Several villagers request an audience with the Temple. Answer
-      to the best of your knowledge, and try not to favor one clan too much."
-
-
-      We
-      were to meet the villagers who had been waiting for several hours, but the
-      <b>magistrate Liliang</b> deigned to offer us her presence, a rare thing. You
-      remember that she is the <b>official leader</b> of the village. She rarely
-      leaves her wealth-filled palace to go to the common people. Maybe <b>yesterday''s
-      demon attack</b> made her realize how dangerous our warnings were.'
+    questDescription: "We were to meet the villagers who had been waiting for several
+      hours, but the <color=#0BB5FF>magistrate Liliang</color> deigned to offer us
+      her presence, a rare thing. You remember that she is the <color=#0BB5FF>official
+      leader</color> of the village. She rarely leaves her wealth-filled palace to
+      go to the common people. Maybe <color=#FF6666>yesterday's demon attack</color>
+      made her realize how dangerous our warnings were.\r\n\r\nRemember, she likes
+      money and big projetcs. Be sure to have <color=#0BB5FF>Yuan</color>  when she
+      comes to see us.\r"
     choice1Name: I understand
-    choice1Description: 
-    choice1Reveal: 
+    choice1Description: "Liliang is also known by the name of \u201CBlue princess\u201D."
+    choice1Reveal: The Magistrate walks to the Temple. Peasants and clan members
+      let her pass as the important woman she is.
     choice2Name: What ?
-    choice2Description: 
+    choice2Description: My Master will think that I am not listening to him.
     choice2Reveal: The monk sight and repeat what he just said.
     rewardChoice1:
       moneyReward: 0

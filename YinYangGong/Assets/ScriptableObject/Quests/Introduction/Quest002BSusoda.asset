@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest100ASusoda
+  m_Name: Quest002BSusoda
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Leader of Susoda
@@ -37,16 +37,16 @@ MonoBehaviour:
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 25
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 94ed8b279a74a734f9f30f3c61787f3a, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: dac17a3bc41ddcc4ea40b984ade5186f, type: 2}
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 0
       nbDisciple: 0
       nbKi: 0
-      yinYangBalance: 25
+      yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 94ed8b279a74a734f9f30f3c61787f3a, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: dac17a3bc41ddcc4ea40b984ade5186f, type: 2}
