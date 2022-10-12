@@ -555,6 +555,7 @@ public class UIController : MonoBehaviour
         TextQuest.QuestInformation.SetActive(true);
         ShowBtn(true);
 
+        StopAllCoroutines();
         StartCoroutine(TypeLine(TextQuest.DescriptionQuest, $"{CurrentQuest.questDefinition.questDescription}"));
     }
 
