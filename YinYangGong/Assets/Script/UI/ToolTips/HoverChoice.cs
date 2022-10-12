@@ -22,6 +22,7 @@ public class HoverChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public bool isLeftGong;
 
     public bool disableOnHover = false;
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!disableOnHover)
