@@ -10,19 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: ReqQuest
+  m_Name: Quest3I
   m_EditorClassIdentifier: 
   questDefinition:
-    questName: 
+    questName: The Place To Be
     questGiverName: A member of clan Huangsei & a member of clan Susoda
     questGiverSprite: {fileID: 21300000, guid: 902c2adb1257c6e459892caf5960ee7e, type: 3}
-    questDescription: 
-    choice1Name: 
-    choice1Description: 
-    choice1Reveal: 
-    choice2Name: 
-    choice2Description: 
-    choice2Reveal: 
+    questDescription: 'We found two places of interest: a cavern and an abandoned
+      forge. We only have time to do one. Choose wisely.'
+    choice1Name: Cavern
+    choice1Description: We found a beautiful heat source. We want to stay together
+      and have a good time. It will help to bond. Praying in hot water helps us feel
+      close to our gods.
+    choice1Reveal: The clan Susoda had a great time. They feel ready to fight!
+    choice2Name: Forge
+    choice2Description: There are no usable weapons here, but we could melt them
+      and sell the silver. Then, we could buy better weapons for our warriors with
+      the money.
+    choice2Reveal: The clan Huangsei sold the silver to Caifu, the Merchant. We made
+      a great deal!
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 20
