@@ -40,7 +40,7 @@ MonoBehaviour:
       yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 4c8976ca9b24ac74d9129f518b5b38ff, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: dac17a3bc41ddcc4ea40b984ade5186f, type: 2}
     rewardChoice2:
       moneyReward: 0
       templeReadiness: 0
@@ -49,4 +49,4 @@ MonoBehaviour:
       yinYangBalance: 50
       unlockQuestChoice:
         nbQuestLater: 1
-        unlockedQuest: {fileID: 11400000, guid: 4c8976ca9b24ac74d9129f518b5b38ff, type: 2}
+        unlockedQuest: {fileID: 11400000, guid: dac17a3bc41ddcc4ea40b984ade5186f, type: 2}
