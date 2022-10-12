@@ -18,16 +18,18 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questDescription: "\u201C Since the demon's attack, a Huodou has been prowling
       around the village! This species of big dog spits fire on the villagers who
-      try to approach it. I think we have enough KI to face this monster! \u201D"
+      try to approach it. I think we have enough <color=#0BB5FF>KI</color> to face
+      this monster! \u201D"
     choice1Name: Attack the monster
-    choice1Description: Our meditations prepared us to face this demon dog.
+    choice1Description: Our <color=#0BB5FF>meditations</color> prepared us to face
+      this demon dog.
     choice1Reveal: The Huodou died thanks to the balance of our physical and mental
       forces. Glory to the gods!
     choice2Name: Try to chase it away
-    choice2Description: Let's save our magic forces<b> for later</b>. Let's try to
-      chase it away with our men instead.
-    choice2Reveal: Hunting the Huodou was not easy. We've lost a few followers, but
-      the monster hasn't been seen again.
+    choice2Description: Let's <color=#0BB5FF>save our magic</color> forces for later.
+      Let's try to chase it away with our men instead.
+    choice2Reveal: Hunting the Huodou was not easy. We've <color=#0BB5FF>lost a few
+      followers</color>, but the monster hasn't been seen again.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15

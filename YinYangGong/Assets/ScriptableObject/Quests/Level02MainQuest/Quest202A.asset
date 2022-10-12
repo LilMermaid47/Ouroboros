@@ -17,12 +17,13 @@ MonoBehaviour:
     questGiverName: Caifu the Merchant
     questGiverSprite: {fileID: 21300000, guid: af298ddb0b9ea094b9b7330bbf20b70d, type: 3}
     questDescription: '"My most reliable source says there was another continent
-      to the east. So we need to prepare <b>some ships</b> to go to the new world.
-      Rumors say it''s <b>abundant in resources and wealth</b>. So imagine our power
-      if we figured out how to get there before the other empires."'
+      to the east. So we need to <color=#0BB5FF>prepare some ships</color> to go
+      to the new world. Rumors say it''s <color=#BCED91>abundant</color> in resources
+      and wealth. So imagine our power if we figured out how to get there before
+      the other empires."'
     choice1Name: Accept the project
-    choice1Description: The project is<b> expensive</b>, but I trust our people.
-      First, we have to find this continent!
+    choice1Description: The project is <color=#FF6666>expensive</color>, but I trust
+      our people. First, we have to find this continent!
     choice1Reveal: Both clans helped prepare the ships. So let's keep our faith,
       and they should be back soon.
     choice2Name: 'Refuse '
