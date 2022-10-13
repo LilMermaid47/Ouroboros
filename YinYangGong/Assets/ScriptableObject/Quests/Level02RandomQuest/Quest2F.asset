@@ -17,18 +17,20 @@ MonoBehaviour:
     questGiverName: A Member of clan Huangsei
     questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
     questDescription: "\u201C A vermilion bird burned part of the forest south of
-      the village. We cannot let it continue. Which <b>clan</b> do we send to take
-      care of this task?"
+      the village. We cannot let it continue. <color=#0BB5FF>Which clan</color> do
+      we send to take care of this task?"
     choice1Name: Huangsei
-    choice1Description: The Huangsei clan knows how to control blazing fires. Their
-      natural stamina will come in handy.
-    choice1Reveal: The Huangsei Clan emerged victorious from their battle against
-      the bird. Moreover, the sale of the feathers brought in big profits.
+    choice1Description: The <color=#ca9c43>Huangsei</color> clan knows how to control
+      blazing fires. Their natural stamina will come in handy.
+    choice1Reveal: The <color=#ca9c43>Huangsei</color> clan emerged victorious from
+      their battle against the bird. Moreover, the sale of the feathers brought in
+      big profits.
     choice2Name: Susoda
-    choice2Description: The Susoda Clan's water magic would no doubt pulverize the
-      mystical bird.
-    choice2Reveal: The Susodai Clan was praised for the fight. Someone said that
-      they found nothing of the bird. The geyser of water was too strong for it.
+    choice2Description: The <color=#AB82FF>Susoda</color> clan's water magic would
+      no doubt pulverize the mystical bird.
+    choice2Reveal: The <color=#AB82FF>Susoda</color> clan was praised for the fight.
+      Someone said that they found nothing of the bird. The geyser of water was too
+      strong for it.
     rewardChoice1:
       moneyReward: 15
       templeReadiness: 10

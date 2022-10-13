@@ -18,17 +18,17 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questDescription: "\u201C It is soon the great eclipse festival, and we must
       organize the festivities. Naturally, the clans are eager to know which deity
-      will be in the <b>spotlight</b>. This is great proof of respect!\u201D"
+      will be in the <color=#0BB5FF>spotlight</color>. This is great proof of respect!\u201D"
     choice1Name: Solar
     choice1Description: "The solar eclipse makes people feel vigorous when the sun
       disappears.\r\n It energizes villagers and makes them stronger.\r"
-    choice1Reveal: The Huangsei clan was in the spotlight at the festivities. Their
-      power rises considerably.
+    choice1Reveal: The <color=#ca9c43>Huangsei</color> clan was in the spotlight
+      at the festivities. Their power rises considerably.
     choice2Name: Lunar
     choice2Description: The lunar eclipse is often accompanied by a blood moon, dramatically
       increasing birth rates.
-    choice2Reveal: The Susoda clan prepared a bountiful banquet. Dance and song were
-      at the heart of the evening. Their power rises considerably.
+    choice2Reveal: The <color=#AB82FF>Susoda</color> clan prepared a bountiful banquet.
+      Dance and song were at the heart of the evening. Their power rises considerably.
     rewardChoice1:
       moneyReward: -15
       templeReadiness: 30
