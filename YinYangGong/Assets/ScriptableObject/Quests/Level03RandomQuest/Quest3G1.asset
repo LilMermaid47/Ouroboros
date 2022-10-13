@@ -24,7 +24,7 @@ MonoBehaviour:
     choice1Name: Contact the Shamans of the West
     choice1Description: <color=#0BB5FF>Shamans</color> have more advanced knowledge
       about diseased trees. Bringing one to the village should help us heal the tree,
-      but they live <color=#0BB5FF>far away</color>.So we need to send an emissary
+      but they live <color=#0BB5FF>far away</color>. So we need to send an emissary
       to their land.
     choice1Reveal: 'On his way to the village, the shaman was attacked and never
       reached his destination. The mother tree of Susoda is stunted and dry. So there''s
