@@ -19,22 +19,25 @@ MonoBehaviour:
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Well, well, what do we have here?\r\nAm I a liar, you
       wonder? \r\nA jester poking amidst mortals whose bones will be shortly cleaned
-      or merely an intruder who came into this town to kill you all. \r\nIs it the
-      same thing? \r\nHaha, which one did you want? \r\nI would be end soon enough.\u201D\r"
+      or merely an intruder who came into this town to <color=#FF6666>kill you all.
+      </color>\r\nIs it the same thing? \r\nHaha, which one did you want? \r\nI would
+      be end soon enough.\u201D\r"
     choice1Name: Send our followers
     choice1Description: They'll never get us!
     choice1Reveal: The Monkey King almost destroyed the city. The monsters flee when
-      their master has been killed. The Huangsei are helping to rebuild the houses
-      in the village, even those of the Susoda clan. Yu and her people tend to the
-      wounded, even those in the Huangsei clan. It's all over. The gods saved us.
-      The gods listened to our prayers because we kept the balance.
+      their master has been killed. The <color=#ca9c43>Huangsei</color>  are helping
+      to rebuild the houses in the village, even those of the <color=#AB82FF>Susoda</color>
+      clan. Yu and her people tend to the wounded, even those in the Huangsei clan.
+      It's all over. The gods saved us. The gods listened to our prayers because
+      we kept the balance.
     choice2Name: Use our magic
     choice2Description: Don't let them get us! Let's load!
     choice2Reveal: The Monkey King almost destroyed the city. The monsters flee when
-      their master has been killed. The Huangsei are helping to rebuild the houses
-      in the village, even those of the Susoda clan. Yu and her people tend to the
-      wounded, even those in the Huangsei clan. It's all over. The gods saved us.
-      The gods listened to our prayers because we kept the balance.
+      their master has been killed. The <color=#ca9c43>Huangsei</color>  are helping
+      to rebuild the houses in the village, even those of the <color=#AB82FF>Susoda</color>
+      clan. Yu and her people tend to the wounded, even those in the Huangsei clan.
+      It's all over. The gods saved us. The gods listened to our prayers because
+      we kept the balance.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -15

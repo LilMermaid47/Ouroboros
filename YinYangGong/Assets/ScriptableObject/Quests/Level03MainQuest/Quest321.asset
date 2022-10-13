@@ -25,15 +25,34 @@ MonoBehaviour:
     choice1Name: Chase it
     choice1Description: We need to build a little army and find the lair of the <color=#FF6666>Huapigui</color>!.
       Show it who rules the land.
-    choice1Reveal: The Huapigui stole the skin from a few people, and it left its
+    choice1Reveal: 'The Huapigui stole the skin from a few people, and it left its
       lair. We kept the gold and the tools for ourselves.
+
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>
+
+'
     choice2Name: Kill it.
     choice2Description: We must find the ghost and kill it with our <color=#0BB5FF>magic</color>.
       If we are lucky, killing it could give us some ghost powder and help us create
       powerful potions.
-    choice2Reveal: The Huapigui was defeated with a powerful ritual that left a lot
-      of ghost powder. With the powerful potions created with the ghost powder, the
-      army will have many more resources in battle.
+    choice2Reveal: 'The Huapigui was defeated with a powerful ritual that left a
+      lot of ghost powder. With the powerful potions created with the ghost powder,
+      the army will have many more resources in battle.
+
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=moinsLogo>
+
+'
     rewardChoice1:
       moneyReward: 15
       templeReadiness: 10

@@ -39,13 +39,35 @@ MonoBehaviour:
     choice1Name: Train Monk
     choice1Description: "We need to <color=#0BB5FF>train new pupils </color>in case
       what she says is true. Put them on watch duty tonight.\r"
-    choice1Reveal: The new trainees meditate et watch for the dragon's return.
+    choice1Reveal: 'The new trainees meditate et watch for the dragon''s return.
+
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+'
     choice2Name: Asking for donations
     choice2Description: We need to make sure we have <color=#0BB5FF>enough money</color>
       in case we have to pay for reinforcements.
-    choice2Reveal: The peasants were slightly angry about giving money, but they
+    choice2Reveal: 'The peasants were slightly angry about giving money, but they
       did not want to die from a dragon. Since they did not have a lot of money,
       they also prayed.
+
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite
+      name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 25

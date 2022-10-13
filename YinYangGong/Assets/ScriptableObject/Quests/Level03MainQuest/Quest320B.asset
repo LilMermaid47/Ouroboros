@@ -25,19 +25,22 @@ MonoBehaviour:
     choice1Name: Kill them
     choice1Description: They'll never get us!
     choice1Reveal: The Monkey King almost destroyed the city. The monsters flee when
-      their master has been killed. The Huangsei are helping to rebuild the houses
-      in the village, even those of the Susoda clan. Yu and her people tend to the
-      wounded, even those in the Huangsei clan. It's all over. The gods saved us.
-      The gods listened to our prayers because we kept the balance.
+      their master has been killed. The <color=#ca9c43>Huangsei</color>  are helping
+      to rebuild the houses in the village, even those of the <color=#AB82FF>Susoda</color>
+      clan. Yu and her people tend to the wounded, even those in the Huangsei clan.
+      It's all over. The gods saved us. The gods listened to our prayers because
+      we kept the balance.
     choice2Name: "Bendan\u2019s pig"
-    choice2Description: Am I completely crazy? Will I leave the fate of the Temple
-      in the hands, or rather the hooves of Bendan's pig?
-    choice2Reveal: "The pig transforms into a man with a delicate and balanced appearance.
-      It's the Perfectly self-awakened, say some. It's The Blessed one, shout others.
-      He came to save us. Then, like a sage, he snaps his fingers. At the same time,
-      all the demons disappeared\u2014even the Monkey king. Our Master probably imprisoned
-      him for his crimes against the gods. It's all over. I can\u2019t believe we
-      are saved without any damage. Except for one: Bendan has never been seen since."
+    choice2Description: Am I completely crazy? Will I leave the <color=#0BB5FF>fate</color> 
+      of the Temple in the hands, or rather the hooves of Bendan's pig?
+    choice2Reveal: "The <color=#0BB5FF>pig</color> transforms into a man with a delicate
+      and balanced appearance. It's the <color=#0BB5FF>Perfectly self-awakened</color>
+      , say some. It's <color=#0BB5FF>The Blessed one</color>, shout others. He came
+      to save us. Then, like a sage, he snaps his fingers. At the same time, all
+      the <color=#FF6666> demons</color>  disappeared\u2014even the <color=#FF6666>
+      Monkey king</color>. Our Master probably imprisoned him for his crimes against
+      the gods. It's all over. I can\u2019t believe we are saved without any damage.
+      Except for one: <color=#0BB5FF>Bendan</color>  has never been seen since."
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -15
