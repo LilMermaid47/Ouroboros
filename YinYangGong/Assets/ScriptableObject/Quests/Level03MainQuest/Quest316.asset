@@ -14,25 +14,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: New Pig
-    questGiverName: Bendan the mad
+    questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: 68108d26a602ec94899c1bc4a8ce60d0, type: 3}
     questGiverAudio: {fileID: 8300000, guid: c0185c874d3f5674e8c29f4d55061cbd, type: 3}
     questDescription: "\u201C Did you miss me? I left the village for a while to
-      mourn the death of my favorite pig. The gods listened to my prayers and gave
-      me a brand-new piglet. Look at its beautiful face with a delicious snout.\r\nI
-      need magic truffles to feed him. This fat pig has expensive tastes. But, unfortunately,
-      it's too costly for me. \u201D\r\n"
+      <color=#0BB5FF>mourn the death of my favorite pig</color> The gods listened
+      to my prayers and gave me a <color=#0BB5FF>brand-new piglet</color>. Look at
+      its beautiful face with a delicious snout.\r\nI need <color=#0BB5FF>magic truffles</color>
+      to feed him. This fat pig has expensive tastes. But, unfortunately, it's too
+      costly for me. \u201D\r\n"
     choice1Name: Capture the pig
-    choice1Description: This pig is strange and possibly dangerous. We can't leave
-      Bendan with this thing.
-    choice1Reveal: The pig turned into a demonic boar. It smashed through a wall
-      of the Temple before flying away with a few shredded followers in its mouth.
-      Bendan mourns the departure of his new friend and continues to deny responsibility.
+    choice1Description: This pig is <color=#0BB5FF>strange and possibly dangerous</color>.
+      We can't leave Bendan with this thing.
+    choice1Reveal: 'The pig turned into a <color=#FF6666>demonic boar</color>. It
+      smashed through a wall of the Temple before flying away with a few shredded
+      followers in its mouth. Bendan mourns the departure of his new friend and continues
+      to deny responsibility.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+'
     choice2Name: Give food
     choice2Description: Bendan is out of control. Leave him alone, him and his pig.
-      Give what he asks.
-    choice2Reveal: By dint of eating magic truffles, the pig grows bigger and bigger.
+      <color=#0BB5FF>Give what he asks.</color>
+    choice2Reveal: 'By dint of eating magic truffles, the pig grows bigger and bigger.
       Was it a good idea?
+
+
+      <sprite name=kiLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -20

@@ -20,8 +20,8 @@ MonoBehaviour:
     questDescription: "\u201C Well, well, what do we have here?\r\nAm I a liar, you
       wonder? \r\nA jester poking amidst mortals whose bones will be shortly cleaned
       or merely an intruder who came into this town to kill you all. \r\nIs it the
-      same thing? \r\nHaha, which one did you want? \r\nI would be end soon enough.\r\n\r\n\r\n\u2026\r\n\r\nWhy
-      did my pig be here?\u201D\r\n"
+      same thing? \r\nHaha, which one did you want? \r\nI would be end soon enough.\r\n\n\u2026\r\n\r\nWhy
+      is my pig here?\u201D\r\n"
     choice1Name: Kill them
     choice1Description: They'll never get us!
     choice1Reveal: The Monkey King almost destroyed the city. The monsters flee when

@@ -17,18 +17,23 @@ MonoBehaviour:
     questGiverName: Yu, the matriarch of the Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C The Susoda clan is happy to know that you appreciate
-      our presence and our assistance to the villager. Having your support during
-      the last conflict was a balm on our bruised hearts.\r\n\r\nWe offer you two
-      gifts our clan is ready to give you, in addition to our support and a few gold
-      pieces.\u201D\r"
+    questDescription: "\u201C <color=#0BB5FF>The Susoda clan is happy to know that
+      you appreciate our presence and our assistance to the villager</color>. Having
+      your support during the last conflict was a balm to our bruised hearts.\r\n\r\nWe
+      offer you two gifts our clan is ready to give you, in addition to our support
+      and a few gold pieces.\u201D\r"
     choice1Name: Poison arrows
     choice1Description: We trust this type of poison against the demon. It burns
       their guts on the inside.
-    choice1Reveal: 'Our new weapon increased our preparation against the demon. '
+    choice1Reveal: "Our new weapon increased our preparation against the demon. \n\n<sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>\r\n<sprite
+      name=readinessLogo> <sprite name=plusLogo>\r\n<sprite name=argentLogo> <sprite
+      name=plusLogo>\r\n"
     choice2Name: Water mage
     choice2Description: A water mage is the strongest elemental mage it can exist.
-    choice2Reveal: 'Our new disciple increased our magic power. '
+    choice2Reveal: "Our new disciple increased our magic power. \n\n<sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>\r\n<sprite name=discipleLogo> <sprite
+      name=plusLogo>\r\n<sprite name=kiLogo> <sprite name=plusLogo>\r\n"
     rewardChoice1:
       moneyReward: 20
       templeReadiness: 30

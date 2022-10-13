@@ -18,19 +18,23 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: 83317201429301b4ebb3bb04aedd2836, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 51eff0c1f5b5049448226e84f6e59e02, type: 3}
     questDescription: "\u201CI was flying quietly from one mountain to another when
-      I saw your magnificent town. Oh, and the Temple here is grandiose! \r\nCan
+      I saw your magnificent town. Oh, and the Temple here is grandiose! \r\n<color=#0BB5FF>Can
       I visit it? I want to see the statues, the porcelains, and the gems decorating
       all the walls. Please let me in. I want to see it. I want to grab some of your
-      treasures and keep them for myself! \u201C\r"
+      treasures and keep them for myself!</color> \u201C\r"
     choice1Name: Kill the Dragon
     choice1Description: Let's slay this dragon. Her threats do not scare us.
-    choice1Reveal: The fight against the dragon was painful, but she left as she
-      came.
+    choice1Reveal: "The fight against the dragon was painful, but she left as she
+      came.\n\n<sprite name=readinessLogo> <sprite name=moinsLogo>\r\n<sprite name=kiLogo>
+      <sprite name=moinsLogo>\r"
     choice2Name: Accept
     choice2Description: She can keep our gold even though the sparkle in her eyes
       makes me cringe oddly.
-    choice2Reveal: She left with a big bag of gold. I hope she didn't come back to
-      look for the rest.
+    choice2Reveal: 'She left with a big bag of gold. I hope she didn''t come back
+      to look for the rest.
+
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -10

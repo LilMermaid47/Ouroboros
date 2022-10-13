@@ -10,25 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: QuestBalancing2
+  m_Name: Quest322
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Before the Attack
     questGiverName: Xida
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\"A dragon! I saw a giant scary dragon!\r\n\r\nIt was as big
-      as the mountains, and red as blood. Or maybe it was green like jade? It flew
-      right over the Magistrate's palace.\r\nYou'll see when it will come and kill
-      us all! It was a dragon!\r\"\n\r\nWe must prepare ourselves for the dragon
-      attack.\r "
+    questDescription: '"A <color=#FF6666>dragon</color>! I saw a giant scary <color=#FF6666>dragon</color>!
+
+
+
+      It
+      was as big as the mountains, and red as blood. Or maybe it was green like jade?
+      It flew right over the Magistrate''s palace.
+
+      You''ll see when it will
+      come and kill us all! It was a <color=#FF6666>dragon</color>!
+
+      "
+
+
+
+      We
+      must prepare ourselves for the <color=#FF6666>dragon attack</color>.
+
+'
     choice1Name: Train Monk
-    choice1Description: "We need to train new pupils in case what she says is true.
-      Put them on watch duty tonight.\r"
+    choice1Description: "We need to <color=#0BB5FF>train new pupils </color>in case
+      what she says is true. Put them on watch duty tonight.\r"
     choice1Reveal: The new trainees meditate et watch for the dragon's return.
     choice2Name: Asking for donations
-    choice2Description: We need to make sure we have enough money in case we have
-      to pay for reinforcements.
+    choice2Description: We need to make sure we have <color=#0BB5FF>enough money</color>
+      in case we have to pay for reinforcements.
     choice2Reveal: The peasants were slightly angry about giving money, but they
       did not want to die from a dragon. Since they did not have a lot of money,
       they also prayed.

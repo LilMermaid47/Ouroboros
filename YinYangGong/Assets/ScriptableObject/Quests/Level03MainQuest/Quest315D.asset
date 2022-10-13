@@ -17,21 +17,44 @@ MonoBehaviour:
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C You do nothing to help the village! A conflict between
-      the clans broke out. One accuses the other of deceit, the other accuses them
-      of hiding criminals worse than a painter. You absolutely must take a side.
-      Otherwise, the village risks going up in smoke!\u201D"
+    questDescription: "\u201C You do <color=#FF6666>nothing</color> to help the village!
+      <color=#0BB5FF>A conflict between the clans broke out</color>. One accuses
+      the other of deceit, the other accuses them of <color=#0BB5FF>hiding criminals</color>
+      worse than a painter. You absolutely must take a side. Otherwise, the village
+      risks going up in smoke!\u201D"
     choice1Name: Huangsei
     choice1Description: The Huangsei clan promised to protect us if we helped them.
-    choice1Reveal: We lost two disciples in the fight. Their leader told us that
-      members of the Susoda clan had attacked his elderly father's house. They went
-      overboard.
+    choice1Reveal: 'We lost two disciples in the fight. Their leader told us that
+      members of the Susoda clan had attacked his <color=#0BB5FF>elderly father''s
+      house</color>. They went overboard.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>
+
+'
     choice2Name: Susoda
     choice2Description: The Susoda clan has promised to strengthen our KI if we offer
       our help.
-    choice2Reveal: We lost two disciples in the fight. The matriarch advised us to
-      protect our young disciples. Times are tough, and minds are becoming corrupted
-      by demons.
+    choice2Reveal: 'We lost two disciples in the fight. The matriarch advised us
+      to protect our young disciples. Times are tough, and <color=#0BB5FF>minds are
+      becoming corrupted by demons</color>.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 20

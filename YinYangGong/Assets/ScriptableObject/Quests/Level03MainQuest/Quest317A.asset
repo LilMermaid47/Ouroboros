@@ -17,18 +17,40 @@ MonoBehaviour:
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201CI wanted to thank you for your support in recent events
-      personally. We are happy that you recognize the strength and morality of our
-      clan.\n\nWe offer you two gifts our clan is ready to give you in addition to
-      our support.\u201D"
+    questDescription: "\u201C<color=#0BB5FF>I wanted to thank you for your support
+      in recent events</color> . We are happy that you recognize the<color=#0BB5FF>
+      strength and morality of our clan</color> .\n\nWe offer you two gifts our clan
+      is ready to give you in addition to our support.\u201D"
     choice1Name: Wind mages
     choice1Description: 'Our secret weapon: wind mages. Their magic is one of the
       strongest.'
-    choice1Reveal: Our magic power is increased.
+    choice1Reveal: 'Our magic power is increased.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+'
     choice2Name: Fire Warriors
     choice2Description: Warriors who use flaming swords are excellent. They can defend
       the village against demons.
-    choice2Reveal: Our preparation is increased.
+    choice2Reveal: 'Our preparation is increased.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=discipleLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
@@ -39,8 +61,8 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 20
-      templeReadiness: 0
+      moneyReward: 0
+      templeReadiness: 20
       nbDisciple: 3
       nbKi: 0
       yinYangBalance: -25

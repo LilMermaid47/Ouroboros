@@ -25,11 +25,28 @@ MonoBehaviour:
       a little something that makes me want to shove some down my throat.\u201D\r"
     choice1Name: Kill the Dragon
     choice1Description: Let's slay this dragon. His threats do not scare us.
-    choice1Reveal: The fight against the dragon was painful, but he left as he came.
+    choice1Reveal: 'The fight against the dragon was painful, but he left as he came.
+
+
+      <sprite
+      name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=moinsLogo>
+
+'
     choice2Name: Accept
     choice2Description: Let him go with a full stomach. We cannot face this monster.
-    choice2Reveal: The dragon served in the Susoda clan and our members. The Susoda
+    choice2Reveal: 'The dragon served in the Susoda clan and our members. The Susoda
       clan was severely ravaged.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -10

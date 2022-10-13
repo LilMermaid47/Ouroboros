@@ -17,20 +17,40 @@ MonoBehaviour:
     questGiverName: Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: 68108d26a602ec94899c1bc4a8ce60d0, type: 3}
     questGiverAudio: {fileID: 8300000, guid: c0185c874d3f5674e8c29f4d55061cbd, type: 3}
-    questDescription: "\u201C We asked both clans about Bendan's new pig. Both leaders
-      gave us concerning reports about the pig. Yu of Susoda offers us to exorcise
-      the pig. The Huangsei clan does not want to hear anything. He proposes that
-      the Temple take the pig as a disciple to observe its actions daily.\u201D\r\n\r\n\"
-      Hi, Master Monk. You asked for me?\r \""
+    questDescription: "\u201C We asked both clans about Bendan's new pig. <color=#0BB5FF>Both
+      leaders gave us concerning reports about the pig</color>. Yu of Susoda offers
+      us to exorcise the pig. The Huangsei clan does not want to hear anything. He
+      proposes that the Temple take the pig as a disciple to observe its actions
+      daily.\u201D\r\n\r\n\" Hi, Master Monk. You asked for me?\r \""
     choice1Name: The ritual
     choice1Description: "The ritual\r\nThe tools necessary for the ritual are required,
       but Yu assures us that the magical energy obtained should satisfy us.\r"
-    choice1Reveal: The pig had become an ordinary pig again. But it's still big and
-      curious.
+    choice1Reveal: 'The pig had become an ordinary pig again. But it''s still big
+      and curious.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>
+
+'
     choice2Name: Keep an eye open
     choice2Description: The Huangsei clan is right. Therefore, it is up to the Temple
       to assume its choices.
-    choice2Reveal: Strangely, the pig prays to look like the statues of the Temple.
+    choice2Reveal: 'Strangely, the pig prays to look like the statues of the Temple.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: -25
       templeReadiness: 0
