@@ -44,45 +44,40 @@ public class TutorialQuestManager : QuestManager
                 MerchantQuestReward(merchantQuest.itemChoice2.item);
         }
         currentQuestIndex++;
-        Debug.Log(currentQuestIndex);
-
-        switch (currentQuestIndex)
-        {
-            case 2:
-                TutorialUI.HideRessources(Ressources.Balance, false);
-                TutorialUI.HideOldMonk(false);
-                break;
-            case 4:
-                TutorialUI.HideOldMonk(true);
-                break;
-            case 5:
-                TutorialUI.HideRessources(Ressources.Readiness, false);
-                TutorialUI.HideRessources(Ressources.Audience, false);
-                TutorialUI.HideOldMonk(false);
-                break;
-            case 6:
-                TutorialUI.HideOldMonk(true);
-                break;
-            case 7:
-                TutorialUI.HideRessources(Ressources.Yuan, false);
-                break;
-            case 9:
-                ChoiceUi.HideAcceptBtn(false);
-                TutorialUI.HideOldMonk(false);
-                break;
-            case 10:
-                ChoiceUi.HideAcceptBtn(true);
-                break;
-        }
 
         if (currentQuestIndex < filledLevel.questList.Count)
         {
             UpdateCurrentQuest();
 
-            if (currentQuest.questDefinition.questName == "Leader of Huangsei")
-                TutorialUI.ShowHuangseiFlag(true);
-            else if (currentQuest.questDefinition.questName == "Leader of Susoda")
-                TutorialUI.ShowSusodaFlag(true);
+            switch (currentQuest.questDefinition.questName)
+            {
+                case "Leader of Huangsei":
+                    TutorialUI.HideRessources(Ressources.Balance, false);
+                    TutorialUI.HideOldMonk(false);
+                    TutorialUI.ShowHuangseiFlag(true);
+                    break;
+                case "Leader of Susoda":
+                    TutorialUI.ShowSusodaFlag(true);
+                    break;
+                case "Assume One's Wrongs":
+                    TutorialUI.HideRessources(Ressources.Readiness, false);
+                    TutorialUI.HideRessources(Ressources.Audience, false);
+                    TutorialUI.HideOldMonk(false);
+                    break;
+                case "First day":
+                    TutorialUI.HideOldMonk(true);
+                    break;                
+                case "The Clans":
+                    TutorialUI.HideOldMonk(true);
+                    break;
+                case "General Store":
+                    TutorialUI.HideRessources(Ressources.Yuan, false);
+                    break;
+                case "Buying Peace":
+                    ChoiceUi.HideAcceptBtn(false);
+                    TutorialUI.HideOldMonk(false);
+                    break;
+            }
         }
         else
         {

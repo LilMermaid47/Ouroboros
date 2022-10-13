@@ -44,6 +44,9 @@ public class TutorialUIController : UIController
         HideBtn();
         HideRessources(true);
         HideOldMonk(true);
+
+        UIMenu.ShopUi.SetActive(false);
+        UIMenu.InventoryUi.SetActive(false);
     }
 
     public override void SetNPCFile(Level niveau, int questIndex)
