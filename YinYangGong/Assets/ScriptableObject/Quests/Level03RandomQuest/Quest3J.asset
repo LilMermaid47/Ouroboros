@@ -17,16 +17,31 @@ MonoBehaviour:
     questGiverName: Sun Wukong, the Strange Man
     questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: I found a magical source that gives good karma and youth. If
-      you pay me, I'll get it for you.
+    questDescription: I found a <color=#0BB5FF>magical source</color> that gives
+      good karma and youth. If you <color=#0BB5FF>pay me</color>, I'll get it for
+      you.
     choice1Name: Accept
-    choice1Description: I need gold and the energy to be able to collect it.
-    choice1Reveal: It's been several weeks without any info about his trip. Was it
-      a lie? Does the source exist?
+    choice1Description: I need <color=#0BB5FF>gold</color> and the <color=#0BB5FF>energy</color>
+      to be able to collect it.
+    choice1Reveal: 'It''s been several weeks without any info about his trip. Was
+      it a lie? Does the source exist?
+
+
+      <sprite name=kiLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: I'll do it
     choice2Description: 'I don''t trust you. I''ll try to do it myself. '
-    choice2Reveal: The water didn't contain any magical element. You wasted your
-      energy for nothing, and the ones who drank the water died because it was poisoned.
+    choice2Reveal: 'The water didn''t contain any magical element. You wasted your
+      energy for nothing, and the ones who drank the water died because it was <color=#0BB5FF>poisoned</color>.
+
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=moinsLogo>'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: 0

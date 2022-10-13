@@ -22,8 +22,11 @@ MonoBehaviour:
     choice1Name: 'Accept '
     choice1Description: What does this strange toad want? Money? Should I agree to
       give it to him?
-    choice1Reveal: The toad gives the money by spitting it and jumps to the exit.
-      What was that? Isn't reversed?
+    choice1Reveal: 'The toad gives the money by spitting it and jumps to the exit.
+      What was that? Isn''t reversed?
+
+
+      <sprite name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Refuse
     choice2Description: I have no time to waste on this odd amphibian.
     choice2Reveal: 'The toad leaves as it arrived: by jumping.'

@@ -11,6 +11,8 @@ TagManager:
   - InventoryManager
   - LampManager
   - Music
+  - UpgradeShop
+  - ConsumableShop
   layers:
   - Default
   - TransparentFX

@@ -17,15 +17,19 @@ MonoBehaviour:
     questGiverName: Neutral Peasant
     questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C We just received a strange gift. Do you want us to
-      open it?\u201D"
+    questDescription: "\u201C We just received a <color=#0BB5FF>strange gift</color>.
+      Do you want us to open it?\u201D"
     choice1Name: Accept
-    choice1Description: "The gift is full of <b>swampy</b> plants and moss. Is it
-      weird?\r"
-    choice1Reveal: "We found a lot of money in that gift. Are we blessed from the
-      god?\r"
+    choice1Description: "The gift is full of <color=#0BB5FF>swampy</color> plants
+      and moss. Is it weird?\r"
+    choice1Reveal: 'We found a lot of money in that gift. Are we blessed from the
+      god?
+
+
+      <sprite name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Refuse
-    choice2Description: This smell is so bad that I don't want to take the risk.
+    choice2Description: This <color=#0BB5FF>smell is so bad</color> that I don't
+      want to take the risk.
     choice2Reveal: We threw the present in the river and never heard of it.
     rewardChoice1:
       moneyReward: 120

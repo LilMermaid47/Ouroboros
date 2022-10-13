@@ -22,8 +22,11 @@ MonoBehaviour:
     choice1Name: 'Accept '
     choice1Description: What does this strange toad want? Money? Should I agree to
       give it to him?
-    choice1Reveal: The toad takes the money, swallows it, and jumps to the exit.
+    choice1Reveal: 'The toad takes the money, swallows it, and jumps to the exit.
       Have I just been robbed?
+
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Refuse
     choice2Description: I have no time to waste on this odd amphibian.
     choice2Reveal: 'The toad leaves as it arrived: by jumping.'
