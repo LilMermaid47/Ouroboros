@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: New Leader
-    questGiverName: Gyatso the old Monk
+    questGiverName: Gyatso the Old Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
     questDescription: '"My dear apprentice, it is time for you to become the <color=#0BB5FF>head
       of the Temple</color>. I''m getting old, and I feel my body and mind losing
