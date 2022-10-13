@@ -3743,8 +3743,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StoreItemManager, Assembly-CSharp
+      - m_Target: {fileID: 1555895329164511358}
+        m_TargetAssemblyTypeName: ItemDescriptionController, Assembly-CSharp
         m_MethodName: AttemptPurchaseSelectedItem
         m_Mode: 1
         m_Arguments:
@@ -11908,6 +11908,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7612883798962811739, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
+      propertyPath: m_TagString
+      value: ConsumableShop
+      objectReference: {fileID: 0}
     - target: {fileID: 7612883798962811741, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -12115,7 +12119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704488186666798999, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
       propertyPath: m_Size
-      value: 0.99999994
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4704488186666798999, guid: 2b1db9d9709e01d40a6917ec734c8117, type: 3}
       propertyPath: m_Value
@@ -12699,6 +12703,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6039392448783655641, guid: 0c7094884a9cf1f428e304fee5bfa52c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c7094884a9cf1f428e304fee5bfa52c, type: 3}
 --- !u!224 &2457614333580566662 stripped
@@ -12734,7 +12742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4397406153923306679, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 4503571814610030429, guid: c7299a8e5ab3e2747a6a2994ab2298a2, type: 3}
       propertyPath: m_Name
@@ -12960,6 +12968,10 @@ PrefabInstance:
     - target: {fileID: 7450946854050297769, guid: 46946199ed2154f4f82a1b4a330ceb60, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450946854050297769, guid: 46946199ed2154f4f82a1b4a330ceb60, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46946199ed2154f4f82a1b4a330ceb60, type: 3}

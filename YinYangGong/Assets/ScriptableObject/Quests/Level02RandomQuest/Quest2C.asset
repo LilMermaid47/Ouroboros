@@ -33,7 +33,7 @@ MonoBehaviour:
 
       <sprite name=readinessLogo>
       <sprite name=plusLogo>'
-    choice2Name: Kil them in their sleep
+    choice2Name: Kill them in their sleep
     choice2Description: Please don't take any risks. Let's send our <color=#0BB5FF>best
       assassins</color> and create chaos in their camp.
     choice2Reveal: 'The <color=#AB82FF>Susoda</color> clan quickly stepped forward

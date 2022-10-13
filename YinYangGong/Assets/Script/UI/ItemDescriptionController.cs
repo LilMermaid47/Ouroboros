@@ -44,7 +44,19 @@ public class ItemDescriptionController : MonoBehaviour
 
     public void AttemptPurchaseSelectedItem()
     {
-        questManager.RemoveMoney(currentItem.Cost);
-        PlayerInventoryManager.AddItem(currentItem);
+        if(currentItem != null)
+        {
+            questManager.RemoveMoney(currentItem.Cost);
+            PlayerInventoryManager.AddItem(currentItem);
+            if(currentItem.ItemType() == TypeOfItem.ConsumableItem)
+            {
+                GameObject.FindGameObjectWithTag("ConsumableShop").GetComponent<StoreItemManager>().RemoveItem(currentItem);
+            }
+            else
+            {
+                GameObject.FindGameObjectWithTag("UpgradeShop").GetComponent<StoreItemManager>().RemoveItem(currentItem);
+                PlayerInventoryManager.UseItem(currentItem);
+            }
+        }
     }
 }
