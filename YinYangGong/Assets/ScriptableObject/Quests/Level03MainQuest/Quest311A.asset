@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Cunning Excuses
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Our leader wants to excuse the behavior of her members
       in recent events. She offers to provide several young disciples for the Temple.
       Otherwise, she can also offer you the last moonstones we made from a meteor.\u201D"

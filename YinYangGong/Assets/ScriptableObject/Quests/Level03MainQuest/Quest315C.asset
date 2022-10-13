@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Susoda Protection
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C We have found the person responsible for the crimes
       committed against the Huangsei clan. This is, unsurprisingly, a member of the
       Susoda clan. However, I heard that you protect him in your temple! I ask that

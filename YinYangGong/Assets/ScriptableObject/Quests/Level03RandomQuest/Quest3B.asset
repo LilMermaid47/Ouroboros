@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Hypebeast
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C I have just returned from a courtesy visit to the neighbouring
       village. I'm completely jealous of their new weaponry. We don't have the means
       to buy better ones. I suggest we attack them and rob them.\u201D"

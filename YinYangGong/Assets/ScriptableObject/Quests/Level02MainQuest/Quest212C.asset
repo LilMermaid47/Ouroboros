@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'The Strange Veggie Collector '
     questGiverName: Peasant
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: '"Master Fangshi, we have a problem! The <color=#0BB5FF>collector
       who bought our jade cabbage</color> is back. He accuses us of selling him a
       <color=#0BB5FF>cursed artifact</color>. He and his army want compensation for

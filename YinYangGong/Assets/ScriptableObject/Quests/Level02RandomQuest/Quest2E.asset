@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: The Eclipse Festival
     questGiverName: Liliang, la Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C It is soon the great eclipse festival, and we must
       organize the festivities. Naturally, the clans are eager to know which deity
       will be in the <color=#0BB5FF>spotlight</color>. This is great proof of respect!\u201D"

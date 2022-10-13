@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'Piggy Bite '
     questGiverName: A Huangsei member and Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: bd8e1238cc625904e9f0e0d9eee54b80, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Bendan's pig bit a village child. The parents want
       <color=#0BB5FF>redress and compensation</color>. Who should we <color=#FF6666>punish</color>
       for this crime? \u201C"

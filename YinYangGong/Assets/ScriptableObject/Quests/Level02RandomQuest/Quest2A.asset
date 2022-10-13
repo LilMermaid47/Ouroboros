@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Paying Again
     questGiverName: Three angry peasants
     questGiverSprite: {fileID: 21300000, guid: 73dae23159b810f4db41dc08a14924c7, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C We have no more money! The tithe is <color=#0BB5FF>too
       high</color>! Our children are hungry, and all we do is work.\u201D"
     choice1Name: Reduce the tithe

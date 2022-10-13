@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'New Project : Colony '
     questGiverName: Caifu the Merchant
     questGiverSprite: {fileID: 21300000, guid: af298ddb0b9ea094b9b7330bbf20b70d, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201CI have good news about the ships we have sent to the
       new continent. One returned with <color=#0BB5FF>gold, gems, and a strange yellow
       vegetable</color>. On the other hand, they asked to have <color=#0BB5FF>soldiers</color> 

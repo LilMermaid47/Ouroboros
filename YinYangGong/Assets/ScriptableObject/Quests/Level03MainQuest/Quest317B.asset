@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Susoda Blessing
     questGiverName: Yu, the matriarch of the Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C The Susoda clan is happy to know that you appreciate
       our presence and our assistance to the villager. Having your support during
       the last conflict was a balm on our bruised hearts.\r\n\r\nWe offer you two

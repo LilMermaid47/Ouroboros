@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: A Strange Disease
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C A <color=#FF6666>strange disease</color> is raging
       in the village. We have tried several remedies, but nothing really seems to
       work. Sick people are <color=#FF6666>expensive</color>. We don't know what

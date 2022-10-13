@@ -52,6 +52,8 @@ public class MusicSFXManager : MonoBehaviour
             MusicSource.volume = i;
         }
 
+        yield return new WaitForSeconds(FadeInOut);
+
         MusicSource.clip = audio;
         MusicSource.Play();
 

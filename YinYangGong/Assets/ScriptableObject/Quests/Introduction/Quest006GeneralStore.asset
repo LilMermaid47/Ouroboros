@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: General Store
     questGiverName: Caifu, the Merchant
     questGiverSprite: {fileID: 21300000, guid: af298ddb0b9ea094b9b7330bbf20b70d, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C I had been promised a building for my shop, but there
       is no longer any available. There are two interesting places, but they already
       <color=#0BB5FF>belong to a clan</color>. Which of the two are you offering

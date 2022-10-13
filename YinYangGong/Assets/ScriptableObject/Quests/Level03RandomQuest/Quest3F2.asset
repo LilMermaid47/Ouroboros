@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'Three Legs Curse '
     questGiverName: Jin Chan
     questGiverSprite: {fileID: 21300000, guid: 07cf74f3ca609e34e88ef05ca7018daa, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 9542e8c8d44840d498e4cb0649c025f0, type: 3}
     questDescription: "\u201C I want my money back\u201D"
     choice1Name: Accept
     choice1Description: I should listen to it. It makes me nervous.

@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'White Tiger '
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C During our last hunt, we found the den of a marvelous
       white tiger. The tiger kidnaps a few of our hunters. We believe we can kill
       it and turn its fur into a <color=#0BB5FF>war chest worthy of our clan</color>!\u201D"

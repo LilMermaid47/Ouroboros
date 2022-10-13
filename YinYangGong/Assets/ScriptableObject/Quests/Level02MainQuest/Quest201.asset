@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Fire Dog
     questGiverName: A member of Susoda
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Since the demon's attack, a Huodou has been prowling
       around the village! This species of big dog spits fire on the villagers who
       try to approach it. I think we have enough <color=#0BB5FF>KI</color> to face

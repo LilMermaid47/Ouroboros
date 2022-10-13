@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'Boss : Dragon'
     questGiverName: Fu-zang long
     questGiverSprite: {fileID: 21300000, guid: 83317201429301b4ebb3bb04aedd2836, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 51eff0c1f5b5049448226e84f6e59e02, type: 3}
     questDescription: "\u201C Poor mortals, you are not worthy to face a creature
       as magnificent as me. Your village blocks the beautiful landscape. Burning
       you is the solution to my problems.\u201D"

@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'The Strange Veggie '
     questGiverName: Sun Wukong, the strange man
     questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C I wanted to thank the village with this <color=#0BB5FF>wonderful
       gift</color>. Here is a precious cabbage carved in jade. Legends say that it
       multiplies the harvests. Use it well.\u201D"

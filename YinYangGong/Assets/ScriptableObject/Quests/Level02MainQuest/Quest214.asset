@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Famine
     questGiverName: Yu, the matriarch of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C We are short on food. Some villagers even tried to
       steal common crops. We must find a solution.\u201D"
     choice1Name: Buy it

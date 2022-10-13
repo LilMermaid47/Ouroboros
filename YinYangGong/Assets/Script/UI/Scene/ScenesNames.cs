@@ -6,14 +6,10 @@ public class ScenesNames : MonoBehaviour
 }
 public enum SceneList
 {
-    Gym,
-    Prototype,
     MainMenu,
+    Introduction,
     Level01,
     Level02,
     Level03,
-    Credit,
-    GymSlider,
-    GymSliderEtPopUp,
-    Shop
+    Credit
 }

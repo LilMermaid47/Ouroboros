@@ -17,6 +17,7 @@ MonoBehaviour:
     questGiverName: Yu, the matriarch of the Susoda clan & Rilou, the patriarch of
       Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e8102fc47d34510438d07b28b7d94584, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C We are under attack! The gruesome statue the Huangsei
       Clan gave you is alive. It attacks the villagers and devours the children!\r\n\r\n\r\nWe
       didn't know it was cursed! We propose to use our fire magic to defeat the statue.\u201D\r\n"

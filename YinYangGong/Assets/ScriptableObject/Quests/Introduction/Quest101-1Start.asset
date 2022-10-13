@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: First day
     questGiverName: Gyatso the old Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: '"Several villagers request an audience with the Temple. Answer
       to the best of your knowledge, and try not to favor one clan too much."
 
