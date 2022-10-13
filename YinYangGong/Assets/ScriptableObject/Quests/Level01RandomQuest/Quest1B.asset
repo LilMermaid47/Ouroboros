@@ -10,24 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest1F
+  m_Name: Quest1B
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Wild Donkeys Donkeys
     questGiverName: A Member of clan Huangsei
     questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
-    questDescription: "\u201C We found three wild donkeys. They <b>look healthy</b>.
-      One of them is even as big as a horse. What do we do with these animals?\u201D"
+    questDescription: "\u201C We found three wild donkeys. They <color=#BCED91>look
+      healthy</color>. One of them is even as big as a horse. What do we do with
+      these animals?\u201D"
     choice1Name: Keep for the Temple
-    choice1Description: We should keep them here. They could help carry heavy loads,
-      making it easier for the monks.
+    choice1Description: We should keep them here. They could help carry <color=#0BB5FF>heavy
+      loads</color> , making it easier for the monks.
     choice1Reveal: "A mason had the brilliant idea of \u200B\u200Busing one of the
-      donkeys to transport the stone to solidify the foundations."
+      donkeys to transport the stone to solidify the foundations.\n\n<sprite name=readinessLogo>
+      <sprite name=plusLogo>"
     choice2Name: Give to the villagers
-    choice2Description: The villagers need help in the fields. The three donkeys
-      would be more beneficial to them.
-    choice2Reveal: The villagers were thrilled with your present. They promised to
-      make good use of it.
+    choice2Description: The villagers need help <color=#0BB5FF>in the fields</color>
+      . The three donkeys would be more beneficial to them.
+    choice2Reveal: 'The villagers were thrilled with your present. They promised
+      to make good use of it.
+
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 25
@@ -38,7 +46,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
     rewardChoice2:
-      moneyReward: 20
+      moneyReward: 30
       templeReadiness: 5
       nbDisciple: 0
       nbKi: 0

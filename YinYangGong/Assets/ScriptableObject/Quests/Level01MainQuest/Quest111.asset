@@ -22,16 +22,36 @@ MonoBehaviour:
     choice1Description: Many say that we should ask for help from the ancient monks.
       Those who dwell in the <color=#ca9c43>mountain of fire</color>. Their wisdom
       and magic can help the village.
-    choice1Reveal: The fighting abilities of the monks are extraordinary! The village
+    choice1Reveal: 'The fighting abilities of the monks are extraordinary! The village
       is in good hands. The <color=#ca9c43>Huangsei</color> clan offered to welcome
       our new allies who joined their clan without problems.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>
+
+'
     choice2Name: Wolves
     choice2Description: Others think that the wolves that ransack the chicken coops
       should be domesticated. This way, we solve <color=#BCED91>two problems</color>
       at once by training them to fight.
-    choice2Reveal: Wolf training didn't go as planned. They attacked several villagers.
+    choice2Reveal: 'Wolf training didn''t go as planned. They attacked several villagers.
       The project almost fell through, but the <color=#AB82FF>Susoda</color> insisted
       on taking over the project. They trained about ten wolves.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: -25
       templeReadiness: 30
