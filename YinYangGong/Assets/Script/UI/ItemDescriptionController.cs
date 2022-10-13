@@ -55,6 +55,7 @@ public class ItemDescriptionController : MonoBehaviour
             else
             {
                 GameObject.FindGameObjectWithTag("UpgradeShop").GetComponent<StoreItemManager>().RemoveItem(currentItem);
+                PlayerInventoryManager.UseItem(currentItem);
             }
         }
     }
