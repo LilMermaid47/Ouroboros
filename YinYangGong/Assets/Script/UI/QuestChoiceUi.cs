@@ -111,4 +111,15 @@ public class QuestChoiceUi : MonoBehaviour
     {
         PlayerInputs.Dispose();
     }
+
+    public void HideAcceptBtn(bool status)
+    {
+        acceptChoice.interactable = status;
+
+        if(status)
+            PlayerInputs.QuestChoice.Accepter.Enable();
+
+        else
+            PlayerInputs.QuestChoice.Accepter.Disable();
+    }
 }

@@ -1,12 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialQuestManager : QuestManager
 {
+    [SerializeField]
+    private QuestChoiceUi ChoiceUi;
+
+    private TutorialUIController TutorialUI; 
+
     private void Start()
     {
-        uIController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<TutorialUIController>();
+        TutorialUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<TutorialUIController>();
+        uIController = TutorialUI;
+
+        ChoiceUi = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<QuestChoiceUi>();
 
         //creates a copy to not lose original data (important)
         filledLevel = Instantiate(level);
@@ -22,49 +28,63 @@ public class TutorialQuestManager : QuestManager
         uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
         uIController.SetNPCFile(filledLevel, currentQuestIndex);
     }
-    protected override void UpdateCurrentQuest()
+    public override void NextQuest()
     {
-        currentQuest = filledLevel.questList[currentQuestIndex];
-
-        uIController.SetQuest(currentQuest);
-        uIController.SetNbQuestLeft(filledLevel.questList.Count - currentQuestIndex);
-        uIController.SetNPCFile(filledLevel, currentQuestIndex);
-
-        if (currentQuest.QuestType() == TypeOfQuest.RequirementQuest)
+        if (currentQuest.QuestType() == TypeOfQuest.MerchantQuest)
         {
-            RequirementQuest requirementQuest = (RequirementQuest)currentQuest;
-            CheckRequirement(requirementQuest);
+            MerchantQuest merchantQuest = (MerchantQuest)currentQuest;
+
+            if (choice1WasMade)
+                MerchantQuestReward(merchantQuest.itemChoice1.item);
+            else
+                MerchantQuestReward(merchantQuest.itemChoice2.item);
         }
-    }
+        currentQuestIndex++;
+        Debug.Log(currentQuestIndex);
 
-    protected override void CheckRequirement(RequirementQuest requirementQuest)
-    {
-        Requirement requirement = requirementQuest.requirementChoice1;
-
-        if ((requirement.templeReadiness <= templeReadiness || requirement.templeReadiness == 0) &&
-            requirement.moneyCost <= argent &&
-            requirement.kiCost <= ki &&
-            requirement.disciples <= disciple)
+        switch (currentQuestIndex)
         {
-            uIController.FirstChoiceBtnActivate(true);
+            case 2:
+                TutorialUI.HideRessources(Ressources.Balance, false);
+                TutorialUI.HideOldMonk(false);
+                break;
+            case 4:
+                TutorialUI.HideOldMonk(true);
+                break;
+            case 5:
+                TutorialUI.HideRessources(Ressources.Readiness, false);
+                TutorialUI.HideRessources(Ressources.Audience, false);
+                TutorialUI.HideOldMonk(false);
+                break;
+            case 6:
+                TutorialUI.HideOldMonk(true);
+                break;
+            case 7:
+                TutorialUI.HideRessources(Ressources.Yuan, false);
+                break;
+            case 9:
+                ChoiceUi.HideAcceptBtn(false);
+                TutorialUI.HideOldMonk(false);
+                break;
+            case 10:
+                ChoiceUi.HideAcceptBtn(true);
+                break;
+        }
+
+        if (currentQuestIndex < filledLevel.questList.Count)
+        {
+            UpdateCurrentQuest();
+
+            if (currentQuest.questDefinition.questName == "Leader of Huangsei")
+                TutorialUI.ShowHuangseiFlag(true);
+            else if (currentQuest.questDefinition.questName == "Leader of Susoda")
+                TutorialUI.ShowSusodaFlag(true);
         }
         else
         {
-            uIController.DisableFirstChoiceBtn(DisableReason(requirement));
+            CheckIfPlayerWon();
         }
 
-        requirement = requirementQuest.requirementChoice2;
-
-        if ((requirement.templeReadiness <= templeReadiness || requirement.templeReadiness == 0) &&
-            requirement.moneyCost <= argent &&
-            requirement.kiCost <= ki &&
-            requirement.disciples <= disciple)
-        {
-            uIController.SecondChoiceBtnActivate(true);
-        }
-        else
-        {
-            uIController.DisableSecondChoiceBtn(DisableReason(requirement));
-        }
+        CheckIfStillWinning();
     }
 }
