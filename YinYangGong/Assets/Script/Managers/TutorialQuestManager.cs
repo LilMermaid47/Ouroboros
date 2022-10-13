@@ -14,6 +14,8 @@ public class TutorialQuestManager : QuestManager
 
         ChoiceUi = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<QuestChoiceUi>();
 
+        musicSFXManager = GameObject.FindGameObjectWithTag("Music").GetComponent<MusicSFXManager>();
+
         //creates a copy to not lose original data (important)
         filledLevel = Instantiate(level);
         tempQuestList = Instantiate(randomQuestList);

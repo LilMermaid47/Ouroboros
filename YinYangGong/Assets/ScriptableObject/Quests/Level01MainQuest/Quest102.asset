@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest106
+  m_Name: Quest102
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Hungry Pig
@@ -19,29 +19,39 @@ MonoBehaviour:
     questDescription: '"<color=#0BB5FF>Watch out for that man and his pig. They bring</color>
       <color=#FF6666>bad luck</color>."
 
-      
 
-      "My pig is hungry, but I
-      have no money to buy him food. The clans listen to you. <color=#0BB5FF>Demand
-      it</color>, and they''ll offer food for my pig.
 
-      Look how beautiful
-      it is. We can''t leave it like that."
+      "My pig is hungry, but I have no
+      money to buy him food. The clans listen to you. <color=#0BB5FF>Demand it</color>,
+      and they''ll offer food for my pig.
 
-      
+      Look how beautiful it is. We can''t
+      leave it like that."
+
+
 
       "Ouink ouink."
 
 '
     choice1Name: Fresh fish
     choice1Description: A fish freshly caught this morning by the fishermen of the
-      Huangsei clan should do the trick.
-    choice1Reveal: Oink Oink. Bendan's pig is happy. Unfortunately, the Huangsei
+      <color=#ca9c43>Huangsei</color> clan should do the trick.
+    choice1Reveal: 'Oink Oink. Bendan''s pig is happy. Unfortunately, the <color=#ca9c43>Huangsei</color>
       clan did not appreciate giving the madman a gift.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=moinsLogo>'
     choice2Name: Bok choy
-    choice2Description: Susoda Clan bok choy are delicious and flavorful.
-    choice2Reveal: The Susoda clan doesn't like Bendan and his pig very much. The
-      cabbages offered to Bendan are less beautiful than he had hoped.
+    choice2Description: <color=#AB82FF>Susoda</color> Clan bok choy are delicious
+      and flavorful.
+    choice2Reveal: 'The <color=#AB82FF>Susoda</color> clan doesn''t like Bendan and
+      his pig very much. The cabbages offered to Bendan are less beautiful than he
+      had hoped.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

@@ -22,13 +22,25 @@ MonoBehaviour:
     choice1Name: Make a blood ceremony
     choice1Description: <color=#0BB5FF>A ritual</color> like this would help strengthen
       the bonds between the soldiers.
-    choice1Reveal: The <color=#AB82FF>Susoda</color> clan enjoyed the ceremony, while
-      the Huangsei clan did not.
+    choice1Reveal: 'The <color=#AB82FF>Susoda</color> clan enjoyed the ceremony,
+      while the Huangsei clan did not.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>'
     choice2Name: Use a better alloy
     choice2Description: More potent weapons wouldn't hurt us. The <color=#ca9c43>Huangsei</color>
       clan has good blacksmiths.
-    choice2Reveal: The blacksmiths have created a magic alloy that will help us against
-      the demons!
+    choice2Reveal: 'The blacksmiths have created a magic alloy that will help us
+      against the demons!
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 10

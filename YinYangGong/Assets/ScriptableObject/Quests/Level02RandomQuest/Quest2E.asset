@@ -22,13 +22,40 @@ MonoBehaviour:
     choice1Name: Solar
     choice1Description: "The solar eclipse makes people feel vigorous when the sun
       disappears.\r\n It energizes villagers and makes them stronger.\r"
-    choice1Reveal: The <color=#ca9c43>Huangsei</color> clan was in the spotlight
+    choice1Reveal: 'The <color=#ca9c43>Huangsei</color> clan was in the spotlight
       at the festivities. Their power rises considerably.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Lunar
     choice2Description: The lunar eclipse is often accompanied by a blood moon, dramatically
       increasing birth rates.
-    choice2Reveal: The <color=#AB82FF>Susoda</color> clan prepared a bountiful banquet.
+    choice2Reveal: 'The <color=#AB82FF>Susoda</color> clan prepared a bountiful banquet.
       Dance and song were at the heart of the evening. Their power rises considerably.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -15
       templeReadiness: 30

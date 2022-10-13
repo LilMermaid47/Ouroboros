@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Clans
-    questGiverName: Gyatso the old Monk
+    questGiverName: Gyatso the Old Monk
     questGiverSprite: {fileID: 21300000, guid: c03e2b20a1a53494a940a801ed1bf4a1, type: 3}
     questDescription: Since you are the new leader, each <color=#0BB5FF>clan</color>
       will come and give their respect to the Temple. Which one do you want to see

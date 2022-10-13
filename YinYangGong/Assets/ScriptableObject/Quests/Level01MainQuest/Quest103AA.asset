@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest108C2
+  m_Name: Quest103AA
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Huangsei vs. Bandits
-    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverName: Rilou, the Patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questDescription: "\u201CBandits captured our <b>outpost </b>this morning. They
       killed everyone. What do we do?\u201D\r"
