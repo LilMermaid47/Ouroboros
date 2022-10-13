@@ -17,17 +17,31 @@ MonoBehaviour:
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C I surrender. I admit it, I was the one who wrote the
-      insults on the houses of the Huangsei clan. I know they are looking for me
-      to make me pay for my crime. I need the help of the temple to protect me. Please
-      enroll me in the Temple. \u201C"
+    questDescription: "\u201C I surrender. I admit it, <color=#0BB5FF>I was the one
+      who wrote the insults</color> on the houses of the Huangsei clan. I know they
+      are looking for me to make me pay for my crime. <color=#0BB5FF>I need the help
+      of the temple to protect me</color>. Please enroll me in the Temple. \u201C"
     choice1Name: Accept
     choice1Description: Her crime is commonplace. Let's protect her.
-    choice1Reveal: We have a new disciple in the temple.
+    choice1Reveal: 'We have a new disciple in the temple.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+'
     choice2Name: Refuse
-    choice2Description: We promised to help the Huangsei clan, but I can't accept.
-    choice2Reveal: The Susoda clan member leaves, scarred and on the edge of exploding
+    choice2Description: <color=#0BB5FF>We promised</color> to help the Huangsei clan,
+      but I can't accept.
+    choice2Reveal: 'The Susoda clan member leaves, scarred and on the edge of exploding
       in tears.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

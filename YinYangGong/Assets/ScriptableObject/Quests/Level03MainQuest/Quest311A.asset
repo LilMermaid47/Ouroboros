@@ -17,21 +17,45 @@ MonoBehaviour:
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C Our leader wants to excuse the behavior of her members
-      in recent events. She offers to provide several young disciples for the Temple.
-      Otherwise, she can also offer you the last moonstones we made from a meteor.\u201D"
+    questDescription: "\u201C Our leader wants to <color=#0BB5FF>excuse the behavior
+      of her members</color> in recent events. She offers to <color=#0BB5FF>provide
+      several young disciples</color> for the Temple. Otherwise, she can also offer
+      you the last <color=#0BB5FF>moonstones we made from a meteor.</color>\u201D"
     choice1Name: Members
     choice1Description: We need to straighten out the members of the Susoda clan.
       Moreover, we are sorely lacking in arms at the Temple.
-    choice1Reveal: The influence of the Susoda has dramatically increased, but at
+    choice1Reveal: 'The influence of the Susoda has dramatically increased, but at
       least the followers are respectful and helpful. Yu thanked us by offering us
-      a talisman with the effigy of a fox.
+      a talisman with the effigy of a <color=#0BB5FF>fox</color>.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+'
     choice2Name: Moonstone
     choice2Description: Artifacts from the heavens often have more than attractive
       magical value and energy
-    choice2Reveal: The moonstones shine brightly. Magic embraces the Temple with
+    choice2Reveal: 'The moonstones shine brightly. Magic embraces the Temple with
       a mystical aura. Yu thanked us by offering us a talisman with the effigy of
-      a fox.
+      a <color=#0BB5FF>fox</color>.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 30

@@ -14,26 +14,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Fox
-    questGiverName: Peasant
+    questGiverName: Cong
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C I have some news regarding the child theft investigation.
-      I managed to find the thief and follow him to his lair. The thief is a nine-tailed
-      species of a lavender fox with a spooky appearance. I'm sorry, but he's hiding
-      in Susoda territory.\u201D\r\n\r\nWhat are you going to do with this information?\r\nWhich
+    questDescription: "\u201C I have some news regarding the <color=#0BB5FF>child
+      theft investigation</color>. I managed to find the thief and follow him to
+      his lair. The <color=#0BB5FF>thief is a nine-tailed species of a lavender fox</color>
+      with a spooky appearance. I'm sorry, but he's hiding in <color=#AB82FF>Susoda</color>
+      territory.\u201D\r\n\r\nWhat are you going to do with this information?\r\nWhich
       clan are you going to join?\r\n"
     choice1Name: Huangsei
     choice1Description: The Huangsei clan will be happy to help us find the culprit.
-    choice1Reveal: The Patriarch had offered us several soldiers who have joined
-      our ranks. The Susoda clan denied the charges, and the fox was never seen in
-      the village again. Is this a victory?
+    choice1Reveal: 'The Patriarch had offered us several soldiers who have joined
+      our ranks. The Susoda clan denied the charges, and <color=#0BB5FF>the fox was
+      never seen in the village again</color> . Is this a victory?
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+'
     choice2Name: Susoda
-    choice2Description: Maybe we should talk to the matriarch about this before we
+    choice2Description: Maybe we should talk to the Matriarch about this before we
       do anything.
-    choice2Reveal: Yu, the head of Susoda clan, is happy that we joined her personally.
+    choice2Reveal: 'Yu, the head of Susoda clan, is happy that we joined her personally.
       We made a deal with her. The Susoda clan offers us wealth and magical artifacts.
-      In exchange, she promised us that the fox would never return to the village
-      again.
+      In exchange, she promised us that <color=#0BB5FF>the fox would never return
+      to the village again</color> .
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 30

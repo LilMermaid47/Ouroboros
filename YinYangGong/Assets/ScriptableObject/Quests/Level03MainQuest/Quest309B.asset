@@ -17,16 +17,27 @@ MonoBehaviour:
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C I have done something wrong. I need the help of the
-      temple to protect me. Please enlist me in the Temple to atone for my crimes.\u201D"
+    questDescription: "\u201C <color=#0BB5FF>I have done something wrong</color>.
+      I need the help of the temple to protect me. Please enlist me in the Temple<color=#0BB5FF>
+      to atone for my crimes</color>.\u201D"
     choice1Name: Accept
-    choice1Description: The temple is always there to help the community. Let's protect
-      him.
-    choice1Reveal: We have a new disciple in the temple.
+    choice1Description: The temple is always there to help the community. Let's <color=#0BB5FF>protect
+      her</color>.
+    choice1Reveal: 'We have a new disciple in the temple.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+'
     choice2Name: Refuse
-    choice2Description: His request is suspicious. I can not accept it.
-    choice2Reveal: The Susoda clan member leaves, scarred and on the edge of exploding
-      in tears.
+    choice2Description: Her request is <color=#0BB5FF>suspicious</color>. I can not
+      accept it.
+    choice2Reveal: "The Susoda clan member leaves, scarred and on the edge of exploding
+      in tears.\n\n<sprite name=balanceLogo><sprite name=susodaLogo> <sprite name=moinsLogo>\r\n\r"
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

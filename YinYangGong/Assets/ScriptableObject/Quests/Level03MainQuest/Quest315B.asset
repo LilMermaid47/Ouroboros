@@ -14,23 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: 'Huangsei Secret '
-    questGiverName: Yu, the matriarch of the Susoda clan
+    questGiverName: Yu, the Matriarch of the Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C The Huangsei clan grabbed one of our members. This
-      man reported several disturbing remarks concerning certain members of the Huangsei
-      clan. I think their leader wants to silence the rumors before they become known
-      to everyone. Order them to release our member.\u201D"
+    questDescription: "\u201C <color=#0BB5FF>The Huangsei clan grabbed one of our
+      members</color>. This man reported <color=#0BB5FF>several disturbing remarks</color>
+      concerning certain members of the Huangsei clan. I think their leader <color=#0BB5FF>wants
+      to silence the rumors</color> before they become known to everyone. Order them
+      to release our member.\u201D"
     choice1Name: Accept
     choice1Description: We must support the Susoda clan. The Huangsei clan is going
       too far.
-    choice1Reveal: The Huangsei Clan released the prisoner without complaint. The
-      Susoda clan flooded us with magical artifacts. Our KI is more powerful
+    choice1Reveal: 'The Huangsei Clan released the prisoner without complaint. The
+      Susoda clan flooded us with magical artifacts. Our KI is more powerful.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=plusLogo>
+
+'
     choice2Name: Refuse
     choice2Description: Rilou had just promised us a new disciple. We must refuse
       at the risk of breaking the agreement with Huangsei.
-    choice2Reveal: The Huangsei clan cut off the criminal's head. The executioner
+    choice2Reveal: 'The Huangsei clan cut off the criminal''s head. The executioner
       joined our Temple afterwards. The conflict seems to be over.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
