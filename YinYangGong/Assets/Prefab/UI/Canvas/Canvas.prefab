@@ -11908,6 +11908,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7612883798962811739, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
+      propertyPath: m_TagString
+      value: ConsumableShop
+      objectReference: {fileID: 0}
     - target: {fileID: 7612883798962811741, guid: 0cb2a5cbfd70f1144b8782f0d72dcc00, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
