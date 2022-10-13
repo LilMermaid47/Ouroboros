@@ -22,14 +22,24 @@ MonoBehaviour:
     choice1Name: Study it
     choice1Description: We should study it in order to know the <color=#0BB5FF>magical
       effects</color> of this cabbage. Perhaps we can increase its effects.
-    choice1Reveal: The man was right. Our harvests are prosperous and generous. Let's
-      hope to find other magical faculties in this cabbage and we could be happy
-      for years.
+    choice1Reveal: 'The man was right. Our harvests are prosperous and generous.
+      Let''s hope to find other magical faculties in this cabbage and we could be
+      happy for years.
+
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Sell it
     choice2Description: Let's <color=#0BB5FF>sell</color> it, I don't trust this
       individual. This item must be worth a small fortune.
-    choice2Reveal: We managed to sell the cabbage to a wealthy noble. He added it
+    choice2Reveal: 'We managed to sell the cabbage to a wealthy noble. He added it
       to his collection and seemed more than happy.
+
+
+      <sprite name=argentLogo>
+      <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 10
       templeReadiness: 20

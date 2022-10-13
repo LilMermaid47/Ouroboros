@@ -22,12 +22,30 @@ MonoBehaviour:
     choice1Name: Fish-warriors
     choice1Description: They are formidable in battle, but they need to feed on <color=#0BB5FF>magic
       shells</color> that we must craft.
-    choice1Reveal: Fish warriors are ready to defend the village.
+    choice1Reveal: 'Fish warriors are ready to defend the village.
+
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=moinsLogo>'
     choice2Name: Attack them
     choice2Description: They travel with several relics of the sea that we could
       <color=#0BB5FF>resell</color> at a high price.
-    choice2Reveal: You have exterminated the ocean creatures easily. Caifu, the merchant,
-      has sold some of their treasure.
+    choice2Reveal: 'You have exterminated the ocean creatures easily. Caifu, the
+      merchant, has sold some of their treasure.
+
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 20

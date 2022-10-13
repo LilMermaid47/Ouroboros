@@ -23,14 +23,35 @@ MonoBehaviour:
     choice1Name: Try to save the sick
     choice1Description: Ask the <color=#AB82FF>Susoda</color> clan to take care of
       the sick. They are the best in this area.
-    choice1Reveal: The <color=#AB82FF>Susoda</color> clan managed to heal several
+    choice1Reveal: 'The <color=#AB82FF>Susoda</color> clan managed to heal several
       villagers, but the disease took a lot of our resources.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=discipleLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Burn the sick
     choice2Description: We shouldn't take any chances. Let us stop the progression
       of the disease by <color=#FF6666>burning</color> the hospice and the sick.
-    choice2Reveal: "We have stopped the progression of the disease. The <color=#ca9c43>Huangsei</color>
+    choice2Reveal: 'We have stopped the progression of the disease. The <color=#ca9c43>Huangsei</color>
       clan disapproved of our action, they accused us of killing innocent people.
-      A few villagers also think the same.\r"
+      A few villagers also think the same.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: -10

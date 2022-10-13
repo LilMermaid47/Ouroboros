@@ -23,14 +23,20 @@ MonoBehaviour:
     choice1Description: The pig belongs to Bendan, and it is its owner who must receive
       the <color=#FF6666>punishment</color>. But Bendan has no money. The Temple
       will have to <color=#0BB5FF>pay</color> the parents for him.
-    choice1Reveal: Bendan is happy with his punishment. He knew the Temple would
+    choice1Reveal: 'Bendan is happy with his punishment. He knew the Temple would
       help him.
+
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: "Pig\u2019s fault"
     choice2Description: The animal must be <color=#FF6666>punished</color> for its
       crime. The pig is uncontrollable and dangerous. It will have to help the villagers
       in the paddy fields.
-    choice2Reveal: "Bendan is angry with the Temple. Through his pig faults, we lost
-      some crops.\r"
+    choice2Reveal: 'Bendan is angry with the Temple. Through his pig faults, we lost
+      some crops.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: 0

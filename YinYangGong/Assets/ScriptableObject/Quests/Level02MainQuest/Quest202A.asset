@@ -24,8 +24,17 @@ MonoBehaviour:
     choice1Name: Accept the project
     choice1Description: The project is <color=#FF6666>expensive</color>, but I trust
       our people. First, we have to find this continent!
-    choice1Reveal: Both clans helped prepare the ships. So let's keep our faith,
+    choice1Reveal: 'Both clans helped prepare the ships. So let''s keep our faith,
       and they should be back soon.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=moinsLogo>'
     choice2Name: 'Refuse '
     choice2Description: We don't have enough funds, which is too big of a risk.
     choice2Reveal: The merchant is disappointed that you did not consider his project.
