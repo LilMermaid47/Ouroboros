@@ -577,7 +577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6520228158315377687, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: NumberOfAvailableItemSlots
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6520228158315377687, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.data[0].Item
