@@ -10,25 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest116
+  m_Name: Quest110
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Sick Pig
-    questGiverName: Bendan the mad
+    questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: ca35d9183f3f29045a58078999774e39, type: 3}
-    questDescription: '"I found my pig. It was hidden under a bridge. But ever since
-      I found it, I have noticed it is ill. Nobody wants to help me. Please have
-      mercy on my sick pig. I don''t know what to do to cure it. " '
+    questDescription: '"I found my pig. It was <color=#0BB5FF>hidden under a bridge</color>.
+      But ever since I found it, I have noticed it is <color=#FF6666>ill</color>.
+      Nobody wants to help me. Please have mercy on my <color=#FF6666>sick pig</color>.
+      I don''t know what to do to cure it. " '
     choice1Name: Kill the pig
     choice1Description: His pig looks bad, there's nothing we can do for him. It
       is better to put it down.
-    choice1Reveal: Bendan walks away angrily. He shouts that he will never let <b>anyone</b>
+    choice1Reveal: 'Bendan walks away angrily. He shouts that he will never let anyone
       touch his favorite pig.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>'
     choice2Name: Susoda Clan Healing
-    choice2Description: The Susoda clan has already treated several sick people.
-      Maybe they know a cure for pigs?
-    choice2Reveal: Bendan asked for help from Yu, the leader of the Susoda. She gave
-      the pig some herbs, but its condition doesn't seem to have changed since.
+    choice2Description: The <color=#AB82FF>Susoda</color> clan has already treated
+      several sick people. Maybe they know a cure for pigs?
+    choice2Reveal: 'Bendan asked for help from Yu, the leader of the Susoda. She
+      gave the pig some herbs, but its condition doesn''t seem to have changed since.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -5

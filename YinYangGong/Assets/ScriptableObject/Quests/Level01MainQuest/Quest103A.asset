@@ -42,7 +42,10 @@ MonoBehaviour:
 
 
       <sprite name=huangseiLgo><sprite
-      name=balanceLogo> <sprite name=moinsLogo>'
+      name=balanceLogo> <sprite name=moinsLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -20
       templeReadiness: 20
