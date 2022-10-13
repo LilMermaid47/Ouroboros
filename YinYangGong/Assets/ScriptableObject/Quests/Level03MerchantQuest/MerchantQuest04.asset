@@ -21,9 +21,10 @@ MonoBehaviour:
       Ki Energy Potion </color>\r it should help you get more ki. And for you my
       friend, I'll sell it to you at half the price!"
     choice1Name: Accept
-    choice1Description: "Receive a Ki potion item for only 25 <sprite name=argentLogo>
+    choice1Description: "Receive a Ki potion item for only 20 <sprite name=argentLogo>
       \r"
-    choice1Reveal: Your merchant friend goes back on his travels
+    choice1Reveal: Your merchant friend goes back on his travels with his pockets
+      full of your gold.
     choice2Name: Refuse
     choice2Description: I dont think I'll need it
     choice2Reveal: Your merchant friend goes back on his travels

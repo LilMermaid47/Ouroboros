@@ -452,16 +452,16 @@ public class UIController : MonoBehaviour
 
     public void RevealChoice1()
     {
-        RevealChoice(true, CurrentQuest.questDefinition.choice1Description);
+        RevealChoice(true, CurrentQuest.questDefinition.choice1Description, CurrentQuest.questDefinition.choice1Name);
     }
     public void RevealChoice2()
     {
-        RevealChoice(false, CurrentQuest.questDefinition.choice2Description);
+        RevealChoice(false, CurrentQuest.questDefinition.choice2Description, CurrentQuest.questDefinition.choice2Name);
     }
 
-    protected void RevealChoice(bool isChoice1, string txtChoice)
+    protected void RevealChoice(bool isChoice1, string txtChoice, string txtName)
     {
-        questChoiceUi.ShowChoice(isChoice1, txtChoice);
+        questChoiceUi.ShowChoice(isChoice1, txtChoice, txtName);
     }
 
     protected void ActivateBtn()

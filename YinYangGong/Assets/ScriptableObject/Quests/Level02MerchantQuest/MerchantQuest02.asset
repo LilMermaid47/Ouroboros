@@ -23,10 +23,11 @@ MonoBehaviour:
     choice1Name: Accept
     choice1Description: "Receive a Get Ready item for only 15 <sprite name=argentLogo>
       \r"
-    choice1Reveal: Your merchant friend goes back on his travels
+    choice1Reveal: Your merchant friend goes back on his travels with his pockets
+      full of your gold.
     choice2Name: Refuse
     choice2Description: I dont think I'll need it
-    choice2Reveal: Your merchant friend goes back on his travels
+    choice2Reveal: The merchant leaves a little disappointed with his offer.
     rewardChoice1:
       moneyReward: -15
       templeReadiness: 0

@@ -16,13 +16,14 @@ public class QuestChoiceUi : MonoBehaviour
 
     public GameObject questChoiceUiParent;
     public GameObject questUi;
+    public TMP_Text questTitle;
     public TMP_Text description;
     public Button acceptChoice;
     public Button refuseChoice;
 
     private bool leftGongChoice;
 
-    public void ShowChoice(bool choice1, string descriptionString)
+    public void ShowChoice(bool choice1, string descriptionString, string txtName)
     {
         MakeChoiceButtonInvisible(true);
         ActivateListener(true);
@@ -31,6 +32,7 @@ public class QuestChoiceUi : MonoBehaviour
         questUi.SetActive(false);
         questChoiceUiParent.SetActive(true);
         description.text = descriptionString;
+        questTitle.text = txtName;
     }
 
     public void AcceptChoice()
