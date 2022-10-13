@@ -23,7 +23,8 @@ MonoBehaviour:
     choice1Name: Accept
     choice1Description: "Receive a Bribed with Food item for only 20 <sprite name=argentLogo>
       \r"
-    choice1Reveal: Your merchant friend goes back on his travels
+    choice1Reveal: Your merchant friend goes back on his travels with his pockets
+      full of your gold.
     choice2Name: Refuse
     choice2Description: I dont think I'll need it
     choice2Reveal: Your merchant friend goes back on his travels
