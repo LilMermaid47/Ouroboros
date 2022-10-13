@@ -21,13 +21,23 @@ MonoBehaviour:
     choice1Name: Reduce the tithe
     choice1Description: I understand your concerns. I will <color=#0BB5FF>lower</color>
       the tithe by 10% to accommodate you.
-    choice1Reveal: The villagers are happy with our decision. Our income has <color=#FF6666>decreased</color>,
+    choice1Reveal: 'The villagers are happy with our decision. Our income has <color=#FF6666>decreased</color>,
       but some peasants want to become disciples of the Temple.
+
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Keep it as is
     choice2Description: We live in difficult times, my friends. We all have to make
       sacrifices!
-    choice2Reveal: The villagers are unhappy with our decision. However, with the
-      villagers' money, we could <color=#BCED91F>fortify our defenses</color>.
+    choice2Reveal: 'The villagers are unhappy with our decision. However, with the
+      villagers'' money, we could <color=#BCED91F>fortify our defenses</color>.
+
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: -20
       templeReadiness: 0

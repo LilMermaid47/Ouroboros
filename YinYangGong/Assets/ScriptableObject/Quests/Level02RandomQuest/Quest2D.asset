@@ -23,9 +23,18 @@ MonoBehaviour:
     choice1Name: Accept the wedding
     choice1Description: "The union of two warriors such as you should be designated!
       Your clans will follow our values \u200B\u200Bof inclusion."
-    choice1Reveal: The festivities were a success. The clans seem to have created
+    choice1Reveal: 'The festivities were a success. The clans seem to have created
       links between them. But, on the other hand, the two leaders were glaring at
       each other.
+
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite
+      name=moinsLogo>'
     choice2Name: Refuse
     choice2Description: I can't go against clans. Sorry.
     choice2Reveal: The lovers fled from the village. Clan honor is spotless.

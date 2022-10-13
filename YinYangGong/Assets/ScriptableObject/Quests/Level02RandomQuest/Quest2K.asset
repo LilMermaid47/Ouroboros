@@ -23,13 +23,31 @@ MonoBehaviour:
     choice1Name: Huangsei
     choice1Description: I think <color=#ca9c43>Rilou</color>, the clan leader, loves
       this fruit.
-    choice1Reveal: All clan members fell ill. They need a few days off. Is it related
+    choice1Reveal: 'All clan members fell ill. They need a few days off. Is it related
       to peaches?
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=moinsLogo>'
     choice2Name: Susoda
     choice2Description: <color=#AB82FF>Yu</color>, the clan leader keeps saying that
       peaches are synonymous with fertility.
-    choice2Reveal: All clan members fell ill. They need a few days off. Is it related
+    choice2Reveal: 'All clan members fell ill. They need a few days off. Is it related
       to peaches?
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -5

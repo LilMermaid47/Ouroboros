@@ -23,15 +23,25 @@ MonoBehaviour:
     choice1Name: Attack them
     choice1Description: Let's <color=#FF6666>declare war</color>. They are dangerous
       and monstrous.
-    choice1Reveal: The Merfolk are warriors as effective on land as in the sea. The
-      village still won the confrontation. Luckily their coral weapons are reselling
+    choice1Reveal: 'The Merfolk are warriors as effective on land as in the sea.
+      The village still won the confrontation. Luckily their coral weapons are reselling
       well.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=moinsLogo>
+
+      <sprite name=argentLogo> <sprite
+      name=plusLogo>'
     choice2Name: Make peace
     choice2Description: They want to receive <color=#0BB5FF>several villagers</color>,
       probably to eat them. Accept their requests.
-    choice2Reveal: 'We gave several Temple disciples as a sacrifice. As a result,
-      the villagers develop a new hatred of monsters. I wouldn''t want to be the
-      next demon in the village. '
+    choice2Reveal: "We gave several Temple disciples as a sacrifice. As a result,
+      the villagers develop a new hatred of monsters. I wouldn't want to be the next
+      demon in the village. \n\n<sprite name=readinessLogo> <sprite name=plusLogo>\n<sprite
+      name=discipleLogo> <sprite name=moinsLogo>"
     rewardChoice1:
       moneyReward: 40
       templeReadiness: -10

@@ -22,14 +22,29 @@ MonoBehaviour:
     choice1Description: "Let\u2019s <color=#0BB5FF>buy</color> food from the neighboring
       village. In addition, our <color=#0BB5FF>relations</color> with that village
       <color=#0BB5FF>will improve</color>.\r\n"
-    choice1Reveal: The villagers thanked the gods for this food. They are ready for
-      any situation.
+    choice1Reveal: 'The villagers thanked the gods for this food. They are ready
+      for any situation.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Steal it
     choice2Description: Send your <color=#0BB5FF>best thieves</color> and bring back
       several caravans of food from the neighboring village.
-    choice2Reveal: The <color=#AB82FF>Susoda</color> clan is received as heroes.
-      Their offering is more precious than any wealth. It's just one caravan, but
+    choice2Reveal: 'The <color=#AB82FF>Susoda</color> clan is received as heroes.
+      Their offering is more precious than any wealth. It''s just one caravan, but
       it will help the town.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: -30
       templeReadiness: 15

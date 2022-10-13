@@ -23,13 +23,23 @@ MonoBehaviour:
     choice1Name: Kill it
     choice1Description: 'Let''s kill it. It shouldn''t cause us any problems. It''s
       half fish, and it <color=#0BB5FF>looks delicious</color>. '
-    choice1Reveal: The village has eaten the fish part of the creature and seems
+    choice1Reveal: 'The village has eaten the fish part of the creature and seems
       reinvigorated.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>'
     choice2Name: Release it
     choice2Description: Throw it in the river and pray to the gods it doesn't bring
       its comrades back.
-    choice2Reveal: Yu, the head of the <color=#AB82FF>Susoda</color> clan, had a
+    choice2Reveal: 'Yu, the head of the <color=#AB82FF>Susoda</color> clan, had a
       vision of flying fish raining down on the village. Something bad is coming.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 5

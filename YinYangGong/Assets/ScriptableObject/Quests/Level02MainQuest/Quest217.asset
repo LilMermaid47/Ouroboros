@@ -22,11 +22,27 @@ MonoBehaviour:
     choice1Name: Using our KI
     choice1Description: Our <color=#0BB5FF>inner balance</color> is our most powerful
       weapon.
-    choice1Reveal: The dragon was pulverized with our magical power gifted from the
-      gods.
+    choice1Reveal: 'The dragon was pulverized with our magical power gifted from
+      the gods.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=moinsLogo>'
     choice2Name: With axes et bows
     choice2Description: There is nothing better than <color=#0BB5FF>sharp blades</color>!
-    choice2Reveal: The dragon flees like a baby crying for her mom.
+    choice2Reveal: 'The dragon flees like a baby crying for her mom.
+
+
+      <sprite
+      name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -10

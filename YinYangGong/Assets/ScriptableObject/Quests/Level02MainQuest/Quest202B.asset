@@ -24,11 +24,22 @@ MonoBehaviour:
     choice1Name: Send tools and more people
     choice1Description: We will help them. Let us <color=#0BB5FF>sell</color> what
       they have brought us and send them reinforcement and protection.
-    choice1Reveal: We sent a ship back to help our colony. I hope all goes well for
-      them.
+    choice1Reveal: 'We sent a ship back to help our colony. I hope all goes well
+      for them.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=moinsLogo>'
     choice2Name: Request their return
     choice2Description: Let them come back. This expedition will not cost us more!
-    choice2Reveal: "We made a big loot. This trip wasn\u2019t for nothing."
+    choice2Reveal: "We made a big loot. This trip wasn\u2019t for nothing.\n\n<sprite
+      name=readinessLogo> <sprite name=plusLogo>\n<sprite name=discipleLogo> <sprite
+      name=plusLogo>\n<sprite name=argentLogo> <sprite name=plusLogo>"
     rewardChoice1:
       moneyReward: -30
       templeReadiness: -15

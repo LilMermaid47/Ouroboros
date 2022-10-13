@@ -22,15 +22,30 @@ MonoBehaviour:
     choice1Name: Look for the shipwreck
     choice1Description: This treasure cannot be forgotten. We must do everything
       in our power to recover it.
-    choice1Reveal: Finding the treasure was difficult, but the vast majority was
+    choice1Reveal: 'Finding the treasure was difficult, but the vast majority was
       recovered during the underwater excavations. We even found artifacts that we
-      believe are from the gods' realm.
+      believe are from the gods'' realm.
+
+
+      <sprite name=readinessLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Return to the village
     choice2Description: No, we can no longer put resources on the colony. Let them
       fend for themselves, but they must continue to send us treasures to pay their
       taxes!
-    choice2Reveal: We established a trade line between our village and the settlement.
+    choice2Reveal: 'We established a trade line between our village and the settlement.
       Wealth awaits us!
+
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 150
       templeReadiness: 25

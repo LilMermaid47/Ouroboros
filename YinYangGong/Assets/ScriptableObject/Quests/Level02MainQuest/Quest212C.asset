@@ -24,12 +24,28 @@ MonoBehaviour:
     choice1Description: Let's <color=#0BB5FF>give them</color> back their <color=#0BB5FF>money</color>
       and <color=#0BB5FF>give them</color> our best <color=#0BB5FF>warriors</color>.
       Maybe they'll spare us.
-    choice1Reveal: They left as they came. Fortunately, no conflict arose.
+    choice1Reveal: 'They left as they came. Fortunately, no conflict arose.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=moinsLogo>'
     choice2Name: Confront them
     choice2Description: Foolishness! We are more robust than them! Our clan members
       and our defenses are more than enough to meet them.
-    choice2Reveal: The fight was difficult. However, our military power is beyond
+    choice2Reveal: 'The fight was difficult. However, our military power is beyond
       doubt. The last enemy soldiers fled like cowards.
+
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=argentLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: -50
       templeReadiness: 0

@@ -22,14 +22,29 @@ MonoBehaviour:
     choice1Name: 'Chase the tiger '
     choice1Description: The <color=#ca9c43>Huangsei</color> clan is proud and threatening.
       I believe in your strength! We need to save the hunters.
-    choice1Reveal: The <color=#ca9c43>Huangsei</color> clan fought the white tiger.
+    choice1Reveal: 'The <color=#ca9c43>Huangsei</color> clan fought the white tiger.
       The tiger ate one or two hunters, but the rest were well.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=moinsLogo>'
     choice2Name: Stay here
     choice2Description: The demons are approaching. We <color=#0BB5FF>cannot afford</color>
       to <color=#0BB5FF>lose any more members</color>. Your clan is the pride of
       the village. Let's stay here and defend.
-    choice2Reveal: The <color=#ca9c43>Huangsei</color> clan is flattered by the trust
-      you have.
+    choice2Reveal: 'The <color=#ca9c43>Huangsei</color> clan is flattered by the
+      trust you have.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

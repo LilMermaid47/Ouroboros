@@ -23,13 +23,26 @@ MonoBehaviour:
     choice1Name: Attack the monster
     choice1Description: Our <color=#0BB5FF>meditations</color> prepared us to face
       this demon dog.
-    choice1Reveal: The Huodou died thanks to the balance of our physical and mental
+    choice1Reveal: 'The Huodou died thanks to the balance of our physical and mental
       forces. Glory to the gods!
+
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=moinsLogo>'
     choice2Name: Try to chase it away
     choice2Description: Let's <color=#0BB5FF>save our magic</color> forces for later.
       Let's try to chase it away with our men instead.
-    choice2Reveal: Hunting the Huodou was not easy. We've <color=#0BB5FF>lost a few
-      followers</color>, but the monster hasn't been seen again.
+    choice2Reveal: 'Hunting the Huodou was not easy. We''ve <color=#0BB5FF>lost a
+      few followers</color>, but the monster hasn''t been seen again.
+
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15

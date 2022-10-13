@@ -22,13 +22,29 @@ MonoBehaviour:
     choice1Name: Make a trap
     choice1Description: Let's take the creature by <color=#0BB5FF>surprise</color>.
       It's risky, but our best chance.
-    choice1Reveal: The plan didn't go as planned, but the <color=#ca9c43>Huangsei</color>
-      Clan managed to kill the creature.
+    choice1Reveal: 'The plan didn''t go as planned, but the <color=#ca9c43>Huangsei</color>
+      clan managed to kill the creature.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>'
     choice2Name: Kill it
     choice2Description: Let's attack it right away. Whether it is a monkey or a bird,
       our <color=#0BB5FF>magic energy</color> will exterminate it.
-    choice2Reveal: The <color=#ca9c43>Huangsei</color> Clan ignited their swords
+    choice2Reveal: 'The <color=#ca9c43>Huangsei</color> clan ignited their swords
       and burned the creature, it died quickly.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -5
