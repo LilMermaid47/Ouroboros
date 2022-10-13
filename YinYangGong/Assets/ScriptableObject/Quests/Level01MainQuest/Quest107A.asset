@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'New Project: Temple Repairs'
     questGiverName: Yichen
     questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201CMaster Fangshi, the temple is in ruins. The faithful
       fear the roof will fall on their heads because of the <color=#FF6666>rotten
       wood</color>. It smells terrible, and we got more rats here than followers.
