@@ -10,23 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: Quest1A
+  m_Name: Quest101
   m_EditorClassIdentifier: 
   questDefinition:
     questName: 'New Project : Well'
-    questGiverName: Neutral peasant
+    questGiverName: Mei
     questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201C The river is dry again. We should build a new well.
-      Who should lead the construction of this project?\u201D\r"
+      <color=#0BB5FF>Who should lead</color> the construction of this project?\u201D"
     choice1Name: Huangsei
-    choice1Description: Our members are as strong as dragons. We can dig and build
-      the well ourselves.
-    choice1Reveal: After a tumultuous  construction, the new well is usable.
+    choice1Description: Our members are as <color=#ca9c43>strong as dragons</color>.
+      We can dig and build the well ourselves.
+    choice1Reveal: 'After a tumultuous  construction, the new well is usable.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>'
     choice2Name: Susoda
-    choice2Description: I propose to <b>buy some slaves</b> and put them on work
-      duty.
-    choice2Reveal: The slaves did a good job, and<b> the Susoda clan converted them
-      </b>.
+    choice2Description: I propose to <color=#AB82FF>buy some slaves</color> and put
+      them on work duty.
+    choice2Reveal: 'The slaves did a good job, and the <color=#AB82FF>Susoda</color> 
+      clan converted them.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15
@@ -51,7 +59,7 @@ MonoBehaviour:
     kiCost: 0
     disciples: 0
   requirementChoice2:
-    moneyCost: 20
+    moneyCost: 0
     templeReadiness: 0
     kiCost: 0
     disciples: 0
