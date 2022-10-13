@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Before the Attack
     questGiverName: Xida
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\"A dragon! I saw a giant scary dragon!\r\n\r\nIt was as big
       as the mountains, and red as blood. Or maybe it was green like jade? It flew
       right over the Magistrate's palace.\r\nYou'll see when it will come and kill

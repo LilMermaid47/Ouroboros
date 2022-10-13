@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Leader of Huangsei
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\"Very happy to meet our new head of the Temple. Let me introduce
       myself; I am <color=#ca9c43>Rilou</color>, the patriarch of the <color=#ca9c43>Huangsei
       clan</color>. \n\nOur men are brave and know how to fight. The Huangsei clan

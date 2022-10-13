@@ -10,6 +10,7 @@ TagManager:
   - QuestManager
   - InventoryManager
   - LampManager
+  - Music
   layers:
   - Default
   - TransparentFX

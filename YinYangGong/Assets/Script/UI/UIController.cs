@@ -48,6 +48,7 @@ public class UIController : MonoBehaviour
     protected Quest CurrentQuest;
     protected QuestManager questManager;
     protected SoundManager soundManager;
+    protected MusicSFXManager musicSFXManager;
 
     public float timeTransitionAnimation = 0.1f;
     public float timeTransitionAnimationBalance = 1f;
@@ -59,6 +60,7 @@ public class UIController : MonoBehaviour
     private void Awake()
     {
         soundManager = gameObject.GetComponent<SoundManager>();
+        musicSFXManager = GameObject.FindGameObjectWithTag("Music").GetComponent<MusicSFXManager>();
 
         UIMenu.QuestUI.SetActive(false);
         UIMenu.VictoryUI.SetActive(false);
@@ -122,6 +124,9 @@ public class UIController : MonoBehaviour
     {
         tmpText.text = "";
 
+        musicSFXManager.ChangeSFX(CurrentQuest.questDefinition.questGiverAudio);
+        musicSFXManager.SFXLoop(true);
+
         for (int i = 0; i < text.Length; i++)
         {
             //if <>
@@ -166,6 +171,8 @@ public class UIController : MonoBehaviour
 
             yield return new WaitForSecondsRealtime(textspeed);
         }
+
+        musicSFXManager.SFXLoop(false);
     }
 
     public virtual void ShowHideShop()
@@ -267,8 +274,8 @@ public class UIController : MonoBehaviour
         }
     }
 
-    int lastBalance = 0;
-    private async Task ChangeBalance(int newCurrentBalance)
+    protected int lastBalance = 0;
+    protected virtual async Task ChangeBalance(int newCurrentBalance)
     {
         float timerBalance = 0;
 

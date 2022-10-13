@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Bashe
     questGiverName: Neutral Peasant
     questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C A bashe commandeers our gold. According to legends,
       they appear when humans are too stingy. He also asked for a meal: a fat disciple.
       The gods want us to pay for our peach trees. Do we accept the serpent's offer?

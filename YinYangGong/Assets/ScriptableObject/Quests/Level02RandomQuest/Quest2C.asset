@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Bandit Camp
     questGiverName: A Member of clan Huangsei
     questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C The bandits are back and want revenge. They are particularly
       <color=#0BB5FF>numerous</color>. We must find a way to defeat them <color=#0BB5FF>without
       facing their army</color>.\u201D"

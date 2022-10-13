@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Assume One's Wrongs
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: '"Master monk, I trust you now. After the fight that my people
       did for our survival yesterday, I can''t be delusional anymore. You said these
       abominations are coming from the <color=#FF6666>army of a monstrous King</color>.

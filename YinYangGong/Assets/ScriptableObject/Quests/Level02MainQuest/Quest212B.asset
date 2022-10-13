@@ -16,27 +16,28 @@ MonoBehaviour:
     questName: The Strange Veggie, Again.
     questGiverName: Peasant
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Master Fangshi, we have a <color=#0BB5FF>problem with
       our crops</color>. They all perished that night without any warning sign. The
-      <color=#AB82FF>Susoda</color> Clan thinks it is the <color=#0BB5FF>jade cabbage</color>,
-      while the <color=#ca9c43>Huangsei</color> Clan accuses the <color=#AB82FF>Susoda</color>
-      Clan of <color=#0BB5FF>poisoning crops</color> to promote their garden. Who
+      <color=#AB82FF>Susoda</color> clan thinks it is the <color=#0BB5FF>jade cabbage</color>,
+      while the <color=#ca9c43>Huangsei</color> clan accuses the <color=#AB82FF>Susoda</color>
+      clan of <color=#0BB5FF>poisoning crops</color> to promote their garden. Who
       are the culprits, in your opinion?\u201D"
     choice1Name: The cabbage
     choice1Description: "We need to get rid of this cabbage before it's too late.
       Its magical aura is disturbing. Let's destroy it even if it\u2019s <color=#FF6666>dangerous</color>."
     choice1Reveal: 'When trying to destroy the artifact, it exploded on the first
-      hit. Several villagers and Huangsei members were injured. At least the cabbage
-      seems to be gone.
+      hit. Several villagers and <color=#ca9c43>Huangsei</color> members were injured.
+      At least the cabbage seems to be gone.
 
 
-      <sprite name=balanceLogo><sprite name=susodaLogo>
-      <sprite name=plusLogo>
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
 
-      <sprite name=readinessLogo> <sprite name=moinsLogo>
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
 
-      <sprite
-      name=discipleLogo> <sprite name=moinsLogo>'
+      <sprite name=discipleLogo> <sprite name=moinsLogo>'
     choice2Name: Susoda clan
     choice2Description: That wouldn't be surprising coming from the <color=#AB82FF>Susoda</color>
       clan. They did something unsavory and have to pay the consequences.

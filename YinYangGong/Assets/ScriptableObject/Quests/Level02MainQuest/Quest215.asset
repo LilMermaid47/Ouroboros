@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: The Sacrifice
     questGiverName: Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C We are <color=#FF6666>cursed</color>! The Gods are
       after us. Death will befall us. Give them golds ! Give them your life ! We
       must make a <color=#FF6666>sacrifice</color> to receive their blessing.\u201D"

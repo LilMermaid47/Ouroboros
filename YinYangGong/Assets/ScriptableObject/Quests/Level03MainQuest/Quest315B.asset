@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'Huangsei Secret '
     questGiverName: Yu, the matriarch of the Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C The Huangsei clan grabbed one of our members. This
       man reported several disturbing remarks concerning certain members of the Huangsei
       clan. I think their leader wants to silence the rumors before they become known

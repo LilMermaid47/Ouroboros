@@ -5,14 +5,18 @@ public class TutorialQuestManager : QuestManager
     [SerializeField]
     private QuestChoiceUi ChoiceUi;
 
-    private TutorialUIController TutorialUI; 
+    private TutorialUIController TutorialUI;
+    private SceneController sceneController;
 
     private void Start()
     {
         TutorialUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<TutorialUIController>();
         uIController = TutorialUI;
+        sceneController = TutorialUI.gameObject.GetComponent<SceneController>();
 
         ChoiceUi = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<QuestChoiceUi>();
+
+        musicSFXManager = GameObject.FindGameObjectWithTag("Music").GetComponent<MusicSFXManager>();
 
         //creates a copy to not lose original data (important)
         filledLevel = Instantiate(level);
@@ -86,5 +90,19 @@ public class TutorialQuestManager : QuestManager
         }
 
         CheckIfStillWinning();
+    }
+
+    protected override void CheckIfPlayerWon()
+    {
+        if (templeReadiness >= templeReadinessToAchieve)
+        {
+            sceneController.LoadScene(SceneList.Level01);
+            musicSFXManager.ChangeMusic(ChooseMusic.VictoryMusic);
+        }
+        else
+        {
+            uIController.Defeat(DefeatType.ReadinessLoss);
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
+        }
     }
 }

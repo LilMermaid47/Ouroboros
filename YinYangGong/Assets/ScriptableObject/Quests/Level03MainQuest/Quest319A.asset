@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: "Red Dragon\u2019s Bargain"
     questGiverName: Tian-long
     questGiverSprite: {fileID: 21300000, guid: fbfb027283264884e9399c025da1c676, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: b03a21724ebfeaa45b2b58d55d8fde78, type: 3}
     questDescription: "\u201C I was flying quietly from one mountain to another when
       I saw your ghetto. On the other hand, the Temple here is magnificent and would
       make a nice home for me. Besides, there is a village of mortals ready to serve

@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: The Fox
     questGiverName: Peasant
     questGiverSprite: {fileID: 21300000, guid: bfa0207885b31544a9a69ddf7f9717fe, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C I have some news regarding the child theft investigation.
       I managed to find the thief and follow him to his lair. The thief is a nine-tailed
       species of a lavender fox with a spooky appearance. I'm sorry, but he's hiding

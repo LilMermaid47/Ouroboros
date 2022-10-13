@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'New Project : Shipwreck'
     questGiverName: Caifu the Merchant
     questGiverSprite: {fileID: 21300000, guid: af298ddb0b9ea094b9b7330bbf20b70d, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: " \u201CI bring you bad news: our last ship from the new continent
       sank during a storm. It contained an <color=#0BB5FF>important treasure of inestimable
       value</color>. What do we do?\u201D"

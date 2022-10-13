@@ -25,6 +25,10 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName.SceneName.ToString());
     }
+    public void LoadScene(SceneList sceneName)
+    {
+        SceneManager.LoadScene(sceneName.ToString());
+    }
 
     public void RetryLevel()
     {

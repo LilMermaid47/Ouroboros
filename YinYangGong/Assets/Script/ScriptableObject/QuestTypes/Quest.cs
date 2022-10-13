@@ -29,6 +29,7 @@ public class QuestDefinition
     public string questGiverName;
 
     public Sprite questGiverSprite;
+    public AudioClip questGiverAudio;
 
     [TextArea(minLines:2, maxLines:5)]
     public string questDescription;

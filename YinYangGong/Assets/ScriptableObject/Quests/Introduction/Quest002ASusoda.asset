@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Leader of Susoda
     questGiverName: Yu, the matriarch of the Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\"Here is the apprentice who takes the place of his master.
       I am <color=#AB82FF>Yu</color>, the matriarch of the <color=#AB82FF>Susoda
       clan</color>. I trust the Temple will keep a good relationship with the Susoda

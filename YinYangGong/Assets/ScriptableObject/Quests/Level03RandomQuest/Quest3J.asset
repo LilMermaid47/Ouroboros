@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: The Mysterious Source
     questGiverName: Sun Wukong, the Strange Man
     questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: I found a magical source that gives good karma and youth. If
       you pay me, I'll get it for you.
     choice1Name: Accept

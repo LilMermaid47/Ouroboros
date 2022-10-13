@@ -1,6 +1,6 @@
 using System;
-using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(SoundManager))]
@@ -17,6 +17,7 @@ public class TutorialUIController : UIController
     private void Awake()
     {
         soundManager = gameObject.GetComponent<SoundManager>();
+        musicSFXManager = GameObject.FindGameObjectWithTag("Music").GetComponent<MusicSFXManager>();
 
         UIMenu.QuestUI.SetActive(false);
         UIMenu.VictoryUI.SetActive(false);

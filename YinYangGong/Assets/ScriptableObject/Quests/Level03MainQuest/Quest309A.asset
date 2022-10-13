@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'I Surrender '
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C I surrender. I admit it, I was the one who wrote the
       insults on the houses of the Huangsei clan. I know they are looking for me
       to make me pay for my crime. I need the help of the temple to protect me. Please

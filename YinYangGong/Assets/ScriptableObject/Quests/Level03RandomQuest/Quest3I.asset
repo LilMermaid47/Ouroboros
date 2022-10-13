@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: The Place To Be
     questGiverName: A member of clan Huangsei & a member of clan Susoda
     questGiverSprite: {fileID: 21300000, guid: 902c2adb1257c6e459892caf5960ee7e, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: 'We found two places of interest: a cavern and an abandoned
       forge. We only have time to do one. Choose wisely.'
     choice1Name: Cavern

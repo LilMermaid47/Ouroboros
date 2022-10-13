@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: 'School for Monks '
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C The clans offered to build a school to <color=#0BB5FF>train
       disciples</color>. Since they don't get along very well, we should train <color=#0BB5FF>just
       one clan</color> to avoid conflicts in the school.\u201D"
