@@ -343,6 +343,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4930688107093968324, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930688107093968324, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: NumberOfAvailableItemSlots
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4930688107093968324, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
