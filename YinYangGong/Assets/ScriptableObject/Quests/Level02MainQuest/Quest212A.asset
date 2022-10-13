@@ -16,18 +16,18 @@ MonoBehaviour:
     questName: 'The Strange Veggie '
     questGiverName: Sun Wukong, the strange man
     questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
-    questDescription: "\u201C I wanted to thank the village with this <b>wonderful
-      gift</b>. Here is a precious cabbage carved in jade. Legends say that it multiplies
-      the harvests. Use it well.\u201D"
+    questDescription: "\u201C I wanted to thank the village with this <color=#0BB5FF>wonderful
+      gift</color>. Here is a precious cabbage carved in jade. Legends say that it
+      multiplies the harvests. Use it well.\u201D"
     choice1Name: Study it
-    choice1Description: We should study it in order to know the <b>magical effects</b>
-      of this cabbage. Perhaps we can increase its effects.
+    choice1Description: We should study it in order to know the <color=#0BB5FF>magical
+      effects</color> of this cabbage. Perhaps we can increase its effects.
     choice1Reveal: The man was right. Our harvests are prosperous and generous. Let's
       hope to find other magical faculties in this cabbage and we could be happy
       for years.
     choice2Name: Sell it
-    choice2Description: Let's sell it, I don't trust this individual. This item must
-      be worth a small fortune.
+    choice2Description: Let's <color=#0BB5FF>sell</color> it, I don't trust this
+      individual. This item must be worth a small fortune.
     choice2Reveal: We managed to sell the cabbage to a wealthy noble. He added it
       to his collection and seemed more than happy.
     rewardChoice1:

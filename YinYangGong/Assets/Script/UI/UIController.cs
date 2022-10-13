@@ -168,8 +168,6 @@ public class UIController : MonoBehaviour
         }
     }
 
-    bool nextPersonWasVisible = false;
-
     public virtual void ShowHideShop()
     {
         UIMenu.ShopUi.SetActive(!UIMenu.ShopUi.activeSelf);

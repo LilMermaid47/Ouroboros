@@ -1,16 +1,18 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(SoundManager))]
 public class TutorialUIController : UIController
 {
+
+    [SerializeField]
+    private GameObject HuangseiFlag;
+    [SerializeField]
+    private GameObject SusodaFlag;
+    [SerializeField]
+    private GameObject OldMonk;
 
     private void Awake()
     {
@@ -20,6 +22,8 @@ public class TutorialUIController : UIController
         UIMenu.VictoryUI.SetActive(false);
         UIMenu.DefeatUI.SetActive(false);
         UIMenu.InGameMenuUI.SetActive(false);
+
+        HideShopBtn(true);
 
         if (UIMenu.GymMenu != null)
             UIMenu.GymMenu.SetActive(false);
@@ -37,6 +41,8 @@ public class TutorialUIController : UIController
         questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<TutorialQuestManager>();
         PauseMenuActive(true);
         HideBtn();
+        HideRessources(true);
+        HideOldMonk(true);
     }
 
     public override void SetNPCFile(Level niveau, int questIndex)
@@ -66,4 +72,68 @@ public class TutorialUIController : UIController
         }
     }
 
+    public void HideOldMonk(bool status)
+    {
+        OldMonk.SetActive(!status);
+    }
+
+    public void HideRessources(bool status)
+    {
+        HideFlags(status);
+        foreach (Ressources item in Enum.GetValues(typeof(Ressources)))
+        {
+            HideRessources(item, status);
+        }
+    }
+
+    public void HideShopBtn(bool status)
+    {
+        BtnQuest.ShopButton.gameObject.SetActive(!status);
+    }
+
+    public void HideFlags(bool status)
+    {
+        ShowHuangseiFlag(!status);
+        ShowSusodaFlag(!status);
+    }
+
+    public void ShowHuangseiFlag(bool status)
+    {
+        HuangseiFlag.SetActive(status);
+    }
+    public void ShowSusodaFlag(bool status)
+    {
+        SusodaFlag.SetActive(status);
+    }
+
+    public void HideRessources(Ressources ressources, bool status)
+    {
+        switch (ressources)
+        {
+            case Ressources.Audience:
+                TextRessources.nbQuestLeft.gameObject.SetActive(!status);
+                break;
+            case Ressources.Balance:
+                TextRessources.BalanceClanSusoda.HideBar(!status);
+                break;
+            case Ressources.Disciple:
+                TextRessources.Disciple.transform.parent.gameObject.SetActive(!status);
+                break;
+            case Ressources.Readiness:
+                TextRessources.TempleReadiness.transform.parent.gameObject.SetActive(!status);
+                break;
+            case Ressources.Yuan:
+                TextRessources.Yuan.transform.parent.gameObject.SetActive(!status);
+                break;
+        }
+    }
+}
+
+public enum Ressources
+{
+    Audience,
+    Balance,
+    Disciple,
+    Readiness,
+    Yuan
 }

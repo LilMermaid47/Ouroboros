@@ -17,16 +17,17 @@ MonoBehaviour:
     questGiverName: Sun Wukong, the strange man
     questGiverSprite: {fileID: 21300000, guid: 9876a29175234344d96872dbcd0d9108, type: 3}
     questDescription: "\u201C I picked a basket of immortality peaches. Listen to
-      me, I don't <b>want to mislead</b> you; peaches don't really make you immortal.
-      However, they <b>give energy</b> to those who eat them. Which clan should I
-      offer them to?\u201D"
+      me, I don't <color=#0BB5FF>want to mislead</color> you; peaches don't really
+      make you immortal. However, they <color=#0BB5FF>give energy</color> to those
+      who eat them. Which clan should I offer them to?\u201D"
     choice1Name: Huangsei
-    choice1Description: I think Rilou, the clan leader, loves this fruit.
+    choice1Description: I think <color=#ca9c43>Rilou</color>, the clan leader, loves
+      this fruit.
     choice1Reveal: All clan members fell ill. They need a few days off. Is it related
       to peaches?
     choice2Name: Susoda
-    choice2Description: Yu, the clan leader keeps saying that peaches are synonymous
-      with fertility.
+    choice2Description: <color=#AB82FF>Yu</color>, the clan leader keeps saying that
+      peaches are synonymous with fertility.
     choice2Reveal: All clan members fell ill. They need a few days off. Is it related
       to peaches?
     rewardChoice1:

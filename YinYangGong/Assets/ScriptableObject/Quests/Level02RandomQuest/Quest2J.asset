@@ -17,18 +17,18 @@ MonoBehaviour:
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questDescription: "\u201C I just saw a creature enter the village. I'm not sure
-      if it's a bird or an ape, but I'm sure it's a <b>bloodthirsty monster</b>.
+      if it's a bird or an ape, but I'm sure it's a <color=#0BB5FF>bloodthirsty monster</color>.
       What do you propose to do?\u201D"
     choice1Name: Make a trap
-    choice1Description: Let's take the creature by surprise. It's risky, but our
-      best chance.
-    choice1Reveal: The plan didn't go as planned, but the Susoda Clan managed to
-      kill the creature.
+    choice1Description: Let's take the creature by <color=#0BB5FF>surprise</color>.
+      It's risky, but our best chance.
+    choice1Reveal: The plan didn't go as planned, but the <color=#ca9c43>Huangsei</color>
+      Clan managed to kill the creature.
     choice2Name: Kill it
     choice2Description: Let's attack it right away. Whether it is a monkey or a bird,
-      our magic energy will exterminate it.
-    choice2Reveal: The Huangsei Clan ignited their swords and burned the creature,
-      it died quickly.
+      our <color=#0BB5FF>magic energy</color> will exterminate it.
+    choice2Reveal: The <color=#ca9c43>Huangsei</color> Clan ignited their swords
+      and burned the creature, it died quickly.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -5

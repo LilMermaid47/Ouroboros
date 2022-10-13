@@ -16,17 +16,19 @@ MonoBehaviour:
     questName: 'School for Monks '
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
-    questDescription: "\u201C The clans offered to build a school to <b>train disciples</b>.
-      Since they don't get along very well, we should train just one clan to avoid
-      conflicts in the school.\u201D"
+    questDescription: "\u201C The clans offered to build a school to <color=#0BB5FF>train
+      disciples</color>. Since they don't get along very well, we should train <color=#0BB5FF>just
+      one clan</color> to avoid conflicts in the school.\u201D"
     choice1Name: Huangsei
-    choice1Description: The Huangsei Clan is strong and knows how to defend the village
-      with fire magic.
-    choice1Reveal: We have successfully trained disciples of the Huangsei clan.
+    choice1Description: The<color=#ca9c43>Huangsei</color> clan is strong and knows
+      how to defend the village with fire magic.
+    choice1Reveal: We have successfully trained disciples of the <color=#ca9c43>Huangsei</color>
+      clan.
     choice2Name: Susoda
-    choice2Description: The Susoda clan knows how to surprise their enemy. Their
-      cunning is their strength.
-    choice2Reveal: We have successfully trained disciples of the Susoda clan.
+    choice2Description: The <color=#AB82FF>Susoda</color> clan knows how to surprise
+      their enemy. Their cunning is their strength.
+    choice2Reveal: We have successfully trained disciples of the <color=#AB82FF>Susoda</color>
+      clan.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15

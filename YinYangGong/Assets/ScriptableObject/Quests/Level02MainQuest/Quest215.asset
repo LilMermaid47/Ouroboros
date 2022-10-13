@@ -16,19 +16,19 @@ MonoBehaviour:
     questName: The Sacrifice
     questGiverName: Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
-    questDescription: "\u201C We are cursed! The Gods are after us. Death will befall
-      us. Give them golds ! Give them your life ! We must make a <b>sacrifice</b>
-      to receive their blessing.\u201D"
+    questDescription: "\u201C We are <color=#FF6666>cursed</color>! The Gods are
+      after us. Death will befall us. Give them golds ! Give them your life ! We
+      must make a <color=#FF6666>sacrifice</color> to receive their blessing.\u201D"
     choice1Name: Volunteer
-    choice1Description: One of our members volunteered. A member of the Susoda clan
-      helped them get prepared. Give the gods what they want.
-    choice1Reveal: The Susoda clan is proud and happy to have served the Moon. Let's
-      pray that she sends us her favors.
+    choice1Description: One of our members volunteered. A member of the <color=#AB82FF>Susoda</color>
+      clan helped them get prepared. Give the gods what they want.
+    choice1Reveal: The <color=#AB82FF>Susoda</color> clan is proud and happy to have
+      served the Moon. Let's pray that she sends us her favors.
     choice2Name: Few animals
-    choice2Description: The Huangsei clan offered their best horses. Human lives
-      are too precious.
-    choice2Reveal: The Huangsei clan is honored to have participated in the offerings
-      to the Sun god.
+    choice2Description: The <color=#ca9c43>Huangsei</color> clan offered their best
+      horses. Human lives are too precious.
+    choice2Reveal: The <color=#ca9c43>Huangsei</color> clan is honored to have participated
+      in the offerings to the Sun god.
     rewardChoice1:
       moneyReward: -10
       templeReadiness: 0

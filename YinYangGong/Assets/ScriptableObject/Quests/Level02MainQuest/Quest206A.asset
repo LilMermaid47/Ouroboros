@@ -28,8 +28,8 @@ MonoBehaviour:
     choice2Name: Release it
     choice2Description: Throw it in the river and pray to the gods it doesn't bring
       its comrades back.
-    choice2Reveal: Yu, the head of the Susoda clan, had a vision of flying fish raining
-      down on the village. Something bad is coming.
+    choice2Reveal: Yu, the head of the <color=#AB82FF>Susoda</color> clan, had a
+      vision of flying fish raining down on the village. Something bad is coming.
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 5

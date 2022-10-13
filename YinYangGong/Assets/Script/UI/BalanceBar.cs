@@ -47,4 +47,9 @@ public class BalanceBar : MonoBehaviour
     {
         transform.parent.gameObject.SetActive(false);
     }
+    
+    public void HideBar(bool status)
+    {
+        transform.parent.gameObject.SetActive(status);
+    }
 }
