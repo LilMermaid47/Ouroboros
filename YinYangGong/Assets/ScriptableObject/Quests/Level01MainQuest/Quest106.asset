@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: "Bendan\u2019s Pig"
     questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: d76327ece2a2ed7448a51049732cae18, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201CI lost my favorite pig in the mountains. The mountain's
       path is <color=#FF6666>dangerous</color>. I need help finding it. Which clan
       can help me?\u201D\r"

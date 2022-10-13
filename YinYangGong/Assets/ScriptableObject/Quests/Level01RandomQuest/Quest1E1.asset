@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Lucky Toad
     questGiverName: Jin Chan
     questGiverSprite: {fileID: 21300000, guid: 6112c71651237bf48a6798dc1ea4f368, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 9542e8c8d44840d498e4cb0649c025f0, type: 3}
     questDescription: "\u201C Gua gua, gua gua gua gua gua gua. Gua gua, gua gua,
       gua, gua gua gua.\u201D"
     choice1Name: 'Accept '
