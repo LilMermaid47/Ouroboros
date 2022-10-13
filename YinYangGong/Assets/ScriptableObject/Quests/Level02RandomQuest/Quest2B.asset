@@ -23,13 +23,27 @@ MonoBehaviour:
     choice1Name: Imprison him
     choice1Description: Theft must be punished. Moreover, his talents as an alchemist
       are dangerous for the village.
-    choice1Reveal: The <color=#AB82FF>Susoda</color> clan hasn't come to the temple
-      for a few days. This is Yu's way of showing us her displeasure.
+    choice1Reveal: 'The <color=#AB82FF>Susoda</color> clan hasn''t come to the temple
+      for a few days. This is Yu''s way of showing us her displeasure.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>'
     choice2Name: Recruit him
     choice2Description: I trust you if the <color=#AB82FF>Susoda</color> clan believes
       their talents can serve the village.
-    choice2Reveal: The clan's new ally has concocted a very deadly poisonous gas.
+    choice2Reveal: 'The clan''s new ally has concocted a very deadly poisonous gas.
       A few <color=#0BB5FF>villagers are dead</color>, but we are ready to fight!
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0

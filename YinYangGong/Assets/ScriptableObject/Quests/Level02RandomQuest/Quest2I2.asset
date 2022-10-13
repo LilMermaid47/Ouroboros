@@ -21,8 +21,11 @@ MonoBehaviour:
     choice1Name: Accept
     choice1Description: "The gift is full of <color=#0BB5FF>swampy</color> plants
       and moss. Is it weird?\r"
-    choice1Reveal: "We found a lot of money in that gift. Are we blessed from the
-      god?\r"
+    choice1Reveal: 'We found a lot of money in that gift. Are we blessed from the
+      god?
+
+
+      <sprite name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Refuse
     choice2Description: This smell is so bad that I don't want to take the risk.
     choice2Reveal: We threw the present in the river and never heard of it.

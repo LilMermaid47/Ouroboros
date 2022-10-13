@@ -22,13 +22,35 @@ MonoBehaviour:
     choice1Name: Huangsei
     choice1Description: The<color=#ca9c43>Huangsei</color> clan is strong and knows
       how to defend the village with fire magic.
-    choice1Reveal: We have successfully trained disciples of the <color=#ca9c43>Huangsei</color>
+    choice1Reveal: 'We have successfully trained disciples of the <color=#ca9c43>Huangsei</color>
       clan.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>'
     choice2Name: Susoda
     choice2Description: The <color=#AB82FF>Susoda</color> clan knows how to surprise
       their enemy. Their cunning is their strength.
-    choice2Reveal: We have successfully trained disciples of the <color=#AB82FF>Susoda</color>
+    choice2Reveal: 'We have successfully trained disciples of the <color=#AB82FF>Susoda</color>
       clan.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15

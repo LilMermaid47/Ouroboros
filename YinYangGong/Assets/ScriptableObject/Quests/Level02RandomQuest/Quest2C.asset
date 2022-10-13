@@ -22,15 +22,29 @@ MonoBehaviour:
     choice1Name: Face their champion
     choice1Description: Propose a dual. It's the <color=#0BB5FF>honorable way</color>
       of sending them back to their land.
-    choice1Reveal: The duel created quite a stir. Our champion, a member of the <color=#ca9c43>Huangsei</color>
-      clan, almost lost the fight, but he snatched victory at the very end. Long
-      live the Huangsei clan!
+    choice1Reveal: 'The duel created quite a stir. Our champion, a member of the
+      <color=#ca9c43>Huangsei</color> clan, almost lost the fight, but he snatched
+      victory at the very end. Long live the Huangsei clan!
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>'
     choice2Name: Kil them in their sleep
     choice2Description: Please don't take any risks. Let's send our <color=#0BB5FF>best
       assassins</color> and create chaos in their camp.
-    choice2Reveal: The <color=#AB82FF>Susoda</color> clan quickly stepped forward
+    choice2Reveal: 'The <color=#AB82FF>Susoda</color> clan quickly stepped forward
       to complete the task. The bandits fled, condemning everything behind them and
       believing their encampment to be haunted.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 20

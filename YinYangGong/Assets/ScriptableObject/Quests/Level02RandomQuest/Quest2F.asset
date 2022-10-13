@@ -22,15 +22,30 @@ MonoBehaviour:
     choice1Name: Huangsei
     choice1Description: The <color=#ca9c43>Huangsei</color> clan knows how to control
       blazing fires. Their natural stamina will come in handy.
-    choice1Reveal: The <color=#ca9c43>Huangsei</color> clan emerged victorious from
+    choice1Reveal: 'The <color=#ca9c43>Huangsei</color> clan emerged victorious from
       their battle against the bird. Moreover, the sale of the feathers brought in
       big profits.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Susoda
     choice2Description: The <color=#AB82FF>Susoda</color> clan's water magic would
       no doubt pulverize the mystical bird.
-    choice2Reveal: The <color=#AB82FF>Susoda</color> clan was praised for the fight.
+    choice2Reveal: 'The <color=#AB82FF>Susoda</color> clan was praised for the fight.
       Someone said that they found nothing of the bird. The geyser of water was too
       strong for it.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 15
       templeReadiness: 10
