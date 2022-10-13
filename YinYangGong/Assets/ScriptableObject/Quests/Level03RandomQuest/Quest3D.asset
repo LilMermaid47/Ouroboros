@@ -17,17 +17,40 @@ MonoBehaviour:
     questGiverName: A member of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C The clan members would like to <b>prepare against the
-      demons</b> that keep approaching day by day. What do you advise us to do?\u201D"
+    questDescription: "\u201C The clan members would like to <color=#0BB5FF>prepare
+      against the demons</color> that keep approaching day by day. What do you advise
+      us to do?\u201D"
     choice1Name: Hire a general
     choice1Description: "Let's send a letter to the Capital. Imperial generals are
       real heroes.\r"
-    choice1Reveal: General Fei has arrived at the village. He is almost as menacing
+    choice1Reveal: 'General Fei has arrived at the village. He is almost as menacing
       as Rilou, the Patriarch of the Huangsei clan.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=discipleLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Train children
-    choice2Description: Let's take significant steps. First, we must train all children
-      over the age of eight.
-    choice2Reveal: The Temple has a small army of children ready to defend the village.
+    choice2Description: Let's take significant steps. First, we must <color=#0BB5FF>train
+      all children</color> over the age of eight.
+    choice2Reveal: 'The Temple has a small army of children ready to defend the village.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=discipleLogo>
+      <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: 30

@@ -14,24 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Susoda Protection
-    questGiverName: Rilou, the patriarch of Huangsei clan
+    questGiverName: Rilou, the Patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C We have found the person responsible for the crimes
-      committed against the Huangsei clan. This is, unsurprisingly, a member of the
-      Susoda clan. However, I heard that you protect him in your temple! I ask that
-      it be returned to me immediately. I'm willing to pay for the Huangsei Clan
-      to regain their honor! \u201C"
+    questDescription: "\u201C <color=#0BB5FF>We have found the person responsible
+      for the crimes committed against the Huangsei clan</color> . This is, unsurprisingly,
+      a member of the <color=#AB82FF>Susoda</color> clan. However, I heard that you
+      protect him in your temple! I ask that it be returned to me immediately. I'm
+      willing to pay for the <color=#ca9c43>Huangsei</color>  Clan to regain their
+      honor! \u201C"
     choice1Name: 'Give him the culprit '
     choice1Description: It's not the leader's habit to be so insistent. We should
       listen to his demands.
-    choice1Reveal: The Huangsei clan cut off the criminal's head. The conflict seems
-      to be over.
+    choice1Reveal: 'The Huangsei clan cut off the criminal''s head. The conflict
+      seems to be over.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite name=plusLogo>
+
+'
     choice2Name: Keep the culprit
     choice2Description: If we help our new disciple. I'm sure Yu will reward us in
       return.
-    choice2Reveal: The Susoda clan flooded us with magical artifacts. Our KI is more
-      powerful.
+    choice2Reveal: 'The Susoda clan flooded us with magical artifacts. Our KI is
+      more powerful.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=kiLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 45
       templeReadiness: 0

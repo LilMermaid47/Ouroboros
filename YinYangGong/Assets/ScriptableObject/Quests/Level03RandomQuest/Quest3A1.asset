@@ -17,17 +17,31 @@ MonoBehaviour:
     questGiverName: Rilou, the patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C O dear Master Fangshi, I want to gift you a magnificent
-      lion statue. We found it in an old abandoned temple and I immediately thought
-      of you when I saw it.\u201D"
+    questDescription: "\u201C O dear Master Fangshi, I want to <color=#0BB5FF>gift
+      you</color> a magnificent lion statue. We found it in an old abandoned temple
+      and I immediately thought of you when I saw it.\u201D"
     choice1Name: Sell it
-    choice1Description: It's very kind of the Huangsei clan, but we need money.
-    choice1Reveal: This statue was worth a jackpot. The Huangsei clan is insulted
+    choice1Description: It's very kind of the Huangsei clan, but we <color=#0BB5FF>need
+      money</color>.
+    choice1Reveal: 'This statue was worth a jackpot. The Huangsei clan is insulted
       by our gesture.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Keep it
-    choice2Description: It will go very well with the statues of the temple. Hopefully,
-      it attracts followers.
-    choice2Reveal: The temple is doing better since the statue arrived in the village.
+    choice2Description: "It will go very well with the statues of the temple. Hopefully,
+      it <color=#0BB5FF>\rattracts followers</color>."
+    choice2Reveal: 'The temple is doing better since the statue arrived in the village.
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 60
       templeReadiness: 0

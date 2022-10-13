@@ -18,16 +18,34 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201CThe tree! The tree has been reborn from the dead! I
-      think if we give it <b>more prayers</b>, it will grow faster and bigger. Don't
-      lose faith!\u201D"
+      think if we give it <color=#0BB5FF>more prayers</color>, it will grow faster
+      and bigger. Don't lose faith!\u201D"
     choice1Name: Cut the tree
     choice1Description: We should cut it before it is too late. We can use this wood
-      to protect ourselves.
-    choice1Reveal: We make arrows and spears with the wood. We are ready to fight!
+      to <color=#0BB5FF>protect ourselves</color>.
+    choice1Reveal: 'We make arrows and spears with the wood. We are ready to fight!
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>'
     choice2Name: Pray to the Moon Goddess
-    choice2Description: Praying and meditating are our strengths. Give us everything!
-    choice2Reveal: The flowers don't stop blooming. Birds are nesting and bees are
-      making honey. I predict a sweet spring with newborn children.
+    choice2Description: <color=#0BB5FF>Praying and meditating</color> are our strengths.
+      Give us everything!
+    choice2Reveal: 'The flowers don''t stop blooming. Birds are nesting and bees
+      are making honey. I predict a sweet spring with newborn children.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 40

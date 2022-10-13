@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: Hungry Pig
     questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: 013447e042b726e4196504b79dd6420d, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: '"<color=#0BB5FF>Watch out for that man and his pig. They bring</color>
       <color=#FF6666>bad luck</color>."
 
