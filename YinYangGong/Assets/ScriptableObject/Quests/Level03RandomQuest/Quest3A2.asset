@@ -18,19 +18,40 @@ MonoBehaviour:
       Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e8102fc47d34510438d07b28b7d94584, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C We are under attack! The gruesome statue the Huangsei
-      Clan gave you is alive. It attacks the villagers and devours the children!\r\n\r\n\r\nWe
-      didn't know it was cursed! We propose to use our fire magic to defeat the statue.\u201D\r\n"
+    questDescription: "\u201C We are <color=#0BB5FF>under attack</color>! The gruesome
+      statue the Huangsei Clan gave you is alive. It attacks the villagers and devours
+      the children!\r\n\r\n\r\nWe didn't know it was cursed! We propose to use our
+      <color=#0BB5FF>fire magic</color> to defeat the statue.\u201D\r\n"
     choice1Name: Destroy it
-    choice1Description: The Huangsei clan offers the hard way. Their honor obliges
-      them to help us.
-    choice1Reveal: The lion statue was destroyed. The Huangsei are always happy to
-      help.
+    choice1Description: The <color=#ca9c43>Huangsei</color> clan offers the hard
+      way. Their honor obliges them to help us.
+    choice1Reveal: 'The lion statue was destroyed. The Huangsei are always happy
+      to help.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=kiLogo> <sprite name=moinsLogo>'
     choice2Name: Lure it into a trap
-    choice2Description: The Susoda clan offers to lure him to a bridge and destroy
-      it. The current of the river will take care of the rest.
-    choice2Reveal: The Susoda's plan went well, although a few villagers died. The
-      villagers have devised other plans of attack in the event of an invasion.
+    choice2Description: The <color=#AB82FF>Susoda</color> clan offers to lure him
+      to a bridge and destroy it. The current of the river will take care of the
+      rest.
+    choice2Reveal: 'The <color=#AB82FF>Susoda</color>''s plan went well, although
+      a few villagers died. The villagers have devised other plans of attack in the
+      event of an invasion.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 5

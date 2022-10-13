@@ -20,12 +20,18 @@ MonoBehaviour:
     questDescription: "\u201C I want my money back\u201D"
     choice1Name: Accept
     choice1Description: I should listen to it. It makes me nervous.
-    choice1Reveal: "We found a lot of money in that gift. Are we blessed from the
-      god?\r"
+    choice1Reveal: 'We found a lot of money in that gift. Are we blessed from the
+      god?
+
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: What?
     choice2Description: "Did the toad talk? I don\u2019t understand."
-    choice2Reveal: The toad takes the money, swallows it, and jumps to the exit.
+    choice2Reveal: 'The toad takes the money, swallows it, and jumps to the exit.
       Have I just been robbed?
+
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -60
       templeReadiness: 0
