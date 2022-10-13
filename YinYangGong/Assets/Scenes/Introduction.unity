@@ -669,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2520464698404237578, guid: ff7c97f6aa618d04dba9c55a74e608ce, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2752370048578425150, guid: ff7c97f6aa618d04dba9c55a74e608ce, type: 3}
       propertyPath: questManager
