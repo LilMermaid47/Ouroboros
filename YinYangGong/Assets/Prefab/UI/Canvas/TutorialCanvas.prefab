@@ -28,7 +28,7 @@ MonoBehaviour:
     GameFirstChoice: {fileID: 5447399674606351727}
     InGameMenuFirstChoice: {fileID: 1216746610256701545}
     VictoryFirstChoice: {fileID: 6193708904287479905}
-    DefeatFirstChoice: {fileID: 8696464403900575641}
+    DefeatFirstChoice: {fileID: 0}
   TextRessources:
     Disciple: {fileID: 5070943963305768681}
     Yuan: {fileID: 8855763534129509114}
@@ -363,7 +363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.size
-      value: 4
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: NumberOfAvailableItemSlots
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6086939062483628639, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: StartingItems.Array.data[1].Item
@@ -403,6 +407,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6213599449217352731, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520228158315377687, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: StartingItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520228158315377687, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: NumberOfAvailableItemSlots
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6633341570103409926, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
@@ -689,20 +701,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8807982018550042924 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 127761684, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-  m_PrefabInstance: {fileID: 8807982018557733944}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &822278206763429857 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8166553717731263449, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+  m_PrefabInstance: {fileID: 8807982018557733944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8769379976308877667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 256463676917744987, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
   m_PrefabInstance: {fileID: 8807982018557733944}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6193708904287479905 stripped
@@ -713,11 +719,6 @@ GameObject:
 --- !u!1 &2852118487141921815 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6748923719403591727, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
-  m_PrefabInstance: {fileID: 8807982018557733944}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8696464403900575641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 183575243065639841, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
   m_PrefabInstance: {fileID: 8807982018557733944}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &5919177763763468721 stripped
@@ -731,11 +732,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &8769379976308877667 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 256463676917744987, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+--- !u!114 &8807982018550042924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 127761684, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
   m_PrefabInstance: {fileID: 8807982018557733944}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1216746610256701545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7700869913944753233, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
