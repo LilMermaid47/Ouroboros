@@ -20,17 +20,37 @@ MonoBehaviour:
     questDescription: "\u201C I want to organize a feast in my honor, but my palace
       cannot accommodate the whole village. I can receive men or just women.  I hope
       it will not insult one clan. How can I know which clan is composed of men or
-      women? <b>Who do you recommend?</b>\u201C\r"
+      women? <color=#0BB5FF>Who do you recommend?</color>\u201C\r"
     choice1Name: The men
     choice1Description: The men of the village represent half of the inhabitants.
-      Most are soldiers and enjoy contests and challenges.
-    choice1Reveal: Huangsei clan leader Rilou showed off his skills in several strength
-      plays. He seems to have made a good impression on the others.
+      Most are <color=#0BB5FF>soldiers</color> and enjoy contests and challenges.
+    choice1Reveal: '<color=#ca9c43>Huangsei</color> clan leader Rilou showed off
+      his skills in several strength plays. He seems to have made a good impression
+      on the others.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: The women
     choice2Description: The village women are young and would appreciate a banquet
       followed by a dance party.
-    choice2Reveal: During the evening, Yu, the leader sing a sweet requiem. She never
-      misses an opportunity to showcase her talents as a singer.
+    choice2Reveal: 'During the evening, <color=#AB82FF>Yu</color>, the leader sing
+      a sweet requiem. She never misses an opportunity to showcase her talents as
+      a singer.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite
+      name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: 20

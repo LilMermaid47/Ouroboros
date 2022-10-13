@@ -18,19 +18,32 @@ MonoBehaviour:
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C I have just returned from a courtesy visit to the neighbouring
-      village. I'm completely jealous of their new weaponry. We don't have the means
-      to buy better ones. I suggest we attack them and rob them.\u201D"
+      village. I'm completely jealous of their <color=#0BB5FF>new weaponry</color>.
+      We don't have the means to buy better ones. I suggest we <color=#0BB5FF>attack
+      them and rob them</color>.\u201D"
     choice1Name: Accept
-    choice1Description: They've been laughing at us for years. Prepare our soldiers.
-    choice1Reveal: We'd lost a few disciples, but the village had more weapons than
-      it needed. The Huangsei clan disagrees.
+    choice1Description: They've been laughing at us for years. <color=#0BB5FF>Prepare
+      our soldiers</color>.
+    choice1Reveal: 'We''d lost a few disciples, but the village had more weapons
+      than it needed. The Huangsei clan disagrees.
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>'
     choice2Name: Refuse
     choice2Description: "I cannot accept it. I have to pray to the gods for the magistrate\u2019s
       lack of morality."
     choice2Reveal: 'The magistrate left the temple disappointed with the lack of
       support. Monks feel magically energized.
 
-'
+
+      <sprite name=kiLogo> <sprite
+      name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 40

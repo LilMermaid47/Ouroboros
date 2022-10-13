@@ -17,19 +17,33 @@ MonoBehaviour:
     questGiverName: A member of clan Huangsei & a member of clan Susoda
     questGiverSprite: {fileID: 21300000, guid: 902c2adb1257c6e459892caf5960ee7e, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: 'We found two places of interest: a cavern and an abandoned
-      forge. We only have time to do one. Choose wisely.'
+    questDescription: 'We found <color=#0BB5FF>two places of interest</color>: a
+      cavern and an abandoned forge. We only have time to do one. Choose wisely.'
     choice1Name: Cavern
     choice1Description: We found a beautiful heat source. We want to stay together
-      and have a good time. It will help to bond. Praying in hot water helps us feel
-      close to our gods.
-    choice1Reveal: The clan Susoda had a great time. They feel ready to fight!
+      and have a good time. It will help to bond. <color=#0BB5FF>Praying in hot water</color>
+      helps us feel close to our gods.
+    choice1Reveal: 'The clan <color=#AB82FF>Susoda</color> had a great time. They
+      feel ready to fight!
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite name=plusLogo>'
     choice2Name: Forge
-    choice2Description: There are no usable weapons here, but we could melt them
-      and sell the silver. Then, we could buy better weapons for our warriors with
-      the money.
-    choice2Reveal: The clan Huangsei sold the silver to Caifu, the Merchant. We made
-      a great deal!
+    choice2Description: There are no usable <color=#0BB5FF>weapons</color> here,
+      but we could melt them and <color=#0BB5FF>sell</color> the silver. Then, we
+      could buy better weapons for our <color=#0BB5FF>warriors</color> with the money.
+    choice2Reveal: 'The clan <color=#ca9c43>Huangsei</color> sold the silver to Caifu,
+      the Merchant. We made a great deal!
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite
+      name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 20

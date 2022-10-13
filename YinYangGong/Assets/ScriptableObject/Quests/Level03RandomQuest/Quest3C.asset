@@ -17,19 +17,38 @@ MonoBehaviour:
     questGiverName: A member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C The clan members would like to prepare against the
-      demons that keep approaching day by day. What do you advise us to do?\u201D"
+    questDescription: "\u201C The clan members would like to prepare <color=#0BB5FF>against
+      the demons</color> that keep approaching day by day. What do you advise us
+      to do?\u201D"
     choice1Name: Healer
-    choice1Description: We need someone who can quickly treat our wounded. A monk
-      who can do this through magic is the most viable option.
-    choice1Reveal: Our new ally is ready. He is preparing all sorts of mixtures for
-      the coming fight.
+    choice1Description: We need someone who can quickly <color=#0BB5FF>treat our
+      wounded</color>. A monk who can do this through magic is the most viable option.
+    choice1Reveal: 'Our new ally is ready. He is preparing all sorts of mixtures
+      for the coming fight.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=plusLogo>
+
+      <sprite name=kiLogo> <sprite
+      name=plusLogo>'
     choice2Name: Vines
-    choice2Description: The Matriarch suggests that we grow a poisonous vine around
-      the village. Then, the demons will have no choice but to break through to reach
-      us.
-    choice2Reveal: The vines have grown more than expected. The village seems trapped
+    choice2Description: The Matriarch suggests that we grow a <color=#0BB5FF>poisonous
+      vine</color> around the village. Then, the demons will have no choice but to
+      break through to reach us.
+    choice2Reveal: 'The vines have grown more than expected. The village seems trapped
       inside but heavily protected.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 15

@@ -17,22 +17,39 @@ MonoBehaviour:
     questGiverName: Yu, the matriarch of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201CThe leaves of our mother tree are turning black and
-      falling. Our prayers are useless. We must try another remedy. Otherwise, I
-      fear that a curse will fall on our community. The last time, women stop having
-      children.\u201D"
+    questDescription: "\u201CThe leaves of our mother tree are <color=#0BB5FF>turning
+      black and falling</color>. Our prayers are useless. We must try another remedy.
+      Otherwise, I fear that a <color=#0BB5FF>curse</color> will fall on our community.
+      The last time, women stop having children.\u201D"
     choice1Name: Contact the Shamans of the West
-    choice1Description: Shamans have more advanced knowledge about diseased trees.
-      Bringing one to the village should help us heal the tree, but they live <b>far
-      away</b>.So we need to send an emissary to their land.
-    choice1Reveal: On his way to the village, the shaman was attacked and never reached
-      his destination. The mother tree of Susoda is stunted and dry. So there's not
-      much more to do with it.
+    choice1Description: <color=#0BB5FF>Shamans</color> have more advanced knowledge
+      about diseased trees. Bringing one to the village should help us heal the tree,
+      but they live <color=#0BB5FF>far away</color>.So we need to send an emissary
+      to their land.
+    choice1Reveal: 'On his way to the village, the shaman was attacked and never
+      reached his destination. The mother tree of Susoda is stunted and dry. So there''s
+      not much more to do with it.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     choice2Name: Cut the tree
     choice2Description: The tree is a lost cause. It should be cut down before the
-      wood goes moldy. I am sure everybody wants to buy this wood.
-    choice2Reveal: Yu angers the loggers who cut down the tree. We sold the magical
+      wood goes moldy. I am sure everybody wants to <color=#0BB5FF>buy this wood</color>.
+    choice2Reveal: 'Yu angers the loggers who cut down the tree. We sold the magical
       wood. The Susoda clan is furious with the temple.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite
+      name=plusLogo>'
     rewardChoice1:
       moneyReward: -30
       templeReadiness: 0
