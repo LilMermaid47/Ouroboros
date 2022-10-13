@@ -16,19 +16,20 @@ MonoBehaviour:
     questName: 'The Alchemist '
     questGiverName: A Member of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: dc0dfe76002d8014f898f4b37f1baaca, type: 3}
-    questDescription: "\u201C We found out<b> who was stealing our plant supplies</b>.
-      We also discovered his laboratory, where he<b> experimented with several strange
-      potions</b> and mixtures. The Susoda clan thinks he might be useful to us.\u201D"
+    questDescription: "\u201C We found out <color=#0BB5FF>who was stealing our plant
+      supplies</color>. We also discovered his laboratory, where he <color=#0BB5FF>experimented
+      with several strange potions</color> and mixtures. The <color=#AB82FF>Susoda</color>
+      clan thinks he might be useful to us.\u201D"
     choice1Name: Imprison him
     choice1Description: Theft must be punished. Moreover, his talents as an alchemist
       are dangerous for the village.
-    choice1Reveal: The Susoda clan hasn't come to the temple for a few days. This
-      is Yu's way of showing us her displeasure.
+    choice1Reveal: The <color=#AB82FF>Susoda</color> clan hasn't come to the temple
+      for a few days. This is Yu's way of showing us her displeasure.
     choice2Name: Recruit him
-    choice2Description: I trust you if the Susoda clan believes their talents can
-      serve the village.
+    choice2Description: I trust you if the <color=#AB82FF>Susoda</color> clan believes
+      their talents can serve the village.
     choice2Reveal: The clan's new ally has concocted a very deadly poisonous gas.
-      A few villagers are dead, but we are ready to fight!
+      A few <color=#0BB5FF>villagers are dead</color>, but we are ready to fight!
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
