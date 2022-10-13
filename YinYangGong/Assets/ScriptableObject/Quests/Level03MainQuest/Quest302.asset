@@ -14,20 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: 'Murder in the Pigsty '
-    questGiverName: Bendan the mad
+    questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: d76327ece2a2ed7448a51049732cae18, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C My pig... My pig was brutally killed! A murderer<b>
-      hides in the village</b>. I demand a trial! Let's find the bastard who did
-      this! \u201D"
+    questDescription: "\u201C My pig... My pig was brutally killed! A <color=#FF6666>murderer</color>
+      hides in the village. I demand a <color=#0BB5FF>trial</color>! Let's find the
+      bastard who did this! \u201D"
     choice1Name: Trial
     choice1Description: Let's find the culprit before he attacks a human.
-    choice1Reveal: The trial would begin in a few days. Bendan is pleased with the
+    choice1Reveal: 'The trial would begin in a few days. Bendan is pleased with the
       attention given to him.
+
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>'
     choice2Name: Compensation
     choice2Description: Let's give him enough money to buy himself a new pig. We
       cannot put resources on trial.
-    choice2Reveal: Bendan curses the temple. Looks like he's up to something.
+    choice2Reveal: 'Bendan curses the temple. Looks like he''s up to something.
+
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -15

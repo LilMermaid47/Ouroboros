@@ -17,20 +17,41 @@ MonoBehaviour:
     questGiverName: A Member of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: aa95d350d696dca4b986c36929843425, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201CThe crime rate has been on the rise since the last attack.
-      Thefts, murders, and assaults are numerous. Maybe the fool was right, a curse
-      fell on us. Fortunately, I caught a child who stole an apple from me. What
-      sentence do you recommend?\u201D"
+    questDescription: "\u201CThe <color=#FF6666>crime rate</color> has been on the
+      rise since the last attack. <color=#FF6666>Thefts, murders, and assaults</color>
+      are numerous. Maybe the fool was right, a curse fell on us. Fortunately, I
+      caught a <color=#FF6666>child who stole an apple from me</color>. What sentence
+      do you recommend?\u201D"
     choice1Name: 'Cut off his hand '
     choice1Description: Theft can only be punished by prompt punishment. Cut off
       his thieving hand.
-    choice1Reveal: The child cried out when he lost his hand. The Huangsei clan is
-      proud of the sentence they received.
+    choice1Reveal: 'The child cried out when he lost his hand. The <color=#ca9c43>Huangsei</color>
+      clan is proud of the sentence they received.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+'
     choice2Name: Community work
     choice2Description: Let him come and work in the Temple so he can be taught good
       manners.
-    choice2Reveal: The young boy now works at the temple. He doesn't seem to carry
+    choice2Reveal: 'The young boy now works at the temple. He doesn''t seem to carry
       the Huangsei clan in his heart.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 10

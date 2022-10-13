@@ -17,18 +17,36 @@ MonoBehaviour:
     questGiverName: Bendan the mad
     questGiverSprite: {fileID: 21300000, guid: d76327ece2a2ed7448a51049732cae18, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C Master Monk, I saw a demon abduct a child. It was near
-      Huangsei territory. I'm sure! You have to find him. Maybe he's the pig killer!
-      \u201D"
+    questDescription: "\u201C Master Monk, I saw a <color=#FF6666> demon abduct a
+      child</color>. It was near <color=#0BB5FF>Huangsei territory</color>. I'm sure!
+      You have to find him. Maybe he's the <color=#FF6666>pig killer</color>! \u201D"
     choice1Name: Investigate
-    choice1Description: Bendan wants us to send an investigator to Huangsei territory.
-      Do we have the necessary resources?
-    choice1Reveal: Our investigator combed through Huangsei territory. I hope he
+    choice1Description: Bendan wants us to <color=#0BB5FF>send an investigator to
+      Huangsei territory</color>. Do we have the necessary resources?
+    choice1Reveal: 'Our investigator combed through Huangsei territory. I hope he
       finds something.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=readinessLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=moinsLogo>
+
+'
     choice2Name: Do nothing
     choice2Description: Is Bendan telling the truth? We cannot risk our resources
-      on Bendan's outlandish stories.
-    choice2Reveal: Bendan is furious that we never listen to him!
+      on <color=#0BB5FF>Bendan's outlandish stories</color>.
+    choice2Reveal: 'Bendan is furious that we never listen to him!
+
+
+      <sprite
+      name=readinessLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: -10

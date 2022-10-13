@@ -14,20 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: Bashe
-    questGiverName: Neutral Peasant
+    questGiverName: Xin
     questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
-    questDescription: "\u201C A bashe commandeers our gold. According to legends,
-      they appear when humans are too stingy. He also asked for a meal: a fat disciple.
-      The gods want us to pay for our peach trees. Do we accept the serpent's offer?
-      \u201D"
+    questDescription: "\u201C A <color=#FF6666>bashe</color> commandeers our gold.
+      According to legends, they appear when humans are <color=#FF6666>too greedy</color>.
+      He also asked for a meal: a fat disciple. The gods want us to pay for our <color=#FF6666>sins</color>.
+      Do we accept the serpent's offer? \u201D"
     choice1Name: Accept
     choice1Description: ' Let''s pay it. That''s the only way he''ll leave.'
-    choice1Reveal: The Bashe left as it came.
+    choice1Reveal: 'The Bashe left as it came.
+
+
+      <sprite name=discipleLogo>
+      <sprite name=moinsLogo>
+
+      <sprite name=argentLogo> <sprite name=moinsLogo>
+
+'
     choice2Name: Refuse
     choice2Description: Let's keep our money!
-    choice2Reveal: The bashe did not accept our refusal. However, it served himself
+    choice2Reveal: 'The bashe did not accept our refusal. However, it served himself
       before leaving.
+
+
+      <sprite name=discipleLogo> <sprite name=moinsLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>
+
+'
     rewardChoice1:
       moneyReward: -30
       templeReadiness: 0

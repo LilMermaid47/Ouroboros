@@ -14,22 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Trial
-    questGiverName: Bendan the mad
+    questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: d76327ece2a2ed7448a51049732cae18, type: 3}
     questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Bendan's pig murder trial is almost over. The evidence
-      is thin, but a member of the Susoda clan is the prime suspect. If we have the
-      support of the Temple, we are confident that the verdict will favor your decision.
-      What do you recommend? \u201D"
+      is <color=#0BB5FF>thin</color>, but a member of the <color=#AB82FF>Susoda</color>
+      clan is the <color=#0BB5FF>prime suspect</color>. If we have the support of
+      the Temple, we are confident that the verdict will favor your decision. What
+      do you recommend? \u201D"
     choice1Name: Death sentence
-    choice1Description: The crimes must stop. Let's send a clear message.
-    choice1Reveal: The Susoda clan disapproves of Temple support. But it looks like
-      they're up to something.
+    choice1Description: The crimes must stop. Let's send a <color=#0BB5FF>clear message</color>.
+    choice1Reveal: 'The Susoda clan disapproves of Temple support. But it looks like
+      they''re up to something.
+
+
+      <sprite name=huangseiLgo><sprite name=balanceLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=moinsLogo>'
     choice2Name: Absolution
     choice2Description: Let's compensate Bendan instead. Then, he will be able to
-      buy a dozen pigs.
-    choice2Reveal: Bendan disagreed, but he was silent when he saw the coins offered
+      <color=#0BB5FF>buy a dozen pigs</color>.
+    choice2Reveal: 'Bendan disagreed, but he was silent when he saw the coins offered
       to him.
+
+
+      <sprite name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=argentLogo> <sprite name=moinsLogo>'
     rewardChoice1:
       moneyReward: 0
       templeReadiness: 0
