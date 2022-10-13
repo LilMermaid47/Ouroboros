@@ -267,8 +267,8 @@ public class UIController : MonoBehaviour
         }
     }
 
-    int lastBalance = 0;
-    private async Task ChangeBalance(int newCurrentBalance)
+    protected int lastBalance = 0;
+    protected virtual async Task ChangeBalance(int newCurrentBalance)
     {
         float timerBalance = 0;
 

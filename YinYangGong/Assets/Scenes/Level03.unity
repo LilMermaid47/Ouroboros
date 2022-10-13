@@ -263,6 +263,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &677357306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 489.81317
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 239.84802
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -394.36777
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367812, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425737456208367814, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
+      propertyPath: m_Name
+      value: Musique
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 94311498febe7614cbed1910e1ee7761, type: 3}
 --- !u!1001 &1195783224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -404,6 +461,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704488188340800662, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704488188340800662, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5168634292443443257, guid: 50b82589894bd3a42a7ae3e9de245b28, type: 3}
@@ -602,6 +663,7 @@ MonoBehaviour:
   ki: 2
   argent: 100
   templeReadinessToAchieve: 135
+  clanMusicStartAt: 0.5
   level: {fileID: 11400000, guid: 608a331432542d04ea02a7640c4d18f1, type: 2}
   randomQuestList: {fileID: 11400000, guid: 670bfbe5afb958f43b702d1c9a2c11c8, type: 2}
   currentQuest: {fileID: 0}

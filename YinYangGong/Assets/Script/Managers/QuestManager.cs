@@ -18,6 +18,8 @@ public class QuestManager : MonoBehaviour
     protected int argent = 0;
     [SerializeField]
     protected float templeReadinessToAchieve = 100;
+    [SerializeField]
+    protected float clanMusicStartAt = 0.5f;
 
     protected float templeReadiness = 0;
 
@@ -32,6 +34,7 @@ public class QuestManager : MonoBehaviour
     protected RandomQuestList tempQuestList;
 
     protected UIController uIController;
+    protected MusicSFXManager musicSFXManager;
 
     protected int currentQuestIndex = 0;
     public Quest currentQuest;
@@ -39,6 +42,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         uIController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<UIController>();
+        musicSFXManager = GameObject.FindGameObjectWithTag("Music").GetComponent<MusicSFXManager>();
 
         //creates a copy to not lose original data (important)
         filledLevel = Instantiate(level);
@@ -177,9 +181,15 @@ public class QuestManager : MonoBehaviour
     protected virtual void CheckIfPlayerWon()
     {
         if (templeReadiness >= templeReadinessToAchieve)
+        {
             uIController.Victory();
+            musicSFXManager.ChangeMusic(ChooseMusic.VictoryMusic);
+        }
         else
+        {
             uIController.Defeat(DefeatType.ReadinessLoss);
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
+        }
     }
 
     public InventoryItemManager InventoryItemManager;
@@ -222,6 +232,21 @@ public class QuestManager : MonoBehaviour
         {
             AddQuest(currentQuestIndex + reward.unlockQuestChoice.nbQuestLater, reward.unlockQuestChoice.unlockedQuest);
         }
+
+        Debug.Log(yinYangBalance / (float)maxClanBalance);
+
+        if (yinYangBalance / (float)maxClanBalance >= clanMusicStartAt)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.SusodaMusic);
+        }
+        else if (yinYangBalance / (float)maxClanBalance <= -clanMusicStartAt)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.HuangseiMusic);
+        }
+        else
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.NormalMusic);
+        }
     }
 
     protected virtual void RemoveQuestReward(Reward reward)
@@ -232,20 +257,48 @@ public class QuestManager : MonoBehaviour
         disciple -= Mathf.FloorToInt(reward.nbDisciple * discipleBonus);
         ki -= Mathf.FloorToInt(reward.nbKi * kiBonus);
         uIController.SetRewardsRessources(argent, yinYangBalance, (templeReadiness / templeReadinessToAchieve) * 100, disciple, ki);
+
+        if (yinYangBalance / maxClanBalance >= clanMusicStartAt)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.SusodaMusic);
+        }
+        else if (yinYangBalance / maxClanBalance <= -clanMusicStartAt)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.HuangseiMusic);
+        }
+        else
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.NormalMusic);
+        }
     }
 
     protected virtual void CheckIfStillWinning()
     {
         if (yinYangBalance >= maxClanBalance)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
             uIController.Defeat(DefeatType.HuangseiLoss);
+        }
         else if (yinYangBalance <= -maxClanBalance)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
             uIController.Defeat(DefeatType.SusodaLoss);
+        }
         else if (disciple <= 0)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
             uIController.Defeat(DefeatType.DiscipleLoss);
+        }
         else if (ki <= 0)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
             uIController.Defeat(DefeatType.KiLoss);
+        }
         else if (argent < 0)
+        {
+            musicSFXManager.ChangeMusic(ChooseMusic.DefeatMusic);
             uIController.Defeat(DefeatType.MoneyLoss);
+        }
     }
 
     public virtual void AddQuest(int index, Quest questToAdd)
