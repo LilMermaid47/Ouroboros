@@ -16,18 +16,41 @@ MonoBehaviour:
     questName: Huangsei vs. Bandits
     questGiverName: Rilou, the Patriarch of Huangsei clan
     questGiverSprite: {fileID: 21300000, guid: e300ba72bc343de468b08558df086205, type: 3}
-    questDescription: "\u201CBandits captured our <b>outpost </b>this morning. They
-      killed everyone. What do we do?\u201D\r"
+    questDescription: "\u201C<color=#FF6666>Bandits</color> captured our <color=#BCED91>outpost</color>
+      this morning. They killed everyone. What do we do?\u201D\r"
     choice1Name: Retake the outpost
     choice1Description: We must take it back from the bandits. The outpost is a strategic
       place for our defense
-    choice1Reveal: The Huangsei clan took back the outpost from the bandits, and
+    choice1Reveal: 'The Huangsei clan took back the outpost from the bandits, and
       we managed to ambush them. The village is grateful for their excellent work!
+
+
+      <sprite
+      name=huangseiLgo><sprite name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=plusLogo>
+
+'
     choice2Name: Defend the village
     choice2Description: Defending the villagers is our priority. Let's leave the
       outpost.
-    choice2Reveal: The bandits attacked us again, and we used our watchtowers to
+    choice2Reveal: 'The bandits attacked us again, and we used our watchtowers to
       eliminate them. Fortunately, the village is saved.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=plusLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=plusLogo>
+
+      <sprite name=argentLogo> <sprite name=plusLogo>
+
+'
     rewardChoice1:
       moneyReward: 10
       templeReadiness: 20

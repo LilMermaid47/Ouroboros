@@ -14,18 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDefinition:
     questName: "Susoda\u2019s Demand"
-    questGiverName: Yu, the matriarch of Susoda clan
+    questGiverName: Yu, the Matriarch of Susoda clan
     questGiverSprite: {fileID: 21300000, guid: 4d50eff9251daa448b29f962a49420f4, type: 3}
-    questDescription: "\u201C We want to build a community garden where everyone
-      can grow vegetables and medicinal plants. Do you want to fund us?\u201D"
+    questDescription: "\u201C We want to build a <color=#0BB5FF>community garden</color>
+      where everyone can grow vegetables and medicinal plants. Do you want to fund
+      us?\u201D"
     choice1Name: Accept the offer
-    choice1Description: The temple gives <b>funds</b> to help the Susoda clan.
-    choice1Reveal: The Susoda clan has completed the landscaping of the garden. The
-      village can now enjoy fresh vegetables and medicinal plants.
+    choice1Description: The temple gives <color=#0BB5FF>funds</color> to help the
+      Susoda clan.
+    choice1Reveal: 'The <color=#AB82FF>Susoda</color> clan has completed the landscaping
+      of the garden. The village can now enjoy fresh vegetables and medicinal plants.
+
+
+      <sprite
+      name=balanceLogo><sprite name=susodaLogo> <sprite name=plusLogo>
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=moinsLogo>
+
+'
     choice2Name: Refuse the offer
     choice2Description: The temple refuses the offer.
-    choice2Reveal: The head of the Susoda clan leaves without showing the slightest
-      emotion. Is she hiding something?
+    choice2Reveal: 'The head of the <color=#AB82FF>Susoda</color> clan leaves without
+      showing the slightest emotion. Is she hiding something?
+
+
+      <sprite name=balanceLogo><sprite
+      name=susodaLogo> <sprite name=moinsLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+'
     rewardChoice1:
       moneyReward: -10
       templeReadiness: 15

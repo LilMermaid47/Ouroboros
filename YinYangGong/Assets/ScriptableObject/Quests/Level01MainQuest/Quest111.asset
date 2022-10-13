@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: Quest117
+  m_Name: Quest111
   m_EditorClassIdentifier: 
   questDefinition:
     questName: The Great Means
     questGiverName: Liliang, the Magistrate
     questGiverSprite: {fileID: 21300000, guid: 83ede145d21b3e948804f9fbeb7fbb97, type: 3}
-    questDescription: "\u201C We have to find a new way to <b>defend ourselves</b>.
-      Our militia is not enough. I need your advice.\u201C"
+    questDescription: "\u201C We have to find a new way to <color=#0BB5FF>defend
+      ourselves</color>. Our militia is not enough. I need your advice.\u201C"
     choice1Name: Ancient monks
     choice1Description: Many say that we should ask for help from the ancient monks.
-      Those who dwell in the <b>mountain of fire</b>. Their wisdom and magic can
-      help the village.
+      Those who dwell in the <color=#ca9c43>mountain of fire</color>. Their wisdom
+      and magic can help the village.
     choice1Reveal: The fighting abilities of the monks are extraordinary! The village
-      is in good hands. The Huangsei clan offered to welcome our new allies who joined
-      their clan without problems.
+      is in good hands. The <color=#ca9c43>Huangsei</color> clan offered to welcome
+      our new allies who joined their clan without problems.
     choice2Name: Wolves
     choice2Description: Others think that the wolves that ransack the chicken coops
-      should be domesticated. This way, we solve <b>two problems</b> at once by training
-      them to fight.
+      should be domesticated. This way, we solve <color=#BCED91>two problems</color>
+      at once by training them to fight.
     choice2Reveal: Wolf training didn't go as planned. They attacked several villagers.
-      The project almost fell through, but the Susodas insisted on taking over the
-      project. They trained about ten wolves.
+      The project almost fell through, but the <color=#AB82FF>Susoda</color> insisted
+      on taking over the project. They trained about ten wolves.
     rewardChoice1:
       moneyReward: -25
       templeReadiness: 30

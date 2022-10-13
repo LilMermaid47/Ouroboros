@@ -10,23 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a365240d4c5e7f441b4854cc1904d6f7, type: 3}
-  m_Name: Quest109
+  m_Name: Quest106
   m_EditorClassIdentifier: 
   questDefinition:
     questName: "Bendan\u2019s Pig"
-    questGiverName: Bendan the mad
+    questGiverName: Bendan the Mad
     questGiverSprite: {fileID: 21300000, guid: d76327ece2a2ed7448a51049732cae18, type: 3}
     questDescription: "\u201CI lost my favorite pig in the mountains. The mountain's
-      path is <b>dangerous</b>. I need help finding it. Which clan can help me?\u201D\r\n"
+      path is <color=#FF6666>dangerous</color>. I need help finding it. Which clan
+      can help me?\u201D\r"
     choice1Name: Huangsei
-    choice1Description: The Huangsei clan is ready to do anything to help the villagers.
-    choice1Reveal: The searches were unsuccessful. Several members fell into a sinkhole
+    choice1Description: The <color=#ca9c43>Huangsei</color> clan is ready to do anything
+      to help the villagers.
+    choice1Reveal: 'The searches were unsuccessful. Several members fell into a sinkhole
       and died. We lost our weapons and our precious map.
+
+
+      <sprite name=huangseiLgo><sprite
+      name=balanceLogo> <sprite name=moinsLogo>
+
+      <sprite name=readinessLogo>
+      <sprite name=moinsLogo>
+
+'
     choice2Name: Susoda
-    choice2Description: The Susoda Clan knows of a few mushrooms that attract pigs.
-    choice2Reveal: The searches were unsuccessful. The mushrooms attracted a bear
-      which killed several members and villagers. We <b>sold the bear pelt</b> at
-      a reasonable price.
+    choice2Description: The <color=#AB82FF>Susoda</color> Clan knows of a few mushrooms
+      that attract pigs.
+    choice2Reveal: "The searches were unsuccessful. The mushrooms attracted a bear
+      which killed several members and villagers. We <color=#BCED91>sold the bear
+      pelt</color> at a reasonable price.\n\n<sprite name=balanceLogo><sprite name=susodaLogo>
+      <sprite name=moinsLogo>\r\n<sprite name=readinessLogo> <sprite name=moinsLogo>\r\n<sprite
+      name=argentLogo> <sprite name=plusLogo>\r"
     rewardChoice1:
       moneyReward: 0
       templeReadiness: -10

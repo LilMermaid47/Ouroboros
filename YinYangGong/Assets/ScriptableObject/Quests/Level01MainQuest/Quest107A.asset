@@ -10,32 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa9dd6730d30c9a4f92bcd4fc50bf487, type: 3}
-  m_Name: Quest113A
+  m_Name: Quest107A
   m_EditorClassIdentifier: 
   questDefinition:
     questName: 'New Project: Temple Repairs'
-    questGiverName: Neutral peasant
+    questGiverName: Yichen
     questGiverSprite: {fileID: 21300000, guid: 6a937a56c2e570944b98879bd9a560c2, type: 3}
     questDescription: "\u201CMaster Fangshi, the temple is in ruins. The faithful
-      fear the roof will fall on their heads because of the rotten wood. It smells
-      terrible, and we got more rats here than followers. How do you want to <b>attract
-      followers</b> in such a place?\""
+      fear the roof will fall on their heads because of the <color=#FF6666>rotten
+      wood</color>. It smells terrible, and we got more rats here than followers.
+      How do you want to <color=#BCED91>attract followers</color> in such a place?\""
     choice1Name: Repair the roof
     choice1Description: You are right; the temple must be repaired if we are to be
       ready to protect the village.
     choice1Reveal: 'Both clans volunteered to repair the temple. In addition, they
       took the opportunity to set up altars of their respective deities.
 
+
+      <sprite
+      name=readinessLogo> <sprite name=plusLogo>
+
+      <sprite name=argentLogo>
+      <sprite name=moinsLogo>
+
 '
     choice2Name: Give a gift to clans
-    choice2Description: Repairs will wait; I was planning to give a gift to one of
-      the clans to improve our relations.
+    choice2Description: Repairs will wait; I was planning to give a gift to <color=#BCED91>one
+      of the clans to improve our relations</color>.
     choice2Reveal: You called several merchants who showed you their merchandise
       to acquire the best gift for the clans of your choice.
     rewardChoice1:
       moneyReward: -30
       templeReadiness: 30
-      nbDisciple: 1
+      nbDisciple: 0
       nbKi: 0
       yinYangBalance: 0
       unlockQuestChoice:
