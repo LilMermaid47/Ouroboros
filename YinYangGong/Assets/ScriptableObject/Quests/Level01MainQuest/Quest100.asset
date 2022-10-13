@@ -16,6 +16,7 @@ MonoBehaviour:
     questName: A New Start
     questGiverName: Zhou
     questGiverSprite: {fileID: 21300000, guid: 173f22ca891ab5f43afae530d132fcc7, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
     questDescription: "\u201C Master Monk, I want to train and become a <color=#0BB5FF>magic
       monk</color>, but I don't know <color=#0BB5FF>which clan</color> would be more
       interesting. What practice do you recommend? \u201D"

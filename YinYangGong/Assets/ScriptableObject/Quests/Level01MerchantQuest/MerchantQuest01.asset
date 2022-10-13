@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d08557ff2a62e458e39a394fdd4e9c, type: 3}
+  m_Name: MerchantQuest01
+  m_EditorClassIdentifier: 
+  questDefinition:
+    questName: A Good Opportunity
+    questGiverName: Caifu, the Merchant
+    questGiverSprite: {fileID: 21300000, guid: af298ddb0b9ea094b9b7330bbf20b70d, type: 3}
+    questGiverAudio: {fileID: 8300000, guid: 55791d91ab0e0c444a4f74ea75cfe7f5, type: 3}
+    questDescription: "I've travelled far and wide to find this <color=#0F0F0F>\r
+      Get Ready </color>\r\n that will help you prepare for the attack. And for you
+      my friend, I'll sell it to you at half the price!"
+    choice1Name: Accept
+    choice1Description: "Receive a Get Ready item for only 25 <sprite name=argentLogo>
+      \r"
+    choice1Reveal: Your merchant friend goes back on his travels with his pockets
+      full of your gold.
+    choice2Name: Refuse
+    choice2Description: I dont think I'll need it
+    choice2Reveal: Your merchant friend goes back on his travels
+    rewardChoice1:
+      moneyReward: -25
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+    rewardChoice2:
+      moneyReward: 0
+      templeReadiness: 0
+      nbDisciple: 0
+      nbKi: 0
+      yinYangBalance: 0
+      unlockQuestChoice:
+        nbQuestLater: 0
+        unlockedQuest: {fileID: 0}
+  itemChoice1:
+    itemPrice: 25
+    item: {fileID: 11400000, guid: 1520c80d24236684ca0a2568be9430ec, type: 2}
+  itemChoice2:
+    itemPrice: 0
+    item: {fileID: 0}

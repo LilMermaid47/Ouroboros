@@ -49,7 +49,7 @@ MonoBehaviour:
         nbQuestLater: 0
         unlockedQuest: {fileID: 0}
   requirementChoice1:
-    moneyCost: 20
+    moneyCost: 0
     templeReadiness: 0
     kiCost: 0
     disciples: 0

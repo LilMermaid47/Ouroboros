@@ -69,6 +69,9 @@ public class UIController : MonoBehaviour
 
         if (UIMenu.GymMenu != null)
             UIMenu.GymMenu.SetActive(false);
+
+        if (NPCQueue != null)
+            NPCFileImage = NPCQueue.GetComponentsInChildren<Image>();
     }
 
     private void Start()
@@ -80,9 +83,6 @@ public class UIController : MonoBehaviour
         questManager = GameObject.FindGameObjectWithTag("QuestManager").GetComponent<QuestManager>();
         PauseMenuActive(true);
         HideBtn();
-
-        if (NPCQueue != null)
-            NPCFileImage = NPCQueue.GetComponentsInChildren<Image>();
 
         UIMenu.ShopUi.SetActive(false);
         UIMenu.InventoryUi.SetActive(false);
